@@ -1,0 +1,34 @@
+[
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "city": { 
+	"houses": { "wizard_tower_op": 5, "wizard_tower_stalker": 5, "wizard_tower_abandoned": 10, "cathedral_saint": 3 },
+	"shops": 
+	{ 
+	"magic_academy_operator": 150, 
+	"magic_academy_necro": 150, 
+	"bank_raiders": 100, 
+	"bank_altar": 100, 
+	"office_towermage": 1, 
+	"s_library_atraxa": 10, 
+	"botanical_garden_omnath": 10, 
+	"lighthouse_ortiel": 10, 
+	"town_hall_ydris": 10, 
+	"post_office_overrun": 100,
+	"police_dept_ADAD": 200, 
+	"demonic_fortress": 25 } 
+	},
+	"map_extras": {
+      "road": {
+        "chance": 75,
+        "extras": {
+          "mx_postal_van_ADAD": 10,
+		  "mx_operator_ambush": 15,
+		  "mx_stalker_ambush": 15,
+		  "mx_operator_campsite": 10
+        }
+    }
+  }
+  }
+]

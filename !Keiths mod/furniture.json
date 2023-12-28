@@ -1,0 +1,1824 @@
+[
+ {
+    "type": "tool_quality",
+    "id": "POWER_ALTAR",
+    "name": "altar of worship"
+  },
+  {
+    "type": "tool_quality",
+    "id": "VHS",
+    "name": "V.H.S"
+  },
+  {
+    "type": "tool_quality",
+    "id": "SILVERMOON_LOOM",
+    "name": "silvermoon loom"
+  },
+  {
+    "type": "tool_quality",
+    "id": "GOLDENSUN_SPRING",
+    "name": "goldensun spring"
+  },
+  {
+    "type": "construction_group",
+    "id": "build_stone_altar",
+    "name": "Conjure an Altar of Worship"
+  },
+  {
+    "type": "construction_group",
+    "id": "build_knowing_post",
+    "name": "Set Down a Knowing Post"
+  },
+  {
+    "type": "construction_group",
+    "id": "draw_magic_circle",
+    "name": "Etch a Magic Circle"
+  },
+  {
+    "type": "construction_group",
+    "id": "build_entertainment_center",
+    "name": "Put Together an Entertainment Center"
+  },
+  {
+    "type": "construction_group",
+    "id": "build_standing_alembic",
+    "name": "Put Together a Standing Alembic"
+  },
+{
+    "type": "tool_quality",
+    "id": "WHITE_CIRCLE",
+    "name": "white circle"
+  },
+  {
+    "type": "tool_quality",
+    "id": "BLACK_CIRCLE",
+    "name": "black circle"
+  },
+  {
+    "type": "tool_quality",
+    "id": "GREEN_CIRCLE",
+    "name": "green circle"
+  },
+  {
+    "type": "tool_quality",
+    "id": "RED_CIRCLE",
+    "name": "red circle"
+  },
+  {
+    "type": "tool_quality",
+    "id": "BLUE_CIRCLE",
+    "name": "blue circle"
+  },
+  {
+    "type": "tool_quality",
+    "id": "ZEN",
+    "name": "zen"
+  },
+  {
+    "type": "construction_group",
+    "id": "zen_garden",
+    "name": "Put Together a Zen Garden"
+  },
+  {
+    "type": "construction",
+    "id": "constr_standing_alembic",
+    "group": "build_standing_alembic",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 7 ], [ "fabrication", 4 ] ],
+    "time": "1 h",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "pot_copper", 1 ] ], [ [ "pipe_glass", 4 ] ], [ [ "glass_tube_small", 10 ] ], [ [ "stopcock", 5 ] ], [ [ "flask_glass", 3 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_alembic"
+  },
+   {
+    "type": "construction",
+    "id": "constr_zen_garden",
+    "group": "zen_garden",
+    "category": "FURN",
+    "required_skills": [ [ "speech", 0 ] ],
+    "time": "1 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "material_sand", 100 ] ], [ [ "rock", 3 ] ], [ [ "stick", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_zen_garden"
+  },
+  {
+    "type": "furniture",
+    "id": "f_zen_garden",
+    "name": "Zen Garden",
+    "move_cost_mod": 3,
+	"looks_like": "t_sand",
+    "symbol": "O",
+    "color": "white",
+	"crafting_pseudo_item": "fake_zen_garden",
+    "required_str": -1,
+	"examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_ZEN",
+          "condition": {
+      "and": [
+        {
+          "not": {
+            "or": [
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_is_wearing": "onyx_silver_ring" },
+			  { "u_is_wearing": "pointed_hat" },
+			  { "u_is_wearing": "ring_signet" },
+			  { "u_has_trait": "THRESH_MANA" },
+              { "u_has_trait": "PSYCHOPATH" }
+            ]
+          }
+        },
+        {
+          "or": [
+            { "u_is_wearing": "holy_symbol" },
+            { "u_is_wearing": "holy_symbol_wood" },
+            { "u_is_wearing": "spirit_armor" },
+			{ "u_has_trait": "SPIRITUAL" },
+            { "u_is_wearing": "bead_bracelet" },
+            { "u_is_wearing": "bead_necklace" },
+            { "u_is_wearing": "relic_small" }
+          ]
+        }
+      ]
+    },
+     "effect": [
+    {
+      "u_add_morale": "morale_feeling_good",
+      "bonus": 10,
+      "max_bonus": 10,
+      "duration": "24 hours",
+      "decay_start": "24 hours"
+    }, 
+	{ "u_message": "Your time in meditation leaves you feeling enlightened.", "popup": true }
+	],
+     "false_effect": { "u_message": "Your racing mind is unable to glean anything from your time spent meditating.", "popup": true }
+    }
+	]
+	},
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY" ],
+    "description": "A place set aside for tranquility's sake."
+  },
+  {
+    "id": "fake_zen_garden",
+    "type": "TOOL",
+    "name": { "str": "fake zen (pseudo item)", "str_pl": "fake zens (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "ZEN", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "tool_quality",
+    "id": "MIRROR_SELF",
+    "name": "mirror self"
+  },
+  {
+    "type": "construction_group",
+    "id": "mirror_self",
+    "name": "Make Yourself a Mirror"
+  },
+  {
+    "type": "construction",
+    "id": "constr_mirror_real",
+    "group": "mirror_self",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 3 ] ],
+    "time": "1 h",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "frame", 1 ] ], [ [ "glass_sheet", 1 ] ], [ [ "bone_glue", 13 ], [ "superglue", 7 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_bigmirror"
+  },
+   {
+    "type": "construction",
+    "id": "constr_mirror_self",
+    "group": "mirror_self",
+    "category": "FURN",
+    "required_skills": [ [ "speech", 3 ] ],
+    "time": "24 h",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "glass_shard", 333 ] ], [ [ "bone_glue", 7 ], [ "superglue", 3 ] ] ],
+    "pre_terrain": "f_bigmirror_b",
+    "post_terrain": "f_selfmirror"
+  },
+  {
+  "type": "furniture",
+  "id": "f_selfmirror",
+  "name": "self-made mirror",
+  "symbol": "{",
+  "description": "A full-length mirror painstakingly hand-mounted in a sleek metal frame.  You can easily see all of the dirt and blood on your clothes, and the weariness in your eyes.",
+  "color": "white",
+  "looks_like": "f_bigmirror",
+  "move_cost_mod": 2,
+  "coverage": 80,
+  "required_str": 5,
+  "crafting_pseudo_item": "fake_mirror_self",
+  "flags": [
+    "NOITEM",
+    "BLOCKSDOOR",
+	"TRANSLOCATOR"
+  ],
+  "examine_action": "translocator",
+  "bash": {
+    "str_min": 5,
+    "str_max": 16,
+    "sound": "glass breaking",
+    "sound_fail": "whack!",
+    "sound_vol": 16,
+    "furn_set": "f_bigmirror_b",
+    "items": [
+      {
+        "item": "glass_shard",
+        "count": [
+          25,
+          50
+        ]
+      }
+    ]
+  }
+  },
+  {
+    "id": "fake_mirror_self",
+    "type": "TOOL",
+    "name": { "str": "fake mirror (pseudo item)", "str_pl": "fake mirrors (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "MIRROR_SELF", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "tool_quality",
+    "id": "SOUL_ENGINE",
+    "name": "soul engine"
+  },
+  {
+    "type": "construction_group",
+    "id": "soul_engine",
+    "name": "Build a Soul Engine"
+  },
+   {
+    "type": "construction",
+    "id": "constr_soul_engine",
+    "group": "soul_engine",
+    "category": "FURN",
+    "required_skills": [ [ "speech", 5 ] ],
+    "time": "16 h",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "engine_block_massive", 1 ] ], [ [ "engineering_engine_kit", 2 ], [ "spiral_stone", 2 ], [ "petrified_eye", 2 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_soul_engine"
+  },
+  {
+  "type": "furniture",
+  "id": "f_soul_engine",
+  "name": "soul engine",
+  "looks_like": "f_compact_ASRG_containment",
+  "description": "An engine that has been brought to a semblance of life by speaking with it for hours on end, slowly hypnotizing it to awareness of newfound eyes. It sputters as if gasping for air, heat and eldritch wisdom alike pouring from it's freshly opened spirit, a tempered vision of pure power.",
+  "symbol": "$",
+  "color": "yellow",
+  "move_cost_mod": 8,
+  "coverage": 55,
+  "required_str": -1,
+  "emissions": [ "emit_hot_air2_stream" ],
+  "crafting_pseudo_item": "fake_soul_engine",
+  "examine_action": "workbench",
+  "workbench": { "multiplier": 2.0, "mass": 10000000, "volume": "1000L" },
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "SEALED",
+	"ACTIVE_GENERATOR",
+    "PLACE_ITEM"
+  ]
+  },
+  {
+    "id": "fake_soul_engine",
+    "type": "TOOL",
+    "name": { "str": "fake soul engine (pseudo item)", "str_pl": "fake soul engines (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "SOUL_ENGINE", 1 ] ],
+    "flags": [ "TRADER_AVOID", "FIRE" ]
+  },
+  {
+    "type": "construction",
+    "id": "constr_magic_circle",
+    "group": "draw_magic_circle",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "1 h",
+	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "white_pen_ink", 1 ], [ "blood", 3 ], [ "candle_lit", 13 ], [ "money_strap_hundred", 1 ] ], [ [ "ring_signet", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_magic_circle"
+  },
+  {
+    "type": "construction",
+    "id": "constr_magic_circle_green",
+    "group": "draw_magic_circle",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "1 h",
+	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "crystallized_ink_green", 1 ] ], [ [ "ring_signet", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_magic_circle_green"
+  },
+  {
+    "type": "construction",
+    "id": "constr_magic_circle_black",
+    "group": "draw_magic_circle",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "1 h",
+	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "crystallized_ink_black", 1 ] ], [ [ "ring_signet", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_magic_circle_black"
+  },
+  {
+    "type": "construction",
+    "id": "constr_magic_circle_blue",
+    "group": "draw_magic_circle",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "1 h",
+	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "crystallized_ink_blue", 1 ] ], [ [ "ring_signet", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_magic_circle_blue"
+  },
+  {
+    "type": "construction",
+    "id": "constr_magic_circle_red",
+    "group": "draw_magic_circle",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 3 ] ],
+    "time": "1 h",
+	"qualities": [ [ { "id": "MANA_WEAVE", "level": 1 } ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "crystallized_ink_red", 1 ] ], [ [ "ring_signet", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_magic_circle_red"
+  },
+{
+    "type": "furniture",
+    "id": "f_magic_circle",
+    "name": "Magic Circle",
+	"copy-from": "f_magic_circle", 
+    "move_cost_mod": 0,
+    "symbol": "O",
+    "color": "white",
+	"crafting_pseudo_item": "fake_magic_circle",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TRANSLOCATOR" ],
+	"examine_action": "translocator",
+	"bash": {
+    "str_min": 3,
+    "str_max": 25,
+    "sound_fail": "whack!",
+    "sound_vol": 5,
+    "items": [
+      {
+        "item": "money_hundred",
+        "count": [
+          5,
+          50
+        ]
+      }
+    ]
+  },
+    "description": "This is a rough magic circle, carved into the ground and decorated with blood, money, low-burning candles, or white ink. It has been ritually enchanted to allow translocation."
+  },
+  {
+    "id": "fake_magic_circle",
+    "type": "TOOL",
+    "name": { "str": "fake circle (pseudo item)", "str_pl": "fake circle (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "WHITE_CIRCLE", 1 ], [ "POWER_ALTAR", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_magic_circle_black",
+    "name": "Magic Circle",
+	"copy-from": "f_magic_circle", 
+    "move_cost_mod": 0,
+    "symbol": "O",
+    "color": "black",
+	"crafting_pseudo_item": "fake_magic_circle_black",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT" ],
+    "description": "This is a rough magic circle, carved into the ground and decorated with black ink."
+  },
+  {
+    "id": "fake_magic_circle_black",
+    "type": "TOOL",
+    "name": { "str": "fake circle (pseudo item)", "str_pl": "fake circle (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "BLACK_CIRCLE", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_magic_circle_red",
+    "name": "Magic Circle",
+	"copy-from": "f_magic_circle", 
+    "move_cost_mod": 0,
+    "symbol": "O",
+    "color": "red",
+	"crafting_pseudo_item": "fake_magic_circle_red",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT" ],
+    "description": "This is a rough magic circle, carved into the ground and decorated with red ink."
+  },
+  {
+    "id": "fake_magic_circle_red",
+    "type": "TOOL",
+    "name": { "str": "fake circle (pseudo item)", "str_pl": "fake circle (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "RED_CIRCLE", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_magic_circle_green",
+    "name": "Magic Circle",
+	"copy-from": "f_magic_circle", 
+    "move_cost_mod": 0,
+    "symbol": "O",
+    "color": "green",
+	"crafting_pseudo_item": "fake_magic_circle_green",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT" ],
+    "description": "This is a rough magic circle, carved into the ground and decorated with green ink."
+  },
+  {
+    "id": "fake_magic_circle_green",
+    "type": "TOOL",
+    "name": { "str": "fake circle (pseudo item)", "str_pl": "fake circle (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "GREEN_CIRCLE", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_magic_circle_blue",
+    "name": "Magic Circle",
+	"copy-from": "f_magic_circle", 
+    "move_cost_mod": 0,
+    "symbol": "O",
+    "color": "blue",
+	"crafting_pseudo_item": "fake_magic_circle_blue",
+    "required_str": -1,
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT" ],
+    "description": "This is a rough magic circle, carved into the ground and decorated with blue ink."
+  },
+  {
+    "id": "fake_magic_circle_blue",
+    "type": "TOOL",
+    "name": { "str": "fake circle (pseudo item)", "str_pl": "fake circle (pseudo items)" },
+    "description": "Pseudo item for the magic circle.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "BLUE_CIRCLE", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "construction",
+    "id": "constr_knowing_post",
+    "group": "build_knowing_post",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 5 ], [ "fabrication", 3 ] ],
+    "time": "10 m",
+	"qualities": [ [ { "id": "PRY", "level": 1 } ], [ { "id": "SCREW", "level": 1 } ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "stick", 1 ], [ "pipe", 1 ] ], [ [ "superglue", 1 ] ], [ [ "crystal_ball", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_knowing_post"
+  },
+  {
+    "id": "emit_clairvoyant_post",
+    "type": "emit",
+    "//": "Intermittent clairvoyance",
+    "field": "fd_clairvoyant",
+    "intensity": 1,
+	"qty": 9,
+    "chance": 100
+  },
+  {
+    "type": "furniture",
+    "id": "f_knowing_post",
+    "name": "knowing post",
+    "description": "A crystal ball stuck onto a post so as to elevate it, giving it a clear view of the surroundings.",
+    "looks_like": "f_floor_lamp",
+    "symbol": "^",
+    "color": "light_gray",
+    "move_cost_mod": 2,
+    "coverage": 0,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT" ],
+    "emissions": [ "emit_clairvoyant_post" ]
+  },
+  {
+    "id": "emit_vault_safe",
+    "type": "emit",
+    "//": "Intermittent vault atmosphere",
+    "field": "fd_vault_atmosphere",
+    "intensity": 1,
+	"qty": 9,
+    "chance": 100
+  },
+  {
+    "type": "furniture",
+    "id": "f_safe_l",
+    "name": "safe",
+    "looks_like": "f_safe_c",
+    "symbol": "X",
+    "description": "A small, heavy, and near-unbreachable metal box with a rotary combination lock.  With something to listen really closely and a hell of a lot of time, you might be able to crack it.",
+    "color": "light_gray",
+    "move_cost_mod": -1,
+    "coverage": 30,
+    "required_str": 14,
+    "max_volume": "250 L",
+	"emissions": [ "emit_vault_atmosphere" ],
+    "flags": [ "TRANSPARENT", "CONTAINER", "SEALED", "PLACE_ITEM", "MOUNTABLE" ],
+    "oxytorch": { "result": "f_safe_o", "duration": "14 seconds" },
+    "examine_action": "safe",
+    "bash": {
+      "str_min": 40,
+      "str_max": 200,
+      "sound": "screeching metal!",
+      "sound_fail": "whump!",
+      "items": [
+        { "item": "steel_chunk", "count": [ 1, 5 ] },
+        { "item": "scrap", "count": [ 1, 5 ] },
+        { "item": "rock", "count": [ 1, 2 ] }
+      ]
+    }
+  },
+  {
+    "type": "construction",
+    "id": "constr_stone_altar",
+    "group": "build_stone_altar",
+    "category": "FURN",
+    "required_skills": [ [ "speech", 3 ], [ "fabrication", 1 ] ],
+    "time": "15 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "skull_human", 1 ] ], [ [ "blood", 2 ] ], [ [ "rock_large", 3 ] ] ],
+    "pre_terrain": "t_pit",
+    "post_terrain": "f_altar"
+  },
+  {
+    "type": "construction",
+    "id": "constr_stone_altar2",
+    "group": "build_stone_altar",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 5 ], [ "fabrication", 5 ] ],
+    "time": "6 h",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "glow_dust", 3 ], [ "dragon_blood", 33 ] ], [ [ "crystallized_mana", 777 ], [ "gold_small", 777 ], [ "silver_small", 777 ] ], [ [ "enchanted_wood", 13 ] ] ],
+    "pre_terrain": "f_magic_circle",
+    "post_terrain": "f_altar_of_power"
+  },
+  {
+    "id": "fake_altar",
+    "type": "TOOL",
+    "name": { "str": "fake altar (pseudo item)", "str_pl": "fake altar (pseudo items)" },
+    "description": "Pseudo item for the altar of power.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "POWER_ALTAR", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_altar",
+    "name": "stone altar",
+    "copy-from": "f_altar",
+    "move_cost_mod": 10,
+	"looks_like": "f_grave_stone",
+    "symbol": "A",
+    "color": "light_gray",
+    "crafting_pseudo_item": "fake_altar",
+    "coverage": 40,
+    "required_str": 30,
+	"flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
+	"examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_STONE_ALTAR",
+          "condition": {
+      "and": [
+        {
+            "or": [
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_has_trait": "PYSCHOPATH" },
+			  { "u_is_wearing": "onyx_silver_ring" }
+            ]
+        },
+        {
+          "and": [
+            { "u_has_item": "cleansed_soul" },
+			{ "u_query": "The crying skull begins wailing and shedding tears, and your cleansed soul feels heavy. Do you trade it at this dark altar for financial gain? You may incur the wrath of forces beyond your control.", "default": false }
+          ]
+        }
+      ]
+    },
+     "effect": [
+    {
+      "u_spawn_item": "money_parcel_hundred", "suppress_message": true
+	},
+	{
+      "u_remove_item_with": "cleansed_soul"
+	},
+	{ "u_message": "The crying soul inhales the cleansed soul, and a mysterious package is delivered to you.'", "popup": true },
+	{ "u_add_trait": "HAS_NEMESIS" }	
+	],
+     "false_effect": [ 
+	 { "u_message": "The crying skull seems as though it's eagerly awaiting some sweet treat to calm it down. Something simple and clean.'", "popup": true }	
+	]
+    }
+	]
+	},
+    "description": "This is a devilish stone altar.  Most commonly used in morally questionable rituals. That's made more obvious by the human skull crying blood.",
+    "bash": {
+      "str_min": 30,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [ { "item": "rock", "count": [ 5, 15 ] }, { "item": "sharp_rock", "count": [ 3, 5 ] }, { "item": "skull_human" } ]
+    }
+  },
+  {
+    "id": "fake_altar_power",
+    "type": "TOOL",
+    "name": { "str": "fake altar (pseudo item)", "str_pl": "fake altar (pseudo items)" },
+    "description": "Pseudo item for the altar of power.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "POWER_ALTAR", 2 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_altar_of_power",
+    "name": "magic altar",
+    "description": "An altar imprinted with a magic circle that makes almost all things much easier. It's laced with magic in it's entire construction, making it a necessary component in some high tier magical recipes.",
+    "symbol": "0",
+    "move_cost_mod": 2,
+	"color": "red",
+    "coverage": 60,
+    "required_str": -1,
+    "crafting_pseudo_item": "fake_altar_power",
+    "looks_like": "f_attunement_altar",
+    "emissions": [ "emit_glimmer" ],
+    "flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
+    "deconstruct": {
+      "items": [
+        { "item": "pipe", "count": [ 6, 12 ] },
+        { "item": "cu_pipe", "count": [ 1, 4 ] },
+        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "epoxy_chunk", "count": [ 50, 75 ] },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "sheet_metal", "count": [ 1, 2 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] }
+      ]
+    },
+    "max_volume": "1750 L",
+    "bash": {
+      "str_min": 35,
+      "str_max": 80,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "epoxy_chunk", "count": [ 30, 50 ] },
+        { "item": "pipe", "count": 1 },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "cu_pipe", "count": 1 }
+      ]
+    },
+	"examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_MAGIC_ALTAR",
+          "condition": {
+      "and": [
+        {
+            "or": [
+              { "u_has_wielded_with_flag": "MAGIC_FOCUS" },
+			  { "u_has_trait": "MANA_THRESH_MANATOUCHED" },
+			  { "u_is_wearing": "copper_infuser" },
+              { "u_is_wearing": "silver_infuser" },
+			  { "u_is_wearing": "ring_signet" }
+            ]
+        },
+        {
+          "and": [
+            { "u_has_item": "spiral_stone" },
+			{ "u_query": "Staring into the spirals of the magic circle you feel a great weight upon your soul. Something is trapped here, or perhaps there. The circle aches to free your soul from the stone prison you command. Do you allow it?", "default": false }
+          ]
+        }
+      ]
+    },
+     "effect": [
+    {
+      "u_spawn_item": "twisted_soul", "suppress_message": true
+	},
+	{ "u_message": "The spiral stone becomes one with the circle, a putrid soul left behind like a deathbed tear.'", "popup": true },
+	{
+      "u_remove_item_with": "spiral_stone"
+	}	
+	],
+     "false_effect": [ 
+	 { "u_message": "The spirals of the magic circle imprinted in this altar seem to petrify at your gaze. Moments ago you know they moved freely, and now at your gaze they're but stone.", "popup": true }	
+	]
+    }
+	]
+	}
+  },
+  {
+    "type": "construction",
+    "id": "constr_stone_altar3",
+    "group": "build_stone_altar",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 7 ] ],
+    "time": "48 h",
+  "components": [ [ [ "saints_symbol", 1 ], [ "burning_heart", 1 ], [ "verge_cleansing", 1 ] ] ],
+    "pre_terrain": "f_magic_bench",
+    "post_terrain": "f_altar_of_essence"
+  },
+  {
+    "id": "fake_altar_essence",
+    "type": "TOOL",
+    "name": { "str": "fake altar (pseudo item)", "str_pl": "fake altar (pseudo items)" },
+    "description": "Pseudo item for the altar of power.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "POWER_ALTAR", 3 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_altar_of_essence",
+    "name": "essential altar",
+    "description": "An altar of pure worship without any fluff or unnecessary additions. It is the highest form of worship that any mortal will ever reach.",
+    "symbol": "0",
+    "bgcolor": "white",
+    "move_cost_mod": 2,
+    "coverage": 60,
+    "required_str": -1,
+    "crafting_pseudo_item": "fake_altar_essence",
+    "looks_like": "f_orrery",
+    "emissions": [ "emit_glimmer" ],
+    "flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
+    "deconstruct": {
+      "items": [
+        { "item": "pipe", "count": [ 6, 12 ] },
+        { "item": "cu_pipe", "count": [ 1, 4 ] },
+        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "epoxy_chunk", "count": [ 50, 75 ] },
+        { "item": "blood", "count": [ 10, 20 ] },
+		{ "item": "burning_heart" },
+        { "item": "sheet_metal", "count": [ 1, 2 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] }
+      ]
+    },
+    "max_volume": "1750 L",
+    "bash": {
+      "str_min": 35,
+      "str_max": 80,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "epoxy_chunk", "count": [ 30, 50 ] },
+        { "item": "pipe", "count": 1 },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "cu_pipe", "count": 1 }
+      ]
+    },
+    "examine_action": "workbench",
+    "workbench": { "multiplier": 3.0, "mass": 900000, "volume": "100L" }
+  },
+  {
+    "type": "construction",
+    "id": "constr_stone_altar4",
+    "group": "build_stone_altar",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 10 ], [ "speech", 7 ] ],
+    "time": "12 h",
+  "components": [ [ [ "impression_cylinder", 1 ] ], [ [ "crystallized_mana", 3000 ], [ "money_hundred", 3000 ] ] ],
+    "pre_terrain": "f_glow_boulder",
+    "post_terrain": "f_scroll_printer"
+  },
+  {
+    "id": "fake_scroll_printer",
+    "type": "TOOL",
+    "name": { "str": "fake altar (pseudo item)", "str_pl": "fake altar (pseudo items)" },
+    "description": "Pseudo item for the altar of power.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "POWER_ALTAR", 4 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "impression_cylinder",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "impression cylinder" },
+    "description": "The core of an infernal press that's been ripped straight out. Now that you're looking at it, you can tell it's just made of brimstone and crystallized mana, mixed so perfectly they're nearly indistinguishable. It radiates with magical energy, only some of it pure.",
+    "weight": "150 g",
+    "volume": "150 ml",
+    "longest_side": "12 cm",
+    "price": 2000000,
+    "material": [ "brimstone" ],
+    "symbol": "B",
+    "color": "red"
+  },
+  {
+    "type": "furniture",
+    "id": "f_scroll_printer",
+    "name": "infernal press",
+    "description": "A dastardly machine containing an element capable of turning regular paper into liquid magic. If only you knew how to do so...",
+    "symbol": "0",
+    "bgcolor": "white",
+    "move_cost_mod": 2,
+    "coverage": 60,
+    "required_str": -1,
+	"looks_like": "f_machinery_old",
+    "crafting_pseudo_item": "fake_scroll_printer",
+    "emissions": [ "emit_glimmer" ],
+    "flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "FLAT_SURF", "USABLE_FIRE" ],
+    "deconstruct": {
+      "items": [
+        { "item": "pipe", "count": [ 6, 12 ] },
+		{ "item": "impression_cylinder" },
+        { "item": "cu_pipe", "count": [ 1, 4 ] },
+        { "item": "cable", "charges": [ 1, 4 ] },
+        { "item": "epoxy_chunk", "count": [ 50, 75 ] },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "sheet_metal", "count": [ 1, 2 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] }
+      ]
+    },
+    "max_volume": "1750 L",
+    "bash": {
+      "str_min": 35,
+      "str_max": 80,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "epoxy_chunk", "count": [ 30, 50 ] },
+        { "item": "pipe", "count": 1 },
+        { "item": "blood", "count": [ 10, 20 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "cu_pipe", "count": 1 }
+      ]
+    },
+    "examine_action": "workbench",
+    "workbench": { "multiplier": 2.5, "mass": 900000, "volume": "100L" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_stone_throne",
+    "name": "stone throne",
+	"looks_like": "f_grave_stone",
+    "description": "An upright carving of jagged stone in the rough shape of a chair, scarred at the foot with a mural of four grovelling husks.",
+    "symbol": "^",
+    "color": "light_gray",
+    "move_cost_mod": 2,
+	"emissions": [ "emit_fatigue_throne" ],
+    "coverage": 50,
+    "required_str": -1,
+    "crafting_pseudo_item": "boulder_anvil",
+    "flags": [ "MINEABLE", "NOITEM", "TRANSPARENT", "MOUNTABLE", "ROUGH", "PLACE_ITEM", "CAN_SIT" ],
+	"examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_THRONE",
+          "condition": {
+      "and": [
+        {
+          "not": {
+            "or": [
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_has_trait": "PYSCHOPATH" }
+            ]
+          }
+        },
+        {
+          "and": [
+            { "u_is_wearing": "blazing_heart" },
+			{ "u_query": "Do you bare naked your blazing heart in the face of damnation, drawing the ire of it's rightful owner?", "default": false }
+          ]
+        }
+      ]
+    },
+     "effect": [
+    {
+      "u_cast_spell": { "id": "summon_devil", "hit_self": true }
+	},
+	{
+      "u_cast_spell": { "id": "ruined_throne", "hit_self": true }
+	}
+	],
+     "false_effect": [ 
+	 { "u_message": "You read the inscription on the throne: 'Here rests the Prince of Dark Hearts, the four Kings who lay at his feet having cast for him a Throne.'", "popup": true }, 
+	 {
+      "u_add_morale": "morale_feeling_good",
+      "bonus": 10,
+      "max_bonus": 10,
+      "duration": "24 hours",
+      "decay_start": "24 hours"
+    },
+    { "u_lose_trait": "HAS_NEMESIS" }	
+	]
+    }
+	]
+	},
+    "bash": {
+      "str_min": 60,
+      "str_max": 160,
+      "sound": "crash!",
+      "sound_fail": "thump!",
+      "items": [ { "item": "rock", "count": [ 8, 14 ] }, { "item": "brimstone_sliver", "count": [ 8, 14 ] } ]
+    }
+  },
+  {
+    "id": "emit_fatigue_throne",
+    "type": "emit",
+    "field": "fd_fatigue",
+    "intensity": 1,
+	"qty": 1,
+    "chance": 20
+  },
+  {
+    "id": "ruined_throne",
+    "type": "SPELL",
+    "name": "Total Incineration",
+    "description": "Whatever power was once contained in the throne has been drained by the Dark Lord.",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "stone_throne_place",
+    "shape": "blast",
+    "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE" ],
+    "energy_source": "MANA",
+    "difficulty": 5,
+    "base_casting_time": 0,
+    "final_casting_time": 0,
+    "base_energy_cost": 0,
+	"final_energy_cost": 0,
+    "max_level": 20,
+    "min_range": 5,
+    "max_range": 5,
+	"min_aoe": 5, 
+	"max_aoe": 5,
+    "range_increment": 0.2
+  },
+  {
+    "type": "construction_group",
+    "id": "build_silvermoon_loom",
+    "name": "Weave a Silvermoon Loom"
+  },
+  {
+    "type": "construction",
+    "id": "constr_silvermoon_loom",
+    "group": "build_silvermoon_loom",
+    "category": "FURN",
+    "required_skills": [ [ "spellcraft", 3 ], [ "tailor", 3 ] ],
+    "time": "1 h",
+	"qualities": [ [ { "id": "MANA_INFUSE", "level": 1 } ] ],
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "loom_frame", 1 ] ], [ [ "moonflowers", 3 ] ], [ [ "silver_small", 33 ] ] ],
+    "pre_terrain": "f_spinwheel_cordage",
+    "post_terrain": "f_spinwheel_magic"
+  },
+  {
+  "type": "TOOL",
+  "name": {
+    "str": "silvermoon loom"
+  },
+  "description": "Dummy item.  If you see this, then something went wrong.",
+  "//": "Include ZERO_WEIGHT flag to avoid errors when instantiating pseudo items.",
+  "flags": [
+    "ZERO_WEIGHT"
+  ],
+  "weight": "1 g",
+  "volume": "1 ml",
+  "qualities": [ [ "SILVERMOON_LOOM", 1 ] ],
+  "symbol": "@",
+  "color": "red",
+  "id": "spinwheel_magic_item",
+  "copy-from": "fake_item"
+  },
+  {
+    "type": "effect_type",
+    "id": "silvermoon_sickness",
+    "name": [ "Silvermoon Draw" ],
+	"show_in_info": true,
+    "desc": [ "You have drawn silver from a silvermoon loom today." ]
+  },
+  {
+    "type": "furniture",
+    "id": "f_spinwheel_magic",
+    "name": "silvermoon loom",
+    "looks_like": "wheel_wood",
+    "description": "A lunar spinwheel for spinning plant fibers, infused with the light of the silver moon. Each night that the moon turns it's eternal wheel you can weave moonlight into pure silver.",
+    "symbol": "=",
+    "bgcolor": "light_gray",
+    "move_cost_mod": 2,
+    "required_str": 11,
+    "coverage": 40,
+    "flags": [ "TRANSPARENT" ],
+    "crafting_pseudo_item": "spinwheel_magic_item",
+    "deconstruct": { "items": [ { "item": "string_36", "count": 4 }, { "item": "2x4", "count": 20 }, { "item": "nail", "charges": 80 }, { "item": "silver_small", "charges": 33 }, { "item": "moonflowers", "count": 3 } ] },
+    "bash": {
+      "str_min": 18,
+      "str_max": 50,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "items": [
+        { "item": "string_36", "count": [ 2, 4 ] },
+        { "item": "2x4", "count": [ 10, 20 ] },
+		{ "item": "moonflowers", "count": [ 1, 3 ] },
+		{ "item": "silver_small", "count": [ 1, 33 ] },
+        { "item": "nail", "charges": [ 55, 80 ] }
+      ]
+    },
+	"examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_SILVERMOON",
+          "condition": {
+          "not": { "or": [ { "u_has_effect": "silvermoon_sickness" }, "is_day" ] }
+    },
+     "effect": [
+    {
+      "u_spawn_item": "silver_small", "count": 100, "suppress_message": true
+	},
+	{
+      "u_add_effect": "silvermoon_sickness", "duration": "1 d"
+	}
+	],
+     "false_effect": [ 
+	 { "u_message": "Moonlight can only be woven into silver once a night by any one person.", "popup": false }
+	]
+    }
+	]
+	}
+  },
+  {
+    "type": "construction_group",
+    "id": "build_goldensun_spring",
+    "name": "Raise a Goldensun Spring"
+  },
+  {
+  "type": "construction",
+  "id": "constr_goldensun_spring",
+  "group": "build_goldensun_spring",
+  "category": "CONSTRUCT",
+  "required_skills": [
+    [
+      "spellcraft",
+      3
+    ],
+    [
+      "survival",
+      3
+    ]
+  ],
+  "time": "30 m",
+  "qualities": [
+    [
+      {
+        "id": "HAMMER",
+        "level": 2
+      }
+    ],
+    [
+      {
+        "id": "WRENCH",
+        "level": 1
+      }
+    ],
+	[
+      {
+        "id": "MANA_FOCUS",
+        "level": 1
+      }
+    ]
+  ],
+  "components": [
+	[
+      [
+        "golden_reed_stalk",
+        3
+      ]
+    ],
+    [
+      [
+        "gold_small",
+        66
+      ]
+    ]
+  ],
+  "pre_terrain": "t_covered_well",
+  "post_terrain": "t_goldensun_spring"
+},
+{
+    "type": "effect_type",
+    "id": "goldensun_sickness",
+    "name": [ "Goldensun Harvest" ],
+	"show_in_info": true,
+    "desc": [ "You have harvested gold from a goldensun spring today." ]
+  },
+{
+  "type": "terrain",
+  "id": "t_goldensun_spring",
+  "name": "goldensun_spring",
+  "description": "A scalding hot wellspring of water that has been focused with the light of the golden sun. Every day that the sun shines you can quench the daylight in it's twinkling waters, solidifying it into pure gold.",
+  "looks_like": "t_water_hot",
+  "symbol": "~",
+  "color": "light_blue",
+  "move_cost": 5,
+  "heat_radiation": 1,
+  "flags": [
+    "TRANSPARENT",
+    "LIQUID",
+    "NO_SCENT",
+    "SWIMMABLE",
+    "SHALLOW_WATER"
+  ],
+  "deconstruct": {
+    "ter_set": "t_covered_well",
+    "items": [
+      {
+        "item": "water_clean",
+        "count": 999
+      },
+	  {
+        "item": "golden_reed_stalk",
+        "count": [ 1, 3 ]
+      },
+      {
+        "item": "gold_small",
+        "count": [
+          11,
+          66
+        ]
+      }
+    ]
+  },
+  "examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_GOLDENSUN",
+          "condition": {
+      "and": [
+        {
+          "not": { "u_has_effect": "goldensun_sickness" }
+        },
+        "is_day"
+      ]
+    },
+     "effect": [
+    {
+      "u_spawn_item": "gold_small", "count": 100, "suppress_message": true
+	},
+	{
+      "u_add_effect": "goldensun_sickness", "duration": "1 d"
+	}
+	],
+     "false_effect": [ 
+	 { "u_message": "Daylight can only be solidified into gold once a day by any one person.", "popup": false }
+	]
+    }
+	]
+	}
+},
+  {
+  "type": "TOOL",
+  "name": {
+    "str": "goldensun spring"
+  },
+  "description": "Dummy item.  If you see this, then something went wrong.",
+  "//": "Include ZERO_WEIGHT flag to avoid errors when instantiating pseudo items.",
+  "flags": [
+    "ZERO_WEIGHT"
+  ],
+  "weight": "1 g",
+  "volume": "1 ml",
+  "qualities": [ [ "GOLDENSUN_SPRING", 1 ] ],
+  "symbol": "@",
+  "color": "red",
+  "id": "goldensun_spring_item",
+  "copy-from": "fake_item"
+  },
+  {
+    "type": "furniture",
+    "id": "f_necrobrazier",
+    "name": "unholy brazier",
+    "description": "A metal dish on a dark platform that breathes primordial energy, a tale of doom voiced by it effortlessly.",
+    "symbol": "#",
+    "color": "red",
+	"looks_like": "f_brazier",
+    "move_cost_mod": 2,
+    "coverage": 35,
+    "required_str": 8,
+    "crafting_pseudo_item": "fake_fireplace",
+	"emissions": [ "emit_blood", "emit_bile", "emit_hot_air2_stream", "emit_cold_air2_stream" ],
+    "flags": [ "PLACE_ITEM", "TRANSPARENT", "FIRE_CONTAINER", "EASY_DECONSTRUCT" ],
+    "examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_NECROBRAZIER",
+          "condition": {
+      "and": [
+        {
+          "not": {
+            "or": [
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			  { "u_has_trait": "PYSCHOPATH" }
+            ]
+          }
+        },
+        {
+          "and": [
+            { "u_is_wearing": "atraxas_aura" },
+			{ "u_is_wearing": "ortiels_aura" },
+			{ "u_is_wearing": "omnaths_aura" },
+			{ "u_is_wearing": "yidris_aura" },
+			{ "u_query": "Do you smelt the four unholy contracts' seals in this accursed altar, branding your heart with their destruction?", "default": false }
+          ]
+        }
+      ]
+    },
+     "effect": [
+    {
+      "u_spawn_item": "burning_heart"
+	},
+	{
+      "u_consume_item": "atraxas_aura"
+	},
+	{
+      "u_consume_item": "ortiels_aura"
+	},
+	{
+      "u_consume_item": "omnaths_aura"
+	},
+	{
+      "u_consume_item": "yidris_aura"
+	},
+	{
+      "u_cast_spell": { "id": "brazier_burnout", "hit_self": true }
+	},
+	{ "u_message": "The essences of the four Kings melt into your soul as you obtain the power this brazier once foretold. True mastery of Reality is all that lay beyond.", "popup": true }
+	],
+     "false_effect": [ 
+	 { "u_message": "This is a place of power, though you know not of what kind. Etched in blood on the rim of the brazier is a saga of four Kings destined for destruction, their contracts signed and sealed.'", "popup": false }
+	]
+    }
+	]
+	},
+    "bash": {
+      "str_min": 8,
+      "str_max": 30,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 5, 15 ] },
+        { "item": "steel_chunk", "count": [ 2, 6 ] },
+        { "item": "sheet_metal_small", "count": [ 2, 6 ] }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_strconc_wall_black_darktower",
+    "name": "reinforced black concrete wall",
+    "looks_like": "t_reb_cage",
+    "description": "A thick wall of concrete that was simply poured over a rebar cage. Effective, but indecent in appearance.",
+    "symbol": "LINE_OXOX",
+    "color": "dark_gray",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_concrete_roof",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 120,
+      "str_max": 460,
+      "sound": "scrrrash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_reb_cage",
+      "items": [ { "item": "rock", "count": [ 10, 22 ] } ]
+    }
+  },
+  {
+    "id": "brazier_burnout",
+    "type": "SPELL",
+    "name": "Total Incineration",
+    "description": "Whatever power was once contained in the brazier has been reforged into your burning heart.",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "brazier_place",
+    "shape": "blast",
+    "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE" ],
+    "energy_source": "MANA",
+    "difficulty": 5,
+    "base_casting_time": 0,
+    "final_casting_time": 0,
+    "base_energy_cost": 0,
+	"final_energy_cost": 0,
+    "max_level": 20,
+    "min_range": 5,
+    "max_range": 5,
+	"min_aoe": 5, 
+	"max_aoe": 5,
+    "range_increment": 0.2
+  },
+  {
+  "type": "TOOL",
+  "name": {
+    "str": "mailbox"
+  },
+  "description": "Dummy item.  If you see this, then something went wrong.",
+  "//": "Include ZERO_WEIGHT flag to avoid errors when instantiating pseudo items.",
+  "flags": [
+    "ZERO_WEIGHT"
+  ],
+  "weight": "1 g",
+  "volume": "1 ml",
+  "qualities": [ [ "FOODPLACE_LOYALTY", 2 ] ],
+  "symbol": "@",
+  "color": "red",
+  "id": "mailbox_item",
+  "copy-from": "fake_item"
+  },
+  {
+  "type": "furniture",
+  "id": "f_mailbox",
+  "name": "mailbox",
+  "copy-from": "f_mailbox",
+  "symbol": "P",
+  "description": "A small metal box on top of a wooden post, designed to receive mail deliveries.  Although considering the circumstances, it will likely never see proper use again.",
+  "color": "light_gray",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_HARD",
+    "CONTAINER",
+    "PLACE_ITEM",
+    "MOUNTABLE"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 2
+      },
+      {
+        "item": "nail",
+        "charges": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "sheet_metal",
+        "count": 1
+      }
+    ]
+  },
+  "max_volume": "10 L",
+  "bash": {
+    "str_min": 12,
+    "str_max": 50,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": 1
+      },
+      {
+        "item": "nail",
+        "charges": [
+          1,
+          5
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 2
+      },
+      {
+        "item": "sheet_metal_small",
+        "count": [
+          6,
+          10
+        ]
+      },
+      {
+        "item": "scrap",
+        "count": [
+          4,
+          10
+        ]
+      }
+    ]
+  }, 
+  "crafting_pseudo_item": "mailbox_item"
+  },
+  {
+  "type": "furniture",
+  "id": "f_portcrystal",
+  "name": "portcrystal",
+  "description": "A marker to be placed anywhere one might wish to return.",
+  "symbol": "^",
+  "color": "light_gray",
+  "looks_like": "f_huge_mana_crystal",
+  "move_cost_mod": 2,
+  "examine_action": "translocator",
+  "coverage": 50,
+  "required_str": -1,
+  "flags": [
+    "MINEABLE",
+    "NOITEM",
+	"EASY_DECONSTRUCT",
+	"TRANSLOCATOR",
+    "TRANSPARENT",
+    "MOUNTABLE",
+    "ROUGH"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "portcrystal",
+        "count": 1
+      }
+    ]
+  },
+  "bash": {
+      "str_min": 64,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [
+        { "item": "rock", "count": [ 10, 22 ] },
+        { "item": "sharp_rock", "count": [ 3, 7 ] },
+        { "item": "material_limestone", "charges": [ 2, 5 ], "prob": 30 },
+        { "item": "material_rocksalt", "count": [ 0, 1 ], "prob": 10 },
+        { "item": "material_rhodonite", "count": [ 0, 1 ], "prob": 1 },
+        { "item": "material_zincite", "count": [ 0, 5 ], "prob": 2 },
+        { "item": "orichalcum_lump", "count": [ 0, 2 ] },
+        { "item": "orichalcum_sliver", "count": [ 4, 10 ] }
+      ]
+    }
+},
+{
+  "type": "vehicle_part",
+  "name": {
+    "str": "crystallized frame"
+  },
+  "location": "structure",
+  "durability": 1,
+  "description": "A frame formed of pure crystallized mana, foldable for easy storage.  Other vehicle components can be mounted on it, but it's lack of durability is legendary. Historically, mages have used it to quickly form bridges, even if each step is a leap of faith.",
+  "breaks_into": [
+    {
+      "item": "crystal_mana",
+      "count": [
+        0,
+        1
+      ]
+    }
+  ],
+  "requirements": {
+    "install": {
+      "skills": [
+        [
+          "spellcraft",
+          1
+        ]
+      ],
+      "time": "1 s"
+    },
+    "removal": {
+      "skills": [
+        [
+          "spellcraft",
+          1
+        ]
+      ],
+      "time": "1 s"
+    }
+  },
+  "flags": [
+    "MOUNTABLE",
+    "INITIAL_PART"
+  ],
+  "categories": [
+    "hull"
+  ],
+  "variants": [
+    {
+      "id": "horizontal",
+      "label": "Horizontal",
+      "symbols": "──│───│─",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "horizontal_front",
+      "label": "Front Horizontal",
+      "symbols": "──│───│─",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "horizontal_rear",
+      "label": "Rear Horizontal",
+      "symbols": "──│───│─",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "horizontal_2",
+      "label": "Thick Horizontal",
+      "symbols": "━━┃━━━┃━",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "horizontal_2_front",
+      "label": "Front Thick Horizontal",
+      "symbols": "━━┃━━━┃━",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical",
+      "label": "Vertical",
+      "symbols": "│\\─/│\\─/",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical_left",
+      "label": "Left Vertical",
+      "symbols": "│\\─/│\\─/",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical_right",
+      "label": "Right Vertical",
+      "symbols": "│\\─/│\\─/",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical_T_left",
+      "label": "Left T Joint",
+      "symbols": "│\\─/│\\─/",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical_T_right",
+      "label": "Right T Joint",
+      "symbols": "│\\─/│\\─/",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical_2",
+      "label": "Thick Vertical",
+      "symbols": "┃┃━┃┃┃━┃",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical_2_left",
+      "label": "Left Thick Vertical",
+      "symbols": "┃┃━┃┃┃━┃",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "vertical_2_right",
+      "label": "Right Thick Vertical",
+      "symbols": "┃┃━┃┃┃━┃",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "cover",
+      "label": "Cover",
+      "symbols": "^^<vvv>^",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "cross",
+      "label": "Cross",
+      "symbols": "┼X┼X┼X┼X",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "ne",
+      "label": "Front Right",
+      "symbols": "┐┐┌└└└┘┐",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "nw",
+      "label": "Front Left",
+      "symbols": "┌┌└┘┘┘┐┌",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "se",
+      "label": "Rear Right",
+      "symbols": "┘┘┐┌┌┌└┘",
+      "symbols_broken": "#"
+    },
+    {
+      "id": "sw",
+      "label": "Rear Left",
+      "symbols": "└└┘┐┐┐┌└",
+      "symbols_broken": "#"
+    }
+  ],
+  "id": "folding_frame_crystal_mana",
+  "copy-from": "frame_abstract",
+  "item": "foldframe_crystal_mana",
+  "folded_volume": "2500 ml",
+  "folding_time": "1 s",
+  "unfolding_time": "1 s"
+},
+{
+    "type": "effect_type",
+    "id": "dieanotherday",
+    "name": [ "Die Another Day" ],
+	"show_in_info": true,
+    "desc": [ "You feel like the protaganist!" ]
+  },
+{
+    "type": "effect_type",
+    "id": "alreadydiedtoday",
+    "name": [ "Die and Die Again" ],
+	"show_in_info": true,
+    "desc": [ "You watched 'Die Another Day' today." ]
+  },
+  {
+    "type": "construction",
+    "id": "constr_tv_setup",
+    "group": "build_entertainment_center",
+    "category": "FURN",
+    "required_skills": [ [ "speech", 0 ] ],
+    "time": "5 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "television", 1 ] ], [ [ "vhs_player", 1 ] ] ],
+    "pre_terrain": "f_entertainment_center",
+    "post_terrain": "f_tv_setup"
+  },
+  {
+    "id": "entrancedbyvhs",
+    "type": "SPELL",
+    "name": "Long Movie",
+    "description": "A long, engrossing movie.",
+    "message": "You can't pull yourself away.",
+    "valid_targets": [ "self" ],
+	"flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
+    "effect": "mod_moves",
+	"min_damage": -360000, 
+	"max_damage": -360000,
+    "shape": "blast"
+  },
+{
+  "type": "furniture",
+  "id": "f_tv_setup",
+  "name": "Home Entertainment Center",
+  "description": "A setup with everything a man might need to kick back and watch a good flick.",
+  "looks_like": "television",
+  "symbol": "~",
+  "required_str": 10,
+  "color": "light_blue",
+  "move_cost_mod": 5,
+  "flags": [
+    "TRANSPARENT",
+    "CONTAINER",
+    "FLAMMABLE",
+    "PLACE_ITEM",
+    "ORGANIC",
+    "BLOCKSDOOR",
+    "MOUNTABLE"
+  ],
+  "deconstruct": {
+	"furn_set": "f_entertainment_center",
+    "items": [
+      {
+        "item": "television",
+        "count": 1
+      },
+	  {
+        "item": "vhs_player",
+        "count": 1
+      }
+    ]
+  },
+  "examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_TV",
+          "condition": {
+      "and": [
+        {
+          "not": { "u_has_effect": "alreadydiedtoday" }
+        }, 
+		{ "u_has_item": "dieanotherday" }
+      ]
+    },
+     "effect": [
+	{ "u_message": "Before you even realize it, you've spent an hour engrossed in 'Die Another Day.' There's just something so dreamy and familiar about that main character...", "popup": true },
+	{
+      "u_add_effect": "dieanotherday", "duration": "1 d"
+	},
+	{
+      "u_add_effect": "alreadydiedtoday", "duration": "1 d"
+	},
+	{
+      "u_add_trait": "HAS_NEMESIS"
+	},
+	{
+      "u_cast_spell": { "id": "entrancedbyvhs", "hit_self": true }
+	}
+	],
+     "false_effect": [ 
+	 { "u_message": "You push buttons on the TV hoping that something will happen, and then realize that it doesn't have power. Not much to watch anyway.", "popup": true }
+	]
+    }
+	]
+	}
+}
+]

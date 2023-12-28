@@ -1,0 +1,429 @@
+[
+  {
+    "id": "MISSION_GET_INTEL",
+    "type": "mission_definition",
+    "name": "Retrieve Lost Intel",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 500000,
+    "item": "classified_intelligence",
+    "end": {
+      "effect": [ { "npc_add_var": "npc_operator_intel_done", "type": "dialogue", "context": "magic_operator", "value": "yes" }, { "u_sell_item": "classified_intelligence" } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_KILL_HUMANS",
+    "dialogue": {
+      "describe": "If only we had managed not to split it up...",
+      "offer": "Fine... I guess you'll have to do. Getting down to brass tacks, when the split happened and all those demons came pouring through into our world, the boys in research were working on a solution to this exact problem. I'm not sure how far they got, but that information would be invaluable in my hands. Problem is, the classified info got split between all the operators that were assigned to protection. I only have one piece, and I need you to go track down another operator and bring me something to work with.",
+      "accepted": "Roger.",
+      "rejected": "I didn't think you'd be able to anyway.",
+      "advice": "Well the intel is probably still in the hands of the operators who stole it. I say probably, 'cuz there's a good chance some of them have lost or sold it by now. I would only need one copy in addition to the one I already have. You can probably find them in cities, assuming they're still standing. Look in places with a lot of valuables like an operations department, that's where I'd be.",
+      "inquire": "Any leads on that intel?",
+      "success": "Finally! Let's see here... Just as I thought. Completely useless.",
+      "success_lie": "Pfft, this is worthless. Moving forward.",
+      "failure": "Thought not."
+    }
+  },
+  {
+    "id": "MISSION_GET_INTEL_STALKER",
+    "type": "mission_definition",
+    "name": "Retrieve Lost Intel",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 500000,
+    "item": "classified_intelligence",
+    "end": {
+      "effect": [ { "npc_add_var": "npc_operator_intel_done", "type": "dialogue", "context": "stalker", "value": "yes" }, { "u_sell_item": "classified_intelligence" } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Intel from the days gone past, certainly worth a pretty penny. Could be I'd show you a thing or two, if you're feeling cheeky.",
+      "offer": "Mm. Need intel from an operator I ran into not long ago. Could be holed up nearby, or scurried off to some tower or other by now. Word is there's a damned useful document being sat on.",
+      "accepted": "Bring it here and I'll owe you a pass or two. Quite sure I'll have something you'd like as tender. I've cash and trinkets to hand over in exchange. Gimme time and I'd keep you in gold.",
+      "rejected": "Wise, likely.",
+      "advice": "Smart one like that keeps everything under lock and key, metaphorically speakin'. Could be they're lookin' for barter, if you're keen. Any classified intel would do, really.",
+      "inquire": "Find it?",
+      "success": "Useful...",
+      "success_lie": "This could come in handy.",
+      "failure": "Tarnation."
+    }
+  },
+  {
+    "id": "MISSION_GET_INTEL_WAITING",
+    "type": "mission_definition",
+    "name": "Retrieve Lost Intel",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 500000,
+    "item": "classified_intelligence",
+    "end": {
+      "effect": [ { "npc_add_var": "npc_operator_intel_done", "type": "dialogue", "context": "magic_operator", "value": "yes" }, { "u_sell_item": "classified_intelligence" } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_KILL_HUMANS",
+    "dialogue": {
+      "describe": "I need to get that classified information out of the cage somehow. I don't think big man in there is gonna have it though.",
+      "offer": "Dude, I'd be forever in your debt. Unless you can get me another copy of that classified intelligence somehow, I need you to open the cage.",
+      "accepted": "Holy shit. You're really saving me on this one.",
+      "rejected": "I didn't think you'd be able to anyway.",
+      "advice": "Well, we're gonna have to kill this thing somehow. Or we could just grab it and run. Your call.",
+      "inquire": "Still thinking something up?",
+      "success": "Nice, man! Let's see... Oh wow. Oh, yeah wow. Yup. Look at this man, my bosses were using disincorporated realities that were parallel to ours as a source of fuel. And all they did was just let the thing that disincorporated them into our world. What a trip.",
+      "success_lie": "Cool, hold on to that for me for a little while. Now that that's settled... You hear about all these demons?",
+      "failure": "I actually really need this man. I'm not allowed to mess these things up anymore, my father-in-law's gonna kill me."
+    }
+  },
+  {
+    "id": "MISSION_GET_DETECTOR",
+    "type": "mission_definition",
+    "name": "Retrieve Lost Intel",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 500000,
+    "item": "anomaly_detector",
+	"end": { "effect": [ { "u_sell_item": "anomaly_detector" } ] },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "There's a rogue element, a stalker who's taken up residence in the other side of this department. I need a piece of equipment off 'em.",
+      "offer": "Quick smash and grab job, just a stalker with an anomaly detector. They're holed up somewhere on the other side of this department. Bring it to me, and we'll talk big money.",
+      "accepted": "Roger. Don't be afraid to hurt 'em.",
+      "rejected": "I didn't think you'd be able to anyway.",
+      "advice": "Well, I wouldn't go in without a plan. This one's a rogue operative maybe, or some office worker who picked themselves up by their boot straps. Could be they'd sell it to you for the right price. They're packing bullets, so should you.",
+      "inquire": "You take 'em out yet?",
+      "success": "Finally! Let's see here... Just as I thought. Completely useless. I'll just hold on to it for now.",
+      "success_lie": "What the hell is this thing? Completely worthless.",
+      "failure": "Pathetic."
+    }
+  },
+  {
+    "id": "MISSION_KILL_HUMANS",
+    "type": "mission_definition",
+    "name": "Finish these filthy creatures, or as many as we can.",
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "HUMAN",
+    "monster_kill_goal": 1000,
+    "difficulty": 10,
+    "value": 5000000,
+    "start": { "effect": "follow" },
+    "end": { "effect": "stop_following" },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Those bastards... They'll pay for what they've done. Let's me and you start ridding this world of the nonsense.",
+      "offer": "If they hadn't split this information into the wrong hands... Well, it's too late now. But it isn't too late to go find and kill the bastards responsible. ",
+      "accepted": "Roger. I'm on your six.",
+      "rejected": "Simply ridiculous...",
+      "advice": "I imagine we could find them around the labs, that's where the brass was researching the portals themselves. I'm making those bastards pay, every last one.",
+      "inquire": "These fuckers are all over the place. Ferals, mages... Research facilities especially, I imagine.",
+      "success": "Guess we've done enough, time for us to go our seperate ways.",
+      "success_lie": "Really? I must've lost track somewhere...",
+      "failure": "Bastards."
+    }
+  },
+  {
+    "id": "MISSION_SAINT",
+    "type": "mission_definition",
+    "name": "Retrieve a chunk of brimstone",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 500000,
+    "item": "brimstone_chunk",
+    "end": {
+      "effect": [  { "u_remove_item_with": "brimstone_chunk" } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SAINT_FIND_FRIEND",
+    "dialogue": {
+      "describe": "Hello, new friend. There is much work to be done.",
+      "offer": "There are new creatures that wander our world. They have a pungent smell, which I feel a calling to investigate. I would like you to bring me a sizable chunk of one of these beings, so that I may study it's origin.",
+      "accepted": "Have faith, friend. You are in good hands.",
+      "rejected": "There are no false paths, only those less traveled.",
+      "advice": "I have seen them with my own eyes. Perhaps you have as well; long-tentacled dogs, statues with fish-like faces. Even some smaller, less odorsome varieties.",
+      "inquire": "Do your days find you well?",
+      "success": "I have no words for the service you have done here, friend. I have nothing to give you save for more tribulations, should your faith somehow fail to waver.",
+      "success_lie": "Ah, thank you friend. You even went to the trouble of removing it's putrid smell.",
+      "failure": "Fear not, friend."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_FIND_FRIEND",
+    "type": "mission_definition",
+    "name": "Find Saint's Old Friend",
+	"difficulty": 4,
+    "value": 500000,
+    "goal": "MGOAL_CONDITION",
+	"goal_condition": { "u_has_var": "talked_to_HEALER_GREY", "type": "dialogue", "context": "healer_grey", "value": "yes" },
+    "start": {
+      "assign_mission_target": { "om_terrain": "magic_cabin", "om_special": "magic_cabin", "reveal_radius": 600, "search_range": 600 },
+      "update_mapgen": { "place_npcs": [ { "class": "healer_priest", "x": 10, "y": 10, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SAINT_HUNT",
+    "dialogue": {
+      "describe": "Once, I had a whole congregation. It has dwindled, but there is one of my flock who I still believe lives.",
+      "offer": "I would like for you to find an old friend of mine.",
+      "accepted": "Thank you, my newest and trustworthiest friend. I am afraid I cannot offer you any material possession as payment, but know that you go with my utmost faith.",
+      "rejected": "No one can be expected to risk their life for another.",
+      "advice": "Oh, this one was an old recluse. They once managed a shop, but they've since retired to a cabin. I would ask that you bring them here, if you can. We have much work to do.",
+      "inquire": "Have you found them, friend?",
+      "success": "Truly, we are all blessed to find such kinship in dire times. May we rejoice in our congregation.",
+      "success_lie": "I see. May they rest in peace.",
+      "failure": "I see. May they rest in peace."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_HUNT",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "monster_species": "HORROR",
+    "monster_kill_goal": 333,
+    "difficulty": 10,
+    "value": 5000000,
+	"start": {
+      "effect": [ "follow" ]
+    },
+	"followup": "MISSION_SAINT_BOSSES_ATRAXA",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "The actions of these beings cannot be allowed to continue.",
+      "offer": "I have meditated on the origin of the chunk you so kindly brought to me. I believe these creatures to be of an unholy nature, and it is our duty to cleanse them from this world. This will be the tempering of our souls needed to face the trials that lay even further ahead.",
+      "accepted": "Our steps will be guided as we walk the path of light.",
+      "rejected": "Your mercy truly knows no bounds.",
+      "advice": "These creatures abound in the many altars to greed that exist in our world. Malls, government facilities... We are simply to look and we shall find.",
+      "inquire": "It seems they have no end, hmm?",
+      "success": "Please, heed my words. I have failed you. These creatures are of no consequence, and it was only my own wrath that brought us to this quest. Instead, please, listen to this offer...",
+      "success_lie": "Really? I must've lost track somewhere...",
+      "failure": "Their number knows no end."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_BOSSES_ATRAXA",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_KILL_MONSTER",
+	"start": {
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_atraxa", "x": [ 12, 15 ], "y": [ 12, 15 ], "target": true, "name": "Evil Nexus" },
+          { "group": "GROUP_DEMONS", "x": [ 12, 15 ], "y": [ 12, 15 ], "repeat": [ 1, 3 ] }
+        ]
+      },
+      "assign_mission_target": {
+        "om_terrain": "church",
+        "om_terrain_match_type": "CONTAINS",
+        "search_range": 80,
+        "min_distance": 0,
+        "random": false,
+        "z": 0
+      }
+    },
+    "difficulty": 20,
+    "value": 5000000,
+	"followup": "MISSION_SAINT_BOSSES_YIDRIS",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Nexuses of evil energy surround us. We must destroy them.",
+      "offer": "The name of one of our enemies has appeared to me. Atraxa, Voice of the Praetor. They are defacing a holy ground nearby. Come, friend.",
+      "accepted": "We are the vanguard of light.",
+      "rejected": "Let not fear overcome you.",
+      "advice": "This 'being' is powerful enough for it's trespassing to alarm my spirit itself. Preparation of our souls would be prudent.",
+      "inquire": "When shall we accost them, friend?",
+      "success": "We have triumphed, let the spoils be yours, but do not daudle. I fear another name has appeared to me, old friend.",
+      "success_lie": "I would doubt myself before you.",
+      "failure": "Ah, so close..."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_BOSSES_YIDRIS",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_KILL_MONSTER",
+	"start": {
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_yidris", "x": [ 12, 15 ], "y": [ 12, 15 ], "target": true, "name": "Evil Nexus" },
+          { "group": "GROUP_DEMONS", "x": [ 12, 15 ], "y": [ 12, 15 ], "repeat": [ 1, 3 ] }
+        ]
+      },
+      "assign_mission_target": {
+        "om_terrain": "church",
+        "om_terrain_match_type": "CONTAINS",
+        "search_range": 80,
+        "min_distance": 0,
+        "random": false,
+        "z": 0
+      }
+    },
+    "difficulty": 20,
+    "value": 5000000,
+	"followup": "MISSION_SAINT_BOSSES_OMNATH",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Nexuses of evil energy surround us. We must destroy them.",
+      "offer": "The name of one of our enemies has appeared to me. Yidris, Maelstrom Wielder. They are defacing a holy ground nearby. Come, friend.",
+      "accepted": "We are the vanguard of light.",
+      "rejected": "Let not fear overcome you.",
+      "advice": "This 'being' is powerful enough for it's trespassing to alarm my spirit itself. Preparation of our souls would be prudent.",
+      "inquire": "When shall we accost them, friend?",
+      "success": "We have triumphed, let the spoils be yours, but do not daudle. I fear another name has appeared to me, old friend.",
+      "success_lie": "I would doubt myself before you.",
+      "failure": "Ah, so close..."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_BOSSES_OMNATH",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_KILL_MONSTER",
+	"start": {
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_omnath", "x": [ 12, 15 ], "y": [ 12, 15 ], "target": true, "name": "Evil Nexus" },
+          { "group": "GROUP_DEMONS", "x": [ 12, 15 ], "y": [ 12, 15 ], "repeat": [ 1, 3 ] }
+        ]
+      },
+      "assign_mission_target": {
+        "om_terrain": "church",
+        "om_terrain_match_type": "CONTAINS",
+        "search_range": 80,
+        "min_distance": 0,
+        "random": false,
+        "z": 0
+      }
+    },
+    "difficulty": 20,
+    "value": 5000000,
+	"followup": "MISSION_SAINT_BOSSES_OMNATH",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Nexuses of evil energy surround us. We must destroy them.",
+      "offer": "The name of one of our enemies has appeared to me. Omnath, Locus of Creation. They are defacing a holy ground nearby. Come, friend.",
+      "accepted": "We are the vanguard of light.",
+      "rejected": "Let not fear overcome you.",
+      "advice": "This 'being' is powerful enough for it's trespassing to alarm my spirit itself. Preparation of our souls would be prudent.",
+      "inquire": "When shall we accost them, friend?",
+      "success": "We have triumphed, let the spoils be yours, but do not daudle. I fear another name has appeared to me, old friend.",
+      "success_lie": "I would doubt myself before you.",
+      "failure": "Ah, so close..."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_BOSSES_ORTIEL",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_KILL_MONSTER",
+	"start": {
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_ortiel", "x": [ 12, 15 ], "y": [ 12, 15 ], "target": true, "name": "Evil Nexus" },
+          { "group": "GROUP_DEMONS", "x": [ 12, 15 ], "y": [ 12, 15 ], "repeat": [ 1, 3 ] }
+        ]
+      },
+      "assign_mission_target": {
+        "om_terrain": "church",
+        "om_terrain_match_type": "CONTAINS",
+        "search_range": 80,
+        "min_distance": 0,
+        "random": false,
+        "z": 0
+      }
+    },
+    "difficulty": 20,
+    "value": 5000000,
+	"followup": "MISSION_SAINT_DEVIL",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Nexuses of evil energy surround us. We must destroy them.",
+      "offer": "The name of one of our enemies has appeared to me. Ortiel, the Yore Tiller. They are defacing a holy ground nearby. Come, friend.",
+      "accepted": "We are the vanguard of light.",
+      "rejected": "Let not fear overcome you.",
+      "advice": "This 'being' is powerful enough for it's trespassing to alarm my spirit itself. Preparation of our souls would be prudent.",
+      "inquire": "When shall we accost them, friend?",
+      "success": "Friend, the day is ours. Our steps have been guided justly, and I dare not doubt them now. Would you hear what would perhaps be my final request, old friend?",
+      "success_lie": "I would doubt myself before you.",
+      "failure": "Ah, so close..."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_DEVIL",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_FIND_ITEM",
+	"item": "chunk_of_devil",
+    "difficulty": 20,
+    "value": 5000000,
+	"followup": "MISSION_SAINT_SUNANDMOON",
+    "origins": [ "ORIGIN_SECONDARY" ],
+	"end": { "effect": [ { "u_buy_item": "saints_symbol" } ] },
+    "dialogue": {
+      "describe": "The time to finish this battle has come.",
+      "offer": "Our path has been riddled with tribulations, and yet we stand at the precipice of our mission's completion. The glory is yours, should you be willing to retrieve it. I have read the contracts of it's lieutenants, written in the original tongue, and see their essence clearly. Will you take up the sword in holy crusade?",
+      "accepted": "Their reading has filled my dreams with visions of dark towers, and of a great spirit-fire at it's peak. There lies a most foul brazier, that much I have seen. Three of these heinous growths guard the fortress of Hell, and in each we must forge a burning heart.",
+      "rejected": "Then the task falls to me alone.",
+      "advice": "You must break these unholy contracts. Take them with you, and use them knowing that they are a necessary evil. In my vision I see three burning hearts to rival those of our enemy, forged into a single blazing heart, though I know not how. Then, at the Devil's fortress, we must wave it as a flag of war on his infernal Kingdom.",
+      "inquire": "Have you found the dark towers yet friend? Should we forge this blazing heart, we must march to our enemies doorstep and draw it out.",
+      "success": "As I said, the glory is yours friend. As, I think, is this holy symbol of mine. A fair trade for the wallet of the Devit itself, no? Oh? What's this...?",
+      "success_lie": "I sense evil still, though I do not doubt you. Friend.",
+      "failure": "We have failed... Though our faith does not waver."
+    }
+  },
+  {
+    "id": "MISSION_SAINT_SUNANDMOON",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_KILL_MONSTER",
+	"start": {
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_faegot", "x": [ 9, 9 ], "y": [ 9, 9 ], "target": true, "name": "Eastern Warrior" }
+        ]
+      },
+      "assign_mission_target": {
+        "om_terrain": "office_towermage_roof_ne_north",
+        "om_terrain_match_type": "CONTAINS",
+        "search_range": 800,
+        "min_distance": 1,
+        "random": true,
+        "z": 1
+	} },
+    "difficulty": 20,
+    "value": 5000000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+	"end": { "effect": [ { "u_buy_item": "saints_sword" } ] },
+    "dialogue": {
+      "describe": "A business card? Peculiar...",
+      "offer": "This, well, wallet had a business card in it. There's a message on the rear that says to meet promptly at a nearby office.",
+      "accepted": "Careful, friend. We know not what lies ahead.",
+      "rejected": "Prudent. It could be nothing, after all.",
+      "advice": "You must go prepared for anything, it seems whoever wrote this message had some control over even the Devil itself...",
+      "inquire": "Have you investigated that office?",
+      "success": "All that lies ahead is white shores... and beyond. A far green country, under a swift sunrise. As I said, the glory is yours friend. As, I think, is this sword. Don't let it go to your head! Ahahahaha!!!",
+      "success_lie": "Nothing there, hmm? Odd.",
+      "failure": "Our quest was not entirely fruitless. We rid the world of much evil, and should be proud."
+    }
+  },
+  {
+    "id": "MISSION_GET_GEMS",
+    "type": "mission_definition",
+    "name": "Retrieve Gems",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 4,
+    "value": 500000,
+    "item": "shiny_gems",
+    "end": {
+      "effect": [ { "u_remove_item_with": "shiny_gems" }, "follow" ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Gems. Jewels. Shiny stuff really.",
+      "offer": "Gems.",
+      "accepted": "Bring 'em.",
+      "rejected": "Jewelry.",
+      "advice": "Dark places an such.",
+      "inquire": "Shiny fings.",
+      "success": "Gems!",
+      "success_lie": "Shiny!",
+      "failure": "Jewels..."
+    }
+  }
+]

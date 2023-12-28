@@ -1,0 +1,5532 @@
+[
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_38",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_44",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_380",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_40",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_9mm",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "3 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_9x18",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_45",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_22",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "rifle_32",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "slamfire_shotgun_d",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "mechanics",
+  "skills_required": [
+    [
+      "gun",
+      1
+    ]
+  ],
+  "time": "1 m",
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "slamfire_shotgun",
+        2
+      ]
+    ],
+    [
+      [
+        "duct_tape",
+        100
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "id_suffix": "fast_alchemy",
+  "result": "slamfire_shotgun",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 1,
+  "time": "4 m",
+  "book_learn": [
+    [
+      "manual_shotgun",
+      1
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "FILE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "//": "40cm weld",
+  "using": [
+    [
+      "welding_standard",
+      40
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "shot_00",
+        -1
+      ],
+      [
+        "shot_bird",
+        -1
+      ],
+      [
+        "shot_dragon",
+        -1
+      ],
+      [
+        "shot_flechette",
+        -1
+      ],
+      [
+        "shot_slug",
+        -1
+      ],
+      [
+        "shot_scrap",
+        -1
+      ],
+      [
+        "shot_he",
+        -1
+      ],
+      [
+        "shot_beanbag",
+        -1
+      ],
+      [
+        "reloaded_shot_00",
+        -1
+      ],
+      [
+        "reloaded_shot_bird",
+        -1
+      ],
+      [
+        "reloaded_shot_dragon",
+        -1
+      ],
+      [
+        "reloaded_shot_flechette",
+        -1
+      ],
+      [
+        "reloaded_shot_slug",
+        -1
+      ],
+      [
+        "bp_shot_00",
+        -1
+      ],
+      [
+        "bp_shot_bird",
+        -1
+      ],
+      [
+        "bp_shot_dragon",
+        -1
+      ],
+      [
+        "bp_shot_flechette",
+        -1
+      ],
+      [
+        "bp_shot_slug",
+        -1
+      ],
+      [
+        "bp_shot_scrap",
+        -1
+      ],
+      [
+        "shot_hull",
+        -1
+      ]
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_welding_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        2
+      ]
+    ],
+    [
+      [
+        "nail",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "id_suffix": "fast_alchemy",
+  "result": "pipe_double_shotgun",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "2 m 30 s",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        2
+      ]
+    ],
+    [
+      [
+        "scrap",
+        3
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "id_suffix": "fast_alchemy", 
+  "result": "pipe_shotgun",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 2,
+  "time": "2 m",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_gunsmithing_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M_FINE",
+      "level": 1
+    },
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        2
+      ]
+    ],
+    [
+      [
+        "2x4",
+        1
+      ]
+    ]
+  ]
+},
+{
+    "result": "cattail_jelly",
+    "byproducts": [ [ "plant_fibre" ] ],
+    "type": "recipe",
+	"id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "survival",
+    "difficulty": 1,
+    "time": "5 s",
+	"autolearn": true,
+    "book_learn": [
+      [ "emergency_book", 1 ],
+      [ "mag_survival", 1 ],
+      [ "textbook_survival", 1 ],
+      [ "survival_book", 1 ],
+      [ "pocket_survival", 1 ],
+      [ "isherwood_herbal_remedies", 1 ]
+    ],
+    "qualities": [ 
+	{ "id": "CUT", "level": 2 },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    } ],
+    "components": [ [ [ "cattail_stalk", 4 ] ] ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "formic_acid",
+    "id_suffix": "fast alchemy",
+    "charges": 40,
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "difficulty": 3,
+    "time": "8 s",
+    "batch_time_factors": [ 40, 2 ],
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_biochemistry" },
+      { "proficiency": "prof_intro_chem_synth" }
+    ],
+    "book_learn": [ [ "textbook_chemistry", 2 ], [ "adv_chemistry", 2 ], [ "atomic_survival", 1 ], [ "recipe_labchem", 1 ] ],
+    "qualities": [ 
+	{ "id": "BOIL", "level": 2 }, 
+	{ "id": "CHEM", "level": 1 },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    } ],
+    "tools": [
+      [ [ "water_boiling_heat", 2, "LIST" ] ],
+      [ [ "ppe_gas", 3, "LIST" ] ],
+      [ [ "ppe_gloves", 1, "LIST" ] ],
+      [ [ "ppe_skin", 1, "LIST" ] ]
+    ],
+    "components": [
+      [ [ "chem_ethanol", 250 ], [ "denat_alcohol", 250 ], [ "mixed_alcohol_strong", 14 ] ],
+      [ [ "blood_acid_insect", 2 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "formic_acid",
+    "id_suffix": "fast alchemy",
+    "charges": 40,
+    "byproduct_group": [
+      { "item": "water_clean", "container-item": "null", "charges": 1 },
+      { "item": "chem_ethanol", "container-item": "null", "charges": [ 200, 250 ] }
+    ],
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "difficulty": 6,
+    "time": "10 s",
+    "batch_time_factors": [ 30, 2 ],
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_biochemistry" },
+      { "proficiency": "prof_distilling" },
+      { "proficiency": "prof_intro_chem_synth" }
+    ],
+    "book_learn": [ [ "textbook_chemistry", 6 ], [ "adv_chemistry", 6 ], [ "atomic_survival", 5 ], [ "recipe_labchem", 5 ] ],
+    "qualities": [
+      { "id": "BOIL", "level": 2 },
+      { "id": "CHEM", "level": 2 },
+      { "id": "DISTILL", "level": 1 },
+      { "id": "FINE_DISTILL", "level": 1 },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+    ],
+    "tools": [
+      [ [ "water_boiling_heat", 2, "LIST" ] ],
+      [ [ "ppe_gas", 4, "LIST" ] ],
+      [ [ "ppe_gloves", 1, "LIST" ] ],
+      [ [ "ppe_skin", 1, "LIST" ] ]
+    ],
+    "components": [
+      [ [ "chem_ethanol", 250 ], [ "denat_alcohol", 250 ], [ "mixed_alcohol_strong", 14 ] ],
+      [ [ "blood_acid_insect", 2 ] ]
+    ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "chem_acetic_acid",
+    "id_suffix": "fast alchemy",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "difficulty": 3,
+    "time": "8 s",
+    "batch_time_factors": [ 40, 2 ],
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_biochemistry" },
+      { "proficiency": "prof_intro_chem_synth" }
+    ],
+    "book_learn": [ [ "textbook_chemistry", 2 ], [ "adv_chemistry", 2 ], [ "atomic_survival", 1 ], [ "recipe_labchem", 1 ] ],
+    "qualities": [ 
+	{ "id": "BOIL", "level": 2 }, 
+	{ "id": "CHEM", "level": 1 },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    } ],
+    "tools": [
+      [ [ "water_boiling_heat", 2, "LIST" ] ],
+      [ [ "ppe_gas", 2, "LIST" ] ],
+      [ [ "ppe_gloves", 1, "LIST" ] ],
+      [ [ "ppe_skin", 1, "LIST" ] ]
+    ],
+    "components": [ [ [ "chem_ethanol", 250 ], [ "denat_alcohol", 250 ], [ "mixed_alcohol_strong", 14 ] ], [ [ "blood_acid_plant", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "chem_acetic_acid",
+    "id_suffix": "fast alchemy",
+    "byproduct_group": [
+      { "item": "water_clean", "container-item": "null", "charges": 1 },
+      { "item": "chem_ethanol", "container-item": "null", "charges": [ 200, 250 ] }
+    ],
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "difficulty": 6,
+    "time": "10 s",
+    "batch_time_factors": [ 30, 2 ],
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_organic_chemistry" },
+      { "proficiency": "prof_biochemistry" },
+      { "proficiency": "prof_distilling" },
+      { "proficiency": "prof_intro_chem_synth" }
+    ],
+    "book_learn": [ [ "textbook_chemistry", 6 ], [ "adv_chemistry", 6 ], [ "atomic_survival", 5 ], [ "recipe_labchem", 5 ] ],
+    "qualities": [
+      { "id": "BOIL", "level": 2 },
+      { "id": "CHEM", "level": 2 },
+      { "id": "DISTILL", "level": 1 },
+      { "id": "FINE_DISTILL", "level": 1 },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+    ],
+    "tools": [
+      [ [ "water_boiling_heat", 2, "LIST" ] ],
+      [ [ "ppe_gas", 3, "LIST" ] ],
+      [ [ "ppe_gloves", 1, "LIST" ] ],
+      [ [ "ppe_skin", 1, "LIST" ] ]
+    ],
+    "components": [ [ [ "chem_ethanol", 250 ], [ "denat_alcohol", 250 ], [ "mixed_alcohol_strong", 14 ] ], [ [ "blood_acid_plant", 2 ] ] ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "chem_sulphuric_acid",
+    "id_suffix": "fast alchemy",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "difficulty": 4,
+    "time": "10 s",
+    "batch_time_factors": [ 50, 2 ],
+    "autolearn": true,
+    "proficiencies": [
+      { "proficiency": "prof_intro_chemistry" },
+      { "proficiency": "prof_inorganic_chemistry" },
+      { "proficiency": "prof_biochemistry" },
+      { "proficiency": "prof_intro_chem_synth" }
+    ],
+    "book_learn": [ [ "textbook_chemistry", 2 ], [ "adv_chemistry", 2 ], [ "atomic_survival", 1 ], [ "recipe_labchem", 1 ] ],
+    "qualities": [ 
+	{ "id": "BOIL", "level": 2 }, 
+	{ "id": "CHEM", "level": 1 },
+    {
+      "id": "POWER_ALTAR",
+      "level": 3
+    } ],
+    "tools": [
+      [ [ "water_boiling_heat", 3, "LIST" ] ],
+      [ [ "ppe_gas", 10, "LIST" ] ],
+      [ [ "ppe_gloves", 1, "LIST" ] ],
+      [ [ "ppe_skin", 1, "LIST" ] ]
+    ],
+    "components": [ [ [ "water", 1 ], [ "water_clean", 1 ] ], [ [ "blood_acid_underground", 2 ] ] ]
+  },
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "frame_wood",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "2 s",
+  "reversible": true,
+  "autolearn": true,
+  "proficiencies": [
+    {
+      "proficiency": "prof_carpentry_basic"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    }, 
+	{ 
+	"id": "POWER_ALTAR", 
+	"level": 3 
+	}	
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        5
+      ]
+    ],
+    [
+      [
+        "nail",
+        20
+      ]
+    ]
+  ]
+},
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "trap_card_flame",
+	"id_suffix": "fast_alchemy", 
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "using": [ [ "drawing_tool", 500 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_PFH", 1 ], [ "big_book_of_metaknowledge", 1 ] ],
+    "components": [
+      [ [ "cards_magic", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "trap_card_cold",
+	"id_suffix": "fast_alchemy", 
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "using": [ [ "drawing_tool", 500 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_WEG", 1 ], [ "big_book_of_metaknowledge", 1 ] ],
+    "components": [
+      [ [ "cards_magic", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "trap_card_green",
+	"id_suffix": "fast_alchemy", 
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "using": [ [ "drawing_tool", 500 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_EEE", 1 ], [ "big_book_of_metaknowledge", 1 ] ],
+    "components": [
+      [ [ "cards_magic", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "trap_card_black",
+	"id_suffix": "fast_alchemy", 
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "using": [ [ "drawing_tool", 500 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_BGTM", 1 ], [ "big_book_of_metaknowledge", 1 ] ],
+    "components": [
+      [ [ "cards_magic", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "trap_card_white",
+	"id_suffix": "fast_alchemy", 
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "using": [ [ "drawing_tool", 500 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_OLAF", 1 ], [ "big_book_of_metaknowledge", 1 ] ],
+    "components": [
+      [ [ "cards_magic", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "trap_card_blank",
+	"id_suffix": "fast_alchemy", 
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "using": [ [ "drawing_tool", 500 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_BYA", 1 ], [ "big_book_of_metaknowledge", 1 ] ],
+    "components": [
+      [ [ "cards_magic", 1 ] ]
+    ]
+  },
+  {
+    "result": "acidbomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "fake",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "time": "10 s",
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+	"qualities": [ { "id": "POWER_ALTAR", "level": 3 } ],
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+      [ [ "any_strong_acid", 2, "LIST" ] ],
+      [ [ "cordage_short", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "dynamite",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "difficulty": 7,
+    "time": "10 s",
+	"autolearn": true,
+    "book_learn": [ [ "textbook_anarch", 5 ], [ "adv_chemistry", 4 ], [ "textbook_chemistry", 4 ] ],
+    "qualities": [ { "id": "CHEM", "level": 2 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
+    "components": [
+      [ [ "chem_sulphuric_acid", 2 ] ],
+      [ [ "chem_nitric_acid", 1 ] ],
+      [ [ "ammonia_liquid", 1 ], [ "chem_ethanol", 250 ], [ "denat_alcohol", 250 ], [ "methed_alcohol", 250 ] ],
+      [ [ "chem_glycerol", 2 ] ]
+    ]
+  },
+  {
+    "result": "EMPbomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "electronics",
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "difficulty": 6,
+    "time": "10 s",
+    "reversible": true,
+	"autolearn": true,
+    "book_learn": [ [ "textbook_anarch", 5 ], [ "advanced_electronics", 5 ] ],
+    "using": [ [ "soldering_standard", 15 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "circuit", 1 ] ],
+      [ [ "e_scrap", 3 ] ],
+      [ [ "magnetron", 1 ] ],
+      [ [ "flux_comp_gen", 1 ] ],
+      [ [ "plut_cell", 1 ] ],
+      [ [ "antenna", 1 ] ],
+      [ [ "cable", 20 ] ]
+    ]
+  },
+  {
+    "result": "firecracker",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "difficulty": 1,
+    "time": "1 s",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 2 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "thread", 10 ] ],
+      [ [ "gunpowder", 50 ], [ "chem_black_powder", 50 ] ]
+    ]
+  },
+  {
+    "result": "coldlight_flashbang",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ], [ "chemistry", 8 ] ],
+    "difficulty": 8,
+    "time": "40 s",
+    "reversible": true,
+	"autolearn": true,
+    "book_learn": [ [ "recipe_labchem", 5 ], [ "textbook_anarch", 7 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "small_grenade_case", 1 ] ],
+    "components": [
+      [ [ "pilot_light", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "crystal_mana", 10 ], [ "brimstone_sliver", 13 ] ],
+      [ [ "incendiary", 50 ] ]
+    ]
+  },
+  {
+    "result": "flashbang",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ], [ "chemistry", 8 ] ],
+    "difficulty": 8,
+    "time": "40 s",
+    "reversible": true,
+	"autolearn": true,
+    "book_learn": [ [ "recipe_labchem", 5 ], [ "textbook_anarch", 7 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "small_grenade_case", 1 ] ],
+    "components": [
+      [ [ "pilot_light", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "oxy_powder", 75 ] ],
+      [ [ "incendiary", 50 ] ]
+    ]
+  },
+  {
+    "result": "gasbomb_makeshift",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "//": "Displaces older teargas recipe.  Conventional teargas grenades generally aren't trichloramine.",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ], [ "mechanics", 1 ] ],
+    "difficulty": 6,
+    "time": "8 s",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_gaswarfare", 3 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "small_gas_canister_case", 1 ] ],
+    "components": [
+      [ [ "bleach", 2 ], [ "oxy_powder", 200 ] ],
+      [ [ "ammonia_liquid", 2 ], [ "lye_powder", 200 ] ],
+      [ [ "superglue", 1 ] ]
+    ]
+  },
+  {
+    "result": "fungicidalbomb_makeshift",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ], [ "mechanics", 1 ] ],
+    "difficulty": 6,
+    "time": "8 s",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_gaswarfare", 3 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "bleach", 2 ], [ "oxy_powder", 200 ] ],
+      [ [ "triffid_fungicide", 1 ], [ "fungicide", 50 ] ],
+      [ [ "chem_sulphur", 150 ] ],
+      [ [ "superglue", 1 ] ]
+    ]
+  },
+  {
+    "result": "insecticidalbomb_makeshift",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+    "skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ], [ "mechanics", 1 ] ],
+    "difficulty": 6,
+    "time": "8 s",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_gaswarfare", 3 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "bleach", 2 ], [ "oxy_powder", 200 ] ],
+      [ [ "insecticide", 50 ] ],
+      [ [ "water", 2 ], [ "water_clean", 2 ] ],
+      [ [ "superglue", 1 ] ]
+    ]
+  },
+  {
+    "result": "molotov",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "fake",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "time": "1 s",
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "accelerant_liquid", 500 ] ],
+	"qualities": [ { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [ [ [ "cotton_patchwork", 1 ] ] ]
+  },
+  {
+    "result": "dynamite_bomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ], [ "mechanics", 2 ] ],
+    "difficulty": 5,
+    "time": "12 s",
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "GLARE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "tools": [ [ [ "welder", 20 ], [ "welder_crude", 30 ], [ "toolset", 30 ], [ "soldering_iron", 30 ] ] ],
+    "components": [ [ [ "nail", 200 ], [ "scrap", 16 ] ], [ [ "fuse", 1 ] ], [ [ "dynamite", 1 ] ] ]
+  },
+  {
+    "result": "smokebomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "chemistry",
+     "skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ], [ "mechanics", 1 ] ],
+    "difficulty": 4,
+    "book_learn": [
+      [ "basic_chemistry", 2 ],
+      [ "textbook_gaswarfare", 2 ],
+      [ "textbook_chemistry", 3 ],
+      [ "adv_chemistry", 3 ],
+      [ "textbook_anarch", 3 ]
+    ],
+    "time": "7 s",
+	"autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "water", 1 ], [ "water_clean", 1 ], [ "salt_water", 1 ], [ "saline", 5 ] ],
+      [ [ "sugar", 16 ] ],
+      [ [ "chem_saltpetre", 24 ] ],
+      [ [ "superglue", 1 ] ]
+    ]
+  },
+  {
+    "result": "military_explosive_small_grenade",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "time": "10 s",
+    "reversible": true,
+    "autolearn": true,
+    "book_learn": [ [ "manual_launcher", 4 ], [ "textbook_anarch", 5 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "military_explosive", 46 ], [ "explosives_casting_standard", 1 ] ],
+    "components": [
+      [ [ "delay_fuze", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "nail", 50 ], [ "scrap", 2 ] ]
+    ]
+  },
+  {
+    "result": "military_explosive_grenade",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "time": "10 s",
+    "reversible": true,
+    "autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "book_learn": [ [ "manual_launcher", 4 ], [ "textbook_anarch", 5 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 }  ],
+    "using": [ [ "military_explosive", 92 ], [ "explosives_casting_standard", 1 ] ],
+    "components": [
+      [ [ "delay_fuze", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "can_medium", 1 ] ],
+      [ [ "nail", 100 ], [ "scrap", 4 ] ]
+    ]
+  },
+  {
+    "result": "military_explosive_pipebomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "15 s",
+    "reversible": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+	"autolearn": true,
+    "book_learn": [ [ "manual_launcher", 4 ], [ "textbook_anarch", 5 ] ],
+    "using": [ [ "military_explosive", 92 ], [ "explosives_casting_standard", 1 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [ [ [ "delay_fuze", 1 ] ] ]
+  },
+  {
+    "result": "military_explosive_bomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "15 s",
+    "reversible": true,
+	"autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "book_learn": [ [ "manual_launcher", 4 ], [ "textbook_anarch", 5 ] ],
+    "using": [ [ "military_explosive", 697 ], [ "explosives_casting_standard", 1 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "delay_fuze", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "nail", 750 ], [ "scrap", 30 ] ]
+    ]
+  },
+  {
+    "result": "military_explosive_half_barrel_bomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "fake",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "2 m",
+    "reversible": true,
+	"autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+	"qualities": [ { "id": "POWER_ALTAR", "level": 3 } ],
+    "book_learn": [ [ "manual_launcher", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "explosives_casting_standard", 5 ], [ "military_explosive", 10000 ] ],
+    "components": [
+      [ [ "delay_fuze", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "military_explosive_full_barrel_bomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "fake",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "2 m",
+    "reversible": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+	"autolearn": true,
+    "book_learn": [ [ "manual_launcher", 7 ], [ "textbook_anarch", 8 ] ],
+	"qualities": [ { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "explosives_casting_standard", 10 ], [ "military_explosive", 20000 ] ],
+    "components": [
+      [ [ "delay_fuze", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "small_homemade_grenade",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "5 s",
+    "reversible": true,
+    "autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "stable_explosive", 15, "LIST" ], [ "volatile_explosive", 15, "LIST" ] ],
+      [ [ "fuse", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "nail", 50 ], [ "scrap", 2 ] ]
+    ]
+  },
+  {
+    "result": "homemade_grenade",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": "7 s",
+    "reversible": true,
+    "autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "stable_explosive", 30, "LIST" ], [ "volatile_explosive", 30, "LIST" ] ],
+      [ [ "fuse", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "nail", 100 ], [ "scrap", 4 ] ]
+    ]
+  },
+  {
+    "result": "pipebomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 s",
+    "//": "You cut the tube to make the bomb.",
+    "autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "stable_explosive", 29 ], [ "volatile_explosive", 1 ] ],
+    "components": [ [ [ "fuse", 1 ] ] ]
+  },
+  {
+    "result": "pipebomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "15 s",
+    "autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "volatile_explosive", 30 ] ],
+    "//": "As someone explained to me in the discord server, you could only realistically use only volatile explosives to make a bomb if the case is hard, which is the reason why I'm allowing it on pipebombs and grenades, but not in bombs which use gallon jugs. Additionally, the biggest reason why you wouldn't make a large bomb with only volatile explosives is that the high volume concentration would make it extremely likely that minimal friction might detonate the entire system, which is the reason why I'm allowing it on smaller explosives, but not on the largest like the barrel bombs.",
+    "components": [ [ [ "fuse", 1 ] ] ]
+  },
+  {
+    "result": "homemade_bomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "5 s",
+    "reversible": true,
+    "autolearn": true,
+    "book_learn": [ [ "manual_launcher", 4 ], [ "textbook_anarch", 5 ] ],
+    "using": [ [ "stable_explosive", 226 ], [ "volatile_explosive", 6 ] ],
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [
+      [ [ "fuse", 1 ] ],
+      [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
+      [ [ "nail", 750 ], [ "scrap", 30 ] ]
+    ]
+  },
+  {
+    "result": "homemade_demolition_charge",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "5 s",
+    "reversible": true,
+    "autolearn": true,
+    "book_learn": [ [ "manual_launcher", 4 ], [ "textbook_anarch", 5 ] ],
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "using": [ [ "stable_explosive", 253 ], [ "volatile_explosive", 6 ] ],
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [ [ [ "fuse", 1 ] ], [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ] ]
+  },
+  {
+    "result": "half_barrel_bomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "fake",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "30 s",
+    "reversible": true,
+	"autolearn": true,
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+    "book_learn": [ [ "manual_launcher", 7 ], [ "textbook_anarch", 8 ] ],
+    "using": [ [ "volatile_explosive", 86 ], [ "stable_explosive", 3354 ] ],
+	"qualities": [ { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [ [ [ "fuse", 1 ] ], [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ] ]
+  },
+  {
+    "result": "full_barrel_bomb",
+    "type": "recipe",  "id_suffix": "fast_alchemy",
+    "activity_level": "fake",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "1 m",
+    "reversible": true,
+    "book_learn": [ [ "manual_launcher", 7 ], [ "textbook_anarch", 8 ] ],
+	"skills_required": [ [ "fabrication", 7 ], [ "spellcraft", 7 ] ],
+	"qualities": [ { "id": "POWER_ALTAR", "level": 3 } ],
+    "using": [ [ "volatile_explosive", 173 ], [ "stable_explosive", 6747 ] ],
+    "components": [ [ [ "fuse", 1 ] ], [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ] ]
+  },
+  {
+  "result": "brimstone_shot_00",
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_shot_00",
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_shot_00",
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_shot_00",
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_shot_00",
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "2 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        10
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_9mm",
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_9mm",
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_9mm",
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_9mm",
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_9mm",
+  "type": "recipe", "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "blue_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "green_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "black_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "white_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+    "type": "recipe",
+	"id_suffix": "fast_alchemy",
+    "activity_level": "NO_EXERCISE",
+    "result": "brimstone_throwing_knife",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "POWER_ALTAR", "level": 3 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "1 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TFOP" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+	"id_suffix": "fast_alchemy",
+    "activity_level": "NO_EXERCISE",
+    "result": "blue_brimstone_throwing_knife",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "POWER_ALTAR", "level": 3 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "1 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TFOP" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+	"id_suffix": "fast_alchemy",
+    "activity_level": "NO_EXERCISE",
+    "result": "green_brimstone_throwing_knife",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "POWER_ALTAR", "level": 3 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "1 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TFOP" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+	"id_suffix": "fast_alchemy",
+    "activity_level": "NO_EXERCISE",
+    "result": "black_brimstone_throwing_knife",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "POWER_ALTAR", "level": 3 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "1 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TFOP" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+	"id_suffix": "fast_alchemy",
+    "activity_level": "NO_EXERCISE",
+    "result": "white_brimstone_throwing_knife",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "qualities": [ { "id": "POWER_ALTAR", "level": 3 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "1 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TFOP" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  { 
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_nail",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "1 s",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_nail",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "1 s",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_nail",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "1 s",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_nail",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "1 s",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_nail",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "time": "1 s",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_cannon_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_cannon_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_cannon_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_cannon_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_cannon_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_flintlock_ammo",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_flintlock_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_flintlock_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_flintlock_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_flintlock_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_flintlock_shot",
+  "type": "recipe",
+  "id_suffix": "fast_alchemy",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "1 s",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        7
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "noise_emitter",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "electronics",
+  "difficulty": 1,
+  "time": "15 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "radio_book",
+      1
+    ],
+    [
+      "textbook_anarch",
+      2
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      5
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_elec_soldering"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "radio",
+        1
+      ],
+      [
+        "two_way_radio",
+        1
+      ],
+      [
+        "talking_doll",
+        1
+      ],
+      [
+        "creepy_doll",
+        1
+      ],
+      [
+        "stereo",
+        1
+      ],
+      [
+        "chimes",
+        1
+      ],
+      [
+        "beeper",
+        1
+      ]
+    ],
+    [
+      [
+        "amplifier",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "boobytrap",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "traps",
+  "difficulty": 3,
+  "time": "25 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "manual_traps_mil_basic",
+      3
+    ],
+    [
+      "manual_traps_mil",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "cordage_short",
+      1
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_traps"
+    },
+    {
+      "proficiency": "prof_trapsetting"
+    }
+  ],
+  "components": [
+    [
+      [
+        "grenade",
+        1
+      ]
+    ],
+    [
+      [
+        "clay_canister",
+        1
+      ],
+      [
+        "can_drink",
+        1
+      ],
+      [
+        "can_food",
+        1
+      ],
+      [
+        "canister_empty",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "slamfire_shotgun_d",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "autolearn": true,
+  "skills_required": [
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 2,
+  "time": "5 m",
+  "book_learn": [
+    [
+      "manual_shotgun",
+      1
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "FILE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "//": "80cm weld",
+  "using": [
+    [
+      "welding_standard",
+      80
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "shot_00",
+        -1
+      ],
+      [
+        "shot_bird",
+        -1
+      ],
+      [
+        "shot_dragon",
+        -1
+      ],
+      [
+        "shot_flechette",
+        -1
+      ],
+      [
+        "shot_slug",
+        -1
+      ],
+      [
+        "shot_scrap",
+        -1
+      ],
+      [
+        "shot_he",
+        -1
+      ],
+      [
+        "shot_beanbag",
+        -1
+      ],
+      [
+        "reloaded_shot_00",
+        -1
+      ],
+      [
+        "reloaded_shot_bird",
+        -1
+      ],
+      [
+        "reloaded_shot_dragon",
+        -1
+      ],
+      [
+        "reloaded_shot_flechette",
+        -1
+      ],
+      [
+        "reloaded_shot_slug",
+        -1
+      ],
+      [
+        "bp_shot_00",
+        -1
+      ],
+      [
+        "bp_shot_bird",
+        -1
+      ],
+      [
+        "bp_shot_dragon",
+        -1
+      ],
+      [
+        "bp_shot_flechette",
+        -1
+      ],
+      [
+        "bp_shot_slug",
+        -1
+      ],
+      [
+        "bp_shot_scrap",
+        -1
+      ],
+      [
+        "shot_hull",
+        -1
+      ]
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_welding_basic"
+    },
+    {
+      "proficiency": "prof_gunsmithing_improv"
+    }
+  ],
+  "components": [
+    [
+      [
+        "pipe",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        2
+      ]
+    ],
+    [
+      [
+        "scrap",
+        6
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "NO_EXERCISE",
+  "result": "shotgun_trap",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "traps",
+  "skills_required": [
+    [
+      "gun",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "25 s",
+  "reversible": true,
+  "decomp_learn": 2,
+  "autolearn": true,
+  "using": [
+    [
+      "cordage",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_traps"
+    },
+    {
+      "proficiency": "prof_trapsetting"
+    }
+  ],
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "slamfire_shotgun_d",
+        1
+      ]
+    ],
+    [
+      [
+        "shot_00",
+        2
+      ],
+      [
+        "shot_slug",
+        2
+      ],
+      [
+        "shot_flechette",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "crossbow",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "traps",
+      1
+    ],
+    [
+      "archery",
+      2
+    ]
+  ],
+  "difficulty": 3,
+  "time": "5 m",
+  "reversible": true,
+  "autolearn": true,
+  "decomp_learn": 2,
+  "proficiencies": [
+    {
+      "proficiency": "prof_bowyery",
+      "time_multiplier": 1.5,
+      "skill_penalty": 0.15
+    },
+    {
+      "proficiency": "prof_gunsmithing_spring"
+    }
+  ],
+  "book_learn": [
+    [
+      "recipe_bows",
+      2
+    ],
+    [
+      "manual_archery",
+      4
+    ],
+    [
+      "book_archery",
+      3
+    ],
+    [
+      "textbook_armschina",
+      5
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        2
+      ],
+      [
+        "stick",
+        4
+      ]
+    ],
+    [
+      [
+        "scrap",
+        1
+      ]
+    ],
+    [
+      [
+        "cordage_superior",
+        3,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "NO_EXERCISE",
+  "result": "crossbow_trap",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "traps",
+  "skills_required": [
+    [
+      "archery",
+      1
+    ]
+  ],
+  "difficulty": 3,
+  "time": "25 s",
+  "reversible": true,
+  "decomp_learn": 2,
+  "autolearn": true,
+  "qualities": [
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "using": [
+    [
+      "cordage",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_traps"
+    },
+    {
+      "proficiency": "prof_trapsetting"
+    }
+  ],
+  "components": [
+    [
+      [
+        "crossbow",
+        1
+      ]
+    ],
+    [
+      [
+        "bolt_steel",
+        1
+      ],
+      [
+        "bolt_wood",
+        4
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "blade_trap",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "mechanics",
+  "skills_required": [
+    "traps",
+    3
+  ],
+  "difficulty": 4,
+  "time": "25 s",
+  "reversible": true,
+  "autolearn": true,
+  "decomp_learn": 3,
+  "proficiencies": [
+    {
+      "proficiency": "prof_traps"
+    }
+  ],
+  "book_learn": [
+    [
+      "manual_mechanics",
+      3
+    ],
+    [
+      "manual_traps",
+      3
+    ],
+    [
+      "howto_traps",
+      3
+    ],
+    [
+      "book_icef",
+      4
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "motor_small",
+        1
+      ]
+    ],
+    [
+      [
+        "blade",
+        2
+      ]
+    ],
+    [
+      [
+        "cordage",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "NO_EXERCISE",
+  "result": "board_trap",
+  "id_suffix": "fast_alchemy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
+  "skill_used": "fabrication",
+  "proficiencies": [
+    {
+      "proficiency": "prof_carpentry_basic"
+    }
+  ],
+  "time": "5 s",
+  "reversible": true,
+  "autolearn": true,
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        3
+      ]
+    ],
+    [
+      [
+        "nail",
+        20
+      ]
+    ]
+  ]
+}
+]

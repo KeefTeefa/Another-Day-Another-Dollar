@@ -1,0 +1,148 @@
+[
+  {
+    "type": "TOOL_ARMOR",
+    "id": "radiant_guitar_acoustic",
+    "name": { "str": "radiant acoustic guitar" },
+    "category": "tools",
+	"looks_like": "acoustic_guitar",
+    "weight": "3750 g",
+    "color": "red",
+    "to_hit": { "grip": "solid", "length": "long", "surface": "any", "balance": "clumsy" },
+    "use_action": 
+	[ { "type": "play_instrument" }, 
+	{ "target": "radiant_guitar_electric", "msg": "You crash into a key switch.", "menu_text": "Flow into Electric", "type": "transform" } ],
+    "tick_action": {
+      "type": "musical_instrument",
+      "volume": 5,
+      "fun": 2,
+      "fun_bonus": 4,
+      "speed_penalty": 0,
+      "description_frequency": 50,
+      "player_descriptions": [
+        "You strum a few chords on the guitar.",
+        "You pluck a few notes on the guitar.",
+        "You play a slow blues-y tune on the guitar."
+      ],
+      "npc_descriptions": [ "strum a few chords on the guitar.", "pluck a few notes on the guitar.", "play a slow blues-y tune on the guitar." ]
+    },
+    "symbol": "-",
+    "description": "An instrument that played the hellfire libretto from dawn til dusk and survived, then had the residual heat doused in a goldensun spring.",
+    "price": 1000000,
+    "material": [ { "type": "wood", "portion": 9 }, { "type": "gold" } ],
+    "volume": "6750 ml",
+    "longest_side": "97 cm",
+    "warmth": 2,
+    "flags": [ "SLEEP_IGNORE", "SEMITANGIBLE" ],
+    "material_thickness": 2,
+    "melee_damage": { "bash": 26 }
+  },
+  {
+    "type": "TOOL_ARMOR",
+    "id": "radiant_guitar_electric",
+    "name": { "str": "radiant electric guitar" },
+    "category": "tools",
+	"looks_like": "guitar_electric",
+    "weight": "3750 g",
+    "color": "red",
+    "to_hit": { "grip": "solid", "length": "long", "surface": "any", "balance": "clumsy" },
+    "use_action": [ { "type": "play_instrument" },
+   { "target": "radiant_violin_golden", "msg": "You crash into a key switch.", "menu_text": "Flow into a Solo", "type": "transform" } ],
+    "tick_action": {
+      "type": "musical_instrument",
+      "volume": 50,
+      "fun": 4,
+      "fun_bonus": 4,
+      "speed_penalty": 0,
+      "description_frequency": 50,
+      "player_descriptions": [
+        "You plink out a shredding solo on your guitar.",
+        "You play an epic classic rock riff on your guitar.",
+        "You play a furious, muted riff on your guitar.",
+        "You play a crunchy stoner tune on your guitar.",
+        "You play an old Britpop song on your guitar.",
+        "You play a tasteful classical piece on your guitar.",
+        "You play a jangly folk ditty on your guitar.",
+        "You play a melancholy melody on your guitar."
+      ]
+    },
+    "symbol": "-",
+    "description": "An instrument that played the hellfire libretto from dawn til dusk and survived, then had the residual heat doused in a goldensun spring.",
+    "price": 1000000,
+    "material": [ { "type": "wood", "portion": 9 }, { "type": "steel" } ],
+    "volume": "6750 ml",
+    "longest_side": "97 cm",
+    "warmth": 2,
+    "flags": [ "SLEEP_IGNORE", "SEMITANGIBLE" ],
+    "material_thickness": 2,
+    "melee_damage": { "bash": 26 }
+  },
+  {
+    "id": "radiant_violin_golden",
+    "type": "TOOL_ARMOR",
+    "category": "tools",
+    "name": { "str": "radiant golden fiddle" },
+    "description": "An instrument that played the hellfire libretto from dawn til dusk and survived, then had the residual heat doused in a goldensun spring.",
+    "weight": "13000 g",
+    "volume": "2500 ml",
+    "longest_side": "60 cm",
+    "price": 1000000,
+    "to_hit": { "grip": "solid", "length": "short", "surface": "any", "balance": "clumsy" },
+    "material": [ "gold" ],
+    "symbol": "}",
+    "color": "yellow",
+	"warmth": 2,
+	"flags": [ "SLEEP_IGNORE", "SEMITANGIBLE" ],
+    "use_action": [ 
+	{ "type": "play_instrument" },
+    { "target": "radiant_banjo", "msg": "You crash into a key switch.", "menu_text": "Flow into a Banjo", "type": "transform" } ],
+    "tick_action": {
+      "type": "musical_instrument",
+      "volume": 0,
+      "fun": 2,
+      "fun_bonus": 4,
+      "speed_penalty": 0,
+      "description_frequency": 20,
+      "player_descriptions": [
+        "You play a quick, folksy tune on your fiddle.",
+        "As you pull the bow across its strings, it makes an evil hiss.",
+        "You play a tune so fierce, it feels like hell's broke loose."
+      ]
+    },
+    "melee_damage": { "bash": 9 }
+  },
+  {
+    "id": "radiant_banjo",
+    "type": "TOOL_ARMOR",
+    "category": "tools",
+    "name": { "str": "radiant banjo" },
+    "description": "An instrument that played the hellfire libretto from dawn til dusk and survived, then had the residual heat doused in a goldensun spring.",
+    "weight": "13000 g",
+    "volume": "2500 ml",
+	"looks_like": "banjo",
+    "longest_side": "60 cm",
+    "price": 1000000,
+    "to_hit": { "grip": "solid", "length": "short", "surface": "any", "balance": "clumsy" },
+    "material": [ "gold" ],
+    "symbol": "}",
+    "color": "yellow",
+	"warmth": 2,
+	"flags": [ "SLEEP_IGNORE", "SEMITANGIBLE" ],
+    "use_action": [ 
+	{ "type": "play_instrument" },
+  { "target": "radiant_guitar_acoustic", "msg": "You crash into a key switch.", "menu_text": "Flow into Acoustic", "type": "transform" }	],
+    "tick_action": {
+      "type": "musical_instrument",
+      "volume": 5,
+      "fun": 2,
+      "fun_bonus": 4,
+      "speed_penalty": 0,
+      "description_frequency": 20,
+      "player_descriptions": [
+        "You play a little tune on your banjo.",
+        "You play a bluegrass tune on your banjo.",
+        "You play a quick, Southern ditty on your banjo."
+      ]
+    },
+    "melee_damage": { "bash": 9 }
+  }
+]

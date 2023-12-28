@@ -1,0 +1,767 @@
+[
+{
+    "type": "overmap_terrain",
+    "id": [ "s_library_atraxa" ],
+    "name": "Atraxic Bibliotheque",
+    "copy-from": "generic_city_building",
+    "sym": "$",
+    "color": "red",
+    "extend": { "flags": [ "SOURCE_BOOKS", "SOURCE_LUXURY" ] }
+  },
+  {
+    "type": "city_building",
+    "id": "s_library_atraxa",
+    "locations": [ "land" ],
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "s_library_atraxa_north" }, { "point": [ 0, 0, 1 ], "overmap": "s_library_roof_north" } ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "BotanicalGarden_omnath_1a", "BotanicalGarden_omnath_1b" ],
+    "name": "Omnathan Estate",
+    "sym": "$",
+    "color": "red",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK", "SOURCE_FARMING" ]
+  },
+  {
+    "type": "city_building",
+    "id": "botanical_garden_omnath",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "BotanicalGarden_omnath_1a_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "BotanicalGarden_1a_roof_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "BotanicalGarden_omnath_1b_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "BotanicalGarden_1b_roof_north" }
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "lighthouse_ortiel_z5" ],
+    "name": "Ortisian Watchtower",
+    "sym": "$",
+    "color": "red",
+    "see_cost": 5
+  },
+  {
+    "type": "city_building",
+    "id": "lighthouse_ortiel",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "lighthouse_ground_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "lighthouse_z1_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "lighthouse_z2_north" },
+      { "point": [ 0, 0, 3 ], "overmap": "lighthouse_z3_north" },
+      { "point": [ 0, 0, 4 ], "overmap": "lighthouse_z4_north" },
+      { "point": [ 0, 0, 5 ], "overmap": "lighthouse_ortiel_z5_north" },
+      { "point": [ 0, 0, 6 ], "overmap": "lighthouse_roof_north" }
+    ],
+    "locations": [ "land" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "town_hall_ydris_0_0_0", "town_hall_ydris_1_0_0", "town_hall_ydris_0_1_0", "town_hall_ydris_1_1_0" ],
+    "name": "Yidrisal Consulate",
+    "sym": "$",
+    "color": "red",
+    "see_cost": 2,
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type": "city_building",
+    "id": "town_hall_ydris",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "town_hall_ydris_0_0_0_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "town_hall_ydris_1_0_0_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "town_hall_ydris_0_1_0_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "town_hall_ydris_1_1_0_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "town_hall_0_0_1_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "town_hall_1_0_1_north" },
+      { "point": [ 0, 1, 1 ], "overmap": "town_hall_0_1_1_north" },
+      { "point": [ 1, 1, 1 ], "overmap": "town_hall_1_1_1_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "town_hall_0_0_roof_north" },
+      { "point": [ 1, 0, 2 ], "overmap": "town_hall_1_0_roof_north" },
+      { "point": [ 0, 1, 2 ], "overmap": "town_hall_0_1_roof_north" },
+      { "point": [ 1, 1, 2 ], "overmap": "town_hall_1_1_roof_north" }
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_ground_operator",
+    "name": "magic academy",
+    "sym": "#",
+    "color": "light_blue",
+    "looks_like": "campus_lecture_0_0_0",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_2nd_operator",
+    "name": "magic academy",
+    "sym": "#",
+    "color": "light_blue",
+    "looks_like": "campus_lecture_0_0_1",
+    "mondensity": 2,
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_3rd_operator",
+    "copy-from": "magic_academy_2nd_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_4th_operator",
+    "copy-from": "magic_academy_3rd_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_5th_operator",
+    "copy-from": "magic_academy_4th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_6th_operator",
+    "copy-from": "magic_academy_5th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_7th_operator",
+    "copy-from": "magic_academy_6th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_8th_operator",
+    "copy-from": "magic_academy_7th_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_basement_operator",
+    "copy-from": "magic_academy_2nd_operator"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_roof_operator",
+    "name": "magic academy",
+    "sym": "#",
+    "color": "light_blue",
+    "looks_like": "campus_lecture_0_0_3",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_ground_necro",
+    "name": "dark tower",
+    "sym": "#",
+    "color": "red",
+    "looks_like": "campus_lecture_0_0_0",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_2nd_necro",
+    "name": "dark tower",
+    "sym": "#",
+    "color": "red",
+    "looks_like": "campus_lecture_0_0_1",
+    "mondensity": 2,
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_3rd_necro",
+    "copy-from": "magic_academy_2nd_necro"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_4th_necro",
+    "copy-from": "magic_academy_3rd_necro"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_5th_necro",
+    "copy-from": "magic_academy_4th_necro"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_6th_necro",
+    "copy-from": "magic_academy_5th_necro"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_7th_necro",
+    "copy-from": "magic_academy_6th_necro"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_8th_necro",
+    "copy-from": "magic_academy_7th_necro"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_basement_necro",
+    "copy-from": "magic_academy_2nd_necro"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "magic_academy_roof_necro",
+    "name": "dark tower",
+    "sym": "#",
+    "color": "red",
+    "looks_like": "campus_lecture_0_0_3",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "bank_altar" ],
+    "looks_like": "bank",
+    "name": "bank",
+    "sym": "$",
+    "color": "light_gray",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK", "SOURCE_LUXURY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "bank_roof_altar" ],
+    "looks_like": "bank",
+    "name": "bank",
+    "sym": "$",
+    "color": "light_gray",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK", "SOURCE_LUXURY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "bank_raiders" ],
+    "looks_like": "bank",
+    "name": "bank",
+    "sym": "$",
+    "color": "light_gray",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK", "SOURCE_LUXURY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "bank_roof_raiders" ],
+    "looks_like": "bank",
+    "name": "bank",
+    "sym": "$",
+    "color": "light_gray",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK", "SOURCE_LUXURY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "forge_1AOP",
+      "forge_2AOP",
+      "forge_3AOP",
+      "forge_4AOP",
+      "forge_5AOP",
+      "forge_1BOP",
+      "forge_2BOP",
+      "forge_3BOP",
+      "forge_4BOP",
+      "forge_5BOP",
+      "forge_1AOP_roof",
+      "forge_2AOP_roof",
+      "forge_3AOP_roof",
+      "forge_4AOP_roof",
+      "forge_5AOP_roof",
+      "forge_1BOP_roof",
+      "forge_2BOP_roof",
+      "forge_3BOP_roof",
+      "forge_4BOP_roof",
+      "forge_5BOP_roof"
+    ],
+    "name": "forge of wonders",
+    "sym": "$",
+    "color": "red",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "aircraft_carrier_1aOP",
+      "aircraft_carrier_1bOP",
+      "aircraft_carrier_1cOP",
+      "aircraft_carrier_2aOP",
+      "aircraft_carrier_2bOP",
+      "aircraft_carrier_2cOP",
+      "aircraft_carrier_3aOP",
+      "aircraft_carrier_3bOP",
+      "aircraft_carrier_3cOP",
+      "aircraft_carrier_4aOP",
+      "aircraft_carrier_4bOP",
+      "aircraft_carrier_4cOP",
+      "aircraft_carrier_5aOP",
+      "aircraft_carrier_5bOP",
+      "aircraft_carrier_5cOP",
+      "aircraft_carrier_6aOP",
+      "aircraft_carrier_6bOP",
+      "aircraft_carrier_6cOP",
+      "aircraft_carrier_7aOP",
+      "aircraft_carrier_7bOP",
+      "aircraft_carrier_7cOP",
+      "aircraft_carrier_8aOP",
+      "aircraft_carrier_8bOP",
+      "aircraft_carrier_8cOP",
+      "aircraft_carrier_9aOP",
+      "aircraft_carrier_9bOP",
+      "aircraft_carrier_9cOP",
+      "aircraft_carrier_10aOP",
+      "aircraft_carrier_10bOP",
+      "aircraft_carrier_10cOP",
+      "aircraft_carrier_11aOP",
+      "aircraft_carrier_11bOP",
+      "aircraft_carrier_11cOP",
+      "aircraft_carrier_12aOP",
+      "aircraft_carrier_12bOP",
+      "aircraft_carrier_12cOP",
+      "aircraft_carrier_13aOP",
+      "aircraft_carrier_13bOP",
+      "aircraft_carrier_13cOP",
+      "aircraft_carrier_1a_1OP",
+      "aircraft_carrier_1b_1OP",
+      "aircraft_carrier_1c_1OP",
+      "aircraft_carrier_2a_1OP",
+      "aircraft_carrier_2b_1OP",
+      "aircraft_carrier_2c_1OP",
+      "aircraft_carrier_3a_1OP",
+      "aircraft_carrier_3b_1OP",
+      "aircraft_carrier_3c_1OP",
+      "aircraft_carrier_4a_1OP",
+      "aircraft_carrier_4b_1OP",
+      "aircraft_carrier_4c_1OP",
+      "aircraft_carrier_5a_1OP",
+      "aircraft_carrier_5b_1OP",
+      "aircraft_carrier_5c_1OP",
+      "aircraft_carrier_6a_1OP",
+      "aircraft_carrier_6b_1OP",
+      "aircraft_carrier_6c_1OP",
+      "aircraft_carrier_7a_1OP",
+      "aircraft_carrier_7b_1OP",
+      "aircraft_carrier_7c_1OP",
+      "aircraft_carrier_8a_1OP",
+      "aircraft_carrier_8b_1OP",
+      "aircraft_carrier_8c_1OP",
+      "aircraft_carrier_9a_1OP",
+      "aircraft_carrier_9b_1OP",
+      "aircraft_carrier_9c_1OP",
+      "aircraft_carrier_10a_1OP",
+      "aircraft_carrier_10b_1OP",
+      "aircraft_carrier_10c_1OP",
+      "aircraft_carrier_11a_1OP",
+      "aircraft_carrier_11b_1OP",
+      "aircraft_carrier_11c_1OP",
+      "aircraft_carrier_12a_1OP",
+      "aircraft_carrier_12b_1OP",
+      "aircraft_carrier_12c_1OP",
+      "aircraft_carrier_13a_1OP",
+      "aircraft_carrier_13b_1OP",
+      "aircraft_carrier_13c_1OP",
+      "aircraft_carrier_1a_2OP",
+      "aircraft_carrier_1b_2OP",
+      "aircraft_carrier_1c_2OP",
+      "aircraft_carrier_2a_2OP",
+      "aircraft_carrier_2b_2OP",
+      "aircraft_carrier_2c_2OP",
+      "aircraft_carrier_3a_2OP",
+      "aircraft_carrier_3b_2OP",
+      "aircraft_carrier_3c_2OP",
+      "aircraft_carrier_4a_2OP",
+      "aircraft_carrier_4b_2OP",
+      "aircraft_carrier_4c_2OP",
+      "aircraft_carrier_5a_2OP",
+      "aircraft_carrier_5b_2OP",
+      "aircraft_carrier_5c_2OP",
+      "aircraft_carrier_6a_2OP",
+      "aircraft_carrier_6b_2OP",
+      "aircraft_carrier_6c_2OP",
+      "aircraft_carrier_7a_2OP",
+      "aircraft_carrier_7b_2OP",
+      "aircraft_carrier_7c_2OP",
+      "aircraft_carrier_8a_2OP",
+      "aircraft_carrier_8b_2OP",
+      "aircraft_carrier_8c_2OP",
+      "aircraft_carrier_9a_2OP",
+      "aircraft_carrier_9b_2OP",
+      "aircraft_carrier_9c_2OP",
+      "aircraft_carrier_10a_2OP",
+      "aircraft_carrier_10b_2OP",
+      "aircraft_carrier_10c_2OP",
+      "aircraft_carrier_11a_2OP",
+      "aircraft_carrier_11b_2OP",
+      "aircraft_carrier_11c_2OP",
+      "aircraft_carrier_12a_2OP",
+      "aircraft_carrier_12b_2OP",
+      "aircraft_carrier_12c_2OP",
+      "aircraft_carrier_13a_2OP",
+      "aircraft_carrier_13b_2OP",
+      "aircraft_carrier_13c_2OP",
+      "aircraft_carrier_1a_3OP",
+      "aircraft_carrier_2a_3OP"
+    ],
+    "name": "aircraft carrier",
+    "sym": "A",
+    "color": "red",
+    "see_cost": 5,
+    "spawns": { "group": "GROUP_AIRCRAFT_CARRIER", "population": [ 20, 40 ], "chance": 5 },
+    "flags": [ "RISK_HIGH", "LAKE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "aircraft_carrier_1a_-1OP",
+      "aircraft_carrier_1b_-1OP",
+      "aircraft_carrier_1c_-1OP",
+      "aircraft_carrier_2a_-1OP",
+      "aircraft_carrier_2b_-1OP",
+      "aircraft_carrier_2c_-1OP",
+      "aircraft_carrier_3a_-1OP",
+      "aircraft_carrier_3b_-1OP",
+      "aircraft_carrier_3c_-1OP",
+      "aircraft_carrier_4a_-1OP",
+      "aircraft_carrier_4b_-1OP",
+      "aircraft_carrier_4c_-1OP",
+      "aircraft_carrier_5a_-1OP",
+      "aircraft_carrier_5b_-1OP",
+      "aircraft_carrier_5c_-1OP",
+      "aircraft_carrier_6a_-1OP",
+      "aircraft_carrier_6b_-1OP",
+      "aircraft_carrier_6c_-1OP",
+      "aircraft_carrier_7a_-1OP",
+      "aircraft_carrier_7b_-1OP",
+      "aircraft_carrier_7c_-1OP",
+      "aircraft_carrier_8a_-1OP",
+      "aircraft_carrier_8b_-1OP",
+      "aircraft_carrier_8c_-1OP",
+      "aircraft_carrier_9a_-1OP",
+      "aircraft_carrier_9b_-1OP",
+      "aircraft_carrier_9c_-1OP",
+      "aircraft_carrier_10a_-1OP",
+      "aircraft_carrier_10b_-1OP",
+      "aircraft_carrier_10c_-1OP",
+      "aircraft_carrier_11a_-1OP",
+      "aircraft_carrier_11b_-1OP",
+      "aircraft_carrier_11c_-1OP",
+      "aircraft_carrier_12a_-1OP",
+      "aircraft_carrier_12b_-1OP",
+      "aircraft_carrier_12c_-1OP",
+      "aircraft_carrier_13a_-1OP",
+      "aircraft_carrier_13b_-1OP",
+      "aircraft_carrier_13c_-1OP"
+    ],
+    "name": "aircraft carrier",
+    "sym": "A",
+    "color": "red",
+    "see_cost": 5,
+    "spawns": { "group": "GROUP_AIRCRAFT_CARRIER", "population": [ 20, 35 ], "chance": 5 },
+    "flags": [ "RISK_HIGH", "LAKE" ]
+  },
+  {
+    "type": "city_building",
+    "id": "police_dept_ADAD",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "police_dept_ADAD_u000_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "police_dept_ADAD_u100_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "police_dept_ADAD_u010_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "police_dept_ADAD_u110_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "police_dept_ADAD_u001_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "police_dept_ADAD_u101_north" },
+      { "point": [ 0, 1, 1 ], "overmap": "police_dept_ADAD_u011_north" },
+      { "point": [ 1, 1, 1 ], "overmap": "police_dept_ADAD_u111_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "police_dept_ADAD_u002_north" },
+      { "point": [ 1, 0, 2 ], "overmap": "police_dept_ADAD_u102_north" },
+      { "point": [ 0, 1, 2 ], "overmap": "police_dept_ADAD_u012_north" },
+      { "point": [ 1, 1, 2 ], "overmap": "police_dept_ADAD_u112_north" },
+      { "point": [ 1, -1, 1 ], "overmap": "police_dept_skyway_ADAD_north" },
+      { "point": [ 1, -1, 2 ], "overmap": "police_dept_skyway_ADAD_roof_north" },
+      { "point": [ 0, -2, -1 ], "overmap": "police_dept_ADAD_b00_south" },
+      { "point": [ 1, -2, -1 ], "overmap": "police_dept_ADAD_b10_south" },
+      { "point": [ 0, -3, -1 ], "overmap": "police_dept_ADAD_b01_south" },
+      { "point": [ 1, -3, -1 ], "overmap": "police_dept_ADAD_b11_south" },
+      { "point": [ 0, -2, 0 ], "overmap": "police_dept_ADAD_d000_south" },
+      { "point": [ 1, -2, 0 ], "overmap": "police_dept_ADAD_d100_south" },
+      { "point": [ 0, -3, 0 ], "overmap": "police_dept_ADAD_d010_south" },
+      { "point": [ 1, -3, 0 ], "overmap": "police_dept_ADAD_d110_south" },
+      { "point": [ 0, -2, 1 ], "overmap": "police_dept_ADAD_d001_south" },
+      { "point": [ 1, -2, 1 ], "overmap": "police_dept_ADAD_d101_south" },
+      { "point": [ 0, -3, 1 ], "overmap": "police_dept_ADAD_d011_south" },
+      { "point": [ 1, -3, 1 ], "overmap": "police_dept_ADAD_d111_south" },
+      { "point": [ 0, -2, 2 ], "overmap": "police_dept_ADAD_d002_south" },
+      { "point": [ 1, -2, 2 ], "overmap": "police_dept_ADAD_d102_south" },
+      { "point": [ 0, -3, 2 ], "overmap": "police_dept_ADAD_d012_south" },
+      { "point": [ 1, -3, 2 ], "overmap": "police_dept_ADAD_d112_south" }
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "police_dept_ADAD_u000",
+      "police_dept_ADAD_u010",
+      "police_dept_ADAD_u100",
+      "police_dept_ADAD_u110",
+      "police_dept_ADAD_u001",
+      "police_dept_ADAD_u011",
+      "police_dept_ADAD_u101",
+      "police_dept_ADAD_u111",
+      "police_dept_ADAD_d000",
+      "police_dept_ADAD_d010",
+      "police_dept_ADAD_d100",
+      "police_dept_ADAD_d110",
+      "police_dept_ADAD_d001",
+      "police_dept_ADAD_d011",
+      "police_dept_ADAD_d101",
+      "police_dept_ADAD_d111"
+    ],
+    "name": "operations department",
+    "copy-from": "generic_city_building",
+	"looks_like": "police_dept_u000",
+    "color": "h_yellow",
+    "extend": { "flags": [ "RISK_HIGH", "SOURCE_GUN", "SOURCE_AMMO" ] }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "police_dept_ADAD_u002",
+      "police_dept_ADAD_u012",
+      "police_dept_ADAD_u102",
+      "police_dept_ADAD_u112",
+      "police_dept_ADAD_d002",
+      "police_dept_ADAD_d012",
+      "police_dept_ADAD_d102",
+      "police_dept_ADAD_d112"
+    ],
+    "name": "operations department roof",
+	"looks_like": "police_dept_u000",
+    "copy-from": "generic_city_building",
+    "color": "h_yellow"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "police_dept_skyway_ADAD", "police_dept_skyway_ADAD_roof" ],
+    "name": "skybridge",
+    "copy-from": "generic_city_building",
+    "sym": "│",
+    "color": "h_yellow"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "police_dept_ADAD_b00", "police_dept_ADAD_b10", "police_dept_ADAD_b01", "police_dept_ADAD_b11" ],
+    "name": "operations department garage",
+    "copy-from": "generic_city_building",
+    "color": "h_yellow"
+  },
+  {
+    "type": "city_building",
+    "id": "cathedral_saint",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 6 ], "overmap": "cathedral_saint_7_NW_north" },
+      { "point": [ 1, 0, 6 ], "overmap": "cathedral_saint_7_NE_north" },
+      { "point": [ 0, 0, 5 ], "overmap": "cathedral_saint_6_NW_north" },
+      { "point": [ 1, 0, 5 ], "overmap": "cathedral_saint_6_NE_north" },
+      { "point": [ 0, 0, 4 ], "overmap": "cathedral_saint_5_NW_north" },
+      { "point": [ 1, 0, 4 ], "overmap": "cathedral_saint_5_NE_north" },
+      { "point": [ 0, 0, 3 ], "overmap": "cathedral_saint_4_NW_north" },
+      { "point": [ 1, 0, 3 ], "overmap": "cathedral_saint_4_NE_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "cathedral_saint_3_NW_north" },
+      { "point": [ 1, 0, 2 ], "overmap": "cathedral_saint_3_NE_north" },
+      { "point": [ 0, 1, 2 ], "overmap": "cathedral_saint_3_SW_north" },
+      { "point": [ 1, 1, 2 ], "overmap": "cathedral_saint_3_SE_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "cathedral_saint_2_NW_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "cathedral_saint_2_NE_north" },
+      { "point": [ 0, 1, 1 ], "overmap": "cathedral_saint_2_SW_north" },
+      { "point": [ 1, 1, 1 ], "overmap": "cathedral_saint_2_SE_north" },
+      { "point": [ 0, 0, 0 ], "overmap": "cathedral_saint_1_NW_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "cathedral_saint_1_NE_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "cathedral_saint_1_SW_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "cathedral_saint_1_SE_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "cathedral_saint_b_NW_north" },
+      { "point": [ 1, 0, -1 ], "overmap": "cathedral_saint_b_NE_north" },
+      { "point": [ 0, 1, -1 ], "overmap": "cathedral_saint_b_SW_north" },
+      { "point": [ 1, 1, -1 ], "overmap": "cathedral_saint_b_SE_north" }
+    ],
+	"flags": [ "GLOBALLY_UNIQUE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "cathedral_saint_1_NW",
+      "cathedral_saint_1_NE",
+      "cathedral_saint_1_SW",
+      "cathedral_saint_1_SE",
+      "cathedral_saint_2_NW",
+      "cathedral_saint_2_NE",
+      "cathedral_saint_2_SW",
+      "cathedral_saint_2_SE",
+      "cathedral_saint_3_NW",
+      "cathedral_saint_3_NE",
+      "cathedral_saint_3_SW",
+      "cathedral_saint_3_SE"
+    ],
+    "name": "cathedral",
+    "sym": "C",
+    "color": "yellow",
+    "see_cost": 5,
+    "mondensity": 2,
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "cathedral_saint_b_NW", "cathedral_saint_b_NE", "cathedral_saint_b_SW", "cathedral_saint_b_SE" ],
+    "copy-from": "cathedral_saint_1_NW",
+    "name": "cathedral basement",
+    "delete": { "flags": [ "SIDEWALK" ] }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "cathedral_saint_4_NW",
+      "cathedral_saint_4_NE",
+      "cathedral_saint_5_NW",
+      "cathedral_saint_5_NE",
+      "cathedral_saint_6_NW",
+      "cathedral_saint_6_NE",
+      "cathedral_saint_7_NW",
+      "cathedral_saint_7_NE"
+    ],
+    "copy-from": "cathedral_saint_1_NW",
+    "name": "cathedral tower",
+    "delete": { "flags": [ "SIDEWALK" ] }
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_op_ground",
+    "copy-from": "generic_city_building",
+    "sym": "W",
+    "color": "light_blue",
+    "name": "wizard tower",
+    "flags": [ "SOURCE_LUXURY", "RISK_HIGH", "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_op_living",
+    "copy-from": "wizardtower_op_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_op_golems",
+    "copy-from": "wizardtower_op_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_op_study",
+    "copy-from": "wizardtower_op_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_op_roof",
+    "copy-from": "wizardtower_op_ground"
+  },
+  {
+    "type": "city_building",
+    "id": "wizard_tower_op",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "wizardtower_op_ground_south" },
+      { "point": [ 0, 0, 1 ], "overmap": "wizardtower_op_living_south" },
+      { "point": [ 0, 0, 2 ], "overmap": "wizardtower_op_golems_south" },
+      { "point": [ 0, 0, 3 ], "overmap": "wizardtower_op_study_south" },
+      { "point": [ 0, 0, 4 ], "overmap": "wizardtower_op_roof_south" }
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_stalker_ground",
+    "copy-from": "generic_city_building",
+    "sym": "W",
+    "color": "light_blue",
+    "name": "wizard tower",
+    "flags": [ "SOURCE_LUXURY", "RISK_HIGH", "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_stalker_stairs1",
+    "copy-from": "wizardtower_stalker_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_stalker_stairs2",
+    "copy-from": "wizardtower_stalker_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_stalker_study",
+    "copy-from": "wizardtower_stalker_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_stalker_roof",
+    "copy-from": "wizardtower_stalker_ground"
+  },
+  {
+    "type": "city_building",
+    "id": "wizard_tower_stalker",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "wizardtower_stalker_ground_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "wizardtower_stalker_stairs1_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "wizardtower_stalker_stairs2_north" },
+      { "point": [ 0, 0, 3 ], "overmap": "wizardtower_stalker_study_north" },
+      { "point": [ 0, 0, 4 ], "overmap": "wizardtower_stalker_roof_north" }
+    ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_abandoned_ground",
+    "copy-from": "generic_city_building",
+    "sym": "W",
+    "color": "light_blue",
+    "name": "wizard tower",
+    "flags": [ "SOURCE_LUXURY", "RISK_HIGH", "SIDEWALK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_abandoned_living",
+    "copy-from": "wizardtower_abandoned_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_abandoned_golems",
+    "copy-from": "wizardtower_abandoned_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_abandoned_study",
+    "copy-from": "wizardtower_abandoned_ground"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "wizardtower_abandoned_roof",
+    "copy-from": "wizardtower_abandoned_ground"
+  },
+  {
+    "type": "city_building",
+    "id": "wizard_tower_abandoned",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "wizardtower_abandoned_ground_south" },
+      { "point": [ 0, 0, 1 ], "overmap": "wizardtower_abandoned_living_south" },
+      { "point": [ 0, 0, 2 ], "overmap": "wizardtower_abandoned_golems_south" },
+      { "point": [ 0, 0, 3 ], "overmap": "wizardtower_abandoned_study_south" },
+      { "point": [ 0, 0, 4 ], "overmap": "wizardtower_abandoned_roof_south" }
+    ]
+  }
+]

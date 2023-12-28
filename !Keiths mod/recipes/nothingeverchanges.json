@@ -1,0 +1,8033 @@
+[
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "money_hundred",
+	"byproducts": [ [ "money_hundred", 9 ] ],
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "speech", 
+    "difficulty": 1,
+    "time": "1 s",
+    "autolearn": true,
+	"using": [
+    [
+      "surface_heat",
+      10
+    ]
+  ],
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "book_learn": [ [ "coin_guidebook", 1 ], [ "occult_economicon", 1 ] ],
+    "components": [ [ [ "coin_penny", 100 ] ], [ [ "blood", 1 ] ] ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "spellcraft", 1 ],
+    "result": "penny_roll",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft", 
+    "difficulty": 10,
+    "time": "1 m",
+    "autolearn": false,
+	"qualities": [ { "id": "POWER_ALTAR", "level": 3 }, { "id": "GOLDENSUN_SPRING", "level": 1 } ],
+	"byproducts": [ [ "spell_scroll_translocate_self_no_hands", 1 ] ],
+    "book_learn": [ [ "coin_guidebook", 1 ] ],
+    "components": [ [ [ "coin_penny", 50 ] ], [ [ "coin_wrapper", 1 ] ], [ [ "dragon_nail", 1 ] ], [ [ "spell_scroll_translocate_self_no_hands", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "spellcraft", 3 ],
+    "result": "coin_gold",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft", 
+    "difficulty": 6,
+    "time": "30 s",
+    "autolearn": false,
+	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 } ],
+	"byproducts": [ [ "spell_scroll_translocate_self_no_hands", 1 ] ],
+    "book_learn": [ [ "coin_guidebook", 1 ] ],
+    "components": [ [ [ "coin_quarter", 200 ] ], [ [ "gold_small", 200 ] ], [ [ "spell_scroll_translocate_self_no_hands", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "spellcraft", 3 ],
+    "result": "money_hundred",
+	"id_suffix": "made via quarters",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft", 
+    "difficulty": 6,
+    "time": "1 s",
+    "autolearn": true,
+	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 } ],
+    "book_learn": [ [ "coin_guidebook", 1 ] ],
+    "components": [ [ [ "coin_quarter", 4 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "spellcraft", 3 ],
+    "result": "coin_quarter",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft", 
+    "difficulty": 6,
+    "time": "1 s",
+    "autolearn": true,
+	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 } ],
+    "book_learn": [ [ "coin_guidebook", 1 ] ],
+    "components": [ [ [ "coin_dime", 2 ] ], [ [ "coin_nickel", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "spellcraft", 3 ],
+    "result": "coin_dime",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft", 
+    "difficulty": 6,
+    "time": "1 s",
+    "autolearn": true,
+	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 } ],
+    "book_learn": [ [ "coin_guidebook", 1 ] ],
+    "components": [ [ [ "coin_nickel", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "spellcraft", 3 ],
+    "result": "coin_nickel",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft", 
+    "difficulty": 6,
+    "time": "1 s",
+    "autolearn": true,
+	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 } ],
+    "book_learn": [ [ "coin_guidebook", 1 ] ],
+    "components": [ [ [ "coin_penny", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_BGTM",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_BGTM", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_EEE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_EEE", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_EIC",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_EIC", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_FOT",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_FOT", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_FT",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_FT", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_GSLOL",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_GSLOL", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_IAP",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_IAP", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_IGT",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_IGT", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_ITTD",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_ITTD", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_LP",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_LP", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_MOH",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_MOH", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_MOM",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_MOM", 1 ], [ "book_fict_hard_ya_dark" ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_NLS",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_NLS", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_NMFD",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_NMFD", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_NS",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_NS", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_OLAF",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_OLAF", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_PFH",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_PFH", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_PGTMS",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_PGTMS", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_SFMP",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_SFMP", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_STW",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_STW", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TAES",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TAES", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TBOT",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TBOT", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TFOP",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TFOP", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_THC",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_THC", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TOBM",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TOBM", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TOHE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TOHE", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TOME",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TOME", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TOMM",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TOMM", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TOOS",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TOOS", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TTOF",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TTOF", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_TUOMAES",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_TUOMAES", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_WEG",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_WEG", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_WGB",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_WGB", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_VM",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_VM", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_BAAA",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_BAAA", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_HECVW",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_HECVW", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_BYA",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "2 h",
+	"book_learn": [ [ "wayward_memory_BYA", 1 ] ],
+    "autolearn": true,
+    "components": [ [ [ "twisted_soul", 1 ], [ "white_pen_ink", 5 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "wayward_memory_CASH_map",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 1 ],
+    "difficulty": 0,
+    "time": "1 s",
+    "autolearn": false,
+	"book_learn": [ [ "wayward_memory_CASH", 1 ] ],
+    "components": [ [ [ "wayward_memory_CASH", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "crystallized_ink_red",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "qualities": [ { "id": "MANA_INFUSE", "level": 2 } ],
+    "difficulty": 7,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [ [ [ "crystallized_ink", 1 ] ], [ [ "poppy_bud", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "crystallized_ink_blue",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 } ],
+    "difficulty": 7,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [ [ [ "crystallized_ink", 1 ] ], [ [ "prussian_blue", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "crystallized_ink_black",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 } ],
+    "difficulty": 7,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [ [ [ "crystallized_ink", 1 ] ], [ [ "charcoal", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "crystallized_ink_green",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "qualities": [ { "id": "MANA_INFUSE", "level": 2 } ],
+    "difficulty": 7,
+    "time": "1 m",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [ [ [ "crystallized_ink", 1 ] ], [ [ "lotus", 3 ] ] ]
+  },
+  {
+    "result": "int_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "dex_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "perc_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "str_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "mana_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "regen_mana_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "stamina_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "regen_stamina_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "hp_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "regen_hp_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 1 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "smite_gloves",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "tools": [ [ [ "demon_forge", 30 ] ] ],
+    "difficulty": 7,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "18 h",
+    "proficiencies": [ { "proficiency": "prof_almetallurgy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "textbook_mithril", 7 ], [ "wayward_memory_TOOS", 1 ] ],
+    "components": [
+      [ [ "orichalcum_ingot", 7 ] ],
+      [ [ "twisted_soul", 3 ] ],
+      [ [ "spell_scroll_crystal_place", 1 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "result": "demi_smite_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "fire_gloves",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "tools": [ [ [ "demon_forge", 30 ] ] ],
+    "difficulty": 7,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "18 h",
+    "proficiencies": [ { "proficiency": "prof_almetallurgy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "textbook_mithril", 7 ], [ "wayward_memory_TOOS", 1 ] ],
+    "components": [
+      [ [ "orichalcum_ingot", 7 ] ],
+      [ [ "twisted_soul", 3 ] ],
+      [ [ "spell_scroll_summon_flame", 1 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "result": "demi_fire_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "cold_gloves",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "tools": [ [ [ "demon_forge", 30 ] ] ],
+    "difficulty": 7,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "18 h",
+    "proficiencies": [ { "proficiency": "prof_almetallurgy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "textbook_mithril", 7 ], [ "wayward_memory_TOOS", 1 ] ],
+    "components": [
+      [ [ "orichalcum_ingot", 7 ] ],
+      [ [ "twisted_soul", 3 ] ],
+      [ [ "spell_scroll_brain_freeze", 1 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "result": "demi_cold_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "bile_gloves",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "tools": [ [ [ "demon_forge", 30 ] ] ],
+    "difficulty": 7,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "18 h",
+    "proficiencies": [ { "proficiency": "prof_almetallurgy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "textbook_mithril", 7 ], [ "wayward_memory_TOOS", 1 ] ],
+    "components": [
+      [ [ "orichalcum_ingot", 7 ] ],
+      [ [ "twisted_soul", 3 ] ],
+      [ [ "spell_scroll_marinate", 1 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "result": "demi_bile_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "elec_gloves",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "tools": [ [ [ "demon_forge", 30 ] ] ],
+    "difficulty": 7,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "18 h",
+    "proficiencies": [ { "proficiency": "prof_almetallurgy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "textbook_mithril", 7 ], [ "wayward_memory_TOOS", 1 ] ],
+    "components": [
+      [ [ "orichalcum_ingot", 7 ] ],
+      [ [ "twisted_soul", 3 ] ],
+      [ [ "spell_scroll_charge_attack", 1 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "result": "demi_elec_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "bullet_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "bash_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "stab_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "result": "cut_gloves",
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+	"skills_required": [ "fabrication", 7 ],
+    "difficulty": 6,
+    "time": "3 h",
+    "book_learn": [ [ "textbook_armwest", 6 ], [ "welding_book", 6 ] ],
+    "using": [ [ "carbon", 2 ] ],
+    "components": [ [ [ "mitten_gaunt_metal_sheets", 1 ] ], [ [ "psychic_pebble", 1 ] ], [ [ "crystallized_mana", 100 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_blacksmithing" },
+      { "proficiency": "prof_case_hardening" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "POWER_ALTAR", "level": 2 }  ],
+    "tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "black_wolfs_ring_bullet",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "tools": [ [ [ "demon_forge", 30 ] ] ],
+    "difficulty": 7,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "18 h",
+    "proficiencies": [ { "proficiency": "prof_almetallurgy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "textbook_mithril", 7 ], [ "wayward_memory_TOMM", 1 ] ],
+    "components": [
+      [ [ "mithril_ingot", 1 ] ],
+      [ [ "cleansed_soul", 1 ] ],
+      [ [ "twisted_soul", 3 ] ],
+      [ [ "spell_scroll_artillery", 1 ] ],
+      [ [ "spell_scroll_pocket_sniper", 1 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "white_wolfs_ring_cold",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "tools": [ [ [ "demon_forge", 30 ] ] ],
+    "difficulty": 7,
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "SILVERMOON_LOOM", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "18 h",
+    "proficiencies": [ { "proficiency": "prof_almetallurgy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "textbook_mithril", 7 ], [ "wayward_memory_TAES", 1 ] ],
+    "components": [
+      [ [ "mithril_ingot", 1 ] ],
+      [ [ "cleansed_soul", 1 ] ],
+      [ [ "twisted_soul", 3 ] ],
+      [ [ "spell_scroll_brain_freeze", 1 ] ],
+      [ [ "spell_scroll_beautification", 1 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+  "result": "brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_shot_00",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 2,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "//": "Assumes standard 9 pellet 00 load. 1166 mg gunpowder rounded to 12 100 mg 'pieces'",
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "tools": [
+    [
+      [
+        "press",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        12
+      ],
+      [
+        "gunpowder_pistol",
+        12
+      ],
+      [
+        "gunpowder_shotgun",
+        12
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_arrow_metal_sharpened_fletched",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "archery",
+      3
+    ],
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        5
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_bolt_metal",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    [
+      "survival",
+      1
+    ]
+  ],
+  "difficulty": 4,
+  "time": "20 m",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_arrows",
+      3
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_fletching"
+    },
+    {
+      "proficiency": "prof_metalworking"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 1
+    },
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "adhesive",
+        1,
+        "LIST"
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "wire",
+        4
+      ],
+      [
+        "pipe",
+        1
+      ]
+    ],
+    [
+      [
+        "fletching",
+        1,
+        "LIST"
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_9mm",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "gun",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      1
+    ],
+    [
+      "manual_smg",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ],
+    [
+      "ammo_9mm",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "copper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        2
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "blue_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        2
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "green_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        2
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "black_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        2
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "white_brimstone_blun_flechette",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "difficulty": 3,
+  "time": "30 s",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "recipe_bullets",
+      2
+    ],
+    [
+      "manual_shotgun",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "gunpowder",
+        20
+      ],
+      [
+        "chem_black_powder",
+        20
+      ]
+    ],
+    [
+      [
+        "brimstone_sliver",
+        2
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 3 ],
+    "difficulty": 3,
+    "qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TFOP" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "blue_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 3 ],
+    "difficulty": 3,
+    "qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_BYA" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "green_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 3 ],
+    "difficulty": 3,
+    "qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_IGT" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "black_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 3 ],
+    "difficulty": 3,
+    "qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_TOHE" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "white_brimstone_throwing_knife",
+	"id_suffix": "via brimstone",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 3 ],
+    "difficulty": 3,
+    "qualities": [ { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "10 s",
+    "autolearn": true,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "wayward_memory_FOT" ] ],
+    "components": [ [ [ "brimstone_chunk", 1 ] ] ]
+  },
+  {
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "brimstone_nail",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "blue_brimstone_nail",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "green_brimstone_nail",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "black_brimstone_nail",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "white_brimstone_nail",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 1,
+  "time": "3 h",
+  "autolearn": true,
+  "using": [
+    [
+      "blacksmithing_standard",
+      1
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_cannon_shot",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "gun",
+    1
+  ],
+  "time": "10 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ]
+    ],
+    [
+      [
+        "chem_black_powder",
+        3000
+      ]
+    ],
+    [
+      [
+        "fuse",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_flintlock_ammo",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "blue_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "green_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "black_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "white_brimstone_flintlock_shot",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 3,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "autolearn": true,
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        30
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_44army",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "autolearn": true,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      3
+    ],
+    [
+      "recipe_bullets",
+      3
+    ],
+    [
+      "big_book_of_metaknowledge",
+      3
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        4
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "lgpistol_primer",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "cold_brimstone_44army",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "autolearn": true,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      3
+    ],
+    [
+      "recipe_bullets",
+      3
+    ],
+    [
+      "big_book_of_metaknowledge",
+      3
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        4
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "lgpistol_primer",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "acid_brimstone_44army",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "autolearn": true,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      3
+    ],
+    [
+      "recipe_bullets",
+      3
+    ],
+    [
+      "big_book_of_metaknowledge",
+      3
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        4
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "lgpistol_primer",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "electric_brimstone_44army",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "autolearn": true,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      3
+    ],
+    [
+      "recipe_bullets",
+      3
+    ],
+    [
+      "big_book_of_metaknowledge",
+      3
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        4
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "lgpistol_primer",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "bio_brimstone_44army",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 1,
+  "autolearn": true,
+  "skills_required": [
+    "spellcraft",
+    1
+  ],
+  "time": "1 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "manual_pistol",
+      3
+    ],
+    [
+      "recipe_bullets",
+      3
+    ],
+    [
+      "big_book_of_metaknowledge",
+      3
+    ]
+  ],
+  "charges": 1,
+  "reversible": true,
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "chem_black_powder",
+        4
+      ]
+    ],
+	[
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "lgpistol_primer",
+        1
+      ]
+    ],
+    [
+      [
+        "paper",
+        1
+      ],
+      [
+        "aluminum_foil",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_50bmg",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "spellcraft",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "big_book_of_metaknowledge",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+         1
+      ]
+    ],
+    [
+      [
+        "50_casing",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "cold_brimstone_50bmg",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "spellcraft",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "big_book_of_metaknowledge",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "50_casing",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "acid_brimstone_50bmg",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "spellcraft",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "big_book_of_metaknowledge",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "50_casing",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "electric_brimstone_50bmg",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "spellcraft",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "big_book_of_metaknowledge",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "50_casing",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "result": "biological_brimstone_50bmg",
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "skills_required": [
+    "spellcraft",
+    4
+  ],
+  "time": "2 m",
+  "batch_time_factors": [
+    60,
+    5
+  ],
+  "book_learn": [
+    [
+      "big_book_of_metaknowledge",
+      1
+    ],
+    [
+      "recipe_bullets",
+      2
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "charges": 1,
+  "reversible": true,
+  "using": [
+    [
+      "bullet_forming",
+      2
+    ],
+    [
+      "ammo_bullet",
+      2
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_handloading"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        1
+      ]
+    ],
+    [
+      [
+        "50_casing",
+        1
+      ]
+    ]
+  ]
+},
+  {
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_knuckle_brass",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_redsmithing"
+    },
+    {
+      "proficiency": "prof_toolsmithing"
+    }
+  ],
+  "difficulty": 3,
+  "time": "1 h",
+  "autolearn": false,
+  "book_learn": [
+    [
+      "recipe_melee",
+      2
+    ]
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      4
+    ],
+    [
+      "ppe_gas",
+      1
+    ]
+  ],
+  "tools": [
+    [
+      [
+        "drift",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "chem_zinc_powder",
+        500
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_katana",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 9,
+  "time": "8 h",
+  "book_learn": [
+    [
+      "textbook_weapeast",
+      8
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    },
+    {
+      "proficiency": "prof_bladesmith"
+    },
+    {
+      "proficiency": "prof_carving",
+      "time_multiplier": 1.2,
+      "learning_time_multiplier": 0.2,
+      "skill_penalty": 0
+    }
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      8
+    ],
+    [
+      "steel_standard",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "GRIND",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    }
+  ],
+  "tools": [
+    [
+      [
+        "hotcut",
+        -1
+      ]
+    ]
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        6
+      ]
+	],
+    [
+	  [
+        "stick",
+        4
+      ]
+    ],
+    [
+      [
+        "fur",
+        2
+      ],
+      [
+        "leather",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_hammer_sledge",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 6,
+  "time": "7 h 40 m",
+  "byproducts": [
+    [
+      "splinter",
+      13
+    ]
+  ],
+  "book_learn": [
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      4
+    ]
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      32
+    ],
+    [
+      "steel_standard",
+      8
+    ]
+  ],
+  "qualities": [
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }, 
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_blacksmithing"
+    },
+    {
+      "proficiency": "prof_toolsmithing"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ]
+  ]
+},
+{
+  "result": "brimstone_spear_pipe",
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 3,
+  "skills_required": [
+    "melee",
+    1
+  ],
+  "time": "60 m",
+  "autolearn": true,
+  "using": [
+    [
+      "welding_standard",
+      2
+    ],
+    [
+      "steel_tiny",
+      1
+    ],
+    [
+      "cordage_superior",
+      2
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_metalworking"
+    },
+    {
+      "proficiency": "prof_welding_basic"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "HAMMER",
+      "level": 3
+    },
+    {
+      "id": "SAW_M",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }, 
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    }
+  ],
+  "components": [
+    [
+      [
+        "simple_spear_pipe",
+        1
+      ]
+	],
+	[
+      [
+        "brimstone_chunk",
+        3
+      ]
+	]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "BRISK_EXERCISE",
+  "result": "brimstone_fire_ax",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 9,
+  "time": "7 h",
+  "autolearn": true,
+  "book_learn": [
+    [
+      "textbook_fireman",
+      8
+    ],
+    [
+      "textbook_fabrication",
+      9
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_blacksmithing",
+      "required": false,
+      "time_multiplier": 3
+    },
+    {
+      "proficiency": "prof_bladesmith"
+    }
+  ],
+  "using": [
+    [
+      "blacksmithing_standard",
+      16
+    ],
+    [
+      "steel_standard",
+      4
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "GRIND",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    },
+	{
+	  "id": "POWER_ALTAR", 
+	  "level": 2
+	}
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        6
+      ]
+	],
+	[
+      [
+        "stick",
+        4
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "brimstone_shiv",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "skills_required": [],
+  "time": "1 m",
+  "reversible": true,
+  "autolearn": true,
+  "components": [
+    [
+      [
+        "brimstone_sliver",
+        1
+      ]
+    ],
+    [
+      [
+        "cotton_patchwork",
+        1
+      ],
+      [
+        "duct_tape",
+        10
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "heat_sight",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "cold_sight",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "acid_sight",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "biological_sight",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "electric_sight",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      3
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 2
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        2
+      ]
+    ],
+    [
+      [
+        "lens",
+        1
+      ],
+      [
+        "lens_small",
+        1
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "pure_sight",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "fabrication",
+  "difficulty": 5,
+  "skills_required": [
+    [
+      "gun",
+      4
+    ],
+	[
+      "spellcraft",
+      9
+    ]
+  ],
+  "time": "15 m",
+  "decomp_learn": 3,
+  "book_learn": [
+    [
+      "manual_rifle",
+      2
+    ],
+    [
+      "manual_fabrication",
+      3
+    ],
+    [
+      "textbook_fabrication",
+      3
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      10
+    ],
+    [
+      "surface_heat",
+      10
+    ],
+    [
+      "plastic_molding",
+      2
+    ]
+  ],
+  "qualities": [
+    {
+      "id": "SCREW_FINE",
+      "level": 1
+    },
+	{
+      "id": "POWER_ALTAR",
+      "level": 3
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_plasticworking"
+    }
+  ],
+  "components": [
+    [
+      [
+        "brimstone_chunk",
+        13
+      ]
+    ],
+    [
+      [
+        "lens",
+        3
+      ]
+    ],
+    [
+      [
+        "lens",
+        4
+      ],
+      [
+        "lens_small",
+        4
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "heat_sliverlauncher",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 4,
+  "time": "2 h",
+  "book_learn": [
+    [
+      "recipe_bows",
+      3
+    ],
+    [
+      "manual_archery",
+      5
+    ],
+    [
+      "book_archery",
+      4
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_carving"
+    },
+    {
+      "proficiency": "prof_gunsmithing_spring"
+    },
+    {
+      "proficiency": "prof_bowyery"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        1
+      ],
+      [
+        "stick",
+        2
+      ]
+    ],
+    [
+      [
+        "cordage_superior_short",
+        1,
+        "LIST"
+      ]
+    ],
+    [
+      [
+        "spring",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        10
+      ]
+    ],
+    [
+      [
+        "brimstone_chunk",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "cold_sliverlauncher",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 4,
+  "time": "2 h",
+  "book_learn": [
+    [
+      "recipe_bows",
+      3
+    ],
+    [
+      "manual_archery",
+      5
+    ],
+    [
+      "book_archery",
+      4
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_carving"
+    },
+    {
+      "proficiency": "prof_gunsmithing_spring"
+    },
+    {
+      "proficiency": "prof_bowyery"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        1
+      ],
+      [
+        "stick",
+        2
+      ]
+    ],
+    [
+      [
+        "cordage_superior_short",
+        1,
+        "LIST"
+      ]
+    ],
+    [
+      [
+        "spring",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        10
+      ]
+    ],
+    [
+      [
+        "brimstone_chunk",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "acid_sliverlauncher",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 4,
+  "time": "2 h",
+  "book_learn": [
+    [
+      "recipe_bows",
+      3
+    ],
+    [
+      "manual_archery",
+      5
+    ],
+    [
+      "book_archery",
+      4
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_carving"
+    },
+    {
+      "proficiency": "prof_gunsmithing_spring"
+    },
+    {
+      "proficiency": "prof_bowyery"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        1
+      ],
+      [
+        "stick",
+        2
+      ]
+    ],
+    [
+      [
+        "cordage_superior_short",
+        1,
+        "LIST"
+      ]
+    ],
+    [
+      [
+        "spring",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        10
+      ]
+    ],
+    [
+      [
+        "brimstone_chunk",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "bio_sliverlauncher",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 4,
+  "time": "2 h",
+  "book_learn": [
+    [
+      "recipe_bows",
+      3
+    ],
+    [
+      "manual_archery",
+      5
+    ],
+    [
+      "book_archery",
+      4
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_carving"
+    },
+    {
+      "proficiency": "prof_gunsmithing_spring"
+    },
+    {
+      "proficiency": "prof_bowyery"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        1
+      ],
+      [
+        "stick",
+        2
+      ]
+    ],
+    [
+      [
+        "cordage_superior_short",
+        1,
+        "LIST"
+      ]
+    ],
+    [
+      [
+        "spring",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        10
+      ]
+    ],
+    [
+      [
+        "brimstone_chunk",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "electric_sliverlauncher",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 4,
+  "time": "2 h",
+  "book_learn": [
+    [
+      "recipe_bows",
+      3
+    ],
+    [
+      "manual_archery",
+      5
+    ],
+    [
+      "book_archery",
+      4
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_carving"
+    },
+    {
+      "proficiency": "prof_gunsmithing_spring"
+    },
+    {
+      "proficiency": "prof_bowyery"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        1
+      ],
+      [
+        "stick",
+        2
+      ]
+    ],
+    [
+      [
+        "cordage_superior_short",
+        1,
+        "LIST"
+      ]
+    ],
+    [
+      [
+        "spring",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        10
+      ]
+    ],
+    [
+      [
+        "brimstone_chunk",
+        2
+      ]
+    ]
+  ]
+},
+{
+  "type": "recipe",
+  "activity_level": "MODERATE_EXERCISE",
+  "result": "pure_sliverlauncher",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+  "skill_used": "spellcraft",
+  "difficulty": 4,
+  "time": "2 h",
+  "book_learn": [
+    [
+      "recipe_bows",
+      3
+    ],
+    [
+      "manual_archery",
+      5
+    ],
+    [
+      "book_archery",
+      4
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_carving"
+    },
+    {
+      "proficiency": "prof_gunsmithing_spring"
+    },
+    {
+      "proficiency": "prof_bowyery"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "CUT",
+      "level": 2
+    },
+    {
+      "id": "HAMMER",
+      "level": 2
+    },
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+    {
+      "id": "WRENCH",
+      "level": 1
+    },
+	{
+      "id": "RED_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "BLUE_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "GREEN_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "BLACK_CIRCLE",
+      "level": 1
+    },
+	{
+      "id": "WHITE_CIRCLE",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "2x4",
+        1
+      ],
+      [
+        "stick",
+        2
+      ]
+    ],
+    [
+      [
+        "cordage_superior_short",
+        1,
+        "LIST"
+      ]
+    ],
+    [
+      [
+        "spring",
+        1
+      ]
+    ],
+    [
+      [
+        "scrap",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        10
+      ]
+    ],
+    [
+      [
+        "brimstone_chunk",
+        2
+      ]
+    ]
+  ]
+},
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_soul_bind",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_soul_bind", 1 ]
+      ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "spell_scroll_soul_bind", 1 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_improved_knock",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_improved_knock", 1 ]
+      ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "spell_scroll_improved_knock", 1 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_scrying",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_scrying", 1 ]
+      ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "spell_scroll_scrying", 1 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_instant_camp",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_spawn_camp", 1 ]
+      ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "spell_scroll_spawn_camp", 1 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_greater_banishment",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "classified_intelligence_scroll", 1 ]
+      ],
+      [ [ "classified_intelligence_scroll", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_cleansing",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_ghost_cleanse", 1 ],
+        [ "spell_scroll_summon_atraxa", 1 ]
+      ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "spell_scroll_ghost_cleanse", 1 ], [ "spell_scroll_summon_atraxa", 1 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_abolish_spirit",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_abolish_spirit", 1 ]
+      ],
+      [ [ "spell_scroll_abolish_spirit", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_ethereal_grasp",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_ethereal_grasp", 1 ]
+      ],
+      [ [ "spell_scroll_ethereal_grasp", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_resonant_shift",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_dimensional_resonance", 1 ]
+      ],
+      [ [ "spell_scroll_dimensional_resonance", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_summon_horse",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_summon_horse", 1 ]
+      ],
+      [ [ "spell_scroll_summon_horse", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_first_things_first",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_first_things_first", 1 ]
+      ],
+      [ [ "spell_scroll_first_things_first", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_cold_flash",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_cold_flash", 1 ]
+      ],
+      [ [ "spell_scroll_cold_flash", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_spawn_gas",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_spawn_gas", 1 ]
+      ],
+      [ [ "spell_scroll_spawn_gas", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_distraction",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_distraction", 1 ]
+      ],
+      [ [ "spell_scroll_distraction", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_fireball",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_fireball", 1 ]
+      ],
+      [ [ "spell_scroll_fireball", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_cone_of_cold",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_cone_cold", 1 ]
+      ],
+      [ [ "spell_scroll_cone_cold", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_lightning_bolt",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_lightning_bolt", 1 ]
+      ],
+      [ [ "spell_scroll_lightning_bolt", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_magus_haste",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_magus_haste", 1 ]
+      ],
+      [ [ "spell_scroll_magus_haste", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_purify_seed",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_purification_seed", 1 ]
+      ],
+      [ [ "spell_scroll_purification_seed", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_protection_aura",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_protection_aura", 1 ]
+      ],
+      [ [ "spell_scroll_protection_aura", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_coagulant_weave",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_biomancer_coagulant_weave", 1 ]
+      ],
+      [ [ "spell_scroll_biomancer_coagulant_weave", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_soulrend",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [ [ "book_of_flame", 1 ], [ "book_of_bile", 1 ], [ "book_of_smoke", 1 ], [ "book_of_blood", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_conjure_crystal",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_crystal_place", 1 ]
+      ],
+      [ [ "spell_scroll_crystal_place", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_blinding_flash",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_blinding_flash", 1 ]
+      ],
+      [ [ "spell_scroll_blinding_flash", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_summon_bike",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_summon_bike", 1 ]
+      ],
+      [ [ "spell_scroll_summon_bike", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_summon_helicoptor",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_airlift", 1 ]
+      ],
+      [ [ "spell_scroll_airlift", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_marinate",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_marinate", 1 ]
+      ],
+      [ [ "spell_scroll_marinate", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_flight",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_flight", 1 ]
+      ],
+      [ [ "spell_scroll_flight", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_beautification",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_beautification", 1 ]
+      ],
+      [ [ "spell_scroll_beautification", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_brain_freeze",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_brain_freeze", 1 ]
+      ],
+      [ [ "spell_scroll_brain_freeze", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_transgate_place",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_transgate_place", 1 ]
+      ],
+      [ [ "spell_scroll_transgate_place", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_baleful_polymorph",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_baleful_polymorph", 1 ]
+      ],
+      [ [ "spell_scroll_baleful_polymorph", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_escape",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "time": "24 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "human_cooked", 1000 ], [ "meat_tainted", 1000 ] ],
+      [ [ "drowning_aura", 1 ] ],
+      [ [ "crystallized_ink", 7 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_magus_escape", 1 ]
+      ],
+      [ [ "spell_scroll_magus_escape", 1 ] ],
+      [ [ "brimstone_chunk", 13 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_create_atomic_light",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 1 } ],
+    "time": "8 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "crystallized_ink", 3 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_create_atomic_light", 1 ]
+      ],
+      [ [ "brimstone_chunk", 3 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_magic_missile",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 1 } ],
+    "time": "8 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "crystallized_ink", 3 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_magic_missile", 1 ]
+      ],
+      [ [ "brimstone_chunk", 3 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_yank",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 1 } ],
+    "time": "8 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "crystallized_ink", 3 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_yank", 1 ]
+      ],
+      [ [ "brimstone_chunk", 3 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "verge_directed_mana",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 8,
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "MANA_INFUSE", "level": 1 }, { "id": "POWER_ALTAR", "level": 1 } ],
+    "time": "8 h",
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "autolearn": false,
+    "book_learn": [ [ "big_book_of_metaknowledge", 1 ], [ "vergists_manual", 1 ] ],
+    "components": [
+      [ [ "enchanted_wood", 10 ] ],
+      [ [ "crystallized_ink", 3 ] ],
+      [
+        [ "book_of_flame", 1 ],
+        [ "book_of_bile", 1 ],
+        [ "book_of_smoke", 1 ],
+        [ "book_of_blood", 1 ],
+        [ "spell_scroll_directed_mana", 1 ]
+      ],
+      [ [ "brimstone_chunk", 3 ] ],
+      [ [ "tear_of_child", 13 ] ],
+      [ [ "mana_pearl", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_wolf",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "BLACK_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_WEG", 1 ], [ "coloring_book", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "black_pen_ink", 100 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_balrog",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 8 ],
+    "difficulty": 8,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "RED_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_PFH", 1 ], [ "coloring_book", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 5 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "red_pen_ink", 100 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_gelatin",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 3 ],
+    "difficulty": 3,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "BLUE_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_IGT", 1 ], [ "coloring_book", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "blue_pen_ink", 100 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_troll",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 3 ],
+    "difficulty": 3,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "GREEN_CIRCLE", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "wayward_memory_WGB", 1 ], [ "coloring_book", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "green_pen_ink", 100 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_dragon",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 10 ],
+    "difficulty": 10,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": false,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_TTOF", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 5 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "dragon_essence", 7 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_artist",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 }, { "id": "MANA_WEAVE", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": false,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_BGTM", 1 ], [ "book_nonf_hard_phil_aesth", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "cleansed_soul", 1 ], [ "white_pen_ink", 7 ] ],
+      [ [ "crystallized_ink", 1 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "crystallized_ink_red", 1 ] ],
+      [ [ "crystallized_ink_blue", 1 ] ],
+      [ [ "crystallized_ink_green", 1 ] ],
+      [ [ "crystallized_ink_black", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_scrying",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_OLAF", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "petrified_eye", 1 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_stop",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_LP", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "sf_watch", 1 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_push",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_OLAF", 1 ], [ "wayward_memory_TAES", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_pull",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_OLAF", 1 ], [ "wayward_memory_TAES", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_destruction_cold",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_WEG", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink_black", 1 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_destruction_acid",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_FOT", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink_green", 1 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_destruction_elec",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_IAP", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink_blue", 1 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_destruction_heat",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_PFH", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink_red", 1 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 5 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_destruction",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_PGTMS", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [
+        [ "crystallized_ink", 1 ],
+        [ "spell_scroll_shadow_realm", 1 ],
+        [ "spell_scroll_wicked_ritual", 1 ],
+        [ "white_pen_ink", 5 ],
+        [ "brimstone_chunk", 7 ]
+      ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_step",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 5,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_NS", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 1 ] ],
+      [ [ "crystallized_ink", 1 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 1 ], [ "brimstone_chunk", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_translocate",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 7 ],
+    "difficulty": 7,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_GSLOL", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 2 ] ],
+      [ [ "crystallized_ink", 2 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 2 ], [ "brimstone_chunk", 5 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "drawing_dislocate",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
+    "skill_used": "spellcraft",
+    "skills_required": [ "spellcraft", 9 ],
+    "difficulty": 9,
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "qualities": [ { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "time": "8 h",
+    "autolearn": true,
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_FT", 1 ] ],
+    "components": [
+      [ [ "mirrored_page", 3 ] ],
+      [ [ "crystallized_ink", 3 ], [ "spell_scroll_shadow_realm", 1 ], [ "spell_scroll_wicked_ritual", 1 ] ],
+      [ [ "white_pen_ink", 3 ], [ "brimstone_chunk", 7 ] ]
+    ]
+  }
+]

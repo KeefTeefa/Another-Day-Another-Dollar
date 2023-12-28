@@ -1,0 +1,408 @@
+[
+{
+  "id": "trap_card_flame",
+  "type": "TOOL",
+  "name": {
+    "str_sp": "exploding trap card"
+  },
+  "category": "traps",
+  "description": "A select few Sorcery cards perfect for weaving a magical trap that will explode when triggered.",
+  "weight": "10 g",
+  "volume": "25 ml",
+  "looks_like": "paper",
+  "price": 10000,
+  "to_hit": -4,
+  "material": [
+    "iron"
+  ],
+  "symbol": ";",
+  "color": "dark_gray",
+  "use_action": {
+    "type": "place_trap",
+    "trap": "tr_trap_card_flame",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You scatter the cards on the %s."
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 1,
+    "cut": 8
+  }
+},
+{
+    "type": "trap",
+    "id": "tr_trap_card_flame",
+    "name": "exploding trap card",
+    "color": "red",
+    "memorial_male": { "ctxt": "memorial_male", "str": "Stepped on a trap card." },
+    "memorial_female": { "ctxt": "memorial_female", "str": "Stepped on a trap card." },
+    "symbol": "_",
+	"drops": [ "trap_card_flame" ],
+    "visibility": 4,
+    "avoidance": 6,
+    "difficulty": 0,
+	"action": "spell",
+    "spell_data": { "id": "spell_trap_card_flame" }
+  },
+  {
+    "id": "spell_trap_card_flame",
+    "type": "SPELL",
+    "name": "Trap Card - Exploding",
+    "description": "Trap card - Exploding",
+    "effect": "attack",
+    "shape": "blast",
+    "valid_targets": [ "ground", "hostile", "ally", "self" ],
+    "flags": [ "IGNITE_FLAMMABLE", "LOUD" ],
+    "max_level": 10,
+    "min_damage": 60,
+    "max_damage": 60,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "damage_type": "heat"
+  },
+  {
+  "id": "trap_card_cold",
+  "type": "TOOL",
+  "name": {
+    "str_sp": "freezing trap card"
+  },
+  "category": "traps",
+  "description": "A select few Sorcery cards perfect for weaving a magical trap that will freeze the one who triggers it in time.",
+  "weight": "10 g",
+  "volume": "25 ml",
+  "looks_like": "paper",
+  "price": 10000,
+  "to_hit": -4,
+  "material": [
+    "iron"
+  ],
+  "symbol": ";",
+  "color": "dark_gray",
+  "use_action": {
+    "type": "place_trap",
+    "trap": "tr_trap_card_cold",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You scatter the cards on the %s."
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 1,
+    "cut": 8
+  }
+},
+{
+    "type": "trap",
+    "id": "tr_trap_card_cold",
+    "name": "freezing trap card",
+    "color": "blue",
+    "memorial_male": { "ctxt": "memorial_male", "str": "Stepped on a trap card." },
+    "memorial_female": { "ctxt": "memorial_female", "str": "Stepped on a trap card." },
+    "symbol": "_",
+	"drops": [ "trap_card_cold" ],
+    "visibility": 4,
+    "avoidance": 6,
+    "difficulty": 0,
+	"action": "spell",
+    "spell_data": { "id": "spell_trap_card_cold" }
+  },
+  {
+    "id": "spell_trap_card_cold",
+    "type": "SPELL",
+    "name": "Trap Card - Freezing",
+    "description": "A blue light touches the earth with cold abandon.",
+    "flags": [ "SILENT" ],
+    "message": "Stale blue light floods the world, and reality stands still.",
+    "valid_targets": [ "self", "ally", "hostile", "ground" ],
+    "effect": "mod_moves",
+    "shape": "blast",
+	"min_damage": -500, 
+	"max_damage": -500
+  },
+  {
+  "id": "trap_card_green",
+  "type": "TOOL",
+  "name": {
+    "str_sp": "wrangling trap card"
+  },
+  "category": "traps",
+  "description": "A select few Sorcery cards perfect for weaving a magical trap that will pull all nearby things into it when activated.",
+  "weight": "10 g",
+  "volume": "25 ml",
+  "looks_like": "paper",
+  "price": 10000,
+  "to_hit": -4,
+  "material": [
+    "iron"
+  ],
+  "symbol": ";",
+  "color": "dark_gray",
+  "use_action": {
+    "type": "place_trap",
+    "trap": "tr_trap_card_green",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You scatter the cards on the %s."
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 1,
+    "cut": 8
+  }
+},
+{
+    "type": "trap",
+    "id": "tr_trap_card_green",
+    "name": "wrangling trap card",
+    "color": "green",
+    "memorial_male": { "ctxt": "memorial_male", "str": "Stepped on a trap card." },
+    "memorial_female": { "ctxt": "memorial_female", "str": "Stepped on a trap card." },
+    "symbol": "_",
+	"drops": [ "trap_card_green" ],
+    "visibility": 4,
+    "avoidance": 6,
+    "difficulty": 0,
+	"action": "spell",
+    "spell_data": { "id": "spell_trap_card_green" }
+  },
+  {
+    "id": "spell_trap_card_green",
+    "type": "SPELL",
+    "name": "Trap Card - Wrangling",
+    "description": "Pulls everything nearby toward the caster.",
+    "valid_targets": [ "item", "ground", "self", "hostile", "ally" ],
+    "effect": "directed_push",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "STAMINA",
+    "difficulty": 3,
+    "max_level": 10,
+    "min_aoe": 10,
+    "max_aoe": 10,
+    "min_damage": -10,
+    "max_damage": -10,
+    "flags": [ "NO_PROJECTILE", "IGNORE_WALLS" ],
+    "sound_description": "a slurp"
+  },
+  {
+  "id": "trap_card_black",
+  "type": "TOOL",
+  "name": {
+    "str_sp": "bidding trap card"
+  },
+  "category": "traps",
+  "description": "A select few Sorcery cards perfect for weaving a magical trap that will create a swarm of undead under your command when triggered.",
+  "weight": "10 g",
+  "volume": "25 ml",
+  "looks_like": "paper",
+  "price": 10000,
+  "to_hit": -4,
+  "material": [
+    "iron"
+  ],
+  "symbol": ";",
+  "color": "dark_gray",
+  "use_action": {
+    "type": "place_trap",
+    "trap": "tr_trap_card_black",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You scatter the cards on the %s."
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 1,
+    "cut": 8
+  }
+},
+{
+    "type": "trap",
+    "id": "tr_trap_card_black",
+    "name": "bidding trap card",
+    "color": "black",
+    "memorial_male": { "ctxt": "memorial_male", "str": "Stepped on a trap card." },
+    "memorial_female": { "ctxt": "memorial_female", "str": "Stepped on a trap card." },
+    "symbol": "_",
+	"drops": [ "trap_card_black" ],
+    "visibility": 4,
+    "avoidance": 6,
+    "difficulty": 0,
+	"action": "spell",
+    "spell_data": { "id": "spell_trap_card_black" }
+  },
+  {
+    "id": "spell_trap_card_black",
+    "type": "SPELL",
+    "name": "Trap Card - Bidding",
+    "description": "An ethereal-looking undead rises from the depths of the earth to fight for you.  You may be able to summon the stronger ones with a higher level in this spell.",
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "max_level": 35,
+    "difficulty": 3,
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_SUMMON_ZOMBIE",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "base_energy_cost": 0,
+    "base_casting_time": 0,
+    "min_duration": 60000,
+    "max_duration": 600000
+  },
+  {
+  "id": "trap_card_white",
+  "type": "TOOL",
+  "name": {
+    "str_sp": "flashing trap card"
+  },
+  "category": "traps",
+  "description": "A select few Sorcery cards perfect for weaving a magical trap that will create blinding flashes of electricity in a huge area when triggered.",
+  "weight": "10 g",
+  "volume": "25 ml",
+  "looks_like": "paper",
+  "price": 10000,
+  "to_hit": -4,
+  "material": [
+    "iron"
+  ],
+  "symbol": ";",
+  "color": "dark_gray",
+  "use_action": {
+    "type": "place_trap",
+    "trap": "tr_trap_card_white",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You scatter the cards on the %s."
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 1,
+    "cut": 8
+  }
+},
+{
+    "type": "trap",
+    "id": "tr_trap_card_white",
+    "name": "flashing trap card",
+    "color": "white",
+    "memorial_male": { "ctxt": "memorial_male", "str": "Stepped on a trap card." },
+    "memorial_female": { "ctxt": "memorial_female", "str": "Stepped on a trap card." },
+    "symbol": "_",
+	"drops": [ "trap_card_white" ],
+    "visibility": 4,
+    "avoidance": 6,
+    "difficulty": 0,
+	"action": "spell",
+    "spell_data": { "id": "spell_trap_card_white" }
+  },
+  {
+    "type": "SPELL",
+    "id": "spell_trap_card_white",
+    "name": "Trap Card - Flashing",
+    "description": "Causes a freezing flashbang at the target. Due to budget constraints, operators will have to pay for the spell out of their own pocket.",
+    "valid_targets": [ "hostile", "ground", "self", "ally" ],
+    "effect": "attack",
+    "effect_str": "blind",
+    "extra_effects": [ { "id": "COLDFLASH_SMOKE" }, { "id": "COLDFLASH_COLD" } ],
+    "shape": "blast",
+    "energy_source": "MANA",
+    "min_aoe": 10,
+    "max_aoe": 10,
+    "difficulty": 6,
+    "max_level": 15,
+	 "field_id": "fd_electricity",
+    "field_chance": 3,
+    "min_duration": 500,
+    "max_duration": 500,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1,
+    "flags": [ "NO_PROJECTILE" ],
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "message": "A freezing light floods the area."
+  },
+  {
+  "id": "trap_card_blank",
+  "type": "TOOL",
+  "name": {
+    "str_sp": "crushing trap card"
+  },
+  "category": "traps",
+  "description": "A select few Sorcery cards perfect for weaving a magical trap that will heavily damage the ground around it upon triggering.",
+  "weight": "10 g",
+  "volume": "25 ml",
+  "looks_like": "paper",
+  "price": 10000,
+  "to_hit": -4,
+  "material": [
+    "iron"
+  ],
+  "symbol": ";",
+  "color": "dark_gray",
+  "use_action": {
+    "type": "place_trap",
+    "trap": "tr_trap_card_blank",
+    "moves": 150,
+    "practice": 2,
+    "done_message": "You scatter the cards on the %s."
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 1,
+    "cut": 8
+  }
+},
+{
+    "type": "trap",
+    "id": "tr_trap_card_blank",
+    "name": "crushing trap card",
+    "color": "dark_gray",
+    "memorial_male": { "ctxt": "memorial_male", "str": "Stepped on a trap card." },
+    "memorial_female": { "ctxt": "memorial_female", "str": "Stepped on a trap card." },
+    "symbol": "_",
+	"drops": [ "trap_card_blank" ],
+    "visibility": 4,
+    "avoidance": 6,
+    "difficulty": 0,
+	"action": "spell",
+    "spell_data": { "id": "spell_trap_card_blank" }
+  },
+  {
+    "type": "SPELL",
+    "id": "spell_trap_card_blank",
+    "name": "Trap Card - Crushing",
+    "description": "",
+    "valid_targets": [ "ground" ],
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "min_aoe": 1,
+    "max_aoe": 1,
+	"min_damage": 50000,
+	"max_damage": 50000,
+    "difficulty": 6,
+    "max_level": 15,
+    "flags": [ "NO_PROJECTILE" ],
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+	"damage_type": "bash"
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "type": "npc",
+    "id": "thug",
+    "name_suffix": "Thug",
+    "class": "NC_THUG",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "bandit",
+    "name_suffix": "Bandit",
+    "class": "NC_SCAVENGER",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "raider",
+    "name_suffix": "Raider",
+    "class": "NC_SOLDIER",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "wandering_thug",
+    "//": "Mission set to null, so they walk around.",
+    "name_suffix": "Thug",
+    "class": "NC_THUG",
+    "attitude": 0,
+    "mission": 0,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "wandering_bandit",
+    "name_suffix": "Bandit",
+    "class": "NC_SCAVENGER",
+    "attitude": 0,
+    "mission": 0,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc",
+    "id": "wandering_raider",
+    "name_suffix": "Raider",
+    "class": "NC_SOLDIER",
+    "attitude": 0,
+    "mission": 0,
+    "chat": "TALK_DONE",
+    "faction": "hells_raiders"
+  },
+   {
+    "type": "npc",
+    "id": "magic_operator",
+    "//": "remnant of the old society.",
+    "name_suffix": "operator",
+    "class": "NC_MAGIC_OPERATOR",
+    "attitude": 1,
+    "mission": 3,
+	"personality": {
+    "aggression": 10,
+	"collector":  0,
+    "bravery":  10,
+    "altruism":  0
+  },
+    "mission_offered": "MISSION_GET_INTEL",
+    "chat": "TALK_MAGIC_OPERATOR",
+    "faction": "forge_lords"
+  },
+  {
+    "type": "npc",
+    "id": "magic_operator2",
+    "//": "remnant of the old society.",
+    "name_suffix": "operator",
+    "class": "NC_MAGIC_OPERATOR2",
+    "attitude": 10,
+    "mission": 0,
+    "mission_offered": "MISSION_GET_INTEL",
+    "chat": "TALK_MAGIC_OPERATOR",
+    "faction": "forge_lords"
+  },
+  {
+    "type": "npc",
+    "id": "magic_operator_waiting",
+    "//": "remnant of the old society.",
+    "name_suffix": "lazy operator",
+    "class": "NC_MAGIC_OPERATOR3",
+    "attitude": 0,
+    "mission": 3,
+	"personality": {
+    "bravery":  10,
+	"aggression": 10,
+	"collector":  0,
+    "altruism":  0
+  },
+    "mission_offered": "MISSION_GET_INTEL_WAITING",
+    "chat": "TALK_MAGIC_OPERATOR_WAITING",
+    "faction": "forge_lords"
+  },
+  {
+    "type": "npc",
+    "id": "magic_operator_PD",
+    "name_suffix": "operator",
+    "class": "NC_MAGIC_OPERATOR_PD",
+    "attitude": 1,
+    "mission": 3,
+	"personality": {
+    "aggression": 10,
+	"collector":  0,
+    "bravery":  10,
+    "altruism":  0
+  },
+    "mission_offered": "MISSION_GET_DETECTOR",
+    "chat": "TALK_MAGIC_OPERATOR",
+    "faction": "forge_lords"
+  },
+  {
+    "type": "npc",
+    "id": "stalker",
+    "name_suffix": "stalker",
+    "class": "NC_STALKER",
+    "attitude": 1,
+    "mission": 3,
+	"personality": {
+    "aggression": 10,
+	"collector":  10,
+    "bravery":  10,
+    "altruism":  0
+  },
+    "mission_offered": "MISSION_GET_INTEL_STALKER",
+    "chat": "TALK_MAGIC_OPERATOR",
+    "faction": "wasteland_scavengers"
+  },
+  {
+    "type": "npc",
+    "id": "cave_dwarf",
+    "//": "Miner.",
+    "name_suffix": "dwarf",
+    "class": "NC_DWARF",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_DWARF_FIRST_MEETING",
+	"mission_offered": "MISSION_GET_GEMS",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "saint",
+    "name_unique": "Saint",
+    "class": "NC_SAINT",
+    "attitude": 1,
+    "mission": 3,
+	"personality": {
+    "aggression": 0,
+	"collector":  10,
+    "bravery":  10,
+    "altruism":  10
+  },
+    "gender": "male",
+	"mission_offered": "MISSION_SAINT",
+    "chat": "TALK_SAINT",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "loyalist",
+    "//": "Foodperson mascot, except if you ask them Foodperson is a real hero and it's them!",
+    "name_unique": "Loyalist",
+    "class": "NC_LOYALIST",
+    "attitude": 10,
+    "mission": 0,
+    "chat": "NC_LOYALIST",
+    "faction": "no_faction"
+  }
+]
