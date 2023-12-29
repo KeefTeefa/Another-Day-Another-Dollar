@@ -781,6 +781,24 @@
 	"TARDIS"
   ]
 },
+{
+    "id": "atm_goblin_spawner",
+    "type": "COMESTIBLE",
+	"comestible_type": "MED",
+	"category": "other",
+    "looks_like": "paper",
+    "name": { "str": "mumblin' swag bag", "str_pl": "mumblin' swag bag" },
+    "description": "A small canvas sack with a dollar sign plastered on the outside. You can hear mumbling as the bag shifts, an annoyed creature attempting to emerge from it's nest.",
+    "weight": "20000 g",
+    "volume": "250 ml",
+    "price": 10000,
+	"spoils_in": "5 s",
+	"rot_spawn": "GROUP_ATM_GOBLIN",
+    "rot_spawn_chance": 100,
+	"flags": [ "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE", "INEDIBLE" ],
+    "symbol": "}",
+    "color": "black"
+  },
   {
     "id": "crystallized_ink",
     "type": "COMESTIBLE",

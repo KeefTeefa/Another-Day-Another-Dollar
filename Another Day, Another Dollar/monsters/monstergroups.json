@@ -424,6 +424,13 @@
   },
   {
     "type": "monstergroup",
+    "name": "GROUP_ATM_GOBLIN",
+    "monsters": [
+	  { "monster": "mon_lazy_lilimp", "weight": 100 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
     "name": "GROUP_PAPER_PRINTER",
     "monsters": [
 	  { "monster": "mon_paper_printer", "weight": 100 }

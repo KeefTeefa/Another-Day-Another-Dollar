@@ -245,7 +245,7 @@
     "id": "familiar_skeleton_dog",
     "type": "TOOL",
 	"looks_like": "mon_dog_skeleton",
-    "name": { "str": "familiar rat" },
+    "name": { "str": "familiar skeleton dog" },
     "description": "The spirit of a deceased dog that could be bound into a spirit chain or similar, letting you call to the spirits of the damned once a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
     "weight": "1000 kg",
     "volume": "500 L",

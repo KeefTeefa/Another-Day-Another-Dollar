@@ -490,7 +490,7 @@
 		{ "group": "familiars", "prob": 3 },
 		{ "item": "cards_magic", "prob": 10, "count": [ 1, 3 ] },
         [ "plastic_golem_token", 1 ],
-        [ "crystallized_mana", 33 ],
+        [ "crystallized_mana", 25 ],
         [ "magic_laptop", 10 ],
         [ "magicvibrator", 25 ],
         [ "antoninianus", 10 ],
@@ -747,11 +747,12 @@
       { "item": "money_bundle_ten", "prob": 60, "count": [ 1, 5 ] },
       { "item": "money_bundle_twenty", "prob": 50, "count": [ 1, 3 ] },
       { "item": "money_bundle_fifty", "prob": 35, "count": [ 1, 2]  },
-	  { "item": "money_bundle_hundred", "prob": 10  },
+	  { "item": "money_bundle_hundred", "prob": 10, "count": [ 0, 2]  },
       { "group": "coins", "prob": 2, "count": [ 1, 10 ] },
 	  { "group": "enchanted_small_items", "prob": 5 },
 	  { "group": "links", "prob": 10 },
 	  { "item": "antoninianus", "prob": 10, "count": [ 1, 2 ] },
+	  { "item": "atm_goblin_spawner", "prob": 1 },
 	  [ "coin_guidebook", 15 ],
 	  [ "spell_scroll_gambit1", 5 ],
       [ "recipe_mil_augs", 5 ],
@@ -819,12 +820,13 @@
   {
     "type": "item_group",
     "id": "benjamins",
-    "subtype": "collection",
+    "subtype": "distribution",
     "entries": [
-      { "item": "money_hundred", "prob": 75, "count": [ 0, 15 ] },
-      { "item": "money_strap_hundred", "prob": 25, "count": [ 0, 3 ] },
-	  { "item": "antoninianus", "prob": 25 },
-      { "item": "money_bundle_hundred", "prob": 20 }
+      { "item": "money_hundred", "prob": 40, "count": [ 0, 100 ] },
+      { "item": "money_strap_hundred", "prob": 34, "count": [ 0, 2 ] },
+	  { "item": "antoninianus", "prob": 15 },
+	  { "item": "atm_goblin_spawner", "prob": 1 },
+      { "item": "money_bundle_hundred", "prob": 10 }
     ]
   },
   {
@@ -847,7 +849,7 @@
       { "item": "chunk_sulfur", "count": [ 0, 9 ], "prob": 50 },
       { "group": "benjamins" },
 	  { "group": "benjamins", "prob": 50 },
-	  { "group": "benjamins" },
+	  { "group": "benjamins", "prob": 25 },
 	  { "group": "links", "prob": 10 },
       { "group": "enchanted_misc", "prob": 1 },
       { "group": "trash", "count": [ 0, 10 ], "prob": 75 },
@@ -860,6 +862,36 @@
       { "item": "denarius", "prob": 50, "count": [ 0, 2 ] }
     ]
   },
+  {
+    "type": "item_group",
+    "id": "lazylilimpdrops",
+    "subtype": "collection",
+    "entries": [
+      { "item": "swag_bag" },
+      { "item": "brimstone_sliver", "count": [ 0, 3 ], "prob": 25 },
+      { "item": "brimstone_chunk", "prob": 15 },
+      { "item": "chunk_sulfur", "count": [ 0, 9 ], "prob": 100 },
+	  { "group": "benjamins", "prob": 50 },
+	  { "group": "benjamins", "prob": 75 },
+      { "group": "trash", "count": [ 0, 5 ], "prob": 100 },
+	  { "group": "coins", "count": [ 0, 20 ], "prob": 100 },
+      { "item": "decaying_soul", "prob": 5 },
+	  { "item": "fp_loyalty_card" },
+	  { "item": "decaying_soul_pill", "prob": 25 },
+      { "item": "antoninianus", "prob": 5 },
+      { "item": "denarius", "prob": 25, "count": [ 0, 2 ] }
+    ]
+  },
+  {
+    "id": "SUS_rivtech_misc",
+    "type": "item_group",
+	"copy-from": "SUS_rivtech_misc",
+    "//": "This group is for rare spawns of rivetech matched sets.",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "enchanted_combat_items", "prob": 15 }
+    ]
+  }
   {
     "type": "item_group",
     "subtype": "collection",
@@ -1848,7 +1880,7 @@
     "copy-from": "enchanted_small_items",
     "extend": {
       "items": [
-        [ "crystallized_mana", 65 ],
+        [ "crystallized_mana", 50 ],
 		{ "item": "money_hundred", "prob": 33, "count": [ 10, 50 ] },
 		[ "ferrystone", 15 ],
 		[ "coffee_dispo", 10 ],
@@ -1956,7 +1988,7 @@
     "extend": {
       "items": [
         { "item": "crazed_note", "prob": 5, "count-min": 1, "count-max": 1 },
-        { "item": "crystallized_mana", "prob": 10, "count-min": 1, "count-max": 2 },
+        { "item": "crystallized_mana", "prob": 2 },
         { "item": "crystallized_heroin", "prob": 5, "count-min": 1, "count-max": 5 },
         { "item": "crystallized_meth_low", "prob": 5, "count-min": 1, "count-max": 5 },
         { "item": "crystallized_meth_pure", "prob": 5 }

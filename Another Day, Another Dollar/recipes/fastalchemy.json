@@ -1395,7 +1395,7 @@
     "components": [
       [ [ "pilot_light", 1 ] ],
       [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
-      [ [ "crystal_mana", 10 ], [ "brimstone_sliver", 13 ] ],
+      [ [ "crystal_mana", 20 ], [ "brimstone_sliver", 13 ] ],
       [ [ "incendiary", 50 ] ]
     ]
   },

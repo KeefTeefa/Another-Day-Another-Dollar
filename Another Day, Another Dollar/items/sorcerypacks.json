@@ -26,11 +26,12 @@
 	  "pack_white", 
 	  "cards_magic", 
 	  "trap_card_blank",
+	  "atm_goblin_spawner",
 		  "trap_card_flame", 
 		  "trap_card_white", 
 		  "trap_card_black", 
 		  "trap_card_cold",
-		  "trap_card_green" 
+		  "trap_card_green"		  
 		  ],  
       "max_contains_weight": "211 g",
       "moves": 100

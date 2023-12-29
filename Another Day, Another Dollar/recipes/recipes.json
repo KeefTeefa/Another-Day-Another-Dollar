@@ -3903,7 +3903,7 @@
     "components": [
       [ [ "pilot_light", 1 ] ],
       [ [ "superglue", 1 ], [ "duct_tape", 75 ], [ "cordage", 1, "LIST" ] ],
-      [ [ "crystal_mana", 333 ], [ "brimstone_sliver", 13 ], [ "spell_scroll_love", 1 ] ],
+      [ [ "crystal_mana", 20 ], [ "brimstone_sliver", 13 ], [ "spell_scroll_love", 1 ] ],
       [ [ "incendiary", 50 ] ]
     ]
   },
@@ -4318,7 +4318,7 @@
     "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_NS", 1 ] ],
     "components": [
       [ [ "paper", 250 ] ],
-      [ [ "parabolan_felt_patch", 5 ], [ "mirror", 7 ], [ "spell_scroll_beautification", 1 ], [ "forge_flyer", 1 ] ],
+      [ [ "parabolan_felt_patch", 5 ], [ "mirror", 7 ], [ "spell_scroll_beautification", 1 ], [ "forge_flyer", 3 ] ],
       [
         [ "crystallized_ink", 1 ],
         [ "spell_scroll_shadow_realm", 1 ],
