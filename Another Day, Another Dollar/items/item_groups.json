@@ -672,6 +672,14 @@
     }
   },
   {
+    "id": "SUS_rivtech_misc",
+    "type": "item_group",
+	"copy-from": "SUS_rivtech_misc",
+    "//": "This group is for rare spawns of rivetech matched sets.",
+    "subtype": "distribution",
+	"extend": { "entries": [ { "group": "enchanted_combat_items", "prob": 15 } ] }
+  },
+  {
     "type": "item_group",
     "id": "tools_science",
     "copy-from": "tools_science",
@@ -882,16 +890,6 @@
       { "item": "denarius", "prob": 25, "count": [ 0, 2 ] }
     ]
   },
-  {
-    "id": "SUS_rivtech_misc",
-    "type": "item_group",
-	"copy-from": "SUS_rivtech_misc",
-    "//": "This group is for rare spawns of rivetech matched sets.",
-    "subtype": "distribution",
-    "entries": [
-      { "group": "enchanted_combat_items", "prob": 15 }
-    ]
-  }
   {
     "type": "item_group",
     "subtype": "collection",

@@ -1283,9 +1283,9 @@
 	"field_id": "fd_swamp_gas",
     "field_chance": 3,
     "min_field_intensity": 1,
-    "max_field_intensity": 1
+    "max_field_intensity": 1,
     "energy_source": "HP",
-	"damage_type": "cut",
+	"damage_type": "cut"
   },
   {
     "id": "mon_lazy_lilimp",

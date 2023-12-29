@@ -135,7 +135,7 @@
         "=": "f_vent_pipe",
         "C": "f_chair",
         "T": "f_table",
-        "A": "f_stone_altar",
+        "A": "f_altar",
         "s": "f_sandbag_half",
         "B": "f_floor_mattress",
         "$": "f_safe_l"
@@ -224,7 +224,7 @@
         "C": "f_chair",
         "T": "f_table",
         "c": "f_counter",
-		"?": "f_stone_altar",
+		"?": "f_altar",
         "r": "f_rubble_rock",
         "l": "f_stool",
         "p": [ "f_indoor_plant", "f_null" ],
