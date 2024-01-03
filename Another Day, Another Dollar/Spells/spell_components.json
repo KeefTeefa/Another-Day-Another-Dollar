@@ -10,6 +10,11 @@
     "components": [ [ [ "pact_of_flame", 1 ], [ "pact_of_bile", 1 ], [ "pact_of_smoke", 1 ], [ "pact_of_blood", 1 ] ] ]
   },
   {
+    "id": "spell_components_possess",
+    "type": "requirement",
+    "components": [ [ [ "ring_signet", 1 ], [ "money_strap_hundred", 1 ], [ "skull_human", 1 ], [ "onyx_silver_ring", 1 ], [ "ring_engagement", 1 ], [ "ring_wedding", 1 ], [ "ring_purity", 1 ], [ "bend_will_item", 1 ], [ "beautification_aura", 1 ], [ "mundane_aura", 1 ], [ "bodypillow", 1 ], [ "switchblade", 1 ] ] ]
+  },
+  {
     "id": "spell_components_summon_dragon",
     "type": "requirement",
     "components": [ [ [ "summon_dragon_item", 1 ] ] ]
@@ -214,7 +219,7 @@
   {
     "id": "spell_components_rabbits_foot",
     "type": "requirement",
-    "components": [ [ [ "mercury", 15 ], [ "cufflinks_intricate", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "mercury", 30 ], [ "cufflinks_intricate", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
   },
   {
     "id": "spell_components_conjure_crystal",

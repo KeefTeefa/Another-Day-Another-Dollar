@@ -115,9 +115,9 @@
     "effect": "dash",
     "shape": "line",
     "valid_targets": [ "ground" ],
-    "flags": [ "SOMATIC", "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
+    "flags": [ "SOMATIC", "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
     "min_range": 1,
-    "max_range": 3,
+    "max_range": 1,
     "min_aoe": 0,
     "max_aoe": 0,
     "max_level": 10,
@@ -134,9 +134,9 @@
     "effect": "dash",
     "shape": "line",
     "valid_targets": [ "ground" ],
-    "flags": [ "SOMATIC", "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
-    "min_range": 3,
-    "max_range": 6,
+    "flags": [ "SOMATIC", "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_TARGET" ],
+    "min_range": 1,
+    "max_range": 5,
     "min_aoe": 0,
     "max_aoe": 0,
     "max_level": 10,
@@ -155,7 +155,7 @@
     "id": "rabbits_foot_aura",
     "type": "ARMOR",
     "name": { "str": "rabbit's foot" },
-    "description": "You feel an insatiable need to move.",
+    "description": "You feel an insatiable need to move, rabbit's feet tapping away egregiously.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -168,7 +168,7 @@
     "relic_data": {
       "passive_effects": [
         { "id": "rabbits_foot_enchantment" },
-        { "has": "WORN", "condition": "ALWAYS", "mutations": [ "GOODCARDIO2", "FLEET2" ] }
+        { "has": "WORN", "condition": "ALWAYS", "mutations": [ "GOODCARDIO2", "FLEET2", "THIRST2", "RABBIT_FEET" ] }
       ]
     }
   },
@@ -181,8 +181,8 @@
   {
     "id": "rabbits_foot_aura2",
     "type": "ARMOR",
-    "name": { "str": "rabbit's foot" },
-    "description": "You feel an insatiable need to move.",
+    "name": { "str": "rabbit's beating paw" },
+    "description": "You feel an insatiable need to move, your heart beating almost as rapidly as your paws.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -195,7 +195,7 @@
     "relic_data": {
       "passive_effects": [
         { "id": "rabbits_foot_enchantment2" },
-        { "has": "WORN", "condition": "ALWAYS", "mutations": [ "GOODCARDIO2", "FLEET2" ] }
+        { "has": "WORN", "condition": "ALWAYS", "mutations": [ "GOODCARDIO2", "FLEET2", "THIRST2", "RABBIT_FEET", "RABBIT_FUR" ] }
       ]
     }
   },
@@ -745,8 +745,8 @@
     "type": "COMESTIBLE",
     "comestible_type": "FOOD",
     "category": "weapons",
-    "name": { "str": "manifested manipulation" },
-    "description": "A charm made of pure manipulation. Activate it to stir hearts and minds.",
+    "name": { "str": "friendship" },
+    "description": "A charm made of pure friendship. Activate it to stir hearts and minds.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -1208,8 +1208,8 @@
   {
     "id": "mundane_aura",
     "type": "ARMOR",
-    "name": { "str": "Mundane Resistance" },
-    "description": "You are magically more resistant to bashing, stabbing and cutting.",
+    "name": { "str": "Love" },
+    "description": "You can feel love making you more resistant to everything in this world. Cuts, scrapes, bruises, none of them matter as much.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -1391,7 +1391,7 @@
   {
     "id": "preventdeath_token_aura",
     "type": "ARMOR",
-    "name": { "str": "Rising Force" },
+    "name": { "str": "raising force" },
     "description": "A force you can feel wrapped around your very essence that seems to keep it from touching the afterlife.",
     "weight": "1 g",
     "volume": "1 ml",

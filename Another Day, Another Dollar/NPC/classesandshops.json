@@ -2,8 +2,8 @@
   {
     "type": "npc_class",
     "id": "NC_MAGIC_OPERATOR",
-    "name": "Magic Operator",
-    "job_description": "I'm... or was, an operator. And a damn good one at that.",
+    "name": "Professional",
+    "job_description": "I'm a professional, and a damn good one at that.",
     "worn_override": "NC_MAGIC_OPERATOR_worn",
     "carry_override": "NC_MAGIC_OPERATOR_carry",
 	"weapon_override": "NC_MAGIC_OPERATOR_weapon",
@@ -104,7 +104,7 @@
   {
     "type": "npc_class",
     "id": "NC_MAGIC_OPERATOR2",
-    "name": "Magic Operator",
+    "name": "Professional",
     "job_description": "I'm... or was, an operator. And a damn good one at that.",
     "worn_override": "NC_MAGIC_OPERATOR_worn",
     "carry_override": "NC_MAGIC_OPERATOR2_carry",
@@ -206,7 +206,7 @@
   {
     "type": "npc_class",
     "id": "NC_MAGIC_OPERATOR3",
-    "name": "Magic Operator",
+    "name": "Professional",
     "common": false,
     "job_description": "I'm... or was, an operator. The best of the best.",
     "worn_override": "NC_MAGIC_OPERATOR_worn",

@@ -114,7 +114,7 @@
   "type": "TOOL",
   "category": "weapons",
   "name": {
-    "str_sp": "blacksteel katana"
+    "str_sp": "blacksteel uchigatana"
   },
   "description": "A long, thin sword made of black metal with a mana pearl stuck in it's hilt. The blade is made of blacksteel, a substance that's nearly impossible to find or create. It adores death above all else, draining it from anyone it touches.",
   "weight": "1313 g",
@@ -1948,5 +1948,280 @@
     "difficulty": 2,
 	"damage_type": "heat",
     "sound_description": "a fwoosh"
+  },
+  {
+    "type": "SPELL",
+    "id": "kill_yokai_dragon",
+    "name": "Yokai Bane",
+    "description": "Heavily donks the yokai",
+    "effect": "attack",
+    "shape": "blast",
+	"effect_str": "stunned",
+    "difficulty": 7,
+    "min_damage": 250,
+    "max_damage": 250,
+	"min_duration": 1500, 
+	"max_duration": 1500,
+	"extra_effects": [ { "id": "wakizashi_oni_bionic", "hit_self": true } ],
+    "base_energy_cost": 0,
+    "max_level": 10,
+    "energy_source": "MANA",
+    "base_casting_time": 0,
+	"min_range": 1, 
+	"max_range": 1, 
+    "valid_targets": [ "hostile" ],
+    "targeted_monster_ids": [ 
+	"mon_oni_dragon",
+	"mon_oni_demon"
+	],
+    "flags": [ "LOUD" ]
+  },
+  {
+    "id": "wakizashi_oni_bionic",
+    "type": "SPELL",
+    "name": "Wakizashi Bionic Drain",
+    "description": "Using the wakizashi restores INSANE amounts of bionic power.",
+    "valid_targets": [ "self" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "NO_FAIL" ],
+    "effect": "recover_energy",
+    "effect_str": "BIONIC",
+    "shape": "blast",
+    "energy_source": "BIONIC",
+    "difficulty": 1,
+    "max_level": 10,
+    "base_casting_time": 500,
+    "base_energy_cost": 0,
+    "damage_increment": 5,
+    "min_damage": 1000,
+    "max_damage": 1000
+  },
+  {
+  "id": "wakizashi_oni",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str_sp": "self-destructive wakizashi"
+  },
+  "description": "A short, high-tech sword with a hilt that resembles a serpent's tail wrapped around your wrist. The yokai housed within is obviously desparate for life, willing to do anything for a second chance. A thin vein of electric blood still runs the length of the blade, faintly pulsing with a spark that is dying to be rekindled.",
+  "weight": "925 g",
+  "volume": "1500 ml",
+  "longest_side": "70 cm",
+  "symbol": "/",
+  "color": "light_gray",
+  "looks_like": "wakizashi",
+  "price_postapoc": 13000,
+  "charges_per_use": 1, 
+  "use_action": [
+  "ROBOTCONTROL"
+  ],
+  "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "dragon_blood": 33 }, "watertight": true } ],
+  "material": [
+    {
+      "type": "leather",
+      "portion": 1.1
+    },
+    {
+      "type": "mc_steel",
+      "portion": 64
+    }
+  ],
+  "repairs_with": [
+    "mc_steel"
+  ],
+  "flags": [
+    "CONDUCTIVE",
+    "SHEATH_SWORD",
+    "FRAGILE_MELEE"
+  ],
+  "techniques": [
+    "RAPID",
+    "WBLOCK_2"
+  ],
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "kill_yokai_dragon" } ]
+        }
+      ]
+    },
+  "to_hit": {
+    "grip": "weapon",
+    "length": "short",
+    "surface": "line",
+    "balance": "good"
+  },
+  "qualities": [
+    [
+      "CUT",
+      1
+    ],
+    [
+      "BUTCHER",
+      14
+    ]
+  ],
+  "weapon_category": [
+    "MEDIUM_SWORDS"
+  ],
+  "melee_damage": {
+    "bash": 2,
+    "cut": 32
+  },
+  "copy-from": "mc_wakizashi",
+  "replace_materials": {
+    "mc_steel": "aluminum",
+    "leather": "nylon"
   }
+},
+{
+    "id": "summon_zomborg",
+    "type": "SPELL",
+    "name": "Cause Zomborg",
+    "description": "A zomborg pulls itself free from the earth.",
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "max_level": 25,
+    "difficulty": 1,
+	"min_aoe": 1, 
+	"max_aoe": 1, 
+    "min_duration": 3000,
+    "max_duration": 3000,
+    "base_energy_cost": 0,
+    "flags": [ "RANDOM_TARGET", "SILENT", "NO_EXPLOSION_SFX" ],
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "mon_troll"
+  },
+{
+    "type": "SPELL",
+    "id": "tame_dragon",
+    "name": "Dragon Mastery",
+    "description": "Tames dragons at Low HP",
+    "effect": "charm_monster",
+    "shape": "blast",
+    "difficulty": 7,
+    "min_damage": 50,
+    "max_damage": 50,
+    "base_energy_cost": 0,
+    "max_level": 10,
+    "energy_source": "MANA",
+    "base_casting_time": 100,
+	"min_range": 10, 
+	"max_range": 10, 
+	"min_duration": 8640000, 
+	"max_duration": 8640000, 
+    "valid_targets": [ "hostile", "ally" ],
+    "targeted_monster_species": [ 
+	"DRAGON"
+	],
+    "flags": [ "LOUD" ]
+  },
+{
+    "id": "dishonored_blade_attack",
+    "type": "SPELL",
+    "name": "Yokai Roar",
+    "description": "The ",
+    "effect": "attack",
+    "shape": "cone",
+    "flags": [ "NO_LEGS" ],
+    "valid_targets": [ "hostile" ],
+	"extra_effects": [ { "id": "summon_zomborg", "hit_self": true } ],
+    "max_level": 10,
+    "min_damage": 10,
+    "max_damage": 10,
+    "base_casting_time": 0,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "STAMINA",
+    "difficulty": 2,
+	"damage_type": "electric",
+    "sound_description": "a zap"
+  },
+{
+  "id": "dishonored_blade",
+  "type": "TOOL",
+  "category": "weapons",
+  "name": {
+    "str_sp": "dishonored dragon"
+  },
+  "description": "A huge, dark sword with a cybernetic dragon wrapped along it, skewered completely. The dragon still angrily roars electric shocks, kept alive only by the necromantic magics in the twice-forged blade, both of which are feeding their own power off it's turbo-charged heart. It has twin mastery of both dragons and robots.",
+  "weight": "1313 g",
+  "volume": "2 L",
+  "longest_side": "90 cm",
+  "symbol": "/",
+  "ascii_picture": "katana",
+  "color": "light_gray",
+  "looks_like": "katana",
+  "price": 98000,
+  "price_postapoc": 450000,
+  "charges_per_use": 1, 
+  "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "dragon_blood": 1 }, "watertight": true } ],
+  "use_action": [
+  { "type": "cast_spell", "spell_id": "tame_dragon", "no_fail": true, "level": 1, "need_wielding": true },
+	"ROBOTCONTROL"
+  ],
+  "material": [
+    {
+      "type": "leather",
+      "portion": 1.1
+    },
+    {
+      "type": "mc_steel",
+      "portion": 96
+    }
+  ],
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "dishonored_blade_attack" } ]
+        }
+      ]
+    },
+  "repairs_with": [
+    "mc_steel"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "CONDUCTIVE",
+    "SHEATH_SWORD"
+  ],
+  "techniques": [
+    "RAPID",
+    "WBLOCK_2"
+  ],
+  "to_hit": {
+    "grip": "weapon",
+    "length": "long",
+    "surface": "line",
+    "balance": "good"
+  },
+  "qualities": [
+    [
+      "CUT",
+      1
+    ],
+    [
+      "BUTCHER",
+      9
+    ]
+  ],
+  "weapon_category": [
+    "LONG_SWORDS"
+  ],
+  "melee_damage": {
+    "bash": 5,
+    "cut": 33
+  },
+  "copy-from": "mc_katana",
+  "replace_materials": {
+    "mc_steel": "steel"
+  }
+}
 ]

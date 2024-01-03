@@ -404,10 +404,7 @@
     "proficiencies": [ "prof_intro_chemistry", "prof_intro_biology" ],
     "items": {
       "both": {
-        "items": [ "dress_shirt", "pants", "money_hundred", "socks", "boots", "all_purpose_watch" ],
-        "entries": [
-          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "chemistry_set" }
-        ]
+        "items": [ "dress_shirt", "pants", "money_hundred", "socks", "boots", "all_purpose_watch", "chemistry_set" ]
       },
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
@@ -637,8 +634,8 @@
   {
     "type": "profession",
     "id": "bio_dog",
-    "name": "Bio Dog",
-    "description": "You were a Bio Dog: The kind of elite soldier who only fought for the highest bidder. You spent most of your time puppyguarding some corpo rat or another. Now that the plague hit? You're taking the chopper and running.",
+    "name": "Professional",
+    "description": "You were a true professional: The kind of elite soldier who only fought for the highest bidder. You spent most of your time puppyguarding some corpo rat or another. Now that the plague hit? You're taking the chopper and running.",
     "points": 8,
 	"traits": [ "AIRLIFT_SPELL", "ANTIPROJECTILE_SPELL", "CANINE_EARS", "DRAINNERVOUSSYSTEM_SPELL" ],
     "proficiencies": [ "prof_gunsmithing_basic", "prof_helicopter_pilot", "prof_disarming", "prof_spotting" ],
@@ -647,6 +644,7 @@
       { "level": 6, "name": "gun" },
       { "level": 6, "name": "smg" },
       { "level": 6, "name": "rifle" },
+	  { "level": 1, "name": "spellcraft" },
       { "level": 4, "name": "cutting" },
       { "level": 4, "name": "melee" },
       { "level": 3, "name": "dodge" },
@@ -1111,7 +1109,7 @@
     "name": "Die Another Day",
     "description": "A long time ago, you starred in the greatest movie of all time, you think. It's all been downhill from there, and now the TV isn't working...",
     "points": 1,
-	"traits": [ "HAS_NEMESIS", "JUMP_SPELL" ],
+	"traits": [ "JUMP_SPELL" ],
     "skills": [
       { "level": 3, "name": "speech" },
 	  { "level": 2, "name": "pistol" },

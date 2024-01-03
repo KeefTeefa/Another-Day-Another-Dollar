@@ -2,29 +2,6 @@
 {
     "type": "recipe",
     "activity_level": "NO_EXERCISE", 
-	"skills_required": [ "speech", 3 ],
-    "result": "money_hundred",
-	"byproducts": [ [ "money_hundred", 9 ] ],
-	"id_suffix": "made via money",
-    "category": "CC_ANOTHERDAY",
-    "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
-    "skill_used": "speech", 
-    "difficulty": 1,
-    "time": "1 s",
-    "autolearn": true,
-	"using": [
-    [
-      "surface_heat",
-      10
-    ]
-  ],
-	"qualities": [ { "id": "CUT", "level": 1 } ],
-    "book_learn": [ [ "coin_guidebook", 1 ], [ "occult_economicon", 1 ] ],
-    "components": [ [ [ "coin_penny", 100 ] ], [ [ "blood", 1 ] ] ]
-  },
-{
-    "type": "recipe",
-    "activity_level": "NO_EXERCISE", 
 	"skills_required": [ "spellcraft", 1 ],
     "result": "penny_roll",
 	"id_suffix": "made via money",
@@ -49,7 +26,7 @@
     "subcategory": "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
     "skill_used": "spellcraft", 
     "difficulty": 6,
-    "time": "30 s",
+    "time": "1 h",
     "autolearn": false,
 	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 } ],
 	"byproducts": [ [ "spell_scroll_translocate_self_no_hands", 1 ] ],
@@ -5005,6 +4982,9 @@
     [
       "textbook_weapeast",
       8
+    ],
+	[
+      "deathbeforedishonor"
     ]
   ],
   "proficiencies": [
@@ -5061,6 +5041,10 @@
       [
         "brimstone_chunk",
         6
+      ],
+	  [
+        "wakizashi_oni",
+        1
       ]
 	],
     [

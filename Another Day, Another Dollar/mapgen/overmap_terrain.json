@@ -1,5 +1,26 @@
 [
 {
+    "type": "overmap_special",
+    "id": "Half-Sunken Cabin",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "witch_cabin_lake_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "cabin_lake_roof_north" }
+    ],
+    "locations": [ "lake_surface" ],
+    "city_sizes": [ 1, 20 ],
+    "occurrences": [ 1, 3 ],
+    "flags": [ "CLASSIC", "LAKE", "MAN_MADE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "witch_cabin_lake" ],
+    "name": "half-sunken hut",
+    "sym": "C",
+    "color": "i_green",
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
+  },
+{
     "type": "overmap_terrain",
     "id": [ "s_library_atraxa" ],
     "name": "Atraxic Bibliotheque",

@@ -42,6 +42,19 @@
   },
   {
     "type": "mutation",
+    "id": "POSSESSION_SPELL",
+    "name": { "str": "Spell: Amicable Split" },
+    "points": 1,
+    "description": "You learn the associated spell. IF YOU SELECT THE MUTATION YOU WILL HAVE THE SPELL FOREVER. IF YOU DE-SELECT THE TRAIT YOU WILL STILL HAVE THE SPELL.",
+    "starting_trait": true,
+    "purifiable": false,
+    "player_display": false,
+    "valid": false,
+    "category": [ "HUMAN" ],
+    "spells_learned": [ [ "possess", 5 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "SUMMONHOVERBOARD_SPELL",
     "name": { "str": "Spell: Flight" },
     "points": 2,
@@ -195,7 +208,7 @@
     "player_display": false,
     "valid": false,
     "category": [ "HUMAN" ],
-    "spells_learned": [ [ "subtle_self", 5 ] ]
+    "spells_learned": [ [ "subtle_metamagic", 5 ] ]
   },
   {
     "type": "mutation",
@@ -208,7 +221,7 @@
     "player_display": false,
     "valid": false,
     "category": [ "HUMAN" ],
-    "spells_learned": [ [ "condensed_self", 5 ] ]
+    "spells_learned": [ [ "condensed_metamagic", 5 ] ]
   },
   {
     "type": "mutation",
@@ -221,7 +234,7 @@
     "player_display": false,
     "valid": false,
     "category": [ "HUMAN" ],
-    "spells_learned": [ [ "silent_self", 5 ] ]
+    "spells_learned": [ [ "silent_metamagic", 5 ] ]
   },
   {
     "type": "mutation",

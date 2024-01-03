@@ -19,7 +19,7 @@
       { "drop": "scrap", "base_num": [ 0, 1 ], "scale_num": [ 0.3, 1.2 ], "max": 7, "type": "flesh" },
       { "drop": "crystallized_mana", "base_num": [ 0, 1 ], "scale_num": [ 0.3, 1.2 ], "max": 3, "type": "flesh" },
       { "drop": "cleansed_soul", "base_num": [ 0, 0 ], "scale_num": [ 0.1, 0.3 ], "max": 1, "type": "flesh" },
-      { "drop": "twisted_soul", "base_num": [ 1, 1 ], "scale_num": [ 0.1, 0.3 ], "max": 7, "type": "flesh" }
+      { "drop": "twisted_soul", "base_num": [ 1, 1 ], "scale_num": [ 0.1, 0.3 ], "max": 5, "type": "flesh" }
     ]
   },
   {
@@ -31,6 +31,19 @@
       { "drop": "scrap", "base_num": [ 0, 1 ], "scale_num": [ 0.3, 1.2 ], "max": 7, "type": "flesh" },
       { "drop": "self_organizing_paper", "base_num": [ 0, 1 ], "scale_num": [ 0.3, 1.2 ], "max": 5, "type": "flesh" },
       { "drop": "twisted_soul", "base_num": [ 1, 1 ], "scale_num": [ 0.1, 0.3 ], "max": 1, "type": "flesh" }
+    ]
+  },
+  {
+    "id": "dragon_oni",
+    "type": "harvest",
+    "entries": [
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "dragon_blood", "type": "blood", "mass_ratio": 0.1 },
+	  { "drop": "wakizashi_oni", "type": "bionic", "scale_num": [ 0, 1 ], "max": 1 },
+      { "drop": "meat_dragon", "type": "flesh", "mass_ratio": 0.18 },
+      { "drop": "dragon_black_scale", "type": "skin", "mass_ratio": 0.05 },
+      { "drop": "black_dragon_hide_raw", "type": "skin", "mass_ratio": 0.1 },
+      { "drop": "bone", "type": "bone", "mass_ratio": 0.1 }
     ]
   }
 ]

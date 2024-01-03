@@ -14,71 +14,11 @@
     "color": "red"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_gold_spawn",
-	"eoc_type": "RECURRING",
-	"recurrence": "1 d",
-	"condition": {
-          "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "onyx_silver_ring" },
-			{ "u_is_wearing": "aura_feral" },
-			{ "u_is_wearing": "foodperson_mask" },
-			{ "u_is_wearing": "foodperson_mask_on" },
-            { "u_is_wearing": "pact_of_blood" },
-            { "u_is_wearing": "pact_of_smoke" },
-            { "u_is_wearing": "pact_of_bile" },
-            { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" }
-          ]
-        },
-	"false_effect": [ { "run_eocs": [ { "id": "eoc_silver_spawn" } ] } ],
-    "effect": [ 
-    { "u_spawn_item": "gold_small", "count": 10 }, { "u_message": "Another day, another dollar.", "type": "warning" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_silver_spawn",
-	"condition": {
-          "or": [
-            { "u_is_wearing": "holy_symbol" },
-            { "u_is_wearing": "holy_symbol_wood" },
-			{ "u_is_wearing": "saints_symbol" },
-            { "u_is_wearing": "spirit_armor" },
-			{ "u_has_trait": "SPIRITUAL" },
-            { "u_is_wearing": "bead_bracelet" },
-            { "u_is_wearing": "bead_necklace" },
-            { "u_is_wearing": "relic_small" }
-          ]
-        },
-	"false_effect": [ { "run_eocs": [ { "id": "eoc_crystallized_spawn" } ] } ],	
-    "effect": [ 
-    { "u_spawn_item": "silver_small", "count": 20 }, { "u_message": "Another day, another dollar.", "type": "warning" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_crystallized_spawn",
-	"condition": {
-          "or": [
-            { "u_is_wearing": "ring_signet" },
-			{ "u_is_wearing": "wizard_hat" },
-			{ "u_has_wielded_with_flag": "MAGIC_FOCUS" },
-            { "u_has_effect": "mana_fatigue" },
-			{ "u_has_trait": "THRESH_MANA" }
-          ]
-        },
-	"false_effect": [ { "u_spawn_item": "money_hundred", "count": 1 }, { "u_message": "Another day, another dollar.", "type": "warning" } ],	
-    "effect": [ 
-    { "u_spawn_item": "crystallized_mana", "count": 10 }, { "u_message": "Another day, another dollar.", "type": "warning" } ]
-  },
-  {
     "type": "recipe_category",
     "id": "CC_ANOTHERDAY",
     "recipe_subcategories": [
 	  "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+	  "CSC_ANOTHERDAY_PETTYCASH",
 	  "CSC_ANOTHERDAY_NOTHINGEVERCHANGES",
 	  "CSC_ANOTHERDAY_ETHEREALWARDROBE",
 	  "CSC_ANOTHERDAY_SPIRITFORGERY",
@@ -404,6 +344,9 @@
       {
         "id": "panacea",
         "duration": "5 m"
+     },
+     {
+        "id": "coin_healing", "duration": "5 m"
      } ],
     "vitamins": [
       [
@@ -438,6 +381,9 @@
       {
         "id": "panacea",
         "duration": "10 m"
+     },
+     {
+        "id": "coin_healing", "duration": "10 m" 
      } ],
     "vitamins": [
       [
@@ -472,6 +418,9 @@
       {
         "id": "panacea",
         "duration": "25 m"
+     },
+     {
+        "id": "coin_healing", "duration": "25 m" 
      } ],
     "vitamins": [
       [
@@ -501,6 +450,10 @@
 	"use_action": {
     "type": "consume_drug",
     "activation_message": "You flip the coin and catch a wink from JFK as it disappears.",
+	"effects": [
+     {
+        "id": "coin_healing", "duration": "30 m" 
+     } ],
     "vitamins": [
       [
         "mutagen_chelator",
@@ -531,6 +484,9 @@
       {
         "id": "panacea",
         "duration": "100 m"
+     },
+     {
+        "id": "coin_healing", "duration": "60 m"
      } ],
     "vitamins": [
       [
@@ -565,6 +521,13 @@
 	"use_action": {
     "type": "consume_drug",
     "activation_message": "You flip the coin and amazingly catch it in your mouth.",
+	"effects": [
+      {
+        "id": "cureall"
+     },
+     {
+        "id": "coin_healing", "duration": "60 m" 
+     }  ],
     "vitamins": [
       [
         "mutagen_human",
@@ -595,7 +558,13 @@
 	"effects": [
       {
         "id": "cureall"
-     } ],
+     },
+     {
+        "id": "coin_healing", "duration": "1 d" 
+     },
+     {
+        "id": "panacea", "duration": "1 d" 
+     }   ],
     "vitamins": [
       [
         "mutagen",
@@ -617,7 +586,7 @@
     "str": "onyx and silver ring"
   },
   "description": "A silver ring with an onyx mounted on top of it. There's a sinister sense to it.",
-  "weight": "10 mg",
+  "weight": "13 mg",
   "volume": "1 ml",
   "price": 10000,
   "price_postapoc": 25,
@@ -672,7 +641,7 @@
     "type": "practice",
     "activity_level": "NO_EXERCISE",
     "category": "CC_PRACTICE",
-    "subcategory": "CSC_PRACTICE_COMBAT",
+    "subcategory": "CSC_PRACTICE_SOCIAL",
     "name": "enchanting (beginner)",
     "description": "You muse on the nature of magic and it's intricate connection to all things.",
     "skill_used": "spellcraft",
@@ -2198,11 +2167,20 @@
     "base_energy_cost": 0
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_cleanse_soul",
-    "effect": { "u_cast_spell": { "id": "recover_fatigue_cleanse" } },
-    "false_effect": { "u_cast_spell": { "id": "induce_vomit", "hit_self": true } },
-    "condition": { "not": { "u_has_trait": "PSYCHOPATH" } }
+    "id": "run_eoc_cleanse_soul_psycho",
+    "type": "SPELL",
+    "name": "Cleanse Psycho",
+    "description": "Got ya.",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_PROJECTILE", "NO_HANDS" ],
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_cleanse_soul_psycho",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 20
   },
   {
     "id": "run_eoc_cleanse_soul",
@@ -2228,7 +2206,7 @@
     "valid_targets": [ "self" ],
     "effect": "attack",
     "effect_str": "bless",
-    "extra_effects": [ { "id": "run_eoc_cleanse_soul" } ],
+    "extra_effects": [ { "id": "run_eoc_cleanse_soul" }, { "id": "run_eoc_cleanse_soul_psycho" }  ],
     "shape": "blast",
     "affected_body_parts": [ "torso" ],
     "base_casting_time": 0,
@@ -2648,9 +2626,9 @@
     "type": "COMESTIBLE",
     "category": "other",
     "comestible_type": "MED",
-    "name": { "str": "minor twisted soul" },
+    "name": { "str": "minor potent soul" },
 	"looks_like": "water_clean",
-    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is heavy with a life of pain. A skilled mage could siphon more mana from it. Using it will permanently increase your maximum mana.",
+    "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is heavy with a long life of struggle. A skilled mage could siphon more mana from it. Using it will permanently increase your maximum mana.",
     "weight": "100 g",
     "volume": "10 ml",
     "longest_side": "1 cm",
@@ -2703,7 +2681,7 @@
     "type": "COMESTIBLE",
     "category": "other",
     "comestible_type": "MED",
-    "name": { "str": "middling twisted soul" },
+    "name": { "str": "middling potent soul" },
     "description": "A dimly glowing soul, slowly turning over and over in itself. This soul is leaking magic, but perhaps a more skilled wizard could wrench even more mana from it... Using it will increase your maximum mana.",
     "weight": "500 g",
     "volume": "10 ml",
@@ -2758,7 +2736,7 @@
     "type": "COMESTIBLE",
     "category": "other",
     "comestible_type": "MED",
-    "name": { "str": "major twisted soul" },
+    "name": { "str": "major potent soul" },
     "description": "A dimly glowing soul, slowly turning over and over in itself. It is absolutely drenched in magic. No mage could tear more magic from it. Using it will increase your maximum mana.",
     "weight": "1000 g",
     "volume": "10 ml",
@@ -3051,48 +3029,6 @@
     "volume": "1 ml"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_desperate_letter",
-    "effect": 
-	    [
-            {
-              "u_location_variable": { "global_val": "OM_post_office_overrun" },
-              "target_params": 
-			  { 
-				"om_terrain": "post_office_overrun",
-				"om_terrain_match_type": "TYPE",
-			    "search_range": 1000,
-			    "min_distance": 10,
-			    "random": false 			
-			  }
-            },
-			{ "u_message": "The envelope rips!" },
-			{ 
-			"run_eocs": 
-			[
-              {
-                 "id": "eoc_desperate_letter2"
-		      }
-	        ] 
-			}
-      ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_desperate_letter2",
-    "effect": 
-	[
-	    {  
-		   "u_teleport": { "global_val": "OM_post_office_overrun" },
-		   "force": true
-	    },
-		{
-        "u_message": "You get sucked into the envelope.",
-        "popup": true
-        }
-	]
-  },
-  {
     "id": "eoc_desperate_letter",
     "type": "SPELL",
     "name": "Open Envelope (Perhaps Rather Slowly)",
@@ -3124,48 +3060,6 @@
     "volume": "1 ml"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_operator_invitation",
-    "effect": 
-	    [
-            {
-              "u_location_variable": { "global_val": "OM_police_dept_ADAD_u000" },
-              "target_params": 
-			  { 
-				"om_terrain": "police_dept_ADAD_u000",
-				"om_terrain_match_type": "TYPE",
-			    "search_range": 1000,
-			    "min_distance": 10,
-			    "random": false 			
-			  }
-            },
-			{ "u_message": "The envelope rips!" },
-			{ 
-			"run_eocs": 
-			[
-              {
-                 "id": "eoc_operator_invitation2"
-		      }
-	        ] 
-			}
-      ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_operator_invitation2",
-    "effect": 
-	[
-	    {  
-		   "u_teleport": { "global_val": "OM_police_dept_ADAD_u000" },
-		   "force": true
-	    },
-		{
-        "u_message": "You get sucked into the envelope.",
-        "popup": true
-        }
-	]
-  },
-  {
     "id": "eoc_operator_invitation",
     "type": "SPELL",
     "name": "Open Envelope (Perhaps Rather Slowly)",
@@ -3195,6 +3089,22 @@
 	"use_action": { "type": "cast_spell", "spell_id": "eoc_operator_invitation", "no_fail": true, "level": 1, "need_wielding": true },
     "weight": "3 g",
     "volume": "1 ml"
+  },
+  {
+    "id": "cauldron_orichalcum",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "orichalcum cauldron" },
+    "description": "This is an alchemical cauldron made of orichalcum.  The metal is especially resistant to the unique types of corrosion caused by alchemy.",
+	"copy-from": "cauldron_orichalcum",
+    "use_action": 
+	[ 
+	"HEAT_FOOD", 
+	{
+    "type": "deploy_furn",
+    "furn_type": "f_cauldron_orichalcum" 
+	}
+	]
   },
   {
     "type": "tool_quality",
@@ -3414,5 +3324,42 @@
     "symbol": "c",
 	"use_action": { "type": "cast_spell", "spell_id": "use_tear", "no_fail": true, "level": 1, "need_wielding": true },
     "color": "white"
+  },
+  {
+  "id": "bot_oni_dragon",
+  "type": "TOOL",
+  "name": {
+    "str": "inactive cyber-dragon yokai",
+    "str_pl": "inactive cyber-dragon yokais"
+  },
+  "description": "An inactive cybernetic serpent. Right now it's sleeping, tiny tufts of electricity shooting from each nostril as it snores. ",
+  "volume": "950 L",
+  "weight": "2200 kg",
+  "price": 100000000,
+  "price_postapoc": 500000,
+  "to_hit": -3,
+  "looks_like": "mon_dragon_dummy",
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "light_blue",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_oni_dragon_friendly",
+    "friendly_msg": "The cyber-serpent playfully stretches to life, ready to face another day!.",
+    "hostile_msg": "The cyber-serpent looks strangely conflicted, and finally lashes out in confusion!",
+    "difficulty": 0,
+    "moves": 300,
+    "skills": [
+      "electronics"
+    ]
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 6
   }
+}
 ]

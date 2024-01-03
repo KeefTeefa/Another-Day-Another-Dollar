@@ -42,6 +42,7 @@
     "comestible_type": "MED",
     "color": "brown",
     "symbol": "G",
+	"price_postapoc": 50000,
     "looks_like": "mon_claygolem",
     "description": "A massive golem made of clay, waiting only to be awakened by your touch. Carefully, it may not quite understand what's happening.",
     "weight": "122 kg",
@@ -58,12 +59,59 @@
     }
   },
   {
+    "id": "stone_golem_token",
+    "name": "inanimate stone golem",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "color": "brown",
+    "symbol": "G",
+	"price_postapoc": 100000,
+    "looks_like": "mon_stonegolem",
+    "description": "A massive golem made of stone, waiting only to be awakened by your touch. Carefully, it may not quite understand what's happening.",
+    "weight": "122 kg",
+    "volume": "120 L",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_stonegolem1",
+      "friendly_msg": "The stone golem rears it's ugly head, and slowly nods it's approval.",
+      "hostile_msg": "The stone golem's eyes slowly open, and you see red-hot rage flash in it's eyes.",
+      "difficulty": 7,
+      "moves": 60,
+      "place_randomly": true,
+      "skills": [ "spellcraft", "survival" ]
+    }
+  },
+  {
+    "id": "iron_golem_token",
+    "name": "inanimate iron golem",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "color": "brown",
+    "symbol": "G",
+	"price_postapoc": 200000,
+    "looks_like": "mon_irongolem",
+    "description": "A massive golem made of iron, waiting only to be awakened by your touch. Carefully, it may not quite understand what's happening.",
+    "weight": "122 kg",
+    "volume": "120 L",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_irongolem1",
+      "friendly_msg": "The iron golem rears it's ugly head, and salutes you in attention.",
+      "hostile_msg": "The iron golem's eyes slowly open, and it's mouth contorts open in dutiful anger.",
+      "difficulty": 7,
+      "moves": 60,
+      "place_randomly": true,
+      "skills": [ "spellcraft", "survival" ]
+    }
+  },
+  {
     "id": "plastic_golem_token",
     "name": "inanimate plastic golem",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "color": "white",
     "symbol": "G",
+	"price_postapoc": 50000,
     "looks_like": "mon_plasticgolem",
     "description": "A massive golem made of plastic, waiting only to be awakened by your touch. Carefully, it may not quite understand what's happening.",
     "weight": "50 kg",
@@ -71,7 +119,7 @@
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_plasticgolem",
-      "friendly_msg": "The plastic golem looks abruptly up and slowly nods at your for it's next task.",
+      "friendly_msg": "The plastic golem looks abruptly up and slowly nods at you for it's next task.",
       "hostile_msg": "The plastic golem's eyes slowly open, and you see anger flood them.",
       "difficulty": 4,
       "moves": 60,
@@ -798,23 +846,6 @@
       "moves": 1000,
       "type": "transform"
     }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_philostone",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_is_wearing": "philosophers_stone" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "platonic_flower", "count": 33 },	
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_consume_item": "philosophers_stone" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 100000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_cast_spell": { "id": "use_ring_signet" } },
-	{ "u_message": "As the cold embrace of death touches your heart, you sink into a state of unconsciousness. All is blank for some unknowable amount of time, and then all of a sudden a great flash of light pierces your vision. The Philosopher's Stone around your neck shatters and it's life is instilled within you! A bouquet of flowers falls to mark your passing.", "popup": true },
-    { "u_cast_spell": { "id": "use_ring_signet" } }	]
   },
   {
     "type": "enchantment",
@@ -1575,7 +1606,9 @@
     "material": [ "plastic" ],
     "symbol": "[",
     "looks_like": "briefcase",
-    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+    "properties": {
+    "creature_size_capacity": "HUGE"
+    },
     "color": "light_gray",
     "sided": true,
     "charges_per_use": 3,
@@ -1617,6 +1650,78 @@
     "use_action": { "type": "cast_spell", "spell_id": "shadow_realm_nested", "no_fail": true, "level": 1, "need_wielding": true },
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 21 } } ]
   },
+  {
+    "type": "SPELL",
+    "id": "sonic_ring_spell",
+    "name": "Sonic Resonate",
+    "description": "Destroys terrain",
+    "valid_targets": [ "ground" ],
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "min_aoe": 1,
+    "max_aoe": 1,
+	"min_damage": 10000,
+	"max_damage": 10000,
+    "difficulty": 6,
+    "max_level": 15,
+    "flags": [ "NO_PROJECTILE" ],
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+	"damage_type": "bash"
+  },
+  {
+  "id": "sonic_ring",
+  "type": "TOOL_ARMOR",
+  "name": {
+    "str": "sonic ring"
+  },
+  "description": "A ring that resonates with the material in objects, causing most materials to disintegrate quickly. Somehow takes triple-A batteries.",
+  "weight": "14 g",
+  "volume": "1 ml",
+  "price": 10000,
+  "price_postapoc": 250000,
+  "charges_per_use": 1, 
+  "material": [
+    "gold",
+    "silver"
+  ],
+  "symbol": "[",
+  "color": "yellow",
+  "sided": true,
+  "use_action": { "type": "cast_spell", "spell_id": "sonic_ring_spell", "no_fail": true, "level": 1, "need_worn": true },
+  "armor": [
+    {
+      "coverage": 0,
+      "covers": [
+        "hand_l",
+        "hand_r"
+      ],
+      "specifically_covers": [
+        "hand_fingers_l",
+        "hand_fingers_r"
+      ],
+      "rigid_layer_only": true
+    }
+  ],
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "flag_restriction": [
+        "BATTERY_ULTRA_LIGHT"
+      ],
+      "default_magazine": "light_minus_battery_cell"
+    }
+  ],
+  "flags": [
+    "FANCY",
+	"TARDIS",
+    "NO_WEAR_EFFECT",
+    "SKINTIGHT",
+    "ALLOWS_TALONS"
+  ]
+},
   {
     "type": "enchantment",
     "id": "pact_of_flame_enchantment3",
@@ -1950,7 +2055,7 @@
   "volume": "15 L",
   "longest_side": "45 cm",
   "looks_like": "p_carpet",
-  "price_postapoc": 150000,
+  "price_postapoc": 100000,
   "to_hit": -3,
   "material": [
     "steel"
@@ -1987,8 +2092,8 @@
   },
   {
     "id": "gate_token",
-    "name": { "str": "favor of the gate" },
-    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' a translocation circle.",
+    "name": { "str": "'full steam liquid dream'" },
+    "description": "Originally sold in tall glass bottles, this airy white soda was branded with a thumbs-up train conductor, and is actually quite abrupt with it's flavor. It always acts like someone just shook it up, and drinking it makes you seem to hallucinate 'magical circles' on the ground around you.",
     "use_action": { "type": "cast_spell", "spell_id": "transgate_place_favor", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -1996,8 +2101,8 @@
   },
   {
     "id": "scroll_token",
-    "name": { "str": "favor of magic" },
-    "description": "A small glass flask filled with blue and white liquid. When ingested, the drinker will 'burp up' something that teaches spells ( such as a scroll ) over the course of the next minute.",
+    "name": { "str": "'mage's bottled delight'" },
+    "description": "Originally sold in tall glass bottles, this snappy blue-green soda was matched only by it's wizardly mascot. It grew in popularity exponentially when the magic community realized the drinker will 'burp up' something that teaches spells ( such as a scroll ) over the course of the next minute.",
     "use_action": { "type": "cast_spell", "spell_id": "spawn_spell_scroll_devil", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -2005,8 +2110,8 @@
   },
   {
     "id": "boss_token",
-    "name": { "str": "favor of colors" },
-    "description": "A small glass flask filled with a liquid that is absolutely roaring with color. You haven't seen most of them before, but somehow you know that if you drink this a creature of great power and opportunity will be called.",
+    "name": { "str": "'prismatic crown sparkling water'" },
+    "description": "Originally sold in tall glass bottles, this extremely carbonated soda roars with color, as did it's dapper bottle. It fell out of popularity when some users reported it 'opening a gateway for the Damned Kings.'",
     "use_action": { "type": "cast_spell", "spell_id": "summon_boss", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -2018,35 +2123,14 @@
     "category": "other",
 	"comestible_type": "MED",
     "looks_like": "rock",
-    "name": { "str": "carrion phylactery" },
-    "description": "A gory poppet of death and life alike. If consumed, this 'creature' would take your place in the arms of Death, should it come for you within the next few minutes.",
-    "weight": "800 g",
-    "volume": "2010 ml",
-    "price_postapoc": 10000,
-    "to_hit": -4,
-    "melee_damage": { "bash": 5 },
-    "material": [ "steel" ],
-	"flags": [ "TRADER_AVOID" ],
+    "name": { "str": "'carry-on chunky pop'" },
+    "description": "A horrid, chunky cola that was sold in a stubby little glass bottle branded with a skull and crossbones. The bottle reported to give the ability to defy death, though no one you knew would ever test it. In reality it just wasn't fun to drink.",
+    "copy-from": "mana_potion_lesser",
+	"fun": -10,
+	"price_postapoc": 500000,
 	"use_action": [ 
 	{ "type": "cast_spell", "spell_id": "preventdeath_token_spell", "no_fail": true, "level": 1, "need_wielding": true }
-	],
-    "symbol": "}",
-    "color": "light_cyan"
-  },
-  {
-    "type": "effect_type",
-    "id": "scourge",
-    "name": [ "Drank a Buncha Bleach" ],
-    "desc": [ "Did you really do that? Holy shit. I cannot believe that worked." ],
-	"base_mods": {
-      "str_mod": [ -2 ],
-      "per_mod": [ -1 ],
-      "dex_mod": [ -1 ],
-      "int_mod": [ -1 ],
-      "speed_mod": [ -10 ],
-      "vomit_chance": [ 100 ]
-    },
-    "removes_effects": [ "dermatik", "formication" ]
+	]
   },
   {
     "id": "demon_spawn_scourging",
@@ -2068,7 +2152,7 @@
   },
   {
     "id": "dermatik_cure",
-    "name": { "str": "demon-spawn scourge" },
+    "name": { "str": "'demon-spawn scourge'" },
     "description": "A handful of change with the mutating elements bleached out of them, you hope. Probably won't be fun, but it should kill anything squirming around in your stomach, at least.",
     "use_action": { "type": "cast_spell", "spell_id": "demon_spawn_scourging", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
@@ -2077,8 +2161,8 @@
   },
   {
     "id": "catalyzer",
-    "name": { "str": "catalyzer" },
-    "description": "A small glass flask filled with a swirling green liquid. You've heard of this stuff, and what it does to you. Mutations abound when it's around.",
+    "name": { "str": "'catalyzer cola'" },
+    "description": "What used to be sold in a tall glass bottle but was quickly irradicated from the market. A swirling green soda that you can almost smell through the bottle. You've heard of this stuff, and what it does to you. Mutations abound when it's around.",
     "use_action": { "type": "cast_spell", "spell_id": "catalyst_no_comp", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -2086,8 +2170,8 @@
   },
   {
     "id": "semi_truck_token",
-    "name": { "str": "bottled semi-truck" },
-    "description": "A glass bottle filled with a thick gas that, reportedly, will cause you to 'burp up' a semi-truck if ingested.",
+    "name": { "str": "'honky-tonk tonic'" },
+    "description": "A very loud soda originally sold in tall glass bottles filled with a thick gas that, reportedly, would cause you to 'burp up' a semi-truck if ingested.",
     "use_action": { "type": "cast_spell", "spell_id": "summon_semi", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -2095,8 +2179,8 @@
   },
   {
     "id": "ship_token",
-    "name": { "str": "bottled ship" },
-    "description": "A glass bottle filled with a deliciously blue liquid that, reportedly, will cause you to 'burp up' a large ship if ingested.",
+    "name": { "str": "'sea-breeze seltzer'" },
+    "description": "A tall glass bottle branded with a sinking sun over a calm sea. The prime yellow liquid inside goes down smooth as butter, but it comes back up as a full-blown log ship.",
     "use_action": { "type": "cast_spell", "spell_id": "summon_ship", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -2104,8 +2188,8 @@
   },
   {
     "id": "mojocycle_token",
-    "name": { "str": "bottled mojocycle" },
-    "description": "A glass bottle filled with a wild blue flame that, reportedly, will cause you to 'burp up' a magically powered motorcycle if ingested.",
+    "name": { "str": "'mouth-o-flame'" },
+    "description": "A deep red 'drink' sold in a tall glass bottle covered in 3-dimensional flames that, reportedly, will cause you to 'burp up' a magically powered motorcycle if ingested.",
     "use_action": { "type": "cast_spell", "spell_id": "summon_mojocycle_perm", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -2113,8 +2197,8 @@
   },
   {
     "id": "hoverboard_token",
-    "name": { "str": "bottled hoverboard" },
-    "description": "A glass bottle filled with a cool green kaleidoscope that, reportedly, will cause you to 'burp up' a magically powered motorcycle if ingested.",
+    "name": { "str": "'topsy-tipsy tequila'" },
+    "description": "A soda once sold in a tall glass bottle branded with a winking worm is a cool green kaleidoscope that, reportedly, would cause you to 'burp up' a hoverboard if ingested.",
     "use_action": { "type": "cast_spell", "spell_id": "summon_hoverboard_perm", "no_fail": true, "level": 1 },
     "type": "COMESTIBLE",
     "copy-from": "mana_potion_lesser",
@@ -2142,12 +2226,9 @@
       "PRY",
       3
     ] ],
-	"properties": [
-    [
-      "creature_size_capacity",
-      "TINY"
-    ]
-  ],
+	"properties": {
+    "creature_size_capacity": "TINY"
+    },
     "flags": [
       "WATCH",
 	  "STURDY", 
@@ -2295,12 +2376,9 @@
       "PRY",
       3
     ] ],
-	"properties": [
-    [
-      "creature_size_capacity",
-      "TINY"
-    ]
-  ],
+	"properties": {
+    "creature_size_capacity": "TINY"
+    },
     "flags": [
       "WATCH",
 	  "STURDY", 
@@ -2435,7 +2513,7 @@
   "description": "What appears to be a regular pack of 'Sorcery' cards is actually a promo pack with a limited edition, one in a million collector's item magically sealed inside.",
   "weight": "210 g",
   "volume": "250 ml",
-  "price_postapoc": 3000,
+  "price_postapoc": 30000,
   "material": [
     "paper"
   ],
@@ -2447,6 +2525,28 @@
   "use_action": {
     "type": "unpack",
     "group": "enchanted_small_items"
+  }
+},
+{
+  "id": "soda_gift",
+  "type": "GENERIC",
+  "category": "other",
+  "name": "Foodplace's Mystery Flavor™",
+  "description": "As part of a promotion trying to diversify the interests of consumers, Foodplace released this miniature bottle of an all black soda. The bottle is branded with a huge white question mark, and the drink inside is entirely flavorless. Drinking it WILL cause you to 'burp up' a random soda, though. Some of them aren't even made by Foodplace, strangely.",
+  "weight": "210 g",
+  "volume": "250 ml",
+  "price_postapoc": 10000,
+  "material": [
+    "glass"
+  ],
+  "symbol": "?",
+  "color": "blue",
+  "flags": [
+    "NO_REPAIR"
+  ],
+  "use_action": {
+    "type": "unpack",
+    "group": "sodagift_group"
   }
 },
   {
@@ -3080,20 +3180,32 @@
     "color": "light_cyan"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_dieanotherday",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_has_effect": "dieanotherday" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "cig_lit" },	
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_lose_effect": "dieanotherday" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 50000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "As the curtains close, you take your final bow. Ohp, wait, production's calling you in for one last take. Gonna need a smoke for this one...", "popup": true } ]
+  "id": "death_poem",
+  "type": "COMESTIBLE",
+  "category": "other",
+  "comestible_type": "MED",
+  "symbol": ",",
+  "color": "white",
+  "name": {
+    "str": "dishonorable death poem"
   },
+  "use_action": [ 
+	{ "type": "cast_spell", "spell_id": "death_poem_spell", "no_fail": true, "level": 1, "need_wielding": true }
+  ],
+  "description": "Some choose Death Before Dishonor, some do not. This 'death poem' is actually a plea, begging for one more moment of life. Reading it would be the same as committing spiritual suicide, ridding one of both it's curses and it's blessings. Once one gets rid of their soul, it's no easy task to get it back.",
+  "price": 0,
+  "price_postapoc": 0,
+  "looks_like": "survnote",
+  "material": [
+    "paper"
+  ],
+  "flags": [
+    "TRADER_AVOID",
+    "PAPER_SHAPED"
+  ],
+  "weight": "3 g",
+  "volume": "10 ml"
+},
   {
   "type": "GENERIC",
   "id": "vhs_player",
@@ -3537,6 +3649,11 @@
     "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "WATER_FRIENDLY", "TARDIS" ]
   },
   {
+    "type": "tool_quality",
+    "id": "MANA_WEAVE",
+    "name": "symbolic weaving"
+  },
+  {
     "id": "white_pen",
     "type": "TOOL",
     "category": "tools",
@@ -3861,13 +3978,6 @@
     "category": [ "HUMAN" ]
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_crystallized_alcohol",
-    "effect": { "u_cast_spell": { "id": "spawn_crystallized_alcohol_aura_long", "hit_self": true } },
-    "false_effect": { "u_cast_spell": { "id": "spawn_crystallized_alcohol_aura_short", "hit_self": true } },
-    "condition": "is_day"
-  },
-  {
     "id": "spawn_crystallized_alcohol_aura_long",
     "type": "SPELL",
     "name": "On the Rocks",
@@ -3923,54 +4033,6 @@
     "max_level": 20
   },
   {
-    "type": "effect_on_condition",
-    "id": "EOC_CRYSTALLIZED_ADDICTION",
-    "condition": {
-      "compare_int": [
-        { "rand": 2000 },
-        "<=",
-        { "u_val": "addiction_intensity", "addiction": "crystallized_mana", "mod": { "val": 2000, "step": 20 } }
-      ]
-    },
-    "effect": [
-      { "u_message": "You want some crystallized mana.", "type": "warning" },
-      { "u_add_morale": "morale_craving_crystallized", "bonus": -5, "max_bonus": -30 },
-      {
-        "run_eocs": [
-          {
-            "id": "EOC_CRYSTALLIZED_ADDICTION_MODSTIM",
-            "condition": {
-              "and": [
-                {
-                  "compare_int": [ { "u_val": "stim" }, ">", { "u_val": "addiction_intensity", "addiction": "crystallized_mana", "mod": -10 } ]
-                },
-                {
-                  "compare_int": [ { "rand": 10 }, "<", { "u_val": "addiction_intensity", "addiction": "crystallized_mana" } ]
-                }
-              ]
-            },
-            "effect": { "arithmetic": [ { "u_val": "stim" }, "-=", { "const": 1 } ] }
-          },
-          {
-            "id": "EOC_CRYSTALLIZED_ADDICTION_SHAKES",
-            "condition": {
-              "and": [
-                { "compare_int": [ { "u_val": "addiction_intensity", "addiction": "crystallized_mana" }, ">=", { "const": 8 } ] },
-                {
-                  "compare_int": [ { "rand": 392 }, "<", { "u_val": "addiction_intensity", "addiction": "crystallized_mana" } ]
-                }
-              ]
-            },
-            "effect": [
-              { "u_message": "Your hands start shaking… you need it bad!", "type": "bad" },
-              { "u_add_effect": "shakes", "duration": "5 minutes" }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "morale_craving_crystallized",
     "type": "morale_type",
     "text": "Craving crystallized mana"
@@ -4015,7 +4077,9 @@
     "material": [ "steel" ],
     "symbol": "I",
     "color": "black",
-    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+    "properties": {
+    "creature_size_capacity": "HUGE"
+    },
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "pocket_data": [
       {
@@ -4039,7 +4103,9 @@
     "symbol": "`",
     "looks_like": "mirror",
     "description": "A piece of paper that has been magically enhanced to have the property of containment. Small objects or creatures can be stored inside. Most commonly used by mages to store magic circles.",
-    "properties": [ [ "creature_size_capacity", "MEDIUM" ] ],
+    "properties": {
+    "creature_size_capacity": "MEDIUM"
+    },
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "price_postapoc": 50000,
     "material": [ "paper" ],
@@ -4254,7 +4320,7 @@
     "description": "Suddenly, your life has meaning again.",
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
-    "effect_str": "lemonlime",
+    "effect_str": "foodplace_zero_drink",
     "extra_effects": [ { "id": "spawn_component_subscription" } ],
     "shape": "blast",
     "min_duration": 600000,
@@ -4982,25 +5048,6 @@
   "range": 100
 },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_reroll",
-    "effect": [ 
-	{ "u_remove_item_with": "pact_of_bile" }, 
-	{ "u_remove_item_with": "pact_of_blood" }, 
-	{ "u_remove_item_with": "pact_of_smoke" }, 
-	{ "u_remove_item_with": "pact_of_flame" }
-	],
-    "false_effect": { "u_spawn_item": "makers_finger" },
-    "condition": {
-      "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" }
-      ]
-    }
-  },
-  {
     "id": "sanctified_reroll",
     "type": "SPELL",
     "name": "Blow the Ultimate Pack",
@@ -5208,15 +5255,6 @@
     }
   },
   {
-    "type": "effect_type",
-    "id": "crack_magic",
-    "name": [ "Magic of Crack" ],
-    "desc": [ "You can't trust everything that you see." ],
-    "rating": "good",
-    "base_mods": { "int_mod": [ -2 ], "str_mod": [ 4 ], "dex_mod": [ 4 ], "per_mod": [ -2 ] },
-    "blood_analysis_description": "Magic of Crack"
-  },
-  {
     "id": "lsd",
     "type": "COMESTIBLE",
     "comestible_type": "MED",
@@ -5227,15 +5265,6 @@
       "activation_message": "You eat the pink tablet.",
       "effects": [ { "id": "hallu", "duration": 3600 }, { "id": "lsd_magic", "duration": 3600 } ]
     }
-  },
-  {
-    "type": "effect_type",
-    "id": "lsd_magic",
-    "name": [ "Magic of LSD" ],
-    "desc": [ "You can't trust everything that you see." ],
-    "rating": "good",
-    "base_mods": { "int_mod": [ 4 ], "str_mod": [ -4 ], "dex_mod": [ -4 ], "per_mod": [ 4 ] },
-    "blood_analysis_description": "Magic of LSD"
   },
   {
     "id": "melatonin_tablet",
@@ -5277,15 +5306,6 @@
         { "id": "morphine_magic", "duration": 1200 }
       ]
     }
-  },
-  {
-    "type": "effect_type",
-    "id": "morphine_magic",
-    "name": [ "Magic of Morphine" ],
-    "desc": [ "You can't trust everything that you see." ],
-    "rating": "good",
-    "base_mods": { "int_mod": [ 6 ], "speed_mod": [ -50 ] },
-    "blood_analysis_description": "Magic of Morphine"
   },
   {
     "id": "hi_q_wax",
@@ -5345,33 +5365,6 @@
       "activation_message": "You pop an adderall.",
       "effects": [ { "id": "pblue", "duration": 3600 } ]
     }
-  },
-  {
-    "type": "effect_type",
-    "id": "adderall_magic",
-    "name": [ "Adderall Magic" ],
-    "desc": [ "You can't trust everything that you see." ],
-    "rating": "good",
-    "base_mods": { "int_mod": [ 3 ] },
-    "blood_analysis_description": "Adderall Magic"
-  },
-  {
-    "type": "effect_type",
-    "id": "smoke_magic",
-    "name": [ "High Magic" ],
-    "desc": [ "You can't trust everything that you see." ],
-    "rating": "good",
-    "base_mods": { "int_mod": [ 1 ] },
-    "blood_analysis_description": "High Magic"
-  },
-  {
-    "type": "effect_type",
-    "id": "smoke_magic2",
-    "name": [ "High Magic" ],
-    "desc": [ "You can't trust everything that you see." ],
-    "rating": "good",
-    "base_mods": { "int_mod": [ 2 ] },
-    "blood_analysis_description": "High Magic"
   },
   {
     "id": "weed",
@@ -5483,22 +5476,6 @@
     },
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ]
   }, 
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_saints_symbol",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_is_wearing": "saints_symbol" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "holy_symbol_wood" },
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_consume_item": "saints_symbol" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 10000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "As your life force drifts away, you are overcome with a sense of peace. You have served this world well, and it thanks you with a sweet Death. As the last light fades from your eyes, they fall on the symbol around your neck. Perhaps there's some life left in you after all...", "popup": true },
-    { "u_cast_spell": { "id": "use_ring_signet" } }	]
-  },
   {
   "id": "saints_symbol",
   "type": "ARMOR",

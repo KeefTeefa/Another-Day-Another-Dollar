@@ -1,18 +1,5 @@
 [
 {
-    "type": "effect_on_condition",
-    "id": "eoc_crystal_spawn",
-    "effect": { "u_cast_spell": { "id": "crystallize_mana_crystal_5" } },
-    "false_effect": { "u_cast_spell": { "id": "crystallize_mana_1" } },
-    "condition": {
-      "or": [
-        { "u_is_wearing": "ring_signet" },
-		{ "u_has_item": "familiar_dragon" },
-        { "u_has_trait": "MANA_CRYST_MANA" }
-      ]
-    }
-  },
-{
     "id": "crystallize_mana_1",
     "type": "SPELL",
     "name": "Crystallize Mana (1)",
@@ -198,13 +185,6 @@
     "sound_description": "a whoosh"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_indirected",
-    "effect": { "u_cast_spell": { "id": "indirected_mana_focused" } },
-    "false_effect": { "u_cast_spell": { "id": "indirected_mana" } },
-    "condition": { "or": [ { "u_is_wearing": "copper_circlet" }, { "u_is_wearing": "wizard_hat" }, { "u_is_wearing": "ring_signet" } ] }
-  },
-  {
     "id": "run_eoc_indirected",
     "type": "SPELL",
     "name": "Directed Mana",
@@ -293,25 +273,6 @@
     "damage_type": "cold"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_directed",
-    "effect": { "u_cast_spell": { "id": "create_smoke" } },
-    "false_effect": { "u_cast_spell": { "id": "hurt_hand" } },
-    "condition": {
-      "or": [
-        { "u_is_wearing": "copper_infuser" },
-        { "u_is_wearing": "silver_infuser" },
-		{ "u_is_wearing": "ring_signet" },
-		{ "u_is_wearing": "silent_metamagic" }, 
-		{ "u_is_wearing": "subtle_metamagic" }, 
-		{ "u_is_wearing": "condensed_metamagic" },
-		{ "u_is_wearing": "foodperson_mask" },
-		{ "u_is_wearing": "foodperson_mask_on" },
-        { "u_has_wielded_with_flag": "MAGIC_FOCUS" }
-      ]
-    }
-  },
-  {
     "id": "directed_prone",
     "type": "SPELL",
     "name": "Directed Mana",
@@ -378,16 +339,6 @@
     "max_level": 25,
     "base_energy_cost": 0,
     "difficulty": 4
-  },
-  {
-    "type": "effect_type",
-    "id": "frozen_hand",
-    "name": [ "Frozen Hand" ],
-    "desc": [ "Your hand has been frozen, making combat much more difficult." ],
-    "max_intensity": 1,
-    "int_add_val": 1,
-    "max_duration": "5 s",
-    "base_mods": { "hit_mod": [ -2 ] }
   },
   {
     "id": "hurt_hand",
@@ -868,12 +819,6 @@
     "effect_str": "mon_devil"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_lose_nemesis",
-	"condition": { "u_has_trait": "HAS_NEMESIS" },
-    "effect": { "u_lose_trait": "HAS_NEMESIS" }
-  },
-  {
     "id": "lose_nemesis",
     "type": "SPELL",
     "name": "Disguise EOC",
@@ -889,13 +834,59 @@
     "max_level": 20
   },
   {
+    "id": "death_poem_spell",
+    "type": "SPELL",
+    "name": "Seppuku",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "effect": "remove_effect",
+    "effect_str": "deathbeforedishonor",
+	"extra_effects": [ { "id": "become_psycho", "hit_self": true }, { "id": "remove_diedbeforedishonor", "hit_self": true } ],
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 20
+  },
+  {
+    "id": "remove_diedbeforedishonor",
+    "type": "SPELL",
+    "name": "Seppuku 2",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "effect": "remove_effect",
+    "effect_str": "diedbeforedishonor",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 20
+  },
+  {
+    "id": "lose_dieanotherday",
+    "type": "SPELL",
+    "name": "Another Day Alone",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "effect": "remove_effect",
+    "effect_str": "dieanotherday",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "max_level": 20
+  },
+  {
     "id": "disguise_kit_spell",
     "type": "SPELL",
     "name": "Fake Death",
     "description": "...",
     "valid_targets": [ "hostile", "ally" ],
 	"targeted_monster_ids": [ "mon_civilian_zombiefighter", "mon_civilian_panic", "mon_civilian_police", "mon_civilian_icu", "mon_civilian_parent" ],
-	"extra_effects": [ { "id": "lose_nemesis", "hit_self": true } ],
+	"extra_effects": [ { "id": "lose_dieanotherday", "hit_self": true } ],
     "min_damage": 1000,
     "max_damage": 1000,
     "min_range": 3,
@@ -3162,28 +3153,6 @@
     "sound_description": "a moan"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_catalyst",
-    "effect": [ { "u_cast_spell": { "id": "mutate_self", "hit_self": true } }, { "u_cast_spell": { "id": "mutate_self", "hit_self": true } }, { "u_cast_spell": { "id": "mutate_self", "hit_self": true } } ],
-    "false_effect": { "u_cast_spell": { "id": "mutate_self", "hit_self": true } },
-    "condition": {
-      "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "onyx_silver_ring" },
-            { "u_is_wearing": "pact_of_blood" },
-            { "u_is_wearing": "pact_of_smoke" },
-            { "u_is_wearing": "pact_of_bile" },
-            { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "foodperson_mask" },
-			{ "u_is_wearing": "foodperson_mask_on" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" }
-      ]
-    }
-  },
-  {
     "id": "catalyst",
     "type": "SPELL",
     "name": "Inciting Event",
@@ -3225,28 +3194,6 @@
     "base_casting_time": 0,
     "base_energy_cost": 0,
     "max_level": 20
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "run_incite_eoc",
-    "effect": [ { "u_cast_spell": { "id": "gain_nemesis", "hit_self": true } } ],
-    "false_effect": { "u_cast_spell": { "id": "induce_vomit_self", "hit_self": true } },
-    "condition": {
-      "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "onyx_silver_ring" },
-            { "u_is_wearing": "pact_of_blood" },
-            { "u_is_wearing": "pact_of_smoke" },
-            { "u_is_wearing": "pact_of_bile" },
-            { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "foodperson_mask" },
-			{ "u_is_wearing": "foodperson_mask_on" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" }
-      ]
-    }
   },
   {
     "id": "gain_nemesis",
@@ -3712,6 +3659,30 @@
     "sound_description": "a moan"
   },
   {
+    "id": "polymorph_hitman",
+    "type": "SPELL",
+    "name": "Polymorph hitman",
+    "description": "Polymorphs hitman",
+    "valid_targets": [ "hostile", "self" ],
+    "targeted_monster_ids": [ "mon_hitman" ],
+    "effect": "targeted_polymorph",
+    "effect_str": "mon_civilian_police",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "energy_source": "MANA",
+    "difficulty": 8,
+    "min_damage": 100,
+    "max_damage": 100,
+    "min_duration": 25000,
+    "max_duration": 25000,
+    "max_level": 5,
+    "min_aoe": 500,
+    "max_aoe": 500,
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT", "PERMANENT" ],
+    "sound_description": "a poof"
+  },
+  {
     "id": "summon_ortiel",
     "type": "SPELL",
     "name": "The Fall",
@@ -3977,44 +3948,6 @@
     "max_level": 10,
     "min_range": 50,
     "max_range": 50
-  },
-    {
-    "type": "effect_on_condition",
-    "id": "eoc_magic_drive",
-    "effect": { "u_cast_spell": { "id": "magic_drive_full", "hit_self": true } },
-    "false_effect": { "u_cast_spell": { "id": "magic_drive_half", "hit_self": true } },
-    "condition": {
-      "and": [
-        {
-          "not": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" }
-            ]
-          }
-        },
-        {
-          "or": [
-            { "u_is_wearing": "holy_symbol" },
-            { "u_is_wearing": "holy_symbol_wood" },
-            { "u_is_wearing": "spirit_armor" },
-			{ "u_has_trait": "SPIRITUAL" },
-            { "u_is_wearing": "bead_bracelet" },
-            { "u_is_wearing": "bead_necklace" },
-            { "u_is_wearing": "relic_small" }
-          ]
-        }
-      ]
-    }
   },
   {
     "id": "magic_drive_full",
@@ -4771,48 +4704,6 @@
     "flags": [ "VERBAL", "SILENT", "NO_LEGS" ]
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_revelation",
-    "effect": [ { "u_cast_spell": { "id": "revelation_good", "hit_self": true } }, { "u_message": "You take a pure, empowering breath.", "type": "warning" } ],
-    "false_effect": [ { "u_cast_spell": { "id": "induce_vomit_self", "hit_self": true } }, { "u_message": "You choke on the harsh reality of your own tainted lungs.", "type": "warning" } ],
-    "condition": {
-      "and": [
-        {
-          "not": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" },
-			  { "u_is_wearing": "ring_signet" },
-		    { "u_has_item": "familiar_dragon" },
-             { "u_has_trait": "MANA_CRYST_MANA" },
-			 { "u_has_trait": "THRESH_MANA" }
-            ]
-          }
-        },
-        {
-          "or": [
-            { "u_is_wearing": "holy_symbol" },
-            { "u_is_wearing": "holy_symbol_wood" },
-            { "u_is_wearing": "spirit_armor" },
-			{ "u_has_trait": "SPIRITUAL" },
-            { "u_is_wearing": "bead_bracelet" },
-            { "u_is_wearing": "bead_necklace" },
-            { "u_is_wearing": "relic_small" }
-          ]
-        }
-      ]
-    }
-  },
-  {
     "id": "revelation_good",
     "type": "SPELL",
     "name": "Revelation - Success",
@@ -5070,14 +4961,6 @@
     "base_casting_time": 0,
     "energy_source": "MANA",
     "base_energy_cost": 0
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_gait",
-    "effect": [
-      { "u_add_effect": "downed", "intensity": 1, "duration": "1 second" }
-    ],
-    "condition": { "not": { "or": [ { "u_has_effect": "feather_fall" }, { "u_has_dexterity": 10 }, { "u_has_effect": "bless" }, { "u_is_wearing": "silent_metamagic" }, { "u_is_wearing": "subtle_metamagic" }, { "u_is_wearing": "condensed_metamagic" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" }, { "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" }, { "u_is_wearing": "ring_signet" }, { "u_is_wearing": "foodperson_mask" }, { "u_is_wearing": "foodperson_mask_on" } ] } }
   },
   {
     "id": "gait_eoc",
@@ -5492,6 +5375,129 @@
     "effect_str": "tieclip_aura"
   },
   {
+    "id": "mod_moves_possess",
+    "type": "SPELL",
+    "name": "Mod Moves Possession",
+    "description": "Mods your moves",
+    "flags": [ "SOMATIC", "VERBAL", "SILENT", "NO_EXPLOSION_SFX" ],
+    "message": "Stale blue light floods the world, and reality stands still.",
+    "valid_targets": [ "self" ],
+    "effect": "mod_moves",
+	"min_damage": -1000, 
+	"max_damage": -1000,
+    "shape": "blast",
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "min_range": 20,
+    "max_range": 20
+  },
+  {
+    "id": "gain_possession",
+    "type": "SPELL",
+    "name": "Gains Possession Trait",
+    "description": "",
+    "valid_targets": [ "self" ],
+	"flags": [ "MUTATE_TRAIT", "SILENT", "NO_EXPLOSION_SFX" ],
+    "effect": "mutate",
+    "effect_str": "POSSESSION_SPELL",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+	"min_damage": 10000,
+	"max_damage": 10000,
+    "energy_source": "MANA",
+    "difficulty": 7,
+    "max_level": 15,
+    "sound_description": "a cackle"
+  },
+  {
+    "id": "possess",
+    "type": "SPELL",
+    "name": "Amicable Split",
+    "description": "You have learned how to use a tiny amount of your spiritual reserve to switch bodies with a willing participant. All that seems to change about either of you is that you can remember how to switch back. Technically it uses *their* spirit, but who's keeping track.",
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "eoc_possession",
+	"extra_effects": [ { "id": "gain_possession", "hit_self": true }, { "id": "drain_fatigue_self_directed", "hit_self": true } ],
+    "shape": "blast",
+    "damage_type": "pure",
+    "energy_source": "STAMINA",
+    "difficulty": 1,
+    "max_level": 10,
+    "base_casting_time": 100,
+    "base_energy_cost": 0,
+	"range_increment": 2, 
+	"min_range": 1, 
+	"max_range": 1
+  },
+  {
+    "id": "DEATH_SLEEP",
+    "type": "SPELL",
+    "name": "Death Sleep",
+    "description": "Death sleeps someone to almost certain death.",
+    "valid_targets": [ "hostile", "ground" ],
+    "effect": "attack",
+    "effect_str": "sleep",
+    "shape": "cone",
+    "damage_type": "pure",
+    "energy_source": "MANA",
+    "difficulty": 1,
+    "max_level": 10,
+	"min_duration": 700, 
+	"max_duration": 700,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+	"min_aoe": 3, 
+	"max_aoe": 3
+  },
+  {
+    "id": "DEATH_STRIKE",
+    "type": "SPELL",
+    "name": "Death Strike",
+    "description": "Death strikes someone to almost certain death.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "RANDOM_TARGET" ],
+    "effect": "attack",
+    "effect_str": "sad",
+    "shape": "blast",
+    "damage_type": "pure",
+    "energy_source": "MANA",
+    "difficulty": 1,
+    "max_level": 10,
+	"min_damage": 100, 
+	"max_damage": 100,
+	"min_duration": 1000, 
+	"max_duration": 1000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "min_range": 1,
+    "max_range": 1
+  },
+  {
+    "id": "fade_archmagus",
+    "type": "SPELL",
+    "name": "Fade Archmagus",
+    "description": "Zzzap",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "RANDOM_TARGET" ],
+	"targeted_monster_ids": [ "mon_kelkememnon", "mon_azarkan" ],
+    "effect": "attack",
+    "effect_str": "faded",
+    "shape": "blast",
+    "damage_type": "electric",
+    "energy_source": "MANA",
+    "difficulty": 1,
+    "max_level": 10,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "min_duration": 1300,
+    "max_duration": 1300,
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "min_range": 10,
+    "max_range": 10
+  },
+  {
     "id": "double_trouble",
     "type": "SPELL",
     "name": "Double Trouble",
@@ -5499,20 +5505,20 @@
     "valid_targets": [ "self" ],
     "min_damage": 1,
     "max_damage": 1,
-    "min_range": 0,
-    "max_range": 0,
-    "base_casting_time": 1,
+    "base_casting_time": 500,
     "energy_source": "MANA",
     "max_level": 5,
     "difficulty": 1,
     "min_duration": 60000,
     "max_duration": 60000,
-    "base_energy_cost": 200,
+    "base_energy_cost": 400,
+	"final_energy_cost": 200,
+	"energy_increment": 40,
     "flags": [ "SOMATIC" ],
     "shape": "blast",
     "effect": "spawn_item",
-    "effect_str": "joint",
-    "extra_effects": [ { "id": "spawn_zippo" } ]
+    "effect_str": "advanced_ecig",
+    "extra_effects": [ { "id": "spawn_hi_q_distillate" }, { "id": "fade_archmagus" } ]
   },
   {
     "id": "spawn_zippo",
@@ -5535,6 +5541,28 @@
     "shape": "blast",
     "effect": "spawn_item",
     "effect_str": "finger_firelighter"
+  },
+  {
+    "id": "spawn_hi_q_distillate",
+    "type": "SPELL",
+    "name": "flick- hi q distillate",
+    "description": "The accompanying vapor for your smoke.",
+    "valid_targets": [ "self" ],
+    "min_damage": 2,
+    "max_damage": 2,
+    "min_range": 10,
+    "max_range": 20,
+    "base_casting_time": 1,
+    "energy_source": "MANA",
+    "max_level": 25,
+    "difficulty": 1,
+    "min_duration": 36000,
+    "max_duration": 36000,
+    "base_energy_cost": 10,
+    "flags": [ "SOMATIC", "PERMANENT_ALL_LEVELS" ],
+    "shape": "blast",
+    "effect": "spawn_item",
+    "effect_str": "hi_q_distillate"
   },
   {
     "id": "spawn_cup_of_coffee",
@@ -6626,31 +6654,6 @@
     "effect_str": "soft_step_aura"
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_rope",
-    "effect": { "u_cast_spell": { "id": "conjure_rope_6_long" } },
-    "false_effect": { "u_cast_spell": { "id": "conjure_rope_6_short" } },
-    "condition": {
-      "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "onyx_silver_ring" },
-            { "u_has_effect": "eff_frightful_presence" },
-            { "u_has_effect": "fearparalyze" },
-            { "u_is_wearing": "pact_of_blood" },
-            { "u_is_wearing": "pact_of_smoke" },
-            { "u_is_wearing": "pact_of_bile" },
-            { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "foodperson_mask" },
-			{ "u_is_wearing": "foodperson_mask_on" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-            { "u_has_effect": "hypovolemia" }
-      ]
-    }
-  },
-  {
     "id": "conjure_rope_6",
     "type": "SPELL",
     "name": "Precipitate Rope",
@@ -7660,15 +7663,6 @@
     "max_duration": 30000
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_step",
-    "effect": [
-      { "u_add_effect": "taint", "intensity": 2, "duration": "5 minutes" },
-      { "u_add_effect": "nausea", "intensity": 2, "duration": "5 minutes" }
-    ],
-    "condition": { "not": { "or": [ { "u_has_effect": "blind" },  { "u_has_worn_with_flag": "BLIND" }, { "u_is_wearing": "silent_metamagic" }, { "u_is_wearing": "subtle_metamagic" }, { "u_is_wearing": "condensed_metamagic" },{ "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" }, { "u_is_wearing": "ring_signet" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" }, { "u_is_wearing": "foodperson_mask" } ] } }
-  },
-  {
     "id": "dimensional_step",
     "type": "SPELL",
     "name": "Sever Connection",
@@ -7850,51 +7844,6 @@
     "final_casting_time": 30,
     "base_energy_cost": 0,
     "energy_source": "MANA"
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_scrying",
-    "effect": { "u_cast_spell": { "id": "spawn_crystal_ball" } },
-	"false_effect": { "u_cast_spell": { "id": "clear_safe_shoppers", "hit_self": true } },
-     "condition": {
-      "and": [
-        {
-          "not": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" }
-            ]
-          }
-        },
-        {
-          "and": [
-		  { 
-		  "or": [
-		    { "u_has_effect": "blind" },
-			{ "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" },
-			{ "u_is_wearing": "silent_metamagic" }, 
-			{ "u_is_wearing": "subtle_metamagic" }, 
-			{ "u_is_wearing": "condensed_metamagic" },
-			{ "u_has_worn_with_flag": "BLIND" } ] 
-		  },
-			{ "u_is_wearing": "ring_signet" },
-			{ "u_has_wielded_with_flag": "MAGIC_FOCUS" },
-            { "u_has_trait": "THRESH_MANA" },
-			 { "compare_int": [ { "u_val": "pos_z" }, ">=", { "const": 3 } ] },
-		    { "u_has_effect": "mana_fatigue" }		
-          ]
-        }
-      ]
-    }
   },
   {
     "id": "clear_safe_shoppers",
@@ -8195,6 +8144,22 @@
     "max_duration": 4000
   },
   {
+    "type": "SPELL",
+    "id": "taxes",
+    "name": "Taxes",
+    "description": "You tax the people around you.",
+    "effect": "attack",
+    "shape": "blast",
+    "max_level": 35,
+    "min_damage": 100,
+    "max_damage": 100,
+	"min_aoe": 10, 
+	"max_aoe": 10,
+	"damage_type": "pure",
+    "valid_targets": [ "hostile", "ally", "ground" ],
+    "flags": [ "LOUD", "RANDOM_TARGET", "IGNITE_FLAMMABLE", "IGNORE_WALLS" ]
+  },
+  {
     "id": "golden_aura",
     "type": "SPELL",
     "name": "Paradox Shield",
@@ -8253,13 +8218,6 @@
 	"damage_type": "pure",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_dislocate",
-    "effect": { "u_cast_spell": { "id": "spawn_dislocate_aura_short" } },
-    "false_effect": { "u_cast_spell": { "id": "spawn_dislocate_aura_long" } },
-    "condition": { "not": { "or": [ { "u_is_wearing": "onyx_silver_ring" }, { "u_is_wearing": "ring_signet" } ] } }
   },
   {
     "id": "dislocate",
@@ -8363,23 +8321,6 @@
     "base_energy_cost": 0
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_estrange",
-    "effect": [
-      { "u_add_effect": "nausea", "intensity": 1, "duration": "5 minutes" }
-    ],
-    "condition": { "not": { "or": [ 
-	{ "u_has_effect": "blind" }, 
-	{ "u_has_worn_with_flag": "BLIND" }, 
-	{ "u_is_wearing": "silent_metamagic" }, 
-			{ "u_is_wearing": "subtle_metamagic" }, 
-			{ "u_is_wearing": "condensed_metamagic" },
-			{ "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" }, 
-			{ "u_is_wearing": "ring_signet" }, 
-			{ "u_has_wielded_with_flag": "MAGIC_FOCUS" }, 
-			{ "u_is_wearing": "foodperson_mask" } ] } }
-  },
-  {
     "id": "estrange_eoc",
     "type": "SPELL",
     "name": "Sever Connection",
@@ -8461,16 +8402,6 @@
     "max_range": 20
   },
   {
-    "type": "effect_type",
-    "id": "haste_longer",
-    "name": [ "Rabbit's Foot" ],
-    "desc": [ "Your feet won't stop tapping." ],
-    "apply_message": "Uncontrollable speed!",
-    "remove_message": "You return to your normal speed.",
-    "rating": "good",
-    "base_mods": { "speed_mod": [ 150 ] }
-  },
-  {
     "id": "spawn_rabbits_foot_aura",
     "type": "SPELL",
     "name": "Rabbit's Foot",
@@ -8509,29 +8440,6 @@
     "shape": "blast",
     "effect": "spawn_item",
     "effect_str": "rabbits_foot_aura2"
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_rabbit",
-    "effect": { "u_cast_spell": { "id": "spawn_rabbits_foot_aura" } },
-    "false_effect": { "u_cast_spell": { "id": "spawn_rabbits_foot_aura2" } },
-    "condition": {
-      "or": [
-        { "u_is_wearing": "ring_signet" },
-		{ "u_is_wearing": "silent_metamagic" }, 
-		{ "u_is_wearing": "subtle_metamagic" }, 
-		{ "u_is_wearing": "condensed_metamagic" },
-		{ "u_has_wielded_with_flag": "MAGIC_FOCUS" },
-        { "u_is_wearing": "dance_shoes" },
-        { "u_is_wearing": "cufflinks_intricate" },
-        { "u_is_wearing": "slippers" },
-		{ "u_is_wearing": "foodperson_mask" },
-		{ "u_is_wearing": "foodperson_mask_on" },
-        { "u_has_item": "rabbit_sample" },
-		{ "u_has_item": "familiar_cat" },
-        { "u_has_effect": "depressants" }
-      ]
-    }
   },
   {
     "id": "rabbits_foot",
@@ -8667,13 +8575,6 @@
     "max_level": 13,
     "base_casting_time": 500,
     "energy_source": "MANA"
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_cleansed_soul",
-    "effect": { "u_cast_spell": { "id": "spawn_cleansed_soul" } },
-    "false_effect": { "u_cast_spell": { "id": "induce_vomit", "hit_self": true } },
-    "condition": { "not": { "u_has_trait": "PSYCHOPATH" } }
   },
   {
     "id": "run_eoc_cleansed_soul",
@@ -8820,29 +8721,6 @@
     "max_duration": 1000
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_love",
-    "effect": { "u_cast_spell": { "id": "love_spawn_aura" } },
-    "false_effect": { "u_cast_spell": { "id": "love_sick" } },
-    "condition": {
-      "and": [
-        { "not": { "u_has_trait": "PSYCHOPATH" } },
-        {
-          "or": [
-            { "u_is_wearing": "ring_purity" },
-            { "u_is_wearing": "holy_symbol" },
-            { "u_is_wearing": "holy_symbol_wood" },
-            { "u_is_wearing": "relic_small" },
-			{ "u_has_trait": "SPIRITUAL" },
-            { "u_is_wearing": "bead_necklace" },
-            { "u_is_wearing": "ring_engagement" },
-            { "u_is_wearing": "ring_wedding" }
-          ]
-        }
-      ]
-    }
-  },
-  {
     "id": "spawn_mundane_aura",
     "type": "SPELL",
     "name": "Love",
@@ -8917,13 +8795,6 @@
     "max_range": 20
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_metamagic",
-    "effect": { "u_cast_spell": { "id": "drain_fatigue_self_ritual" } },
-    "false_effect": { "u_cast_spell": { "id": "drain_fatigue_self_distraction" } },
-    "condition": { "or": [ { "u_has_trait": "PSYCHOPATH" }, { "compare_int": [ { "u_val": "fatigue" }, ">=", { "const": 100 } ] } ] }
-  },
-  {
     "id": "run_eoc_metamagic",
     "type": "SPELL",
     "name": "Metamagic EOC",
@@ -8991,12 +8862,6 @@
     "energy_source": "MANA",
     "difficulty": 7,
     "max_level": 15
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_crystal_place",
-    "effect": { "u_cast_spell": { "id": "spawn_diamond" } },
-    "condition": { "or": [ { "u_has_trait": "THRESH_MANA" }, { "u_has_item": "book_newage_weapcrys" }, { "u_is_wearing": "ring_signet" }, { "u_is_wearing": "silent_metamagic" }, { "u_is_wearing": "subtle_metamagic" }, { "u_is_wearing": "condensed_metamagic" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" } ] }
   },
   {
     "id": "crystal_place",
@@ -9101,15 +8966,15 @@
     "type": "SPELL",
     "name": "Hired Help",
     "description": "You offer money in exchange for otherworldy assitance.",
-    "valid_targets": [ "ground"],
+    "valid_targets": [ "ground", "self" ],
+	"flags": [ "RANDOM_TARGET" ],
     "effect": "summon",
     "effect_str": "mon_goblin_warrior",
     "shape": "blast",
     "energy_source": "MANA",
     "min_damage": 1,
     "max_level": 10,
-    "min_range": 1,
-	"max_range": 1,
+	"min_aoe": 1,
 	"min_duration": 8640000,
 	"max_duration": 8640000,
     "sound_description": "a moan"
@@ -9117,20 +8982,33 @@
   {
     "id": "use_bundle",
     "type": "SPELL",
-    "name": "Hired Help",
+    "name": "Hired Help - 5 Devilhands",
     "description": "You offer money in exchange for otherworldy assitance.",
-    "valid_targets": [ "ground"],
+    "valid_targets": [ "ground", "self" ],
+	"flags": [ "SPAWN_GROUP" ],
     "effect": "summon",
-    "effect_str": "mon_gundemon",
+    "effect_str": "MON_DEVILHANDS",
     "shape": "blast",
     "energy_source": "MANA",
-    "min_damage": 1,
     "max_level": 10,
-    "min_range": 5,
-	"max_range": 5,
+	"min_aoe": 2, 
+	"max_aoe": 2, 
+    "min_range": 15,
+	"max_range": 15,
+	"min_damage": 5, 
+	"max_damage": 5,
 	"min_duration": 8640000,
 	"max_duration": 8640000,
-    "sound_description": "a moan"
+    "sound_description": "a rattling of arms"
+  },
+  {
+    "id": "bless",
+    "type": "SPELL",
+    "name": { "str": "Bless" },
+    "description": "A spell of blessing that gives you energy and boosts your abilities.",
+    "copy-from": "bless",
+    "effect": "effect_on_condition",
+	"effect_str": "eoc_bless"
   },
   {
     "id": "drain_fatigue_self_gate",
@@ -9149,34 +9027,6 @@
     "max_level": 25,
     "base_energy_cost": 0,
     "difficulty": 4
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_prayer_faithful",
-    "effect": { "u_cast_spell": { "id": "prayer_faithful2" } },
-    "condition": {
-          "not": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" }
-            ]
-         }
-    }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_prayer_wallet",
-    "effect": [ { "u_cast_spell": { "id": "spawn_pretty_penny" } }, { "u_remove_item_with": "chunk_of_devil" }, { "u_message": "You feel a great weight lifted from you and replaced with simplicity.", "type": "warning" } ],
-    "condition": { "u_has_item": "chunk_of_devil" }
   },
   {
     "id": "spawn_pretty_penny",
@@ -9346,50 +9196,6 @@
     "base_casting_time": 0,
     "base_energy_cost": 0,
     "max_level": 1
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_prayer",
-    "effect": { "u_cast_spell": { "id": "prayer2" } },
-    "false_effect": {
-      "u_add_morale": "morale_feeling_good",
-      "bonus": 10,
-      "max_bonus": 10,
-      "duration": "10 minutes",
-      "decay_start": "10 minutes"
-    },
-    "condition": {
-      "and": [
-        {
-          "not": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" }
-            ]
-          }
-        },
-        {
-          "or": [
-            { "u_is_wearing": "holy_symbol" },
-            { "u_is_wearing": "holy_symbol_wood" },
-            { "u_is_wearing": "spirit_armor" },
-			{ "u_has_trait": "SPIRITUAL" },
-            { "u_is_wearing": "bead_bracelet" },
-            { "u_is_wearing": "bead_necklace" },
-            { "u_is_wearing": "relic_small" }
-          ]
-        }
-      ]
-    }
   },
   {
     "id": "prayer",
@@ -9570,108 +9376,6 @@
     "difficulty": 4
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_wicked",
-    "condition": {
-      "and": [
-        {
-          "not": {
-            "or": [
-              { "u_is_wearing": "holy_symbol" },
-              { "u_is_wearing": "holy_symbol_wood" },
-              { "u_is_wearing": "bead_bracelet" },
-              { "u_is_wearing": "bead_necklace" },
-			  { "u_has_trait": "SPIRITUAL" },
-              { "u_is_wearing": "relic_small" }
-            ]
-          }
-        },
-        {
-          "or": [
-            { "u_is_wearing": "pointed_hat" },
-			{ "u_is_wearing": "foodperson_mask" },
-			{ "u_is_wearing": "foodperson_mask_on" },
-			{ "u_is_wearing": "onyx_silver_ring" },
-            { "u_has_effect": "eff_frightful_presence" },
-            { "u_has_effect": "fearparalyze" },
-            { "u_is_wearing": "pact_of_blood" },
-            { "u_is_wearing": "pact_of_smoke" },
-            { "u_is_wearing": "pact_of_bile" },
-            { "u_is_wearing": "pact_of_flame" },
-			{ "u_is_wearing": "pact_of_blood_devoted" },
-            { "u_is_wearing": "pact_of_smoke_devoted" },
-            { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-            { "u_has_effect": "hypovolemia" }
-          ]
-        }
-      ]
-    },
-    "false_effect": [
-      {
-        "u_message": "The sky darkens and the winds howl with delighted violence, a horn blowing somewhere in the distance. You have obviously done something horribly wrong.",
-        "type": "warning",
-        "popup": true
-      },
-      "lightning",
-      { "u_spawn_monster": "mon_ortiel", "real_count": 1, "min_radius": 7, "max_radius": 50, "outdoor_only": false }
-    ],
-    "effect": [
-      { "u_cast_spell": { "id": "spawn_spell_scroll_devil" } },
-      {
-        "run_eocs": [
-          {
-            "id": "wicked_bench",
-            "condition": {
-              "or": [
-                { "u_near_om_location": "cemetery_small" },
-                { "u_near_om_location": "cemetery_religious" },
-                { "u_near_om_location": "cemetery_city" },
-                { "u_near_om_location": "cemetery_religious_city" },
-                { "u_near_om_location": "cemetery" },
-                { "u_has_effect": "sleep_deprived" },
-                { "u_has_effect": "badpoison" },
-				{ "compare_int": [ { "u_val": "pos_z" }, "<=", { "const": -1 } ] },
-                { "u_has_effect": "paralyzepoison" },
-                { "u_has_effect": "poison" }
-              ]
-            },
-            "effect": [ { "u_spawn_item": "magic_bench_item", "count": 1 } ]
-          },
-          {
-            "id": "wicked_storm",
-            "condition": { "and": [ { "is_weather": "portal_storm" }, "u_is_outside" ] },
-            "effect": [ { "u_spawn_item": "minute_orrery", "count": 1 } ]
-          },
-          {
-            "id": "wicked_chained",
-            "condition": {
-              "and": [
-                { "or": [ { "is_weather": "thunder" }, { "is_weather": "lightning" } ] },
-                "u_is_outside",
-                { "compare_int": [ { "u_val": "pos_z" }, ">=", { "const": 5 } ] },
-                { "or": [ { "u_has_worn_with_flag": "ELECTRIC_IMMUNE" }, { "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" } ] }
-              ]
-            },
-            "effect": [ { "u_spawn_item": "sacred_chain", "count": 1 } ]
-          },
-          {
-            "id": "chained_orrery_eoc",
-            "condition": {
-              "and": [ { "u_is_wearing": "sacred_chain" }, { "u_is_wearing": "minute_orrery" }, { "u_has_item": "cleansed_soul" } ]
-            },
-            "effect": [
-              { "u_spawn_item": "chained_orrery", "count": 1 },
-              { "u_remove_item_with": "sacred_chain" },
-              { "u_remove_item_with": "cleansed_soul" },
-              { "u_remove_item_with": "minute_orrery" }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "wicked_ritual",
     "type": "SPELL",
     "name": "Wicked Ritual",
@@ -9788,10 +9492,11 @@
     "id": "altar_place_ring",
     "type": "SPELL",
     "name": "Shatter Onyx",
-    "description": "",
+    "description": "Shatters an onyx-silver ring.",
     "valid_targets": [ "ground" ],
     "effect": "ter_transform",
-    "effect_str": "stone_altar_place",
+    "effect_str": "t_magic_circle_place",
+	"extra_effects": [ { "id": "use_strap", "hit_self": true } ],
     "shape": "blast",
     "flags": [ "SOMATIC", "LOUD", "PERMANENT_ALL_LEVELS", "CONCENTRATE", "NO_PROJECTILE" ],
     "energy_source": "MANA",
@@ -9888,20 +9593,5 @@
     "energy_source": "STAMINA",
     "difficulty": -10,
     "sound_description": "a quiet humming from somewhere beyond the grave."
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_token",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_is_wearing": "preventdeath_token_aura" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_spawn_item": "platonic_flower" },
-	{ "u_consume_item": "preventdeath_token_aura" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 25000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "As the cold embrace of death touches your heart, you sink into a state of unconsciousness. A flower falls to mark your passing, and all goes silent. Suddenly, raw mana pierces your lungs like a breath of the freshest air.", "popup": true } ]
   }
 ]

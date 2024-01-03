@@ -64,7 +64,7 @@
     "type": "TOOL",
 	"looks_like": "mon_frog",
     "name": { "str": "familiar frog" },
-    "description": "The spirit of a frog that could be bound into a spirit chain or similar, letting them leap like a frog three times a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
+    "description": "The spirit of a frog that could be bound into a spirit chain or similar, letting them leap like a frog thirteen times a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
     "weight": "1000 kg",
     "volume": "500 L",
     "longest_side": "2 km",
@@ -72,30 +72,30 @@
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE", "NO_UNLOAD", "NO_RELOAD" ], 
     "material": [ "aether" ],
 	"charges_per_use": 1,
-	"use_action": [ { "type": "cast_spell", "spell_id": "Jump_frog", "no_fail": true, "level": 10 } ],
+	"use_action": [ { "type": "cast_spell", "spell_id": "Jump_frog", "no_fail": true, "level": 1 } ],
     "relic_data": {
       "charge_info": { "recharge_type": "periodic", "time": "1 d", "regenerate_ammo": true }
     },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 3 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 13 } } ],
     "symbol": "S",
     "color": "light_gray"
   },
   {
     "id": "Jump_frog",
     "type": "SPELL",
-    "name": "Leap",
+    "name": "Leapfrog",
     "description": "You leap, perhaps across a gap or forward through a crowd of zombies. Whatever the case, you push your body to move quickly. Say no if asked if you'd like to step into ledge, one time required for each ledge in the gap.",
     "effect": "dash",
     "shape": "line",
     "valid_targets": [ "ground" ],
     "flags": [ "SILENT", "NO_HANDS" ],
-    "min_range": 12,
-    "max_range": 12,
+    "min_range": 6,
+    "max_range": 6,
     "min_aoe": 0,
     "max_aoe": 0,
     "max_level": 10,
     "difficulty": -10,
-    "base_casting_time": 0,
+    "base_casting_time": 30,
     "energy_source": "STAMINA",
     "base_energy_cost": 0,
 	"final_energy_cost": 0
@@ -130,7 +130,7 @@
     "type": "TOOL",
 	"looks_like": "mon_bluejay",
     "name": { "str": "familiar bird" },
-    "description": "The spirit of a bird that could be bound into a spirit chain or similar, letting them fly like a bird once a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
+    "description": "The spirit of a bird that could be bound into a spirit chain or similar, letting them fly like a bird three times a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
     "weight": "1000 kg",
     "volume": "500 L",
     "longest_side": "2 km",
@@ -142,7 +142,7 @@
     "relic_data": {
       "charge_info": { "recharge_type": "periodic", "time": "1 d", "regenerate_ammo": true }
     },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 1 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 3 } } ],
     "symbol": "S",
     "color": "light_gray"
   },
@@ -176,7 +176,7 @@
     "type": "TOOL",
 	"looks_like": "mon_lab_rat",
     "name": { "str": "familiar rat" },
-    "description": "The spirit of a rat that could be bound into a spirit chain or similar, letting them summon rats 3 times a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
+    "description": "The spirit of a rat that could be bound into a spirit chain or similar, letting them summon rats 5 times a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
     "weight": "1000 kg",
     "volume": "500 L",
     "longest_side": "2 km",
@@ -188,7 +188,7 @@
     "relic_data": {
       "charge_info": { "recharge_type": "periodic", "time": "1 d", "regenerate_ammo": true }
     },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 3 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 5 } } ],
     "symbol": "S",
     "color": "light_gray"
   },
@@ -360,7 +360,7 @@
     "type": "TOOL",
 	"looks_like": "mon_cat",
     "name": { "str": "familiar cat" },
-    "description": "The spirit of a cat that could be bound into a spirit chain or similar, giving you a cat's speed once a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
+    "description": "The spirit of a cat that could be bound into a spirit chain or similar, giving you a cat's speed nine times a day. One versed in spellcraft could also solidify it back into it's vigorous form.", 
     "weight": "1000 kg",
     "volume": "500 L",
     "longest_side": "2 km",
@@ -368,13 +368,33 @@
 	"flags": [ "TRADER_AVOID", "SEMITANGIBLE", "NO_UNLOAD", "NO_RELOAD" ], 
     "material": [ "aether" ],
 	"charges_per_use": 1,
-	"use_action": [ { "type": "cast_spell", "spell_id": "rabbits_foot", "no_fail": true, "level": 10 } ],
+	"use_action": [ { "type": "cast_spell", "spell_id": "rabbits_foot_no_comp", "no_fail": true, "level": 1 } ],
     "relic_data": {
       "charge_info": { "recharge_type": "periodic", "time": "1 d", "regenerate_ammo": true }
     },
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 1 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "crystallized_mana": 9 } } ],
     "symbol": "S",
     "color": "light_gray"
+  },
+  {
+    "id": "rabbits_foot_no_comp",
+    "type": "SPELL",
+    "name": "Cat's Paw",
+    "description": "You imbue your feet with raw quickness, perhaps growing an actual rabbit's foot or some other appendage. Whatever the case you wish you'd brought better shoes, or at least something to stave off the jitters. Good luck, anyway.",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_PROJECTILE", "NO_HANDS" ],
+    "effect": "attack",
+    "effect_str": "haste_longer",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "difficulty": 4,
+    "base_casting_time": 0,
+    "final_casting_time": 0,
+    "casting_time_increment": -65,
+    "base_energy_cost": 0,
+    "final_energy_cost": 0,
+    "max_level": 20,
+    "min_duration": 6000
   },
   {
     "id": "familiar_cat_summon",

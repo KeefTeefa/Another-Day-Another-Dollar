@@ -21,6 +21,13 @@
     "description": "a nexus of evil, lieutenant of the Devil"
   },
   {
+    "id": "emit_hot_air4_blast",
+    "type": "emit",
+    "field": "fd_hot_air4",
+    "intensity": 1,
+    "qty": 100
+  },
+  {
     "id": "mon_hemor",
     "type": "MONSTER",
     "name": "hemor",
@@ -1389,6 +1396,7 @@
     "melee_damage": [ { "damage_type": "cold", "amount": 3 } ],
     "emit_fields": [ { "emit_id": "emit_shock_cloud", "delay": "1 s" } ],
     "dodge": 7,
+	"regenerates": 5, 
     "death_drops": "yidrisdrops",
     "harvest": "exempt",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "Yidris solemnly leaves through a portal, unscathed." },
@@ -1453,6 +1461,7 @@
     "melee_dice": 0,
     "melee_dice_sides": 0,
     "death_drops": "omnathdrops",
+	"regenerates": 1, 
 	"armor": { "electric": 50, "cold": 50, "heat": 50, "acid": 50, "pure": 999 },
     "melee_damage": [ { "damage_type": "pure", "amount": 0 } ],
     "dodge": 7,
@@ -1526,6 +1535,7 @@
     "melee_dice_sides": 10,
     "melee_damage": [ { "damage_type": "heat", "amount": 5 } ],
     "dodge": 7,
+	"regenerates": 10, 
     "harvest": "exempt",
     "biosignature": { "biosig_item": "brimstone_chunk", "biosig_timer": 50 },
     "death_drops": "ortieldrops",
@@ -1599,6 +1609,7 @@
     "melee_dice_sides": 10,
     "melee_damage": [ { "damage_type": "heat", "amount": 10 } ],
     "dodge": 7,
+	"regenerates": 10, 
     "harvest": "exempt",
     "biosignature": { "biosig_item": "brimstone_chunk", "biosig_timer": 50 },
     "death_drops": "ortieldrops",
@@ -1924,7 +1935,8 @@
     "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
     "dodge": 0,
 	"emit_fields": [
-      { "emit_id": "emit_tindalos_rift", "delay": "30 s" }
+      { "emit_id": "emit_tindalos_rift", "delay": "30 s" },
+	  { "emit_id": "emit_rad_leak", "delay": "30 s" }
     ],
     "vision_day": 15,
     "vision_night": 25,
@@ -1957,10 +1969,14 @@
     "melee_dice_sides": 0,
     "vision_day": 50,
     "vision_night": 50,
-	"armor": { "electric": 999, "biological": 999, "cold": 999, "stab": 999, "cut": 999, "bullet": 999, "bash": 999 },
+	"armor": { "electric": 100, "biological": 100, "cold": 100, "stab": 100, "cut": 100, "bullet": 100, "bash": 100 },
     "melee_damage": [ { "damage_type": "pure", "amount": 0 } ],
+	"emit_fields": [
+	  { "emit_id": "emit_rad_leak", "delay": "30 s" }
+    ],
     "dodge": 7,
     "harvest": "exempt",
+	"regenerates": 100, 
     "death_drops": "atraxadrops",
     "death_function": { "corpse_type": "NO_CORPSE", "message": "Like the end of a tale told well, it came too early and went too soon." },
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "PLAYER_CLOSE" ],
@@ -2183,7 +2199,7 @@
 	"grab_strength": 10,
     "harvest": "demon_humanoid",
     "death_drops": "demondrops",
-	"death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "corpse_type": "NO_CORPSE", "message": "The % melts away." },
+	"death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "special_attacks": [
 	  [ "DERMATIK", 10 ],
@@ -2242,5 +2258,279 @@
 	"max_duration": 10000,
     "flags": [ "LOUD", "RANDOM_TARGET", "HOSTILE_SUMMON" ],
     "difficulty": 0
+  },
+  {
+    "id": "mon_oni_demon",
+    "type": "MONSTER",
+    "name": { "str": "oni" },
+    "description": "A demon in chrome samurai armor with a horrid, petrifying face of pure evil. As you meet it's gaze you see it's intelligence and realize that it seems intent on you, and fear is all you can feel. The sharpness in it's eyes is matched by the sword it carries, blood already dripping from it's lifeless mechanical blade. As the Oni moves, the blade's serpent tail listlessly carries them through the air.",
+    "bodytype": "human",
+    "default_faction": "nether",
+	"looks_like": "mon_irongolem",
+    "species": [ "HUMAN" ],
+    "volume": "48000 ml",
+    "weight": "800 kg",
+    "hp": 1500,
+    "speed": 300,
+    "material": [ "flesh" ],
+    "symbol": "M",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "vision_day": 25,
+    "vision_night": 100,
+    "melee_skill": 7,
+    "melee_dice": 2,
+    "melee_dice_sides": 10,
+    "armor": { "heat": 50, "bash": 100, "bullet": 100, "stab": 100, "cut": 100 },
+    "bleed_rate": 20,
+    "emit_fields": [
+      { "emit_id": "emit_hot_air4_blast", "delay": "1 s" },
+	  { "emit_id": "emit_dragon_adult_fright", "delay": "5 s" },
+	  { "emit_id": "emit_blood", "delay": "3 s" }
+    ],
+	"starting_ammo": {
+    "bot_c4_hack": 10,
+    "bot_flashbang_hack": 10,
+    "bot_gasbomb_hack": 10,
+    "bot_grenade_hack": 20
+  },
+    "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
+    "dodge": 7,
+    "weakpoint_sets": [ "wps_humanoid_body" ],
+    "harvest": "demon_humanoid",
+    "path_settings": { "avoid_traps": true, "avoid_sharp": true },
+    "death_function": { "effect": { "id": "summon_dragon_oni", "hit_self": true }, "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
+    "anger_triggers": [ "HURT" ],
+    "special_attacks": [
+	  [ "DERMATIK", 15 ],
+	  [ "FEAR_PARALYZE", 5 ],
+	  [
+      "GRENADIER_ELITE",
+      10
+    ],
+	   {
+      "id": "grab"
+    },
+    {
+      "id": "scratch_humanoid"
+    },
+    {
+      "id": "bite_humanoid"
+    },
+    {
+      "id": "smash",
+      "throw_strength": 96
+    },
+      {
+        "type": "spell",
+        "spell_data": { "id": "hallucinator_touch", "min_level": 1 },
+        "cooldown": 5,
+        "monster_message": "The oni's eyes gaze deep into yours and the order of your world becomes chaos."
+      }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "PATH_AVOID_DANGER_2",
+      "FLIES",
+	  "PUSH_MON",
+	  "GRABS", 
+	  "DESTROYS",
+      "BASHES",
+      "PUSH_VEH",
+      "HARDTOSHOOT",
+	  "NIGHT_INVISIBILITY",
+      "CAN_OPEN_DOORS",
+      "PRIORITIZE_TARGETS"
+    ]
+  },
+  {
+    "id": "summon_dragon_oni",
+    "type": "SPELL",
+    "name": { "str": "Oni Death Dragon" },
+    "description": "Spawns the dragon.",
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "flags": [ "RANDOM_TARGET", "HOSTILE_SUMMON", "PERMANENT", "SPAWN_WITH_DEATH_DROPS" ],
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "mon_oni_dragon",
+    "min_aoe": 1,
+    "max_aoe": 1
+  },
+  {
+  "type": "GENERIC",
+  "id": "broken_oni_dragon",
+  "symbol": ",",
+  "color": "light_blue",
+  "looks_like": "mon_dragon_black_adult",
+  "name": {
+    "str": "broken oni dragon",
+    "str_pl": "broken cyber-dragon"
+  },
+  "category": "other",
+  "description": "The jittering, jolting 'corpse' of a cyber-dragon yokai. The electricity is dying, but something inside seems to never lose strength. It's almost sad to see.",
+  "price_postapoc": 200000,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "weight": "2200 kg",
+  "volume": "85000 ml",
+  "to_hit": -3,
+  "flags": [
+    "TRADER_AVOID",
+    "NO_REPAIR"
+  ],
+  "melee_damage": {
+    "bash": 4,
+    "cut": 4
+  }
+},
+  {
+    "id": "mon_oni_dragon",
+    "type": "MONSTER",
+    "name": "cyber-dragon yokai",
+	"looks_like": "mon_dragon_dummy",
+    "description": "What was once the bleeding blade of a yokai has been freed into a long blue and white cyber-serpent that hovers above the ground, gouts of electricity shooting from the sides of it's metallic, grinning mouth. It seems to be evil incarnate, indiscriminate in it's rampage, constantly building an army inside it's own body from some unknown source of power.",
+    "copy-from": "mon_dragon_black_adult",
+    "weight": "2200 kg",
+	"default_faction": "defense_bot",
+    "hp": 1500,
+    "melee_dice": 4,
+    "melee_dice_sides": 12,
+    "melee_damage": [ { "damage_type": "cut", "amount": 28 } ],
+	"harvest": "dragon_oni",
+    "dodge": 6,
+	"aggression": 100, 
+	"morale": 100,
+	"revert_to_itype": "bot_oni_dragon",
+	"biosignature": { "biosig_item": "broken_EMP_hack", "biosig_timer": 100 },
+	"species": [
+    "ROBOT"
+    ],
+	"starting_ammo": {
+    "bot_c4_hack": 10,
+    "bot_flashbang_hack": 10,
+    "bot_gasbomb_hack": 10,
+    "bot_grenade_hack": 20
+  },
+    "speed": 200,
+	"material": [ "steel" ],
+	"special_when_hit": [ "ZAPBACK", 50 ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "ALL_SEEING", "PATH_AVOID_DANGER_1", "WARM", "ELECTRIC", "PUSH_MON", "DROPS_AMMO", "FLIES", "ELECTRONIC", "PET_MOUNTABLE", "CANPLAY", "PET_HARNESSABLE", "ELECTRIC_FIELD" ],
+    "emit_fields": [ { "emit_id": "emit_dragon_adult_fright", "delay": "1 s" }, { "emit_id": "emit_blood", "delay": "10 s" } ],
+    "special_attacks": [
+	[
+      "GRENADIER_ELITE",
+      10
+    ],
+      { "type": "bite", "cooldown": 10 },
+      [ "scratch", 3 ],
+      { "type": "spell", "spell_data": { "id": "dragon_breath_electric", "min_level": 20 }, "cooldown": 25 }
+    ],
+    "armor": { "electric": 600, "bash": 14, "cut": 30, "bullet": 50, "stab": 10 }
+  },
+  {
+    "type": "SPELL",
+    "id": "dragon_breath_electric",
+    "name": { "str": "Yokai dragon Breath" },
+    "description": "Spews a line of electricity from your mouth.",
+    "valid_targets": [ "hostile", "ally", "ground" ],
+    "damage_type": "electric",
+	"field_id": "fd_electricity",
+    "copy-from": "dragon_breath_black",
+    "flags": [ "VERBAL", "NO_HANDS", "NO_LEGS", "LOUD", "IGNITE_FLAMMABLE" ]
+  },
+  {
+    "id": "mon_oni_dragon_friendly",
+    "type": "MONSTER",
+    "name": "cyber-dragon yokai",
+	"looks_like": "mon_dragon_dummy",
+    "description": "What was once the bloodied blade of a yokai has grown into a long blue and white cyber-serpent that hovers above the ground, gouts of electricity shooting from the sides of it's metallic, grinning mouth. It has grown into an easily loveable, hyper-protective companion with a glorious, healthy heart. Strangely it's stopped producing more robots and seems to be working on a project much more intimate.",
+    "vision_day": 30,
+    "vision_night": 20,
+    "path_settings": { "//min_dist": 8, "avoid_traps": true, "avoid_sharp": true },
+	"material": [ "steel" ],
+	"bodytype": "angel",
+    "symbol": "D",
+    "color": "black_white",
+    "weight": "2200 kg",
+	"default_faction": "player",
+    "hp": 2000,
+	"aggression": 100,
+    "morale": 100,
+    "melee_dice": 4,
+    "melee_dice_sides": 12,
+    "melee_damage": [ { "damage_type": "cut", "amount": 28 } ],
+	"harvest": "dragon_oni",
+    "dodge": 6,
+	"revert_to_itype": "bot_oni_dragon", 
+	"biosignature": { "biosig_item": "broken_manhack", "biosig_timer": 100 },
+	"reproduction": {
+    "baby_monster": "mon_oni_dragon_friendly_baby",
+    "baby_count": 1,
+    "baby_timer": 120
+    },
+	"species": [
+    "ROBOT"
+    ],
+    "speed": 250,
+	"special_when_hit": [ "ZAPBACK", 100 ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "ALL_SEEING", "PATH_AVOID_DANGER_1", "WARM", "ELECTRIC", "PUSH_MON", "ELECTRONIC", "DROPS_AMMO", "FLIES", "PET_MOUNTABLE", "CANPLAY", "PET_HARNESSABLE", "ELECTRIC_FIELD" ],
+    "emit_fields": [ { "emit_id": "emit_spark", "delay": "10 s" } ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 10 },
+      [ "scratch", 3 ],
+      { "type": "spell", "spell_data": { "id": "dragon_breath_electric", "min_level": 20 }, "cooldown": 25 }
+    ],
+    "armor": { "electric": 600, "bash": 14, "cut": 30, "bullet": 50, "stab": 10 }
+  },
+  {
+    "id": "mon_oni_dragon_friendly_baby",
+    "type": "MONSTER",
+    "name": "cyber-tadpole",
+    "description": "A hyper friendly little creature much like an electric eel that swims through the air, . It's more organic than it is robot right now, but every day it builds on itself more and more.",
+    "default_faction": "player",
+    "bodytype": "angel",
+    "species": [ "DRAGON" ],
+    "volume": "80 L",
+    "weight": "65 kg",
+    "hp": 180,
+    "speed": 150,
+    "material": [ "steel" ],
+    "symbol": "s",
+    "color": "light_blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 9 } ],
+    "dodge": 5,
+    "vision_day": 30,
+    "vision_night": 20,
+	"emit_fields": [ { "emit_id": "emit_spark", "delay": "1 m" } ],
+	"biosignature": { "biosig_item": "electrohack", "biosig_timer": 100 },
+	"death_drops": {
+      "subtype": "collection",
+      "items": [
+        { "item": "power_supply" },
+		{ "item": "decaying_soul_pill" }
+      ]
+    },
+	"flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "PATH_AVOID_DANGER_1", "WARM", "ELECTRONIC", "ELECTRIC", "FLIES", "PET_MOUNTABLE", "CANPLAY", "PET_HARNESSABLE", "ELECTRIC_FIELD" ],
+    "armor": { "bash": 2, "cut": 12, "electric": 600, "bullet": 10 },
+	"upgrades": { "half_life": 90, "into": "mon_oni_dragon_friendly" },
+    "path_settings": { "//min_dist": 8, "avoid_traps": true, "avoid_sharp": true },
+	"death_function": { "effect": { "id": "death_guilt", "hit_self": true }, "corpse_type": "NO_CORPSE", "message": "The cyber-tadpole shorts and shrivels into a tiny, electrically charged piece of metal." },
+    "special_attacks": [
+      { "type": "bite", "cooldown": 10 },
+      [ "scratch", 7 ],
+      { "type": "spell", "spell_data": { "id": "dragon_breath_electric", "min_level": 4 }, "cooldown": 20 }
+    ]
   }
 ]

@@ -1299,7 +1299,7 @@
   {
     "result": "acidbomb",
     "type": "recipe",  "id_suffix": "fast_alchemy",
-    "activity_level": "fake",
+    "activity_level": "NO_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
     "skill_used": "fabrication",
@@ -1485,7 +1485,7 @@
   {
     "result": "molotov",
     "type": "recipe",  "id_suffix": "fast_alchemy",
-    "activity_level": "fake",
+    "activity_level": "NO_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
     "skill_used": "fabrication",
@@ -1623,7 +1623,7 @@
   {
     "result": "military_explosive_half_barrel_bomb",
     "type": "recipe",  "id_suffix": "fast_alchemy",
-    "activity_level": "fake",
+    "activity_level": "NO_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
     "skill_used": "fabrication",
@@ -1643,7 +1643,7 @@
   {
     "result": "military_explosive_full_barrel_bomb",
     "type": "recipe",  "id_suffix": "fast_alchemy",
-    "activity_level": "fake",
+    "activity_level": "NO_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
     "skill_used": "fabrication",
@@ -1773,7 +1773,7 @@
   {
     "result": "half_barrel_bomb",
     "type": "recipe",  "id_suffix": "fast_alchemy",
-    "activity_level": "fake",
+    "activity_level": "NO_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
     "skill_used": "fabrication",
@@ -1790,7 +1790,7 @@
   {
     "result": "full_barrel_bomb",
     "type": "recipe",  "id_suffix": "fast_alchemy",
-    "activity_level": "fake",
+    "activity_level": "NO_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_QUICKALCHEMY",
     "skill_used": "fabrication",

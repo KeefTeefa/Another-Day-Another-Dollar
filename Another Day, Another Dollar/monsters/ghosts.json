@@ -49,7 +49,7 @@
         "monster_message": "The ghost forces you back telekinetically."
       }
     ],
-    "death_drops": { "subtype": "collection", "items": [ { "item": "decaying_soul", "count": [ 1, 3 ] }, { "item": "twisted_soul" } ] },
+    "death_drops": { "subtype": "collection", "items": [ { "item": "decaying_soul", "count": [ 1, 3 ] }, { "item": "twisted_soul" }, { "item": "nonlocal_spellbook", "prob": 50 } ] },
     "flags": [
       "SEES",
       "HEARS",
@@ -119,7 +119,7 @@
         "monster_message": "The ghost pushes you back telekinetically."
       }
     ],
-    "death_drops": { "subtype": "collection", "items": [ { "item": "decaying_soul", "count": [ 1, 5 ] }, { "item": "ring_wedding" } ] },
+    "death_drops": { "subtype": "collection", "items": [ { "item": "decaying_soul", "count": [ 1, 5 ] }, { "item": "ring_wedding" }, { "item": "spell_scroll_flight", "prob": 50 }, { "item": "spell_scroll_extract_memory", "prob": 50 } ] },
     "flags": [
       "SEES",
       "HEARS",
@@ -183,8 +183,10 @@
     "death_drops": {
       "subtype": "collection",
       "items": [
-        { "item": "decaying_soul", "count": [ 1, 3 ] },
+        { "item": "decaying_soul" },
         { "group": "trash", "count": [ 1, 7 ] },
+		{ "item": "spell_scroll_spiritual_invisibility", "prob": 50 },
+		{ "item": "spell_scroll_soft_step", "prob": 50 },
         { "item": "crystallized_mana" }
       ]
     },
@@ -254,7 +256,7 @@
     ],
     "death_drops": {
       "subtype": "collection",
-      "items": [ { "item": "decaying_soul", "count": [ 1, 5 ] }, { "group": "enchanted_misc", "prob": 10 } ]
+      "items": [ { "item": "decaying_soul", "count": [ 1, 5 ] }, { "group": "enchanted_misc", "prob": 10 }, { "item": "record_accounting", "prob": 75 }, { "item": "spell_scroll_conjure_string", "prob": 75 }, { "item": "spell_scroll_dislocate", "prob": 25 } ]
     },
     "flags": [
       "SEES",
@@ -324,7 +326,8 @@
       "subtype": "collection",
       "items": [
         { "item": "decaying_soul", "count": [ 1, 3 ] },
-        { "item": "nonlocal_spellbook", "prob": 5 },
+        { "item": "spell_scroll_estrangement", "prob": 75 },
+		{ "item": "spell_scroll_dimensional_resonance", "prob": 75 },
         { "item": "twisted_soul", "count": [ 1, 3 ] }
       ]
     },
@@ -347,10 +350,179 @@
     ]
   },
   {
+    "id": "mon_death",
+    "type": "MONSTER",
+    "name": { "str": "death" },
+    "description": "You can almost recognize this thing from last episode.",
+    "default_faction": "nether",
+    "looks_like": "mon_magi_shadow",
+    "bodytype": "human",
+    "species": [ "UNKNOWN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 10000,
+    "speed": 500,
+    "material": [ "arcane_skin" ],
+    "symbol": ".",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "phase": "PLASMA",
+    "anger_triggers": [ "HOSTILE_SEEN", "PLAYER_CLOSE" ],
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 10,
+    "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
+    "emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "1 s" }, { "emit_id": "emit_dragon_adult_fright", "delay": "1 s" } ],
+    "weakpoint_sets": [ "wps_humanoid_body" ],
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "dodge": 10,
+	"regenerates": 100,
+    "luminance": 10,
+    "harvest": "exempt",
+    "vision_day": 100,
+    "vision_night": 100,
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "Death recedes into nothing." },
+    "special_attacks": [
+      [ "FEAR_PARALYZE", 10 ],
+	  {
+        "type": "spell",
+        "spell_data": { "id": "DEATH_SLEEP", "min_level": 1 },
+        "cooldown": 30,
+        "monster_message": "Death raises it's lantern high, and for a moment you almost recognize a grin."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "DEATH_STRIKE", "min_level": 1 },
+        "cooldown": 30,
+        "monster_message": "Death raises it's scythe high, and for a moment you almost recognize a frown."
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "items": [
+        { "item": "grim_reaper_robe" },
+		{ "item": "jackolantern_lit" },
+		{ "item": "twisted_soul" },
+        { "item": "scythe_war" }
+      ]
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "BASHES",
+      "FLIES",
+	  "ALWAYS_SEES_YOU",
+      "NO_BREATHE",
+      "NIGHT_INVISIBILITY",
+      "NOGIB",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "id": "mon_death_small",
+    "type": "MONSTER",
+    "name": { "str": "death" },
+    "description": "You recognize this thing, it's Death from 'Death and Taxes.'",
+    "default_faction": "nether",
+    "looks_like": "mon_magi_shadow",
+    "bodytype": "human",
+    "species": [ "UNKNOWN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 5000,
+    "speed": 500,
+    "material": [ "arcane_skin" ],
+    "symbol": ".",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "phase": "PLASMA",
+    "anger_triggers": [ "HOSTILE_SEEN", "PLAYER_CLOSE" ],
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 10,
+    "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
+    "emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "1 s" } ],
+    "weakpoint_sets": [ "wps_humanoid_body" ],
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "dodge": 10,
+	"regenerates": 100,
+    "luminance": 10,
+    "harvest": "exempt",
+    "vision_day": 100,
+    "vision_night": 100,
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "Death recedes into nothing." },
+    "special_attacks": [
+	  {
+        "type": "spell",
+        "spell_data": { "id": "DEATH_SLEEP", "min_level": 1 },
+        "cooldown": 30,
+        "monster_message": "You recall the only episode of 'Death and Taxes' that put you to sleep. Good times."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "DEATH_STRIKE", "min_level": 1 },
+        "cooldown": 30,
+        "monster_message": "You recall that gruesome episode of 'Death and Taxes' that almost made you throw up. Not so good times."
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "items": [
+        { "item": "grim_reaper_robe" },
+		{ "item": "jackolantern_lit" },
+		{ "item": "decaying_soul" },
+        { "item": "scythe_war" }
+      ]
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "BASHES",
+      "FLIES",
+	  "ALL_SEEING",
+      "NO_BREATHE",
+      "NIGHT_INVISIBILITY",
+      "NOGIB",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+  "type": "GENERIC",
+  "id": "broken_ghost_generator",
+  "symbol": ",",
+  "color": "dark_gray",
+  "name": {
+    "str": "broken ghost generator"
+  },
+  "category": "other",
+  "description": "The busted remains of a ghost generator. The ghosts have all escaped, but the foundation of a ghost vault is still here.",
+  "price": 30000,
+  "price_postapoc": 10,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "weight": "40750 g",
+  "volume": "30000 ml",
+  "to_hit": -3,
+  "flags": [
+    "TRADER_AVOID",
+    "NO_REPAIR"
+  ],
+  "melee_damage": {
+    "bash": 6,
+    "cut": 6
+  }
+},
+  {
     "id": "mon_ghost_generator",
     "type": "MONSTER",
     "name": "ghost vault",
-    "description": "An incredibly complex 'machine' that is teeming with so many souls it's taken on their incoporeality.",
+    "description": "An incredibly complex 'machine' that is teeming with so many souls it's taken on it's own incorporeality. It shutters violently as the souls inside desperately try to escape.",
     "default_faction": "nether",
     "bodytype": "blob",
     "species": [ "ROBOT" ],
@@ -373,6 +545,13 @@
     "dodge": 2,
     "vision_day": 10,
     "vision_night": 10,
+	"death_drops": {
+      "subtype": "collection",
+      "items": [
+        { "item": "spell_scroll_psychic_anchor", "prob": 50 },
+		{ "item": "spell_scroll_distance_self", "prob": 50 }
+      ]
+    },
     "special_attacks": [
       {
         "type": "spell",
@@ -382,9 +561,9 @@
       }
     ],
     "harvest": "ghostgenerator",
-    "death_function": { "effect": { "id": "summon_ghosts", "hit_self": true }, "corpse_type": "BROKEN" },
+    "death_function": { "effect": { "id": "summon_ghosts", "hit_self": true }, "corpse_type": "BROKEN"  },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
-    "flags": [ "SEES", "IMMOBILE", "RANGED_ATTACKER" ]
+    "flags": [ "SEES", "IMMOBILE", "RANGED_ATTACKER", "LOUDMOVES" ]
   },
   {
     "id": "summon_ghosts",

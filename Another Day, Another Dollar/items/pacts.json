@@ -57,7 +57,7 @@
     "id": "pact_of_blood_enchantment",
     "condition": "ALWAYS",
     "values": [
-      { "value": "MAX_MANA", "add": 1500 },
+      { "value": "MAX_MANA", "add": 3000 },
 	  { "value": "INTELLIGENCE", "add": 1 },
 	  { "value": "STRENGTH", "add": 1 },
       { "value": "REGEN_MANA", "multiply": 0.2 }
@@ -101,7 +101,7 @@
       { "value": "REGEN_MANA", "multiply": 0.2 },
 	  { "value": "BONUS_DODGE", "add": 1 },
 	  { "value": "DEXTERITY", "add": 1 },
-      { "value": "MAX_MANA", "add": 1500 }
+      { "value": "MAX_MANA", "add": 3000 }
     ]
   },
   {
@@ -120,7 +120,7 @@
 	  { "value": "INTELLIGENCE", "add": 4 },
 	  { "value": "MAX_HP", "multiply": 0.2 },
       { "value": "REGEN_MANA", "multiply": 0.5 },
-      { "value": "MAX_MANA", "add": 2500 }
+      { "value": "MAX_MANA", "add": 4500 }
     ]
   },
   {
@@ -128,7 +128,7 @@
     "id": "pact_of_flame_enchantment",
     "condition": "ALWAYS",
     "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
-    "values": [ { "value": "MAX_MANA", "add": 2500 }, { "value": "REGEN_MANA", "multiply": 0.5 }, { "value": "LUMINATION", "add": 15 } ]
+    "values": [ { "value": "MAX_MANA", "add": 5000 }, { "value": "REGEN_MANA", "multiply": 0.5 }, { "value": "LUMINATION", "add": 5 }, { "value": "SPEED", "multiply": 0.5 } ]
   },
   {
     "type": "enchantment",
@@ -179,25 +179,10 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "BADTEMPER", "JEKYLL", "CURELIGHTWOUNDS_SPELL", "SCHIZOPHRENIC", "PSYCHOPATH", "BLOODPACTHEAT" ]
+          "mutations": [ "BADTEMPER", "JEKYLL", "CURELIGHTWOUNDS_SPELL", "SCHIZOPHRENIC", "PSYCHOPATH", "BLOODPACTHEAT", "WAKEFUL2", "INSOMNIA" ]
         }
       ]
     }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_blood_contract",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_is_wearing": "pact_of_blood_devoted" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "pact_of_blood" },	
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_consume_item": "pact_of_blood_devoted" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 50000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "As the flames of Hell begin to devour you, the face of an old friend smiles. As much as they'd love your boiling soul, it seems you have work left to do. Your Contract will pay the price of death for you.", "popup": true } ]
   },
   {
     "id": "pact_of_blood_devoted",
@@ -223,7 +208,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "CURELIGHTWOUNDS_SPELL", "PSYCHOPATH" ]
+          "mutations": [ "CURELIGHTWOUNDS_SPELL", "PSYCHOPATH", "WAKEFUL2" ]
         }
       ]
     }
@@ -248,25 +233,10 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "WAKEFUL", "XS", "spiritwalk_SPELL", "summonwisps_SPELL", "PSYCHOPATH", "FLIMSY", "GLASSJAW", "SMOKEPACTHEAT" ]
+          "mutations": [ "XS", "spiritwalk_SPELL", "summonwisps_SPELL", "SLEEPY", "PSYCHOPATH", "FLIMSY", "GLASSJAW", "SMOKEPACTHEAT", "EASYSLEEPER2" ]
         }
       ]
     }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_smoke_contract",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_is_wearing": "pact_of_smoke_devoted" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "pact_of_smoke" },	
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_consume_item": "pact_of_smoke_devoted" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 50000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "As the flames of Hell begin to devour you, the face of an old friend smiles. As much as they'd love your listless soul, it seems you have work left to do. Your Contract will pay the price of death for you.", "popup": true } ]
   },
   {
     "id": "pact_of_smoke_devoted",
@@ -287,7 +257,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "mutations": [ "spiritwalk_SPELL", "summonwisps_SPELL", "PSYCHOPATH" ]
+          "mutations": [ "spiritwalk_SPELL", "summonwisps_SPELL", "PSYCHOPATH", "SLEEPY", "EASYSLEEPER2" ]
         }
       ]
     }
@@ -319,6 +289,8 @@
             "BADKNEES",
             "ACIDPROOF",
             "ACIDBLOOD",
+			"HUNGER3",
+			"NO_THIRST",
 			"SLOWRUNNER",
 			"BILEPACTHEAT",
             "ENLARGE_SPELL",
@@ -329,21 +301,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_bile_contract",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_is_wearing": "pact_of_bile_devoted" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "pact_of_bile" },	
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_consume_item": "pact_of_bile_devoted" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 50000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "As the flames of Hell begin to devour you, the face of an old friend smiles. As much as they'd love your filthy soul, it seems you have work left to do. Your Contract will pay the price of death for you.", "popup": true } ]
   },
   {
     "id": "pact_of_bile_devoted",
@@ -368,6 +325,8 @@
           "mutations": [
             "ACIDPROOF",
             "ACIDBLOOD",
+			"HUNGER3",
+			"NO_THIRST",
             "ENLARGE_SPELL",
             "PSYCHOPATH"
           ]
@@ -392,7 +351,7 @@
       "passive_effects": [
         { "id": "pact_of_flame_enchantment" },
         { "id": "pact_of_flame_enchantment2" },
-        { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "summon_flame", "hit_self": true, "once_in": 3 } ] },
+        { "has": "WORN", "condition": "ALWAYS", "hit_me_effect": [ { "id": "summon_flame", "hit_self": true, "once_in": 2 } ] },
         {
           "has": "WORN",
           "condition": "ALWAYS",
@@ -402,6 +361,7 @@
             "PYROMANIA",
             "PSYCHOPATH",
 			"NOMAD",
+			"THIRST3",
 			"FLAMEPACTHEAT",
             "THERMALIGNORANCE",
             "SLOWHEALER",
@@ -411,21 +371,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_flame_contract",
-	"eoc_type": "PREVENT_DEATH",
-	"condition": { "u_is_wearing": "pact_of_flame_devoted" },
-    "effect": [ 
-	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "pact_of_flame" },	
-	{ "math": [ "u_pain()", "=", "0" ] }, 
-	{ "u_consume_item": "pact_of_flame_devoted" }, 
-	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 50000 } ] },
-    { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
-	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "As the flames of Hell begin to devour you, the face of an old friend smiles. As much as they'd love your red-hot soul, it seems you have work left to do. Your Contract will pay the price of death for you.", "popup": true } ]
   },
   {
     "id": "pact_of_flame_devoted",
@@ -449,6 +394,7 @@
           "condition": "ALWAYS",
           "mutations": [
             "PSYCHOPATH",
+			"THIRST2",
             "THERMALIGNORANCE",
             "FIREBALL_SPELL"
           ]

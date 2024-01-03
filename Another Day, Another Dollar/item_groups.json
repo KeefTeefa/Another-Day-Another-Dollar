@@ -115,6 +115,7 @@
         [ "spell_scroll_abolish_spirit", 35 ],
 		[ "spell_scroll_distance_self", 35 ],
 		[ "spell_scroll_call_wild", 35 ],
+		[ "death_poem", 35 ],
 		[ "spell_scroll_indirected_mana", 5 ],
 		[ "spell_scroll_realign_pigment", 35 ],
         [ "spell_scroll_reanimate_golem", 50 ],
@@ -208,6 +209,7 @@
       "items": [
         [ "portable_game_magic", 5 ],
         [ "magic_camera", 5 ],
+		[ "deathandtaxes_broken", 1 ],
 		[ "magic_eink_tablet_pc", 5 ],
 		[ "vhs_player", 5 ],
 		{ "group": "bionics_common", "prob": 5 },
@@ -228,6 +230,7 @@
 		{ "group": "enchanted_misc", "prob": 3 },
         [ "twisted_soul", 1 ],
         [ "smart_rug", 1 ],
+		[ "deathandtaxes", 1 ],
         [ "antoninianus", 1 ],
         [ "white_wolfs_staff", 1 ],
         [ "mana_potion_lesser", 2 ],
@@ -333,11 +336,14 @@
 	[ "crystal_ball", 1 ], 
 	[ "walking_key", 3 ], 
 	[ "dieanotherday", 3 ], 
+	[ "deathbeforedishonor", 2 ],
+	[ "deathandtaxes", 1 ],
 	[ "bluesteel_longsword", 3 ], 
 	[ "greensteel_spear", 3 ], 
 	[ "redsteel_morningstar", 3 ],
 	[ "blacksteel_katana", 1 ],
     [ "whitesteel_staff", 1 ],	
+	[ "deathandtaxes_broken", 5 ],
     { "group": "spell_scroll_tier_2", "prob": 2 } ] }
   },
   {
@@ -350,7 +356,7 @@
     "type": "item_group",
     "id": "antique",
     "copy-from": "antique",
-    "extend": { "items": [ [ "white_wolfs_staff", 1 ], [ "spell_scroll_spawn_white_wolfs_staff", 1 ], [ "vhs_player", 10 ], [ "clay_golem_token", 1 ], { "group": "spell_scroll_tier_1", "prob": 3 } ] }
+    "extend": { "items": [ [ "white_wolfs_staff", 1 ], [ "spell_scroll_spawn_white_wolfs_staff", 1 ], [ "vhs_player", 10 ], [ "clay_golem_token", 3 ], [ "stone_golem_token", 2 ], [ "iron_golem_token", 1 ], { "group": "spell_scroll_tier_1", "prob": 3 } ] }
   },
   {
     "type": "item_group",
@@ -390,7 +396,11 @@
     "copy-from": "pawn",
     "extend": {
       "items": [
-        { "group": "enchanted_misc", "prob": 3 }
+        { "group": "enchanted_misc", "prob": 3 },
+		{ "item": "vhs_player", "prob": 1 },
+		{ "item": "dieanotherday", "prob": 3 },
+		{ "item": "deathbeforedishonor", "prob": 2 },
+		{ "item": "deathandtaxes", "prob": 1 }
       ]
     }
   },
@@ -473,13 +483,13 @@
 		[ "range_extender", 5 ],
 		[ "mirrored_page", 10 ],
         [ "wash_kit_magic", 5 ],
-        [ "clay_golem_token", 1 ],
 		[ "unending_tape", 5 ],
 		[ "vesuvian_bottle", 5 ],
         [ "gate_token", 10 ],
         [ "bag_of_rocks", 10 ], 
 		[ "infinite_bottle", 10 ], 
 		[ "pack_opening", 10 ], 
+		[ "soda_gift", 10 ], 
 		[ "large_dry_bottle", 1 ], 
         { "group": "unendingpens", "prob": 15 },
 		{ "group": "benjamins", "prob": 10 },
@@ -556,7 +566,13 @@
     "id": "fast_food",
     "copy-from": "fast_food",
     "subtype": "distribution",
-    "extend": { "entries": [ { "item": "foodplace_subscription_box", "prob": 5 }, { "item": "foodplace_cup", "prob": 10 }, { "item": "infinite_bottle", "prob": 15 }, { "item": "spell_scroll_summon_hot4", "prob": 5 }, { "item": "spell_scroll_brain_freeze", "prob": 5 } ] }
+    "extend": { "entries": [ 
+	{ "item": "foodplace_subscription_box", "prob": 5 }, 
+	{ "item": "foodplace_cup", "prob": 10 }, 
+	{ "item": "infinite_bottle", "prob": 15 }, 
+	{ "item": "spell_scroll_summon_hot4", "prob": 5 }, 
+	{ "item": "spell_scroll_brain_freeze", "prob": 5 },
+    { "group": "specialsoda", "prob": 1 } ] }
   },
   {
     "type": "item_group",
@@ -600,10 +616,52 @@
   },
   {
     "type": "item_group",
+    "id": "sodagift_group",
+    "subtype": "distribution",
+    "items": [
+      { "group": "specialsoda", "prob": 25 },
+      { "group": "softdrinks_bottled", "prob": 25 },
+	  { "group": "softdrinks_canned", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "specialsoda",
+    "subtype": "distribution",
+    "items": [
+      { "item": "gate_token", "prob": 15 },
+      { "item": "scroll_token", "prob": 20 },
+	  { "item": "boss_token", "prob": 5 },
+	  { "item": "catalyzer", "prob": 10 },
+	  { "item": "ship_token", "prob": 10 },
+	  { "item": "semi_truck_token", "prob": 10 },
+	  { "item": "preventdeath_token", "prob": 1 },
+	  { "item": "soda_gift", "prob": 5 },
+	  { "item": "mojocycle_token", "prob": 10 },
+	  { "item": "hoverboard_token", "prob": 10 }
+    ]
+  },
+  {
+    "id": "groce_softdrink",
+    "type": "item_group",
+    "copy-from": "groce_softdrink",
+    "extend": { "items": [ { "group": "specialsoda", "prob": 1 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "softdrinks_bottled",
+    "copy-from": "softdrinks_bottled",
+	"subtype": "distribution",
+    "extend": {
+      "items": [ { "group": "specialsoda", "prob": 1 }, [ "linguistics_lesson_one", 1 ], [ "linguistics_lesson_two", 1 ], [ "linguistics_lesson_three", 1 ] ]
+    }
+  },
+  {
+    "type": "item_group",
     "id": "potions_rare",
     "copy-from": "potions_rare",
     "extend": {
-      "items": [ [ "gate_token", 1 ], [ "scroll_token", 1 ], [ "boss_token", 1 ], [ "catalyzer", 1 ], [ "ship_token", 1 ], [ "semi_truck_token", 1 ], [ "mojocycle_token", 1 ], [ "linguistics_lesson_one", 1 ], [ "linguistics_lesson_two", 1 ], [ "linguistics_lesson_three", 1 ] ]
+      "items": [ { "group": "specialsoda", "prob": 5 },  [ "linguistics_lesson_one", 5 ], [ "linguistics_lesson_two", 5 ], [ "linguistics_lesson_three", 5 ] ]
     }
   },
   {
@@ -650,6 +708,7 @@
       { "item": "psychic_pebble", "prob": 1 },
       { "item": "infinite_bottle", "prob": 1 },
       { "item": "antoninianus", "prob": 5 },
+	  { "item": "deathandtaxes_broken", "prob": 3 },
 	  { "item": "decaying_soul_pill", "prob": 5 },
 	  { "item": "night_vision_pill", "prob": 5 },
 	  { "item": "tear_of_child", "prob": 5 }
@@ -1362,6 +1421,14 @@
   },
   {
     "type": "item_group",
+    "id": "onidragondrops",
+	"subtype": "collection",
+    "items": [
+	  { "item": "wakizashi_oni" }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "kelkdrops",
 	"subtype": "collection",
     "items": [
@@ -1632,10 +1699,11 @@
 	{ "group": "enchanted_small_items", "prob": 25 }, 
 	{ "item": "ring_signet", "prob": 1 }, 
 	{ "item": "infinite_bottle", "prob": 2 }, 
-	{ "item": "coin_guidebook", "prob": 5 }, 
+	{ "item": "coin_guidebook", "prob": 1 }, 
 	{ "item": "portcrystal", "prob": 3 }, 
 	{ "item": "ferrystone", "prob": 5 },
 	{ "item": "pack_opening", "prob": 10 },
+	{ "item": "coffee_dispo", "prob": 10 },
 	{ "item": "throwing_pen", "prob": 15, "count": [ 1, 3 ] },
 	{ "group": "packs", "prob": 5 }, 
 	{ "group": "unendingpens", "prob": 35 }, 
@@ -1747,7 +1815,7 @@
     "//": "Books found in school library",
     "subtype": "collection",
     "copy-from": "book_school",
-    "extend": { "items": [ { "item": "spells_for_the_modern_professional", "prob": 1 }, { "item": "spell_scroll_summon_flame", "prob": 1 }, { "item": "coin_guidebook", "prob": 5 }, { "item": "spell_scroll_summon_bike", "prob": 3 }, { "item": "spell_scroll_close_tear", "prob": 3 } ] }
+    "extend": { "items": [ { "item": "spells_for_the_modern_professional", "prob": 1 }, { "item": "spell_scroll_summon_flame", "prob": 1 }, { "item": "coin_guidebook", "prob": 2 }, { "item": "spell_scroll_summon_bike", "prob": 3 }, { "item": "spell_scroll_close_tear", "prob": 3 } ] }
   },
   {
     "type": "item_group",
@@ -1768,7 +1836,7 @@
     "id": "mansion_bookcase",
     "subtype": "collection",
     "copy-from": "mansion_bookcase",
-    "extend": { "items": [ { "item": "spell_scroll_charge_attack", "prob": 5 }, { "item": "spell_scroll_transtemporal_passage", "prob": 3 }, { "item": "coin_guidebook", "prob": 5 }, { "item": "spell_scroll_ghost_cleanse", "prob": 5 }, { "item": "spell_scroll_recover_mana_fatigue", "prob": 3 } ] }
+    "extend": { "items": [ { "item": "spell_scroll_charge_attack", "prob": 5 }, { "item": "spell_scroll_transtemporal_passage", "prob": 3 }, { "item": "death_poem", "prob": 1 }, { "item": "coin_guidebook", "prob": 2 }, { "item": "spell_scroll_ghost_cleanse", "prob": 5 }, { "item": "spell_scroll_recover_mana_fatigue", "prob": 3 } ] }
   },
   {
     "type": "item_group",
@@ -1794,7 +1862,7 @@
     "type": "item_group",
     "copy-from": "livingroom",
     "subtype": "distribution",
-    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 }, { "item": "cards_magic", "prob": 10 }, { "item": "devils_catalogue", "prob": 1 }, { "item": "coin_guidebook", "prob": 10 }, { "item": "spell_scroll_untether_mana", "prob": 1 }, { "item": "spell_scroll_52_card_shuffle", "prob": 1 } ] }
+    "extend": { "items": [ { "group": "enchanted_misc", "prob": 3 }, { "item": "cards_magic", "prob": 10 }, { "item": "devils_catalogue", "prob": 1 }, { "item": "coin_guidebook", "prob": 1 }, { "item": "spell_scroll_untether_mana", "prob": 1 }, { "item": "spell_scroll_52_card_shuffle", "prob": 1 } ] }
   },
   {
     "id": "bedroom",
@@ -1998,7 +2066,7 @@
     "id": "enchanted_rings_common",
     "copy-from": "enchanted_rings_common",
     "subtype": "collection",
-    "extend": { "items": [ { "item": "ring_signet", "prob": 5 } ] }
+    "extend": { "items": [ { "item": "ring_signet", "prob": 5 }, { "item": "onyx_silver_ring", "prob": 5 } ] }
   },
   {
     "type": "item_group",
@@ -2006,6 +2074,24 @@
     "copy-from": "enchanted_rings_uncommon",
     "subtype": "collection",
     "extend": { "items": [ { "item": "black_wolfs_ring_bullet", "prob": 1 }, { "item": "white_wolfs_ring_cold", "prob": 1 } ] }
+  },
+   {
+    "type": "item_group",
+    "id": "witch_stuff",
+    "subtype": "collection",
+    "items": [
+      { "item": "onyx_silver_ring", "prob": 25 },
+      { "item": "familiar_cat", "prob": 25 },
+	  { "item": "book_newage_witchcraftadv", "prob": 25 },
+	  { "item": "book_newage_witchcraftbeg", "prob": 50 },
+	  { "item": "familiar_frog", "prob": 25 },
+	  { "item": "familiar_rat", "prob": 25 },
+	  { "item": "fp_loyalty_card", "prob": 25 },
+	  { "item": "familiar_rat", "prob": 25 },
+	  { "item": "witch_dress_long", "prob": 25 },
+	  { "item": "witch_dress", "prob": 25 },
+      { "item": "pointed_hat", "prob": 75 }
+    ]
   },
   {
     "type": "item_group",
@@ -2135,6 +2221,7 @@
 	  { "item": "spell_scroll_estrangement", "prob": 3, "container-item": "big_envelope" },
 	  { "item": "spell_scroll_transgate_place", "prob": 5 },
 	  { "item": "spell_scroll_sorcery", "prob": 5 },
+	  { "item": "deathandtaxes", "prob": 5 },
 	  { "item": "desperate_letter", "prob": 1, "container-item": "big_envelope" },
 	  { "item": "operator_invitation", "prob": 1, "container-item": "big_envelope" }
     ]
@@ -2252,7 +2339,25 @@
 	  { "item": "familiar_frigiling", "prob": 10 },
 	  { "item": "familiar_sparklet", "prob": 10 },
 	  { "item": "familiar_corrolug", "prob": 10 },
+	  { "group": "familiar_summon_items", "prob": 1 },
 	  { "item": "familiar_dragon", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "familiar_summon_items",
+    "items": [
+	  { "item": "familiar_frog_summon", "prob": 10 },
+	  { "item": "familiar_owl_summon", "prob": 10 },
+	  { "item": "familiar_rat_summon", "prob": 10 },
+	  { "item": "familiar_skeleton_dog_summon", "prob": 10 },
+	  { "item": "familiar_cat_summon", "prob": 10 },
+	  { "item": "familiar_fish_summon", "prob": 10 },
+	  { "item": "familiar_blastlid_summon", "prob": 10 },
+	  { "item": "familiar_frigiling_summon", "prob": 10 },
+	  { "item": "familiar_sparklet_summon", "prob": 10 },
+	  { "item": "familiar_corrolug_summon", "prob": 10 },
+	  { "item": "summon_dragon_item", "prob": 1 }
     ]
   },
   {
@@ -2353,11 +2458,19 @@
         [ "white_wolfs_staff", 3 ],
 		[ "larsandersens_form", 5 ],
 		[ "disguise_kit", 5 ],
+		[ "death_poem", 3 ],
 		[ "larsandersens_form_2", 1 ],
 		[ "big_game_crossbow", 5 ],
 		[ "perfect_suppressor_2", 5 ],
+		[ "sonic_ring", 1 ],
 		[ "range_extender_2", 5 ],
-		[ "dieanotherday", 2 ],
+		[ "dieanotherday", 3 ],
+		[ "deathbeforedishonor", 2 ],
+		[ "deathandtaxes", 1 ],
+		[ "clay_golem_token", 1 ],
+		[ "stone_golem_token", 1 ],
+		[ "iron_golem_token", 1 ],
+		[ "plastic_golem_token", 1 ],
         [ "smart_rug", 5 ],
 		[ "portcrystal", 5 ],
 		[ "heat_sight", 5 ],
@@ -2378,7 +2491,9 @@
         [ "interdimensional_cage", 5 ],
         [ "parabolan_silk_undersuit", 5 ],
         { "group": "drawings", "prob": 1 },
-		{ "group": "benjamins", "prob": 40 },
+		{ "group": "familiars", "prob": 1 },
+		{ "group": "familiar_summon_items", "prob": 3 },
+		{ "group": "benjamins", "prob": 10 },
 		{ "group": "gloves", "prob": 10 },
 		{ "group": "links", "prob": 10 },
 		{ "group": "sliverlaunchers", "prob": 5 },

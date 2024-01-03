@@ -971,7 +971,7 @@
     "type": "furniture",
     "id": "f_scroll_printer",
     "name": "infernal press",
-    "description": "A dastardly machine containing an element capable of turning regular paper into liquid magic. If only you knew how to do so...",
+    "description": "A dastardly machine containing an element capable of turning regular paper into liquid magic. It is simply above the level of anything else, capable of circumventing requirements that bind the world and keep it in check.",
     "symbol": "0",
     "bgcolor": "white",
     "move_cost_mod": 2,
@@ -984,7 +984,6 @@
     "deconstruct": {
       "items": [
         { "item": "pipe", "count": [ 6, 12 ] },
-		{ "item": "impression_cylinder" },
         { "item": "cu_pipe", "count": [ 1, 4 ] },
         { "item": "cable", "charges": [ 1, 4 ] },
         { "item": "epoxy_chunk", "count": [ 50, 75 ] },
@@ -1151,13 +1150,6 @@
   "copy-from": "fake_item"
   },
   {
-    "type": "effect_type",
-    "id": "silvermoon_sickness",
-    "name": [ "Silvermoon Draw" ],
-	"show_in_info": true,
-    "desc": [ "You have drawn silver from a silvermoon loom today." ]
-  },
-  {
     "type": "furniture",
     "id": "f_spinwheel_magic",
     "name": "silvermoon loom",
@@ -1265,13 +1257,6 @@
   "pre_terrain": "t_covered_well",
   "post_terrain": "t_goldensun_spring"
 },
-{
-    "type": "effect_type",
-    "id": "goldensun_sickness",
-    "name": [ "Goldensun Harvest" ],
-	"show_in_info": true,
-    "desc": [ "You have harvested gold from a goldensun spring today." ]
-  },
 {
   "type": "terrain",
   "id": "t_goldensun_spring",
@@ -1788,20 +1773,6 @@
   "folding_time": "1 s",
   "unfolding_time": "1 s"
 },
-{
-    "type": "effect_type",
-    "id": "dieanotherday",
-    "name": [ "Die Another Day" ],
-	"show_in_info": true,
-    "desc": [ "You feel like the protaganist!" ]
-  },
-{
-    "type": "effect_type",
-    "id": "alreadydiedtoday",
-    "name": [ "Die and Die Again" ],
-	"show_in_info": true,
-    "desc": [ "You watched 'Die Another Day' today." ]
-  },
   {
     "type": "construction",
     "id": "constr_tv_setup",
@@ -1827,11 +1798,37 @@
 	"max_damage": -360000,
     "shape": "blast"
   },
+  {
+    "id": "entrancedbydbd",
+    "type": "SPELL",
+    "name": "Long Movie",
+    "description": "A long, engrossing movie.",
+    "message": "You can't pull yourself away.",
+    "valid_targets": [ "self" ],
+	"flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
+    "effect": "mod_moves",
+	"min_damage": -1080000, 
+	"max_damage": -1080000,
+    "shape": "blast"
+  },
+  {
+    "id": "entrancedbydat",
+    "type": "SPELL",
+    "name": "One More Episode",
+    "description": "A long, engrossing episode.",
+    "message": "You can't pull yourself away.",
+    "valid_targets": [ "self" ],
+	"flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
+    "effect": "mod_moves",
+	"min_damage": -126000, 
+	"max_damage": -126000,
+    "shape": "blast"
+  },
 {
   "type": "furniture",
   "id": "f_tv_setup",
   "name": "Home Entertainment Center",
-  "description": "A setup with everything a man might need to kick back and watch a good flick.",
+  "description": "A setup with everything somebody might need to kick back and watch a good flick.",
   "looks_like": "television",
   "symbol": "~",
   "required_str": 10,
@@ -1864,34 +1861,62 @@
       "effect_on_conditions": [
         {
           "id": "EOC_TV",
-          "condition": {
-      "and": [
-        {
-          "not": { "u_has_effect": "alreadydiedtoday" }
-        }, 
-		{ "u_has_item": "dieanotherday" }
-      ]
-    },
+          "condition": { "u_has_item": "dieanotherday" },
      "effect": [
 	{ "u_message": "Before you even realize it, you've spent an hour engrossed in 'Die Another Day.' There's just something so dreamy and familiar about that main character...", "popup": true },
 	{
       "u_add_effect": "dieanotherday", "duration": "1 d"
 	},
 	{
-      "u_add_effect": "alreadydiedtoday", "duration": "1 d"
-	},
-	{
-      "u_add_trait": "HAS_NEMESIS"
-	},
-	{
       "u_cast_spell": { "id": "entrancedbyvhs", "hit_self": true }
 	}
 	],
-     "false_effect": [ 
-	 { "u_message": "You push buttons on the TV hoping that something will happen, and then realize that it doesn't have power. Not much to watch anyway.", "popup": true }
-	]
-    }
-	]
+     "false_effect": [ { "run_eocs": [ { "id": "eoc_dbd" } ] } ]
 	}
+	]
+  }
+},
+{
+  "type": "furniture",
+  "id": "f_cauldron_orichalcum",
+  "name": "orichalcum cauldron",
+  "description": "This is an alchemical cauldron made of orichalcum. The metal is especially resistant to the unique types of corrosion caused by alchemy. Could be simply deconstructed to move it around.",
+  "symbol": "#",
+  "color": "red",
+  "looks_like": "cauldron_orichalcum",
+  "move_cost_mod": 2,
+  "coverage": 35,
+  "required_str": 8,
+  "crafting_pseudo_item": "cauldron_orichalcum",
+  "flags": [
+    "PLACE_ITEM",
+    "TRANSPARENT",
+    "FIRE_CONTAINER",
+    "EASY_DECONSTRUCT"
+  ],
+  "deployed_item": "cauldron_orichalcum",
+  "examine_action": "fireplace",
+  "bash": {
+    "str_min": 16,
+    "str_max": 40,
+    "sound": "metal screeching!",
+    "sound_fail": "clang!",
+    "items": [
+      {
+        "item": "orichalcum_sliver",
+        "count": [
+          5,
+          15
+        ]
+      },
+      {
+        "item": "orichalcum_lump",
+        "count": [
+          1,
+          3
+        ]
+      }
+    ]
+  }
 }
 ]

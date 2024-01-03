@@ -1,0 +1,180 @@
+[
+{
+    "type": "effect_type",
+    "id": "dieanotherday",
+    "name": [ "Die Another Day" ],
+	"show_in_info": true,
+    "desc": [ "You feel like the protaganist! You can almost feel the plot armor." ]
+  },
+  {
+    "type": "effect_type",
+    "id": "deathbeforedishonor",
+    "name": [ "Death Before Dishonor" ],
+	"show_in_info": true,
+    "desc": [ "You feel ready to do whatever it takes, even if it kills you." ]
+  },
+  {
+    "type": "effect_type",
+    "id": "diedbeforedishonor",
+    "name": [ "Price of Freedom" ],
+    "desc": [ "Your body is carried forward by sheer will, and it takes it's toll. You don't know how much longer you can keep this up." ],
+    "max_intensity": 13,
+    "int_add_val": 1,
+    "max_duration": "24 h",
+	"dur_add_perc": 200,  
+	"int_decay_step": -1,    
+	"int_decay_tick": 8640000,
+	"show_in_info": true,
+	"miss_messages": [ [ "You feel like it's getting harder to go on... Maybe you should rest.", 5 ] ],
+    "scaling_mods": {
+        "str_mod": [-1],
+        "per_mod": [-1],
+        "dex_mod": [-1],
+        "int_mod": [-1]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "deathandtaxes",
+    "name": [ "Death And Taxes" ],
+	"show_in_info": true,
+    "desc": [ "This whole 'living' thing just seems bizarre and comical." ]
+  },
+  {
+    "type": "effect_type",
+    "id": "silvermoon_sickness",
+    "name": [ "Silvermoon Draw" ],
+	"show_in_info": true,
+    "desc": [ "You have drawn silver from a silvermoon loom today." ]
+  },
+  {
+    "type": "effect_type",
+    "id": "goldensun_sickness",
+    "name": [ "Goldensun Harvest" ],
+	"show_in_info": true,
+    "desc": [ "You have harvested gold from a goldensun spring today." ]
+  },
+  {
+    "type": "effect_type",
+    "id": "coin_healing",
+    "name": [ "Small Change" ],
+    "desc": [ "After eating a coin you feel a little different. Your body feels stronger and you seem to brush off cuts and bruises." ],
+    "main_parts_only": true,
+    "rating": "good",
+    "int_dur_factor": "6 h",
+    "max_intensity": 16,
+    "max_effective_intensity": 8,
+	"show_in_info": false,
+    "part_descs": true,
+    "max_duration": "4 d",
+    "base_mods": { "healing_rate": [ 6 ], "healing_head": [ 150 ], "healing_torso": [ 450 ] },
+    "scaling_mods": { "healing_rate": [ 6 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "frozen_hand",
+    "name": [ "Frozen Hand" ],
+    "desc": [ "Your hand has been frozen, making combat much more difficult." ],
+    "max_intensity": 1,
+    "int_add_val": 1,
+    "max_duration": "5 s",
+    "base_mods": { "hit_mod": [ -2 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "haste_longer",
+    "name": [ "Rabbit's Foot" ],
+    "desc": [ "Your feet won't stop tapping." ],
+    "apply_message": "Uncontrollable speed!",
+    "remove_message": "You return to your normal speed.",
+    "rating": "good",
+    "base_mods": { "speed_mod": [ 150 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "faded",
+    "name": [ "Faded" ],
+    "desc": [ "Obliviated, Obliviated, Obliviated, Obliviated, Obliviated." ],
+    "apply_message": "You smoke up in the greatest living god-dammit mages faces!",
+    "remove_message": "Your purpose and mission is complete.",
+    "rating": "good",
+    "base_mods": { "speed_mod": [ -150 ] }
+  },
+  {
+    "type": "effect_type",
+    "name": [ "Enraged" ],
+    "desc": [ "Enraged" ],
+    "id": "battle_fervor",
+    "rating": "neutral",
+    "base_mods": { "speed_mod": [ 50 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "scourge",
+    "name": [ "Drank a Buncha Bleach" ],
+    "desc": [ "Did you really do that? Well, it probably won't be fun for a while." ],
+	"base_mods": {
+      "str_mod": [ -2 ],
+      "per_mod": [ -1 ],
+      "dex_mod": [ -1 ],
+      "int_mod": [ -1 ],
+      "speed_mod": [ -10 ],
+      "vomit_chance": [ 100 ]
+    },
+    "removes_effects": [ "dermatik", "formication" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "crack_magic",
+    "name": [ "Magic of Crack" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ -2 ], "str_mod": [ 4 ], "dex_mod": [ 4 ], "per_mod": [ -2 ] },
+    "blood_analysis_description": "Magic of Crack"
+  },
+  {
+    "type": "effect_type",
+    "id": "lsd_magic",
+    "name": [ "Magic of LSD" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 4 ], "str_mod": [ -4 ], "dex_mod": [ -4 ], "per_mod": [ 4 ] },
+    "blood_analysis_description": "Magic of LSD"
+  },
+  {
+    "type": "effect_type",
+    "id": "morphine_magic",
+    "name": [ "Magic of Morphine" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 6 ], "speed_mod": [ -50 ] },
+    "blood_analysis_description": "Magic of Morphine"
+  },
+  {
+    "type": "effect_type",
+    "id": "adderall_magic",
+    "name": [ "Adderall Magic" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 3 ] },
+    "blood_analysis_description": "Adderall Magic"
+  },
+  {
+    "type": "effect_type",
+    "id": "smoke_magic",
+    "name": [ "High Magic" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 1 ] },
+    "blood_analysis_description": "High Magic"
+  },
+  {
+    "type": "effect_type",
+    "id": "smoke_magic2",
+    "name": [ "High Magic" ],
+    "desc": [ "You can't trust everything that you see." ],
+    "rating": "good",
+    "base_mods": { "int_mod": [ 2 ] },
+    "blood_analysis_description": "High Magic"
+  }
+]

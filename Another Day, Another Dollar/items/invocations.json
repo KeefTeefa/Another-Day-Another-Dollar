@@ -74,13 +74,6 @@
     "use_action": { "type": "cast_spell", "spell_id": "invocation_step", "no_fail": true, "level": 20, "need_wielding": false }
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_invocation",
-    "effect": { "u_cast_spell": { "id": "break_spirit_armor" } },
-    "false_effect": { "u_cast_spell": { "id": "become_psycho" } },
-    "condition": { "or": [ { "u_is_wearing": "armor_spirit" }, { "u_is_wearing": "burning_heart" }, { "u_has_effect": "bless" } ] }
-  },
-  {
     "id": "break_spirit_armor",
     "type": "SPELL",
     "name": "Armor of Faith",

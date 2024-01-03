@@ -46,7 +46,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "name": { "str_sp": "linguistics for novices" },
-    "description": "A dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of magic. They warn you of the cost of cheap power.",
+    "description": "A dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of life. They warn you of the cost of cheap power.",
     "weight": "1 g",
     "volume": "250 ml",
     "price": 25000,
@@ -63,7 +63,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "name": { "str_sp": "linguistics for adepts" },
-    "description": "A dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of magic. They tell you to to focus on who you are, and say that no matter what everything will be alright.",
+    "description": "A dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of life. They tell you to to focus on who you are, and say that no matter what everything will be alright.",
     "weight": "1 g",
     "volume": "250 ml",
     "price": 25000,
@@ -80,7 +80,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "name": { "str_sp": "linguistics for masters" },
-    "description": "A dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of magic. They soothe you with promises that true purity will be rewarded.",
+    "description": "A dark, multicolor ooze. You can hear whispers drifting from inside, ready to teach you the language of life. They soothe you with promises that true purity will be rewarded.",
     "weight": "1 g",
     "volume": "250 ml",
     "price": 25000,
@@ -93,89 +93,13 @@
     "use_action": { "type": "cast_spell", "spell_id": "linguistics_three", "no_fail": true, "level": 1, "need_wielding": true }
   },
   {
-    "type": "effect_on_condition",
-    "id": "eoc_linguistics_one",
-    "effect": { "u_cast_spell": { "id": "linguistics_one_devil" } },
-    "false_effect": { "u_cast_spell": { "id": "linguistics_one_magic" } },
-    "condition": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" }
-            ]
-    }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_linguistics_two",
-    "effect": { "u_cast_spell": { "id": "linguistics_two_devil" } },
-    "false_effect": { "u_cast_spell": { "id": "linguistics_two_magic" } },
-    "condition": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" }
-            ]
-    }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_linguistics_three",
-    "effect": { "u_cast_spell": { "id": "linguistics_three_devil" } },
-    "false_effect": { "u_cast_spell": { "id": "linguistics_three_magic" } },
-    "condition": {
-            "or": [
-              { "u_is_wearing": "pact_of_bile" },
-              { "u_is_wearing": "pact_of_blood" },
-              { "u_is_wearing": "pact_of_smoke" },
-              { "u_is_wearing": "pact_of_flame" },
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-              { "u_has_trait": "PSYCHOPATH" }
-            ]
-    }
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_linguistics_three_crystal",
-    "effect": { "u_cast_spell": { "id": "linguistics_three_crystal_spawn" } },
-    "condition": {
-      "and": [
-        {
-          "not": {
-            "or": [
-			  { "u_is_wearing": "onyx_silver_ring" },
-			  { "u_is_wearing": "pointed_hat" },
-			  { "u_has_trait": "PSYCHOPATH" }
-            ]
-          }
-        },
-        {
-          "and": [
-		    { "u_is_wearing": "manatouched_aura1" },
-            { "u_is_wearing": "manatouched_aura2" },
-			{ "u_is_wearing": "manatouched_aura3" }
-          ]
-        }
-      ]
-    }
-  },
-  {
     "id": "linguistics_one",
     "type": "SPELL",
     "name": "Logos",
     "description": "",
     "valid_targets": [ "self" ],
     "effect": "effect_on_condition",
-    "effect_str": "eoc_linguistics_one",
+    "effect_str": "eoc_linguistics_one_good",
     "shape": "blast",
     "energy_source": "MANA",
     "difficulty": 4,
@@ -222,7 +146,7 @@
     "description": "",
     "valid_targets": [ "self" ],
     "effect": "effect_on_condition",
-    "effect_str": "eoc_linguistics_two",
+    "effect_str": "eoc_linguistics_two_good",
     "shape": "blast",
     "energy_source": "MANA",
     "difficulty": 4,
@@ -269,7 +193,7 @@
     "description": "",
     "valid_targets": [ "self" ],
     "effect": "effect_on_condition",
-    "effect_str": "eoc_linguistics_three",
+    "effect_str": "eoc_linguistics_three_good",
 	"extra_effects": [ {"id": "eoc_linguistics_three_crystal" } ],
     "shape": "blast",
     "energy_source": "MANA",
@@ -464,7 +388,7 @@
     "player_display": false,
     "valid": false,
     "category": [ "HUMAN" ],
-    "spells_learned": [ [ "devil_one", 5 ], [ "bribe_demon", 5 ] ]
+    "spells_learned": [ [ "devil_one", 5 ], [ "bribe_demon", 25 ] ]
   },
   {
     "type": "mutation",
@@ -1265,7 +1189,9 @@
     "material": [ "alien_liquid" ],
     "symbol": "O",
     "color": "white",
-	"properties": [ [ "creature_size_capacity", "MEDIUM" ] ],
+	"properties": {
+    "creature_size_capacity": "MEDIUM"
+    },
     "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "pocket_data": [
       {
@@ -1296,11 +1222,11 @@
     "valid_targets": [ "self" ],
     "effect": "spawn_item",
     "effect_str": "money_hundred",
-    "flags": [ "PERMANENT", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "PERMANENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "shape": "blast",
 	"components": "spell_components_devil_two",
     "min_damage": 1,
-    "max_damage": 1,
+    "max_damage": 2,
     "difficulty": 1,
     "max_level": 5,
 	"energy_source": "STAMINA",
@@ -1385,7 +1311,9 @@
       "type": "gemstone"
     }
   ],
-  "properties": [ [ "creature_size_capacity", "HUGE" ] ],
+  "properties": {
+    "creature_size_capacity": "HUGE"
+  },
   "use_action": [ "CAPTURE_MONSTER_ACT" ],
   "pocket_data": [
     {
@@ -1395,7 +1323,7 @@
       "max_item_length": "30 cm",
 	  "weight_multiplier": 0.0,
 	  "volume_multiplier": 0.3,
-      "moves": 1000
+      "moves": 100
     }
   ],
   "material_thickness": 1,
@@ -1414,12 +1342,6 @@
       }
     ]
 },
-{
-    "type": "effect_on_condition",
-    "id": "ring_of_fire_eoc",
-    "effect": [ { "u_spawn_item": "devils_ring", "count": 1 } ],
-    "condition": { "and": [ { "u_is_wearing": "onyx_silver_ring" }, { "u_has_trait": "PSYCHOPATH" } ] }
-  },
   {
     "id": "ring_of_fire_eoc",
     "type": "SPELL",

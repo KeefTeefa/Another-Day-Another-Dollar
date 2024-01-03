@@ -1,6 +1,29 @@
 [
 {
     "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "money_hundred",
+	"byproducts": [ [ "money_hundred", 9 ] ],
+	"id_suffix": "made via money",
+    "category": "CC_CATALOGUE",
+    "subcategory": "CSC_CATALOGUE_CUSTOMERSERVICE",
+    "skill_used": "speech", 
+    "difficulty": 1,
+    "time": "1 s",
+    "autolearn": true,
+	"using": [
+    [
+      "surface_heat",
+      10
+    ]
+  ],
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "book_learn": [ [ "coin_guidebook", 1 ], [ "occult_economicon", 1 ] ],
+    "components": [ [ [ "coin_penny", 100 ] ], [ [ "blood", 1 ] ] ]
+  },
+{
+    "type": "recipe",
     "activity_level": "NO_EXERCISE", "skills_required": [ "speech", 3 ],
     "result": "money_strap_hundred",
     "id_suffix": "pennies and blood",
@@ -195,10 +218,30 @@
 	[  "emerald", 1 ],
 	[  "blue_topaz", 1 ],
 	[  "onyx", 1 ],
+	[  "gold_small", 100 ], 
+	[  "silver_small", 100  ],
 	[ "gasdiscount_platinum", 1 ],
 	[ "cards_magic", 1 ], 
 	[ "ring_signet", 1 ] 
 	] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "money_strap_hundred",
+	"id_suffix": "made via printer",
+    "category": "CC_CATALOGUE",
+    "subcategory": "CSC_CATALOGUE_CUSTOMERSERVICE",
+    "skill_used": "spellcraft",
+    "difficulty": 10,
+	"autolearn": false,
+    "qualities": [ { "id": "POWER_ALTAR", "level": 4 } ],
+    "time": "1 h",
+    "book_learn": [ [ "sunandmoon", 1 ] ],
+    "components": [
+      [ [ "paper", 500 ] ],
+      [ [ "white_pen_ink", 1 ], [ "creamsoda", 1 ] ]
+  ]	  
   },
   {
     "type": "recipe",
@@ -242,8 +285,6 @@
 	[  "amethyst", 1 ],
 	[  "platinum_small", 50 ],
 	[  "bleach", 33 ],
-	[  "gold_small", 100 ], 
-	[  "silver_small", 200  ],
 	[  "copper", 500  ],
 	[  "lead", 100 ]
 	]
