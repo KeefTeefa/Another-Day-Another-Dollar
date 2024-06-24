@@ -16,7 +16,7 @@
 	  { "group": "trait_group_manatouched_nonthres" },
 	  { "group": "trait_group_manatouched_postthres" },
 	  { "group": "Appearance_demographics" },
-	  { "trait": "HAIR_BALD" },
+	  { "trait": "hair_bald" },
 	  { "trait": "SKIN_LIGHT" },
 	  { "trait": "eye_color", "variant": "gray" }
     ],

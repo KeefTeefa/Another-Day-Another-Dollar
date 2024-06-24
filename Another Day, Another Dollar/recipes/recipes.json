@@ -10,8 +10,8 @@
     "time": "1 s",
 	"reversible": true,
     "autolearn": true,
-    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TUOMAES" ] ],
-    "components": [ [ [ "spell_scroll_directed_mana", 5 ] ] ]
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TUOMAES" ], [ "mag_comic" ] ],
+    "components": [ [ [ "spell_scroll_directed_mana", 6 ] ] ]
   },
   {
     "type": "recipe",
@@ -36,7 +36,7 @@
     "skill_used": "chemistry",
     "difficulty": 7,
     "skills_required": [ "spellcraft", 7 ],
-    "book_learn": [ [ "wayward_memory_BYA", 5 ], [ "big_book_of_metaknowledge" ] ],
+    "book_learn": [ [ "wayward_memory_BYA", 5 ], [ "big_book_of_metaknowledge" ], [ "mag_comic" ] ],
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR"
   },
@@ -91,6 +91,102 @@
       [ [ "brimstone_chunk", 10 ], [ "spell_scroll_summon_hoverboard", 1 ], [ "spell_scroll_crystal_place", 1 ], [ "spell_scroll_transgate_place", 2 ], [ "spell_scroll_jump", 1 ] ]
     ]
   },
+  {
+  "type": "recipe",
+  "activity_level": "LIGHT_EXERCISE",
+  "result": "bio_time_freeze",
+  "id_suffix": "made via smart guy",
+  "category": "CC_ANOTHERDAY",
+  "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+  "skill_used": "electronics",
+  "skills_required": [
+    "spellcraft",
+    10
+  ],
+  "difficulty": 10,
+  "time": "1 h",
+  "reversible": false,
+  "autolearn": true,
+  "book_learn": [
+    [
+      "big_book_of_metaknowledge",
+      1
+    ],
+    [
+      "textbook_robots",
+      5
+    ]
+  ],
+  "using": [
+    [
+      "soldering_standard",
+      14
+    ]
+  ],
+  "proficiencies": [
+    {
+      "proficiency": "prof_elec_soldering"
+    }
+  ],
+  "qualities": [
+    {
+      "id": "SCREW",
+      "level": 1
+    },
+	{
+      "id": "MIRROR_SELF",
+      "level": 1
+    },
+	{
+      "id": "ORRERY",
+      "level": 1
+    }
+  ],
+  "components": [
+    [
+      [
+        "spell_scroll_bio_for_stamina",
+        1
+      ]
+    ],
+    [
+      [
+        "amplifier",
+        1
+      ]
+    ],
+    [
+      [
+        "receiver",
+        1
+      ]
+    ],
+    [
+      [
+        "antenna",
+        1
+      ]
+    ],
+    [
+      [
+        "burnt_out_bionic",
+        33
+      ]
+    ],
+    [
+      [
+        "spell_scroll_golden_aura",
+        1
+      ]
+    ],
+    [
+      [
+        "spell_scroll_cold_flash",
+        1
+      ]
+    ]
+  ]
+},
   {
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
@@ -230,21 +326,6 @@
 	{ "proficiency": "prof_golemancy_basic" } ],
     "book_learn": [ [ "wayward_memory_EEE", 4 ], [ "wayward_memory_NMFD" ], [ "book_nonf_hard_homemk_plantshome", 4 ], [ "big_book_of_metaknowledge" ] ],
     "components": [ [ [ "scrap", 250 ] ], [ [ "golemcore", 1 ], [ "rune_earthshaper", 1 ], [ "spell_scroll_reanimate_golem", 1 ] ] , [ [ "crystallized_mana", 777 ], [ "decaying_soul", 7 ], [ "bulette_plate", 1 ], [ "dragon_essence", 1 ] ] ]
-  },
-  {
-    "type": "recipe",
-    "activity_level": "NO_EXERCISE",
-    "result": "night_vision_pill",
-	"id_suffix": "crushed and melted",
-    "category": "CC_ANOTHERDAY",
-    "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
-    "skill_used": "spellcraft",
-    "difficulty": 1,
-    "time": "10 s",
-    "autolearn": true,
-	"tools": [ [ [ "surface_heat", 5, "LIST" ] ] ],
-	"qualities": [ { "id": "BOIL", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "components": [ [ [ "crystallized_mana", 5 ], [ "crack", 1 ], [ "meth", 1 ], [ "pure_meth", 1 ], [ "coke", 1 ] ], [ [ "saline", 5 ], [ "contacts", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -475,14 +556,14 @@
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
     "skill_used": "speech",
-    "skills_required": [ "speech", 1 ],
-    "difficulty": 1,
+    "skills_required": [ "speech", 6 ],
+    "difficulty": 6,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "time": "1 h",
     "autolearn": false,
     "book_learn": [ [ "vergists_manual", 1 ] ],
     "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
-    "components": [ [ [ "pact_of_flame", 1 ] ], [ [ "saints_symbol", 1 ] ] ]
+    "components": [ [ [ "pact_of_flame", 1 ] ], [ [ "saints_symbol", 1 ], [ "skull_human", 333 ] ] ]
   },
   {
     "type": "recipe",
@@ -491,14 +572,14 @@
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
     "skill_used": "speech",
-    "skills_required": [ "speech", 1 ],
-    "difficulty": 1,
+    "skills_required": [ "speech", 6 ],
+    "difficulty": 6,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "time": "1 h",
     "autolearn": false,
     "book_learn": [ [ "vergists_manual", 1 ] ],
     "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
-    "components": [ [ [ "pact_of_bile", 1 ] ], [ [ "saints_symbol", 1 ] ] ]
+    "components": [ [ [ "pact_of_bile", 1 ] ], [ [ "saints_symbol", 1 ], [ "skull_human", 333 ] ] ]
   },
   {
     "type": "recipe",
@@ -507,14 +588,14 @@
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
     "skill_used": "speech",
-    "skills_required": [ "speech", 1 ],
-    "difficulty": 1,
+    "skills_required": [ "speech", 6 ],
+    "difficulty": 6,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "time": "1 h",
     "autolearn": false,
     "book_learn": [ [ "vergists_manual", 1 ] ],
     "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
-    "components": [ [ [ "pact_of_smoke", 1 ] ], [ [ "saints_symbol", 1 ] ] ]
+    "components": [ [ [ "pact_of_smoke", 1 ] ], [ [ "saints_symbol", 1 ], [ "skull_human", 333 ] ] ]
   },
   {
     "type": "recipe",
@@ -523,14 +604,14 @@
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
     "skill_used": "speech",
-    "skills_required": [ "speech", 1 ],
-    "difficulty": 1,
+    "skills_required": [ "speech", 6 ],
+    "difficulty": 6,
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "time": "1 h",
     "autolearn": false,
     "book_learn": [ [ "vergists_manual", 1 ] ],
     "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
-    "components": [ [ [ "pact_of_blood", 1 ] ], [ [ "saints_symbol", 1 ] ] ]
+    "components": [ [ [ "pact_of_blood", 1 ] ], [ [ "saints_symbol", 1 ], [ "skull_human", 333 ] ] ]
   },
   {
     "type": "recipe",
@@ -542,15 +623,11 @@
     "skills_required": [ [ "speech", 10 ] ],
     "difficulty": 10,
     "autolearn": false,
+	"using": [ [ "drawing_tool", 500 ] ],
     "tools": [ [ [ "surface_heat", 20, "LIST" ] ], [ [ "demon_forge", 15 ] ] ],
     "qualities": [
-      { "id": "MANA_INFUSE", "level": 1 },
-      { "id": "CONCENTRATE", "level": 1 },
-      { "id": "POWER_ALTAR", "level": 4 },
       { "id": "MANA_WEAVE", "level": 1 },
-      { "id": "SEPARATE", "level": 1 },
-      { "id": "ZEN", "level": 1 },
-	  { "id": "MIRROR_SELF", "level": 1 },
+	  { "id": "ORRERY", "level": 1 },
 	  { "id": "SOUL_ENGINE", "level": 1 },
 	  { "id": "PHILOSTONE", "level": 1 },
 	  { "id": "WHITE_CIRCLE", "level": 1 },
@@ -558,7 +635,6 @@
 	  { "id": "BLUE_CIRCLE", "level": 1 },
 	  { "id": "GREEN_CIRCLE", "level": 1 },
 	  { "id": "RED_CIRCLE", "level": 1 },
-      { "id": "MAGIC_CAULDRON", "level": 2 },
       { "id": "MANA_FOCUS", "level": 1 }
     ],
     "time": "24 h",
@@ -566,8 +642,9 @@
       [ "chunk_of_devil", 1 ]
     ],
     "components": [
-      [ [ "chunk_of_devil", 3 ] ],
-      [ [ "blood", 1 ], [ "crystallized_ink", 1 ] ]
+      [ [ "chunk_of_devil", 1 ], [ "mirrored_page", 13 ], [ "coloring_book", 1 ] ],
+	  [ [ "crystallized_ink", 1 ] ],
+      [ [ "blood", 1 ] ]
     ]
   },
   {
@@ -589,6 +666,7 @@
       { "id": "SEPARATE", "level": 1 },
       { "id": "ZEN", "level": 1 },
 	  { "id": "MIRROR_SELF", "level": 1 },
+	  { "id": "ORRERY", "level": 1 },
 	  { "id": "SOUL_ENGINE", "level": 1 },
 	  { "id": "PHILOSTONE", "level": 1 },
 	  { "id": "WHITE_CIRCLE", "level": 1 },
@@ -718,6 +796,191 @@
   {
     "type": "recipe",
     "activity_level": "NO_EXERCISE",
+    "result": "bottled_time",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+    "skill_used": "spellcraft",
+    "skills_required": [ [ "spellcraft", 5 ], [ "speech", 5 ] ],
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "difficulty": 5,
+    "autolearn": false,
+    "qualities": [
+      { "id": "MANA_INFUSE", "level": 1 },
+      { "id": "CONCENTRATE", "level": 1 },
+      { "id": "POWER_ALTAR", "level": 2 },
+      { "id": "FINE_DISTILL", "level": 1 },
+      { "id": "MANA_WEAVE", "level": 1 },
+	  { "id": "ZEN", "level": 1 },
+	  { "id": "ORRERY", "level": 1 },
+      { "id": "CONTAIN", "level": 1 },
+      { "id": "MAGIC_CAULDRON", "level": 2 },
+      { "id": "MANA_FOCUS", "level": 1 }
+    ],
+    "time": "36 h",
+    "book_learn": [
+      [ "book_nonf_soft_phil_benoth", 1 ],
+      [ "philosophy_book", 1 ],
+      [ "plays_book", 1 ],
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "collector_book", 1 ],
+      [ "book_fict_soft_pulp_squids", 1 ],
+      [ "paperback_romance_envyh", 1 ]
+    ],
+	"components": [
+	  [ [ "flask_glass", 1 ] ],
+      [ [ "crystallized_mana", 333 ], [ "photo_album", 1 ], [ "psychic_anchor", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "bot_living_orrery",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+    "skill_used": "spellcraft",
+    "skills_required": [ [ "spellcraft", 10 ], [ "speech", 7 ] ],
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "difficulty": 10,
+    "autolearn": false,
+    "qualities": [
+      { "id": "MANA_WEAVE", "level": 1 },
+	  { "id": "MIRROR_SELF", "level": 1 },
+	  { "id": "ZEN", "level": 1 },
+	  { "id": "WHITE_CIRCLE", "level": 1 },
+	  { "id": "BLACK_CIRCLE", "level": 1 },
+	  { "id": "BLUE_CIRCLE", "level": 1 },
+	  { "id": "GREEN_CIRCLE", "level": 1 },
+	  { "id": "RED_CIRCLE", "level": 1 },
+	  { "id": "POWER_ALTAR", "level": 3 },
+	  { "id": "MANA_INFUSE", "level": 1 },
+      { "id": "MANA_FOCUS", "level": 1 }
+    ],
+    "time": "48 h",
+    "book_learn": [
+      [ "book_nonf_soft_phil_benoth", 1 ],
+      [ "philosophy_book", 1 ],
+      [ "plays_book", 1 ],
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "collector_book", 1 ],
+      [ "book_fict_soft_pulp_squids", 1 ],
+      [ "paperback_romance_envyh", 1 ]
+    ],
+	"components": [
+      [ [ "orrery_item", 1 ] ],
+	  [ [ "cleansed_soul", 1 ] ],
+	  [ [ "knowledgeable_dust3", 1 ] ],
+	  [ [ "still_lab", 1 ] ],
+	  [ [ "spell_scroll_golden_aura", 1 ], [ "bottled_time", 1 ], [ "spell_scroll_transtemporal_passage", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "refined_knowledge",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+    "skill_used": "spellcraft",
+    "skills_required": [ [ "spellcraft", 10 ] ],
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "difficulty": 10,
+    "autolearn": false,
+    "qualities": [
+	  { "id": "GOLDENSUN_SPRING", "level": 1 },
+	  { "id": "SILVERMOON_LOOM", "level": 1 },
+	  { "id": "WHITE_CIRCLE", "level": 1 },
+	  { "id": "BLACK_CIRCLE", "level": 1 },
+	  { "id": "BLUE_CIRCLE", "level": 1 },
+	  { "id": "GREEN_CIRCLE", "level": 1 },
+	  { "id": "RED_CIRCLE", "level": 1 }
+    ],
+    "time": "1 s",
+    "book_learn": [
+      [ "classified_intelligence", 1 ],
+      [ "big_book_of_metaknowledge", 1 ]
+    ],
+	"components": [
+      [ [ "classified_intelligence", 7 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "sacred_locket",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+    "skill_used": "spellcraft",
+    "skills_required": [ [ "spellcraft", 10 ], [ "speech", 10 ] ],
+    "proficiencies": [ { "proficiency": "prof_alchemy" } ],
+    "difficulty": 10,
+    "autolearn": false,
+    "qualities": [
+	  { "id": "MIRROR_SELF", "level": 1 },
+	  { "id": "PHILOSTONE", "level": 1 },
+	  { "id": "ZEN", "level": 1 }
+    ],
+    "time": "3 h",
+    "book_learn": [
+      [ "paperback_romance_conq", 1 ],
+      [ "philosophy_book", 1 ],
+      [ "plays_book", 1 ],
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "collector_book", 1 ],
+      [ "novel_romance", 1 ],
+      [ "paperback_romance_envyh", 1 ]
+    ],
+	"components": [
+      [ [ "sacred_chain", 1 ] ],
+	  [ [ "burning_heart", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "burning_heart",
+	"id_suffix": "made_via_faith",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+    "skill_used": "speech",
+    "skills_required": [ [ "speech", 10 ] ],
+    "difficulty": 10,
+    "autolearn": false,
+	"tools": [ [ [ "surface_heat", 20, "LIST" ] ], [ [ "demon_forge", 15 ] ] ],
+    "qualities": [
+	  { "id": "ZEN", "level": 1 },
+	  { "id": "POWER_ALTAR", "level": 3 }
+    ],
+    "time": "1 h",
+    "book_learn": [
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "holybook_bible1", 1 ],
+      [ "holybook_bible2", 1 ],
+      [ "holybook_bible3", 1 ],
+      [ "holybook_quran", 1 ],
+      [ "holybook_hadith", 1 ],
+      [ "holybook_havamal", 1 ],
+      [ "holybook_tanakh", 1 ],
+      [ "holybook_talmud", 1 ],
+      [ "holybook_vedas", 1 ],
+      [ "holybook_upanishads", 1 ],
+      [ "holybook_tripitaka", 1 ],
+      [ "holybook_sutras", 1 ],
+      [ "holybook_granth", 1 ],
+      [ "holybook_pastafarian", 1 ],
+      [ "holybook_slack", 1 ],
+      [ "holybook_kallisti", 1 ],
+      [ "holybook_scientology", 1 ],
+      [ "holybook_mormon", 1 ],
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "holybook_kojiki", 1 ]
+    ],
+	"components": [
+      [ [ "strength_token", 1 ] ],
+	  [ [ "classified_intelligence", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
     "result": "spell_scroll_ghost_cleanse",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
@@ -762,7 +1025,7 @@
     "skills_required": [ "spellcraft", 10 ],
     "difficulty": 10,
     "proficiencies": [ { "proficiency": "prof_weapon_enchanting" } ],
-    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_BAAA" ], [ "novel_spy_comefly" ], [ "holybook_pastafarian" ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_BAAA" ], [ "novel_spy_comefly" ], [ "holybook_pastafarian" ], [ "mag_comic" ] ],
     "autolearn": false,
     "qualities": [ { "id": "POWER_ALTAR", "level": 3 }, { "id": "PRESSURIZATION", "level": 2 }, { "id": "MIRROR_SELF", "level": 1 }, { "id": "WHITE_CIRCLE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 } ],
     "time": "24 h",
@@ -909,7 +1172,7 @@
     "proficiencies": [ { "proficiency": "prof_alchemy" } ],
     "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_SFMP" ] ],
     "autolearn": true,
-    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "MIRROR_SELF", "level": 1 } ],
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "ORRERY", "level": 1 } ],
     "time": "24 h",
     "components": [
       [ [ "crystallized_mana", 100 ] ],
@@ -975,7 +1238,8 @@
     "components": [
       [ [ "spell_scroll_gambit1", 1 ], [ "spell_scroll_close_tear", 1 ] ],
       [ [ "spell_scroll_scrying", 1 ] ],
-      [ [ "gold_small", 100 ] ],
+	  [ [ "ar_glasses_basic", 1 ] ],
+      [ [ "gold_small", 333 ] ],
       [ [ "crystallized_mana", 200 ] ]
     ]
   },
@@ -1048,7 +1312,7 @@
       [ "sunandmoon", 0 ]
     ],
 	"qualities": [ { "id": "SILVERMOON_LOOM", "level": 1 } ],
-    "components": [ [ [ "spell_scroll_spiritual_invisibility", 1 ] ], [ [ "twin_brooch", 1 ] ], [ [ "cloak", 1 ] ] ]
+    "components": [ [ [ "spell_scroll_spiritual_invisibility", 1 ] ], [ [ "twin_brooch", 1 ] ], [ [ "cloak", 1 ], [ "cloak_aura", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -1064,7 +1328,44 @@
       [ "sunandmoon", 0 ]
     ],
 	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 } ],
-    "components": [ [ [ "spell_scroll_extract_memory", 1 ] ], [ [ "twin_brooch", 1 ] ], [ [ "western_holster", 1 ] ] ]
+    "components": [ [ [ "spell_scroll_extract_memory", 1 ] ], [ [ "twin_brooch", 1 ] ], [ [ "western_holster", 1 ], [ "wayward_memory_PFH", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "symbol_devout",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_ANOTHERDOLLAR",
+    "skill_used": "speech", 
+    "difficulty": 3,
+    "autolearn": false,
+    "time": "7 h",
+	"book_learn": [
+      [ "sunandmoon", 0 ],
+	  [ "big_book_of_metaknowledge", 0 ],
+	  [ "holybook_bible1", 1 ],
+      [ "holybook_bible2", 1 ],
+      [ "holybook_bible3", 1 ],
+      [ "holybook_quran", 1 ],
+      [ "holybook_hadith", 1 ],
+      [ "holybook_havamal", 1 ],
+      [ "holybook_tanakh", 1 ],
+      [ "holybook_talmud", 1 ],
+      [ "holybook_vedas", 1 ],
+      [ "holybook_upanishads", 1 ],
+      [ "holybook_tripitaka", 1 ],
+      [ "holybook_sutras", 1 ],
+      [ "holybook_granth", 1 ],
+      [ "holybook_pastafarian", 1 ],
+      [ "holybook_slack", 1 ],
+      [ "holybook_kallisti", 1 ],
+      [ "holybook_scientology", 1 ],
+      [ "holybook_mormon", 1 ],
+      [ "big_book_of_metaknowledge", 1 ],
+      [ "holybook_kojiki", 1 ]
+    ],
+	"qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "POWER_ALTAR", "level": 3 } ],
+    "components": [ [ [ "cleansed_soul", 1 ] ], [ [ "mundane_aura", 1 ] ], [ [ "icon", 1 ], [ "holy_symbol", 1 ], [ "holy_symbol_wood", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -1076,7 +1377,7 @@
     "skills_required": [ "spellcraft", 10 ],
     "difficulty": 10,
     "proficiencies": [ { "proficiency": "prof_alchemy" } ],
-    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ] ],
+    "book_learn": [ [ "big_book_of_metaknowledge" ], [ "wayward_memory_TOMM" ], [ "mag_comic" ] ],
     "autolearn": true,
     "qualities": [ { "id": "MANA_INFUSE", "level": 1 }, { "id": "MANA_FOCUS", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 } ],
     "time": "13 h",
@@ -2390,7 +2691,7 @@
     "qualities": [ { "id": "ZEN", "level": 1 }, { "id": "MIRROR_SELF", "level": 1 }, { "id": "SOUL_ENGINE", "level": 1 } ],
     "book_learn": [ [ "spellcraft_mastery", 1 ], [ "sunandmoon", 1 ], [ "vergists_manual", 1 ] ],
     "autolearn": true,
-    "components": [ [ [ "burning_heart", 3 ] ] ]
+    "components": [ [ [ "burning_heart", 3 ], [ "silver_crown", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -2401,7 +2702,7 @@
     "skill_used": "spellcraft",
     "skills_required": [ "spellcraft", 10 ],
     "difficulty": 10,
-    "qualities": [ { "id": "GOLDENSUN_SPRING", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 }, { "id": "MANA_WEAVE", "level": 1 } ],
+    "qualities": [ { "id": "SILVERMOON_LOOM", "level": 1 }, { "id": "POWER_ALTAR", "level": 2 }, { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "24 h",
     "autolearn": true,
     "book_learn": [ [ "wayward_memory_VM", 1 ] ],

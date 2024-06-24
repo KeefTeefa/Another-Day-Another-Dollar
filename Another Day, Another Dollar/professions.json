@@ -85,9 +85,9 @@
   {
     "type": "profession",
     "id": "professional_postman",
-    "name": "Professional Mail Carrier",
-    "description": "Neither snow nor rain nor heat nor gloom of night stays you from the swift completion of your appointed rounds, but nobody said anything about demons. Well, maybe they said one or two things...",
-    "points": 0,
+    "name": "Professional Post Officer",
+    "description": "Neither snow nor rain nor heat nor gloom of night stays you from the swift completion of your appointed rounds, but nobody said anything about demons. Well, maybe they said one or two things... Luckily, you Post Officers have a special connection to the power of the Post and so long as you still wear your uniform it will take you as far you'd like to go.",
+    "points": 3,
     "skills": [ { "level": 1, "name": "driving" }, { "level": 1, "name": "spellcraft" } ],
     "items": {
       "both": {
@@ -105,8 +105,9 @@
         ],
         "entries": [
           { "item": "desperate_letter", "container-item": "big_envelope" },
-          { "item": "spell_scroll_extract_memory", "container-item": "big_envelope" },
-          { "item": "spell_scroll_transgate_place", "container-item": "big_envelope" },
+          { "group": "letters" },
+		  { "group": "letters" },
+		  { "group": "letters" },
           { "group": "charged_smart_phone" }
         ]
       },

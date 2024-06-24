@@ -1,0 +1,991 @@
+[
+  {
+    "id": "mon_steed",
+    "type": "MONSTER",
+    "looks_like": "mon_horse",
+    "name": { "str": "steed" },
+    "description": "A hooved grazing mammal with a mane of hair, a sweeping tail, and powerful-looking muscles.  A stalwart companion to humans for longer than recorded history, with some effort you should be able to get this one to trust you enough to ride it.",
+    "default_faction": "herbivore",
+    "bodytype": "horse",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "MAMMAL" ],
+    "volume": "550000 ml",
+    "weight": "2000 kg",
+    "mountable_weight_ratio": 0.5,
+    "hp": 90,
+    "speed": 300,
+    "attack_cost": 230,
+    "material": [ "flesh" ],
+    "symbol": "H",
+    "color": "brown",
+    "morale": 50,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 12,
+    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "dodge": 4,
+    "anger_triggers": [ "FRIEND_ATTACKED" ],
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "harvest": "mammal_large_leather",
+    "dissect": "dissect_cattle_sample_small",
+    "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 360 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
+    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 1 },
+    "special_attacks": [ [ "EAT_CROP", 60 ] ],
+    "zombify_into": "mon_zombie_horse",
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "CANPLAY", "PET_MOUNTABLE", "PET_HARNESSABLE", "PATH_AVOID_DANGER_1", "WARM" ]
+  },
+  {
+    "id": "mon_steed_greater",
+    "type": "MONSTER",
+    "looks_like": "mon_horse",
+    "name": { "str": "greater steed" },
+    "description": "A hooved grazing mammal with a mane of hair, a sweeping tail, and powerful-looking muscles.  A stalwart companion to humans for longer than recorded history, with some effort you should be able to get this one to trust you enough to ride it. This one has tiny little wings sticking out of it's back.",
+    "default_faction": "herbivore",
+    "bodytype": "horse",
+    "categories": [ "WILDLIFE" ],
+    "species": [ "MAMMAL" ],
+    "volume": "550000 ml",
+    "weight": "2000 kg",
+    "mountable_weight_ratio": 0.5,
+    "hp": 90,
+    "speed": 400,
+    "attack_cost": 230,
+    "material": [ "flesh" ],
+    "symbol": "H",
+    "color": "brown",
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 12,
+    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "dodge": 4,
+    "armor": { "bash": 5, "stab": 5, "cut": 5, "bullet": 5, "electric": 5, "pure": 999 },
+    "anger_triggers": [ "FRIEND_ATTACKED" ],
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "harvest": "mammal_large_leather",
+    "dissect": "dissect_cattle_sample_small",
+    "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 360 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
+    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 1 },
+    "special_attacks": [ [ "EAT_CROP", 60 ] ],
+    "zombify_into": "mon_zombie_horse",
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "CANPLAY", "FLIES", "PET_MOUNTABLE", "PET_HARNESSABLE", "PATH_AVOID_DANGER_1", "WARM" ]
+  },
+  {
+  "id": "mon_hitman",
+  "type": "MONSTER",
+  "name": {
+    "str": "hitman"
+  },
+  "description": "Wearing a tactical camo ghillie suit with Kevlar lining, this person seems to be a hired gun turned feral. Their calm, collected eyes scan for threats as their hands work a deadly .50 caliber bolt action rifle. Looks like you pissed somebody off...",
+  "default_faction": "zombie",
+  "looks_like": "chud",
+  "bodytype": "human",
+  "species": [
+    "FERAL"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 84,
+  "speed": 100,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "@",
+  "color": "magenta",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 1,
+  "melee_dice_sides": 6,
+  "weakpoint_sets": [
+    "wps_humanoid_body",
+    "wps_humanoid_body_armor",
+    "wps_humanoid_open_helmet"
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_physiology",
+    "prof_wp_syn_armored"
+  ],
+  "dodge": 3,
+  "harvest": "human",
+  "dissect": "dissect_human_sample_single",
+  "tracking_distance": 30,
+  "vision_day": 50,
+  "vision_night": 15,
+  "path_settings": {
+    "max_dist": 45,
+    "allow_open_doors": true,
+    "avoid_traps": true,
+    "avoid_sharp": true
+  },
+  "starting_ammo": {
+    "50match": 5
+  },
+  "special_attacks": [
+    {
+      "type": "gun",
+      "cooldown": 15,
+      "move_cost": 150,
+      "gun_type": "bfg50",
+      "ammo_type": "50",
+      "fake_skills": [
+        [
+          "gun",
+          3
+        ],
+        [
+          "rifle",
+          3
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 10,
+      "ranges": [
+        [
+          5,
+          30,
+          "DEFAULT"
+        ]
+      ],
+      "require_targeting_player": false,
+      "target_moving_vehicles": true,
+      "description": "The hitman fires their rifle!"
+    }
+  ],
+  "death_drops": "hitman_drops",
+  "zombify_into": "mon_mage_operator",
+  "anger_triggers": [
+    "FRIEND_DIED",
+    "FRIEND_ATTACKED",
+    "PLAYER_CLOSE",
+    "PLAYER_WEAK",
+    "STALK"
+  ],
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "WARM",
+    "BASHES",
+    "GROUP_BASH",
+    "HUMAN",
+    "CAN_OPEN_DOORS",
+    "PATH_AVOID_DANGER_1",
+    "DROPS_AMMO",
+	"KEEP_DISTANCE",
+    "CLIMBS"
+  ],
+  "copy-from": "mon_feral_human_pipe",
+  "diff": 15,
+  "fear_triggers": [
+    "HURT"
+  ],
+  "armor": {
+    "bash": 5,
+    "cut": 7,
+    "acid": 5,
+    "bullet": 15,
+    "electric": 4
+  }
+},
+  {
+    "type": "GENERIC",
+    "id": "broken_claygolem1",
+    "symbol": "x",
+    "color": "brown",
+    "name": "broken clay golem",
+    "category": "other",
+    "description": "A broken clay golem, looking like a piece of post-modern art.  Could be smashed for clay.",
+    "price": 10000,
+    "material": [ "clay" ],
+    "weight": "122 kg",
+    "volume": "120 L",
+    "melee_damage": { "bash": 6 },
+    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_stonegolem1",
+    "symbol": "x",
+    "color": "brown",
+    "name": "broken stone golem",
+    "category": "other",
+    "description": "A broken stone golem, looking like a piece of post-modern art.  Could be smashed for stone.",
+    "price": 10000,
+    "material": [ "clay" ],
+    "weight": "122 kg",
+    "volume": "120 L",
+    "melee_damage": { "bash": 6 },
+    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_irongolem1",
+    "symbol": "x",
+    "color": "brown",
+    "name": "broken iron golem",
+    "category": "other",
+    "description": "A broken iron golem, looking like a piece of post-modern art.  Could be smashed for iron.",
+    "price": 10000,
+    "material": [ "clay" ],
+    "weight": "122 kg",
+    "volume": "120 L",
+    "melee_damage": { "bash": 6 },
+    "flags": [ "TRADER_AVOID", "NO_REPAIR" ]
+  },
+  {
+    "id": "mon_claygolem1",
+    "type": "MONSTER",
+    "name": "clay golem",
+    "copy-from": "mon_claygolem",
+    "description": "A large, humanoid golem made from clay.  Its proportions are off and it seems fragile, as well as dull even for a golem. It eats the same thing horses do, so that's a start.",
+    "default_faction": "robot",
+    "bodytype": "human",
+    "species": [ "GOLEM" ],
+    "looks_like": "mon_claygolem",
+	"revert_to_itype": "clay_golem_token",
+    "diff": 2,
+    "volume": "120 L",
+    "weight": "1000 kg",
+    "hp": 100,
+    "speed": 80,
+    "material": [ "clay" ],
+    "symbol": "X",
+    "color": "brown",
+    "aggression": 20,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 10,
+    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+	"armor": { "bullet": 10, "bash": 10, "cut": 10 },
+    "dodge": 0,
+    "vision_day": 40,
+    "vision_night": 40,
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+    "death_function": { "corpse_type": "BROKEN" },
+    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "LOUDMOVES", "PET_MOUNTABLE", "CANPLAY", "PET_HARNESSABLE" ]
+  },
+  {
+    "id": "mon_stonegolem1",
+    "type": "MONSTER",
+    "name": "stone golem",
+    "description": "A large, humanoid golem made from stone.  Its fists look similar to rockets.",
+    "default_faction": "robot",
+    "bodytype": "human",
+    "species": [ "GOLEM" ],
+    "volume": "120 L",
+    "weight": "162 kg",
+    "hp": 250,
+    "speed": 60,
+    "material": [ "stone" ],
+	"revert_to_itype": "stone_golem_token",
+    "symbol": "X",
+    "color": "light_gray",
+    "aggression": 10,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 8,
+    "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
+    "dodge": 0,
+    "vision_day": 40,
+    "vision_night": 40,
+    "special_attacks": [ { "type": "spell", "spell_data": { "id": "rocket_punch", "min_level": 5 }, "cooldown": 10 } ],
+    "death_function": { "corpse_type": "BROKEN" },
+	"petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "LOUDMOVES", "PET_MOUNTABLE", "CANPLAY", "PET_HARNESSABLE" ],
+    "armor": { "bash": 20, "cut": 20, "bullet": 16 }
+  },
+  {
+    "id": "mon_irongolem1",
+    "type": "MONSTER",
+    "name": "iron golem",
+    "description": "A large, humanoid golem made from iron.  Some sort of noxious gas seems to be seeping from its mouth.",
+    "default_faction": "robot",
+    "bodytype": "human",
+    "species": [ "GOLEM" ],
+	"revert_to_itype": "iron_golem_token",
+    "volume": "120 L",
+    "weight": "945 kg",
+    "hp": 400,
+    "speed": 50,
+    "material": [ "iron" ],
+    "symbol": "X",
+    "color": "dark_gray",
+    "aggression": 10,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 10,
+    "melee_damage": [ { "damage_type": "cut", "amount": 7 } ],
+    "dodge": 0,
+    "vision_day": 40,
+    "vision_night": 40,
+    "special_attacks": [ { "type": "spell", "spell_data": { "id": "gas_attack", "min_level": 5 }, "cooldown": 60 } ],
+	"petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
+    "death_function": { "corpse_type": "BROKEN" },
+    "flags": [ "SEES", "NO_BREATHE", "ACIDPROOF", "LOUDMOVES", "PET_MOUNTABLE", "CANPLAY", "PET_HARNESSABLE" ],
+    "armor": { "bash": 32, "cut": 32, "bullet": 26 }
+  },
+  {
+  "id": "mon_walker",
+  "type": "MONSTER",
+  "name": {
+    "str": "walker"
+  },
+  "description": "A human body that has rapidly decayed to nearly nothing, the black ooze dribbling from it's lacerated body burning a slow death march into it's tired legs. The clothes have all but rotted off the body in record time, and whatever's left of value on it is overgrown into the bramble of it's flesh. It's long past time to move on, but whoever's pulling the strings doesnt't seem to find it profitable.",
+  "default_faction": "zombie",
+  "bodytype": "human",
+  "looks_like": "mon_zombie",
+  "categories": [
+    "CLASSIC"
+  ],
+  "species": [
+    "ZOMBIE",
+    "HUMAN"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 40,
+  "speed": 40,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "Z",
+  "color": "light_green",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 2,
+  "melee_dice": 1,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 0
+    }
+  ],
+  "vision_night": 1,
+  "weakpoint_sets": [
+    "wps_humanoid_body"
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_physiology",
+    "prof_wp_zombie"
+  ],
+  "harvest": "zombie_humanoid",
+  "grab_strength": 15,
+  "special_attacks": [
+    {
+      "id": "grab"
+    },
+    {
+      "id": "bite_humanoid",
+      "cooldown": 10
+    },
+    {
+      "id": "scratch_humanoid"
+    }
+  ],
+  "death_drops": "everyday_gear",
+  "burn_into": "mon_zombie_scorched",
+  "fungalize_into": "mon_zombie_fungus",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "STUMBLES",
+    "WARM",
+    "GRABS",
+	"BASHES",
+	"REVIVES_HEALTHY",
+    "GROUP_BASH",
+    "POISON",
+    "NO_BREATHE",
+    "FILTHY"
+  ]
+},
+{
+  "id": "mon_civilian_pyromancer",
+  "type": "MONSTER",
+  "name": {
+    "str": "pyromantic person"
+  },
+  "description": "Obviously, this aggravated yet rallied human has lost their wits and tries to fight the undead with just a stick in their hands. Oh wait, that's not a stick...",
+  "looks_like": "mon_dementia",
+  "default_faction": "human",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "material": [
+    "flesh"
+  ],
+  "weakpoint_sets": [
+    "wps_humanoid_body"
+  ],
+  "chat_topics": [
+    "TALK_CIVILIAN_FIGHTER"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 90,
+  "symbol": "@",
+  "color": "white",
+  "diff": 3,
+  "aggression": 100,
+  "morale": 100,
+  "vision_day": 10,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 4
+    }
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_physiology"
+  ],
+  "special_attacks": [
+    { "type": "spell", "spell_data": { "id": "fireball", "min_level": 5 }, "cooldown": 5 }
+  ],
+  "//": "They are human after all",
+  "death_function": {
+    "effect": {
+      "id": "death_guilt",
+      "min_level": 6
+    }
+  },
+  "path_settings": {
+    "max_dist": 30,
+    "allow_open_doors": true,
+    "avoid_traps": true,
+    "avoid_sharp": true
+  },
+  "dodge": 1,
+  "death_drops": "default_zombie_death_drops_plus_fireball_wand",
+  "zombify_into": "mon_nethermage_fire",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "HUMAN",
+	"RANGED_ATTACKER",
+    "CAN_OPEN_DOORS",
+    "PATH_AVOID_DANGER_1",
+    "CONVERSATION"
+  ],
+  "copy-from": "mon_civilian_panic",
+  "melee_skill": 2
+},
+{
+  "id": "mon_civilian_cat_lady",
+  "type": "MONSTER",
+  "name": {
+    "str": "crazy cat lady"
+  },
+  "description": "Obviously, this aggravated yet rallied human has lost their wits and tries to fight the undead with just a stick in their hands. Oh wait, that's not a stick, it's a bag of cats!",
+  "looks_like": "mon_dementia",
+  "default_faction": "human",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "material": [
+    "flesh"
+  ],
+  "weakpoint_sets": [
+    "wps_humanoid_body"
+  ],
+  "chat_topics": [
+    "TALK_CIVILIAN_FIGHTER"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 90,
+  "symbol": "@",
+  "color": "white",
+  "diff": 3,
+  "aggression": 100,
+  "morale": 100,
+  "vision_day": 10,
+  "melee_dice": 2,
+  "melee_dice_sides": 3,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 4
+    }
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_physiology"
+  ],
+  "special_attacks": [
+    { "type": "spell", "spell_data": { "id": "summon_cats", "min_level": 15 }, "cooldown": 5 }
+  ],
+  "//": "They are human after all",
+  "death_function": {
+    "effect": {
+      "id": "death_guilt",
+      "min_level": 6
+    }
+  },
+  "path_settings": {
+    "max_dist": 30,
+    "allow_open_doors": true,
+    "avoid_traps": true,
+    "avoid_sharp": true
+  },
+  "dodge": 1,
+  "death_drops": "default_zombie_death_drops_plus_cats_wand",
+  "zombify_into": "mon_yulecat",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "HUMAN",
+	"RANGED_ATTACKER",
+    "CAN_OPEN_DOORS",
+    "PATH_AVOID_DANGER_1",
+    "CONVERSATION"
+  ],
+  "copy-from": "mon_civilian_panic",
+  "melee_skill": 2
+},
+{
+  "id": "mon_civilian_chilling",
+  "type": "MONSTER",
+  "name": {
+    "str": "chilling person"
+  },
+  "description": "They just stand there, staring into the void, with a vacant expression on their face.  Barely moving, they will probably fall to the undead horde soon, at least as soon as that wand runs out.",
+  "looks_like": "mon_dementia",
+  "default_faction": "human",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "material": [
+    "flesh"
+  ],
+  "weakpoint_sets": [
+    "wps_humanoid_body"
+  ],
+  "chat_topics": [
+    "TALK_CIVILIAN_PANIC"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 30,
+  "symbol": "@",
+  "color": "white",
+  "diff": 0,
+  "aggression": -50,
+  "morale": -50,
+  "vision_day": 10,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_physiology"
+  ],
+  "special_attacks": [
+    { "type": "spell", "spell_data": { "id": "cone_cold", "min_level": 10 }, "cooldown": 1 }
+  ],
+  "//": "Will not be able to do this in their current mental state:",
+  "death_function": {
+    "effect": {
+      "id": "death_guilt",
+      "min_level": 6
+    }
+  },
+  "path_settings": {
+    "max_dist": 30,
+    "allow_open_doors": false,
+    "avoid_traps": false,
+    "avoid_sharp": false
+  },
+  "dodge": 1,
+  "death_drops": "default_zombie_death_drops_plus_cold_wand",
+  "zombify_into": "mon_nethermage_cold",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "HUMAN",
+	"RANGED_ATTACKER",
+    "CAN_OPEN_DOORS",
+    "PATH_AVOID_DANGER_1",
+    "CONVERSATION"
+  ],
+  "copy-from": "mon_civilian_panic"
+},
+{
+  "id": "mon_civilian_police_wand",
+  "type": "MONSTER",
+  "name": {
+    "str": "bleeding enforcer"
+  },
+  "description": "Gun in hand, this police officer is determined to make a last stand against the horde. They've got something gripped underneath the gun that looks kind of like a flashlight with a bright red tip.",
+  "looks_like": "mon_dementia",
+  "default_faction": "human",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "material": [
+    "flesh"
+  ],
+  "weakpoint_sets": [
+    "wps_humanoid_body",
+    "wps_humanoid_body_armor"
+  ],
+  "chat_topics": [
+    "TALK_CIVILIAN_OFFICER"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 90,
+  "symbol": "@",
+  "color": "white",
+  "diff": 5,
+  "aggression": 100,
+  "morale": 100,
+  "vision_day": 50,
+  "melee_dice": 2,
+  "melee_dice_sides": 4,
+  "melee_damage": [
+    {
+      "damage_type": "bash",
+      "amount": 5
+    }
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_physiology",
+    "prof_wp_syn_armored"
+  ],
+  "special_attacks": [
+    { "type": "spell", "spell_data": { "id": "bleed", "min_level": 5 }, "cooldown": 5 },
+    {
+      "type": "gun",
+      "cooldown": 10,
+      "move_cost": 150,
+      "gun_type": "civilian_cop_glock22",
+      "ammo_type": "40fmj",
+      "fake_skills": [
+        [
+          "gun",
+          2
+        ],
+        [
+          "pistol",
+          3
+        ]
+      ],
+      "fake_dex": 8,
+      "fake_per": 10,
+      "ranges": [
+        [
+          2,
+          14,
+          "DEFAULT"
+        ]
+      ],
+      "condition": {
+        "and": [
+          {
+            "not": {
+              "u_has_effect": "maimed_arm"
+            }
+          },
+          {
+            "not": {
+              "u_has_effect": "disarmed"
+            }
+          }
+        ]
+      },
+      "require_targeting_player": false,
+      "description": "The officer fires their Glock 22!"
+    }
+  ],
+  "//": "Copied from zombie cop",
+  "death_function": {
+    "effect": {
+      "id": "death_guilt",
+      "min_level": 6
+    }
+  },
+  "path_settings": {
+    "max_dist": 30,
+    "allow_open_doors": true,
+    "avoid_traps": true,
+    "avoid_sharp": true
+  },
+  "dodge": 1,
+  "death_drops": {
+    "subtype": "collection",
+    "items": [
+      {
+        "group": "mon_zombie_cop_death_drops",
+        "prob": 100
+      },
+	  { "item": "wand_disp_bleed_minor", "charges": [ 1, 19 ], "prob": 100 },
+      {
+        "item": "glock_22",
+        "prob": 100,
+        "charges": [
+          0,
+          6
+        ]
+      }
+    ]
+  },
+  "zombify_into": "mon_mage_operator",
+  "flags": [
+    "SEES",
+    "HEARS",
+    "WARM",
+    "HUMAN",
+    "CAN_OPEN_DOORS",
+    "PATH_AVOID_DANGER_1",
+    "CONVERSATION",
+    "DROPS_AMMO",
+    "WIELDED_WEAPON"
+  ],
+  "copy-from": "mon_civilian_panic",
+  "aggro_character": false,
+  "vision_night": 3,
+  "melee_skill": 6,
+  "//2": "Uses a baton for melee attacks",
+  "starting_ammo": {
+    "40fmj": 10
+  },
+  "armor": {
+    "bash": 6,
+    "cut": 6,
+    "stab": 6,
+    "bullet": 6,
+    "electric": 2
+  }
+},
+{
+  "id": "mon_civilian_icu_wand",
+  "type": "MONSTER",
+  "name": {
+    "str": "dying psychic"
+  },
+  "description": "This being is severely ill in some form or another, requiring intensive care that is not available anymore after the Cataclysm. They seem to be in some form of scrying ecstasy, eyes and body sparking with energy, unmoving but still psychicly operating a wand to buy even a few more moments of bliss.",
+  "looks_like": "mon_dementia",
+  "default_faction": "human",
+  "bodytype": "human",
+  "species": [
+    "HUMAN"
+  ],
+  "material": [
+    "flesh"
+  ],
+  "weakpoint_sets": [
+    "wps_humanoid_body"
+  ],
+  "chat_topics": [
+    "TALK_CIVILIAN_ICU"
+  ],
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "hp": 75,
+  "speed": 100,
+  "symbol": "@",
+  "color": "white",
+  "luminance": 10,
+  "diff": 0,
+  "aggression": -50,
+  "morale": 0,
+  "vision_day": 10,
+  "melee_dice": 1,
+  "melee_dice_sides": 2,
+  "special_when_hit": [
+    "ZAPBACK",
+    3
+  ],
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 3
+    }
+  ],
+  "families": [
+    "prof_intro_biology",
+    "prof_physiology"
+  ],
+  "special_attacks": [
+    { "type": "spell", "spell_data": { "id": "entrapment_no_comp", "min_level": 10 }, "cooldown": 1 }
+  ],
+  "//": "So they are not perpetually fleeing despite lying in a hospital bed",
+  "death_function": {
+    "effect": {
+      "id": "death_guilt",
+      "min_level": 6
+    }
+  },
+  "path_settings": {
+    "max_dist": 30,
+    "allow_open_doors": false,
+    "avoid_traps": false,
+    "avoid_sharp": false
+  },
+  "dodge": 1,
+  "death_drops": "default_zombie_death_drops_plus_entrapment_wand",
+  "zombify_into": "mon_nethermage",
+  "flags": [
+    "WARM",
+    "HUMAN",
+	"ELECTRIC_FIELD",
+	"ALL_SEEING",
+    "CAN_OPEN_DOORS",
+	"IMMOBILE",
+    "PATH_AVOID_DANGER_1",
+    "CONVERSATION"
+  ],
+  "copy-from": "mon_civilian_stationary"
+},
+{
+  "type": "GENERIC",
+  "id": "broken_living_orrery",
+  "symbol": ",",
+  "color": "dark_gray",
+  "name": {
+    "str": "broken living orrery"
+  },
+  "category": "other",
+  "description": "The busted remains of a living orrery. Mostly worthless.",
+  "price": 30000,
+  "price_postapoc": 10,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "weight": "140000 g",
+  "volume": "62500 ml",
+  "to_hit": -3,
+  "flags": [
+    "TRADER_AVOID",
+    "NO_REPAIR"
+  ],
+  "melee_damage": {
+    "bash": 6,
+    "cut": 6
+  }
+},
+{
+  "id": "bot_living_orrery",
+  "type": "TOOL",
+  "name": {
+    "str": "dormant orrery"
+  },
+  "description": "An orrery that has a soul but does not know it yet.  Using this item involves placing it on the ground and reactivating its mechanical body.  If reprogrammed and rewired successfully, the orrery will then identify you as a friendly and begin distilling time itself.",
+  "volume": "62500 ml",
+  "weight": "81500 g",
+  "price": 750000,
+  "price_postapoc": 250,
+  "to_hit": -3,
+  "material": [
+    "steel"
+  ],
+  "symbol": ";",
+  "color": "white",
+  "use_action": {
+    "type": "place_monster",
+    "monster_id": "mon_living_orrery",
+    "friendly_msg": "The orrery magically springs to life, the planets moving into perfect alignment.",
+    "hostile_msg": "You misprogram the orrery. It will still distill time, it just doesn't like doing it.",
+    "difficulty": 5,
+    "moves": 150,
+    "skills": [
+      "spellcraft"
+    ]
+  },
+  "flags": [
+    "SINGLE_USE"
+  ],
+  "melee_damage": {
+    "bash": 8
+  }
+},
+{
+    "id": "living_orrery_death",
+    "type": "SPELL",
+    "name": "Living Orrery Death",
+    "description": "The accompanying droplet for your orrery.",
+    "valid_targets": [ "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 1,
+    "max_range": 1,
+    "base_casting_time": 0,
+    "energy_source": "MANA",
+    "max_level": 1,
+    "difficulty": 1,
+    "base_energy_cost": 0,
+    "min_duration": 28800000,
+    "max_duration": 28800000,
+    "flags": [ "SOMATIC", "NO_LEGS", "PERMANENT_ALL_LEVELS" ],
+    "shape": "blast",
+    "effect": "spawn_item",
+    "effect_str": "time_droplet"
+  },
+  {
+    "id": "mon_living_orrery",
+    "type": "MONSTER",
+    "name": "living orrery",
+    "description": "This is a beautiful, non-scale model of the solar system.  A complex series of gears allows the relative motions of the planets to be studied at the turn of a crank, which is painstakingly turning itself. An ancient technique of magic has been employed upon it in order for it to 'distill' these planetary motions into pure droplets of time.",
+    "default_faction": "nether",
+    "bodytype": "blob",
+    "species": [ "ROBOT" ],
+    "looks_like": "f_orrery",
+    "material": [ "arcane_skin" ],
+    "diff": 2,
+    "volume": "30000 ml",
+    "weight": "40750 g",
+    "hp": 100,
+    "speed": 100,
+    "symbol": "0",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+	"revert_to_itype": "bot_living_orrery",
+    "melee_skill": 0,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+	"biosignature": { "biosig_item": "time_droplet", "biosig_timer": 72 },
+	"armor": { "cold": 9999 },
+    "melee_damage": [ { "damage_type": "pure", "amount": 0 } ],
+	"emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "24 h" } ],
+    "dodge": 2,
+    "vision_day": 10,
+    "vision_night": 10,
+    "harvest": "livingorrery",
+    "death_function": { "effect": { "id": "living_orrery_death", "hit_self": true }, "corpse_type": "BROKEN" },
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
+    "flags": [ "HEARS", "SEES", "IMMOBILE" ]
+  }
+]

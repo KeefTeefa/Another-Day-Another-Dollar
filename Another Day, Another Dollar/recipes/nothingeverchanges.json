@@ -7806,7 +7806,7 @@
     "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "8 h",
     "autolearn": true,
-    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_LP", 1 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_LP", 1 ], [ "mag_comic" ] ],
     "components": [
       [ [ "mirrored_page", 1 ] ],
       [ [ "sf_watch", 1 ] ],
@@ -7942,7 +7942,7 @@
     "qualities": [ { "id": "MANA_WEAVE", "level": 1 } ],
     "time": "8 h",
     "autolearn": true,
-    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_PGTMS", 1 ] ],
+    "book_learn": [ [ "coloring_book", 1 ], [ "wayward_memory_PGTMS", 1 ], [ "mag_comic" ] ],
     "components": [
       [ [ "mirrored_page", 1 ] ],
       [

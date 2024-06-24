@@ -293,7 +293,7 @@
     },
     "difficulty": 20,
     "value": 5000000,
-	"followup": "MISSION_SAINT_BOSSES_OMNATH",
+	"followup": "MISSION_SAINT_BOSSES_ORTIEL",
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "Nexuses of evil energy surround us. We must destroy them.",
@@ -400,6 +400,37 @@
       "success": "All that lies ahead is white shores... and beyond. A far green country, under a swift sunrise. As I said, the glory is yours friend. As, I think, is this sword. Don't let it go to your head! Ahahahaha!!!",
       "success_lie": "Nothing there, hmm? Odd.",
       "failure": "Our quest was not entirely fruitless. We rid the world of much evil, and should be proud."
+    }
+  },
+  {
+    "id": "MISSION_KILL_ANGEL",
+    "type": "mission_definition",
+    "name": "A necessary evil.",
+    "goal": "MGOAL_GO_TO",
+	"start": {
+      "assign_mission_target": {
+        "om_terrain": "church_steeple_end",
+        "om_terrain_match_type": "CONTAINS",
+        "search_range": 100,
+        "min_distance": 0,
+        "random": true,
+        "z": 3
+      }
+    },
+	"end": { "effect": [ { "u_message": "You can feel the firm hand of your true Father gripping your shoulder in pride. They tell you to keep the spoils of war, and to spend them wisely.", "popup": true } ] },
+    "difficulty": 20,
+    "value": 5000000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "...",
+      "offer": "...",
+      "accepted": "...",
+      "rejected": "...",
+      "advice": "...",
+      "inquire": "...",
+      "success": "...",
+      "success_lie": "...",
+      "failure": "..."
     }
   },
   {

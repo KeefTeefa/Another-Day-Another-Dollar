@@ -1,13 +1,5 @@
 [
   {
-    "abstract": "spell_scroll",
-    "name": { "str": "Spell Scroll" },
-    "type": "BOOK",
-    "copy-from": "spell_scroll",
-    "looks_like": "envelope",
-    "price": 25000
-  },
-  {
   "id": "big_envelope",
   "type": "GENERIC",
   "category": "container",
@@ -129,8 +121,28 @@
     "name": { "str": "sacrificial advertisement", "str_pl": "sacrificial advertisement" },
     "looks_like": "postcard",
 	"price": 200000,
-    "flags": [ "TRADER_AVOID" ],
-    "description": "A small piece of cardboard that looks like it was cut from a magazine from 100 years ago. A cartoonish wizard on the front grins devilishly and points to a box with the words 'YOURS, FREE, NO HOOK, NO LINE, NO SINKER.' You find that when you look away, you know how to cast a new spell. You're not sure what it cost you.",
+    "flags": [ "TRADER_KEEP", "ACT_IN_FIRE" ],
+    "description": "A small piece of cardboard that looks like it was cut from a magazine from 100 years ago, judging by the grime. A cartoonish wizard on the front grins devilishly and points to a box with the words 'YOURS, FREE, NO HOOK, NO LINE, NO SINKER.' The wizard seems to be pointing at a picture of the flames of Hell.",
+    "use_action": {
+      "target": "spell_scroll_wicked_ritual_2",
+      "msg": "You burn the sacrificial advertisement.",
+      "menu_text": "Scratch Off",
+	  "need_fire": 1, 
+	  "need_fire_msg": "You try to scratch the box off to reveal your prize but it doesn't seem to do any good.", 
+      "moves": 1000,
+      "type": "transform"
+    }
+  },
+  {
+    "copy-from": "spell_scroll",
+    "type": "BOOK",
+    "id": "spell_scroll_wicked_ritual_2",
+    "//": "Classless spell",
+    "name": { "str": "sacrificial advertisement", "str_pl": "sacrificial advertisement" },
+    "looks_like": "postcard",
+	"price": 200000,
+    "flags": [ "TRADER_KEEP" ],
+    "description": "A burned advertisement for a vacation in Hell. The grinning wizard has been burn half-black, but they still point to the box. It has been burned open to reveal a slot machine scratcher, and you've rolled 3 lucky thirteens.",
     "use_action": { "type": "learn_spell", "spells": [ "wicked_ritual" ] }
   },
   {
@@ -187,8 +199,8 @@
     "looks_like": "rock_large",
     "name": { "str": "heavy stone", "str_pl": "heavy stone" },
     "weight": "15768 g",
-    "description": "A large rock which you seem to recognize in some way. All that's left to do is wait.",
-    "use_action": { "type": "learn_spell", "spells": [ "psychic_anchor", "resonant_shift" ] }
+    "description": "A large rock which you seem to recognize in some way, like a friend you forgot about a long time ago. All that's left to do is wait.",
+    "use_action": { "type": "learn_spell", "spells": [ "psychic_anchor", "earthshaper_stoneskin", "conjure_rock" ] }
   },
   {
     "type": "BOOK",
@@ -350,7 +362,7 @@
     "name": { "str": "unblinking eye", "str_pl": "unblinking eyes" },
     "fun": -12,
     "description": "Staring into this solemn, unblinking eyeball slowly teaches you something you're not quite sure you're comfortable with. You're certainly not comfortable with the teacher.",
-    "use_action": { "type": "learn_spell", "spells": [ "close_tear", "silent_self" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "close_tear", "silent_metamagic" ] }
   },
   {
     "type": "BOOK",
@@ -404,7 +416,7 @@
     "fun": -2,
     "looks_like": "toilet_paper",
     "description": "An extremly soft handkerchief embroidered with a saga of quiet disappearance. Reading it strikes your soul, and teaches you to walk carefully in this life.",
-    "use_action": { "type": "learn_spell", "spells": [ "soft_step", "subtle_self" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "soft_step", "subtle_metamagic" ] }
   },
   {
     "type": "BOOK",
@@ -522,7 +534,7 @@
     "looks_like": "creepy_doll",
     "name": { "str": "collectible robot", "str_pl": "collectible robots" },
     "fun": 3,
-	"price_postapoc": 500000,
+	"price_postapoc": 200000,
     "description": "Hey, this is the exact one you were looking for!",
     "use_action": { "type": "learn_spell", "spells": [ "directed_prone" ] }
   },
@@ -665,7 +677,7 @@
     "//": "Classless spell",
     "looks_like": "envelope",
     "name": { "str": "shredded letter", "str_pl": "shredded letters" },
-    "description": "A marked envelope from one of many corporate spell-casting services. This one looks as though it was shredded some time ago and barely managed to survive. It is stamped: 'DONT RUIN, OPEN INSIDE'",
+    "description": "A marked envelope from one of many corporate spell-casting services. This one looks as though it was shredded some time ago and barely managed to survive. It is stamped: 'DONT RUIN, OPEN INSIDE.'",
     "use_action": { "type": "learn_spell", "spells": [ "conjure_apple_cider" ] }
   },
   {
@@ -851,7 +863,7 @@
     "//": "Classless spell",
     "color": "red",
 	"symbol": "!",
-    "name": { "str": "flashing stop sign", "str_pl": "flashing stop signs" },
+    "name": { "str": "warning sign", "str_pl": "warning signs" },
     "description": "A stop sign that's subtely flashing, only so much as to draw in your attention. It's hypnotizing, really.",
     "use_action": { "type": "learn_spell", "spells": [ "COLD_FLASH" ] }
   },
@@ -1003,9 +1015,9 @@
     "id": "spell_scroll_summon_horse",
     "//": "Classless spell",
     "looks_like": "thermos",
-    "name": { "str": "horse decanter", "str_pl": "horse decanters" },
+    "name": { "str": "equine decanter", "str_pl": "equine decanters" },
     "intelligence": 10,
-    "description": "A decanter like for alcoholic drinks, except when you pour the only thing that comes out is a neigh. You might get something out of it, eventually.",
+    "description": "A horse-head stemmed decanter like for alcoholic drinks, except when you pour the only thing that comes out is a neigh. You might get something out of it, eventually.",
     "use_action": { "type": "learn_spell", "spells": [ "summon_horse" ] }
   },
   {
@@ -1076,6 +1088,16 @@
     "name": { "str": "skipping record", "str_pl": "skipping records" },
     "description": "An old-school record that let's out the faint sound of an unprovoked skip every few minutes. Listening closely, you start to hear voices in that skipping.",
     "use_action": { "type": "learn_spell", "spells": [ "let_loose" ] }
+  },
+  {
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "id": "spell_scroll_chromatic_orb",
+    "//": "Classless spell",
+    "looks_like": "fd_dazzling",
+    "name": { "str": "chromatic orb", "str_pl": "chromatic orbs" },
+    "description": "A dazzling glass ball about the size of your palm that is alight with pure and unabashed color. As you watch their unending play you seem to grow closer to the colors themselves, and your soul feels desperate to express them.",
+    "use_action": { "type": "learn_spell", "spells": [ "chromatic_orb_heat", "chromatic_orb_cold", "chromatic_orb_acid", "chromatic_orb_electric", "chromatic_orb_biological" ] }
   },
   {
     "type": "BOOK",
@@ -1174,19 +1196,5 @@
     "fun": 1,
     "description": "A tiny little paperback notebook emblazoned with the silhouette of a wizard grinning cheekily and pointing down. If the pages of the book are flipped rapidly, drawings of the wizard display the proper form for drawing the magic from within the cards. Careful, it looks chaotic.",
     "use_action": { "type": "learn_spell", "spells": [ "sorcery" ] }
-  },
-  {
-    "id": "cards_magic",
-    "type": "BOOK",
-    "category": "manuals",
-    "name": { "str": "deck of Sorcery cards", "str_pl": "decks of Sorcery cards" },
-    "description": "A set of cards meant to play the game \"Sorcery.\"  Each card has a fun picture of a different monster.",
-    "weight": "210 g",
-    "volume": "250 ml",
-    "price": 23000,
-    "material": [ "paper" ],
-    "symbol": "?",
-    "color": "blue",
-    "flags": [ "NO_REPAIR" ]
   }
 ]

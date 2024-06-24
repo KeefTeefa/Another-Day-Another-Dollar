@@ -25,7 +25,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "FOOD",
     "category": "weapons",
-	"flags": [ "INEDIBLE" ],
+	"flags": [ "INEDIBLE", "ACT_IN_FIRE" ],
     "name": { "str": "Restless Black Egg" },
     "description": "A large, spotted black egg that shakes and quivers at the slightest provocation. With even the tiniest prod, it may open...",
     "weight": "1 g",
@@ -35,6 +35,9 @@
     "material": [ "concentrated_mana" ],
     "symbol": "o",
     "color": "black",
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_DRAGON",
+    "rot_spawn_chance": 100,
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_dragon", "no_fail": true, "level": 15 } ]
   },
   {
@@ -54,7 +57,7 @@
     "base_energy_cost": 0,
     "min_duration": 999999999,
     "max_duration": 999999999,
-    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_LEGS", "SPAWN_WITH_DEATH_DROPS", "PERMANENT" ],
+    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_LEGS", "SPAWN_WITH_DEATH_DROPS", "PERMANENT", "RANDOM_TARGET" ],
     "shape": "blast",
     "effect": "summon",
     "effect_str": "mon_dragon_black_wyrmling"
@@ -115,6 +118,9 @@
     "material": [ "concentrated_mana" ],
     "symbol": "o",
     "color": "black",
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_FROG",
+    "rot_spawn_chance": 100,
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_frog", "no_fail": true, "level": 15 } ]
   },
   {
@@ -123,7 +129,7 @@
     "name": "Happy Birthday",
 	"copy-from": "summon_dragon",
     "description": "The egg opens and inside you find...",
-	"effect_str": "mon_toad_giant"
+	"effect_str": "mon_foul_toad"
   },
   {
     "id": "familiar_owl",
@@ -161,6 +167,9 @@
     "material": [ "concentrated_mana" ],
     "symbol": "o",
     "color": "black",
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_OWL",
+    "rot_spawn_chance": 100,
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_owl", "no_fail": true, "level": 15 } ]
   },
   {
@@ -195,7 +204,7 @@
   {
     "id": "summon_rat_familiar",
     "type": "SPELL",
-    "name": "Lab Work",
+    "name": "Lab Work - Familiar",
     "description": "No animals were harmed in the CASTING of this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 3,
@@ -229,6 +238,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_RAT",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_rat", "no_fail": true, "level": 15 } ]
@@ -297,6 +309,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_SKELETON_DOG",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_skeleton_dog", "no_fail": true, "level": 15 } ]
@@ -343,6 +358,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_FISH",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_fish", "no_fail": true, "level": 15 } ]
@@ -409,6 +427,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_CAT",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_cat", "no_fail": true, "level": 15 } ]
@@ -478,6 +499,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_BLASTLID",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_blastlid", "no_fail": true, "level": 15 } ]
@@ -547,6 +571,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_FRIGILING",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_frigiling", "no_fail": true, "level": 15 } ]
@@ -601,6 +628,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_SPARKLET",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_sparklet", "no_fail": true, "level": 15 } ]
@@ -655,6 +685,9 @@
     "longest_side": "1 cm",
     "price": 50000,
     "material": [ "concentrated_mana" ],
+	"spoils_in": "60 days",
+	"rot_spawn": "GROUP_FAMILIAR_CORROLUG",
+    "rot_spawn_chance": 100,
     "symbol": "o",
     "color": "black",
     "use_action": [ { "type": "cast_spell", "spell_id": "summon_familiar_corrolug", "no_fail": true, "level": 15 } ]

@@ -27,7 +27,7 @@
   {
     "id": "spell_components_summon_hoverboard",
     "type": "requirement",
-    "components": [ [ [ "wheel_skate", 4 ], [ "money_bundle_hundred", 1 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "wheel_skate", 4 ], [ "money_bundle_hundred", 1 ], [ "ring_signet", 1 ], [ "frame_wood_deck", 1 ], [ "book_of_flame", 1 ] ] ]
   },
   {
     "id": "spell_components_use_ring",
@@ -107,7 +107,7 @@
   {
     "id": "spell_components_gambit",
     "type": "requirement",
-    "components": [ [ [ "chess", 1 ], [ "checkers", 1 ], [ "shogi", 1 ], [ "senet", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
+    "components": [ [ [ "chess", 1 ], [ "checkers", 1 ], [ "shogi", 1 ], [ "senet", 1 ], [ "knight_mage", 1 ], [ "money_strap_hundred", 1 ], [ "ring_signet", 1 ] ] ]
   },
   {
     "id": "spell_components_scrying",

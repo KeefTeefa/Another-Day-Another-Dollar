@@ -1,46 +1,102 @@
 [
+{
+  "type": "AMMO",
+  "id": "postage_stamp",
+  "name": {
+    "str_sp": "postage stamp"
+  },
+  "category": "spare_parts",
+  "weight": "1 g",
+  "color": "white",
+  "symbol": "`",
+  "description": "A tiny piece of paper with glue on the back, emblazoned with the American flag. Could be used to make pretty much any kind of purchase through a catalogue, if you happen to find one. The glue is rapidly drying, but you might be able to parcel something together quick enough to send it off.",
+  "price": 0,
+  "price_postapoc": 0,
+  "material": [
+    "paper"
+  ],
+  "qualities": [ [ "FOODPLACE_LOYALTY", 2 ], [ "POWER_ALTAR", 1 ], [ "VHS", 1 ] ],
+  "flags": [
+    "TINDER",
+    "PAPER_SHAPED"
+  ],
+  "volume": "1 ml",
+  "longest_side": "297 mm",
+  "ammo_type": "paper"
+},
   {
-    "id": "portable_game_magic",
-    "type": "TOOL",
-    "name": { "str": "magical handheld game system" },
-    "description": "This is a portable games console in working condition, with a backlit screen allowing you to play in the dark. Multiple game systems can be linked together for multiplayer games.",
-    "weight": "200 g",
-    "volume": "230 ml",
-    "price": 80000,
-    "material": [ "plastic" ],
-    "symbol": ";",
-    "color": "light_gray",
-    "flags": [ "WATER_BREAK" ],
-    "use_action": [ "PORTABLE_GAME" ]
+    "type": "SPELL",
+    "id": "spit_trap_bite",
+    "name": "Spit Trap Bite",
+    "description": "Bites",
+    "effect": "attack",
+    "shape": "blast",
+    "max_level": 35,
+	"flags": [ "RANDOM_TARGET", "NO_EXPLOSION_SFX" ], 
+    "min_damage": 10,
+    "max_damage": 10,
+	"min_range": 2, 
+	"max_range": 2, 
+	"damage_type": "cut",
+    "valid_targets": [ "hostile", "ally" ]
+  },
+  {
+    "type": "SPELL",
+    "id": "spit_trap_bite_self",
+    "name": "Spit Trap Bite Self",
+    "description": "Bites",
+    "effect": "attack",
+    "shape": "blast",
+    "max_level": 35,
+	"flags": [ "NO_EXPLOSION_SFX" ], 
+    "min_damage": 10,
+    "max_damage": 10,
+	"min_range": 2, 
+	"max_range": 2, 
+	"damage_type": "cut",
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "enchantment",
+    "id": "spit_trap_enchantment",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "STRENGTH", "add": 1 }
+    ],
+    "intermittent_activation": { "effects": [ { "frequency": "15 s", "spell_effects": [ { "id": "spit_trap_bite" } ] }, { "frequency": "60 s", "spell_effects": [ { "id": "spit_trap_bite_self" } ] }  ] }
   },
   {
     "id": "spit_trap_spellitem",
     "type": "ARMOR",
     "name": "miscipula brachiumorphus",
-    "description": "Your own overgrown arm, massive head like a venus fly trap angrily frothing and lashing at anything that moves. You included, occasionally. ",
+    "description": "An overgrowth that coils around your arm, massive head like a venus fly trap angrily frothing and lashing at anything that moves. You included, occasionally. You can't seem to pull it off but fire might do the trick.",
     "weight": "2032 g",
     "volume": "3500 ml",
     "longest_side": "140 cm",
     "price": 2000,
     "price_postapoc": 250,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "INTEGRATED", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "INTEGRATED", "NO_TAKEOFF", "NONCONDUCTIVE" ],
     "material": [ "wood" ],
     "symbol": ".",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "LEAVES", "FLOWERS", "DEFORMED" ] } ] },
-    "use_action": {
-      "type": "place_trap",
-      "allow_underwater": true,
-      "trap": "tr_pitfall",
-      "moves": 1,
-      "practice": 1,
-      "done_message": "Your arm lithely rips a huge chunk of dirt out of the earth, swallowing it whole."
-    },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "LEAVES", "FLOWERS", "DEFORMED" ] }, { "id": "spit_trap_enchantment" } ] },
+    "use_action": [
+	{ "type": "cast_spell", "spell_id": "spit_trap_spell", "no_fail": true, "level": 10, "need_worn": true },
+	{
+      "target": "withered",
+      "msg": "You burn the miscipula brachiumorphus, shrieking as it falls to the ground.",
+      "menu_text": "Burn Overgrowth Off",
+	  "need_fire": 3, 
+	  "need_fire_msg": "You can't pull the growth loose.", 
+      "moves": 500,
+      "type": "transform"
+    }
+	],
     "warmth": 1,
     "material_thickness": 2,
     "armor": [
       {
-        "encumbrance": 0,
+        "encumbrance": 7,
         "volume_encumber_modifier": 0,
         "coverage": 100,
         "cover_ranged": 95,
@@ -70,7 +126,7 @@
       "rigid": true,
 	  "weight_multiplier": 0.0,
 	  "volume_multiplier": 0.0,
-      "max_contains_volume": "50000 L",
+      "max_contains_volume": "500 L",
       "max_contains_weight": "50000 kg",
 	  "item_restriction": [
           "water",
@@ -1007,8 +1063,20 @@
     "material": [ "platinum" ],
     "symbol": "[",
     "color": "white",
+	"pocket_data": [
+    {
+      "pocket_type": "CONTAINER",
+      "holster": true,
+      "max_contains_weight": "12 mg",
+      "max_contains_volume": "1 ml",
+      "description": "Slot for a photograph",
+      "item_restriction": [
+        "wallet_photo"
+      ]
+    }
+  ],
     "use_action": { "type": "cast_spell", "spell_id": "sacred_chain_freeze", "no_fail": true, "level": 1, "need_worn": true },
-    "flags": [ "SUPER_FANCY" ]
+    "flags": [ "SUPER_FANCY", "SEMITANGIBLE" ]
   },
   {
     "id": "minute_orrery",
@@ -1023,6 +1091,7 @@
     "looks_like": "silver_bracelet",
     "color": "brown",
     "sided": true,
+	"qualities": [ [ "ORRERY", 1 ] ],
     "armor": [
       {
         "encumbrance": 0,
@@ -1032,7 +1101,7 @@
       }
     ],
     "use_action": { "type": "cast_spell", "spell_id": "minute_orrery_gambit", "no_fail": true, "level": 1, "need_worn": true },
-    "flags": [ "BELTED", "OVERSIZE", "SUPER_FANCY" ]
+    "flags": [ "BELTED", "OVERSIZE", "SUPER_FANCY", "SEMITANGIBLE" ]
   },
   {
     "id": "chained_orrery",
@@ -1045,9 +1114,10 @@
     "material": [ "copper" ],
     "symbol": "[",
     "looks_like": "silver_necklace",
+	"qualities": [ [ "ORRERY", 1 ] ],
     "color": "brown",
     "use_action": { "type": "cast_spell", "spell_id": "chained_orrery_time_stop", "no_fail": true, "level": 1, "need_worn": true },
-    "flags": [ "SUPER_FANCY", "LIGHT_10" ]
+    "flags": [ "SUPER_FANCY", "LIGHT_10", "SEMITANGIBLE" ]
   },
   {
     "id": "pretty_penny",
@@ -1429,9 +1499,10 @@
         "pocket_type": "CONTAINER",
         "max_contains_volume": "70 L",
         "max_contains_weight": "100 kg",
+		"weight_multiplier": 0.0, 
         "max_item_length": "100 cm",
         "magazine_well": "5 L",
-        "moves": 300
+        "moves": 275
       }
     ],
     "warmth": 10,

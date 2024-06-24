@@ -38,74 +38,6 @@
     ]
   },
   {
-    "type": "COMESTIBLE",
-    "comestible_type": "FOOD",
-    "category": "weapons",
-	"flags": [ "INEDIBLE", "OLD_CURRENCY", "BANK_NOTE_STRAP_SHAPED", "NUTRIENT_OVERRIDE" ],
-    "id": "money_strap_hundred",
-    "name": { "str": "hundred-dollar currency strap" },
-    "description": "A hundred hundred-dollar bills held together by a mustard currency strap. Most people have figured out by now that if you offer it as payment, a creature will come to your aid.",
-    "looks_like": "money_strap_one",
-    "copy-from": "money_strap_one",
-    "color": "green",
-    "symbol": "$",
-	"use_action": [ 
-	{ "type": "cast_spell", "spell_id": "use_strap", "no_fail": true, "level": 1, "need_wielding": true }
-	],
-    "price": 1000000,
-    "price_postapoc": 10000
-  },
-  {
-	  "id": "money_bundle_hundred", 
-	  "type": "COMESTIBLE",
-      "comestible_type": "FOOD",
-      "category": "weapons",
-	  "flags": [ "INEDIBLE", "OLD_CURRENCY", "NUTRIENT_OVERRIDE" ],
-	  "copy-from": "money_bundle_hundred", 
-	  "name": { "str": "hundred-dollar currency bundle" },
-	  "price_postapoc": 100000,
-	  "description": "A thousand hundred-dollar bills, divided evenly between ten mustard currency straps, and bundled together with rubber bands. Most people have figured out by now that if you offer it as payment, a band of mercenaries from Hell will come to your aid.",
-	  "use_action": [ 
-	{ "type": "cast_spell", "spell_id": "use_bundle", "no_fail": true, "level": 1, "need_wielding": true }
-	]
-  },
-  {
-    "id": "ring_signet",
-    "type": "COMESTIBLE",
-    "comestible_type": "FOOD",
-    "category": "weapons",
-	"copy-from": "ring_signet",
-    "name": { "str": "signet ring" },
-    "description": "A gold and silver ring with a wide stamp attached to the band.  A long time ago, the stamp was legible, but now the patterns have faded into each other.",
-    "weight": "14 g",
-    "volume": "1 ml",
-    "price": 10000,
-	"price_postapoc": 10000,
-    "material": [ "gold", "silver" ],
-    "symbol": "[",
-    "color": "yellow",
-	"use_action": { "type": "cast_spell", "spell_id": "use_ring_signet", "no_fail": true, "level": 10, "need_worn": true },
-    "armor_data": { "covers": [ "HAND_EITHER" ] },
-    "flags": [ "FANCY", "SKINTIGHT", "ONE_PER_LAYER", "ALLOWS_NATURAL_ATTACKS", "INEDIBLE", "NO_TAKEOFF", "NUTRIENT_OVERRIDE" ]
-  },
-  {
-    "type": "AMMO",
-    "id": "crystallized_mana",
-    "category": "spare_parts",
-    "price": 50000,
-    "copy-from": "crystallized_mana",
-    "name": { "str_sp": "crystallized mana" },
-    "symbol": "=",
-    "color": "yellow",
-    "description": "Some crystallized mana.  This can be reloaded into rechargeable mana crystals, but can never be unloaded.",
-    "flags": [ "TRADER_AVOID", "ZERO_WEIGHT" ],
-    "volume": "100 ml",
-    "ammo_type": "crystallized_mana",
-    "material": [ "crystallized_mana" ],
-    "count": 100,
-    "looks_like": "battery"
-  },
-  {
   "type": "GENERIC",
   "id": "foldframe_crystal_mana",
   "name": {
@@ -135,13 +67,14 @@
     "type": "BOOK",
     "category": "manuals",
     "name": { "str": "classified intelligence", "str_pl": "intelligences" },
-    "description": "Only one piece of the puzzle. A neatly paperclipped document sits face down on top of the file labeled 'Top Secret.' You can surmise from what's in the file itself that the Government before the cataclysm was trying to enslave demons and use them as a source of infinite power. You can also surmise that it did not go as planned. You'll need to remove the paperclip if you want to know more.",
+    "description": "Only one piece of the puzzle. A neatly paperclipped document sits face down on top of a file labeled 'Top Secret.' You can surmise from what's in the file itself that the Government before the cataclysm was trying to enslave demons and use them as a source of infinite power. You can also surmise that it did not go as planned. You'll need to remove the paperclip if you want to know more.",
     "weight": "1200 g",
     "volume": "1200 ml",
-    "price": 2000000,
+    "price": 2500000,
     "material": [ "paper" ],
     "symbol": "?",
     "color": "light_red",
+	"flags": [ "TRADER_KEEP" ],
     "use_action": [
       {
         "type": "transform",
@@ -179,13 +112,19 @@
           "toxic_dump",
           "police_dept_u000",
           "lab_subway",
-		  "wizard_tower_op",
           "microlab_sub_connector",
           "microlab_sub_station",
           "central_lab_train_depot",
           "lab_train_depot",
           { "om_terrain": "magic_academy_ground", "om_terrain_match_type": "TYPE" },
 		  { "om_terrain": "magic_academy_operator", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "magic_academy_necro", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "witch_cabin_lake", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "wizard_tower_op", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "wizard_tower_stalker", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "wizard_tower_abandoned", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "cathedral_saint", "om_terrain_match_type": "TYPE" },
+		  { "om_terrain": "demonic_fortress", "om_terrain_match_type": "TYPE" },
 		  { "om_terrain": "bank_raiders", "om_terrain_match_type": "TYPE" },
 		  { "om_terrain": "bank_altar", "om_terrain_match_type": "TYPE" },
 		  { "om_terrain": "police_dept_ADAD", "om_terrain_match_type": "CONTAINS" },
@@ -199,55 +138,29 @@
           "police",
           "mil_base_road_entrance"
         ],
-        "message": "You preen the intel for locations of interest."
+        "message": "You preen the intel. It seems whoever wrote this knew where key locations would form after the cataclysm, and marked them down ahead of time."
       }
     ]
   },
   {
-    "type": "tool_quality",
-    "id": "FOODPLACE_LOYALTY",
-    "name": "foodplace loyalty"
-  },
-  {
-  "type": "BOOK",
-  "name": {
-    "str": "Foodkid badge"
-  },
-  "description": "A star-shaped plastic badge.  \"Foodkid\" is printed on it in bold letters.  This badge marks its wearer as Foodperson's trusty sidekick, and comes included with every kid's meal at Foodplace. Welcome to the Foodplace Loyalty Program™!",
-  "category": "manuals",
-  "qualities": [ [ "FOODPLACE_LOYALTY", 1 ] ],
-  "id": "badge_foodkid",
-  "armor_data": {
-    "covers": [
-      "torso"
-    ]
-  },
-  "copy-from": "badge_foodkid"
-},
-  {
-    "id": "fp_loyalty_card",
-    "type": "AMMO",
-    "name": "Foodplace Loyalty Card",
-    "ammo_type": "fp_loyalty_card_ammo",
-	"description": "A bright pink loyalty card, all the points are stamped. There's an ad on the back for so called 'Loyalists' to send these in for prizes that would be delivered magically, and it says the instructions can be found in a magazine called 'Glamopolitan'. It sounds more like a call to arms than a rewards program, but who knows. This would definitely prove your fidelity to Foodplace, if that still meant anything…",
-    "copy-from": "fp_loyalty_card"
-  },
-  {
-    "id": "mag_glam",
-    "type": "BOOK",
-	"category": "manuals",
-     "name": {
-    "str": "Glamopolitan",
-    "str_pl": "issues of Glamopolitan"
-    },
-    "description": "A full-size glossy women's magazine.  There are a few unoriginal recipes and some simple cooking tips somewhere in between the fashion photos and the sex advice columns. Every issue has an advertisement for Foodplace's Loyalty Program™, hosted by a cute little cartoonish wizard. They colorfully show you a Foodplace kid with his Badge, putting a handful of Loyalty cards in his mailbox. Out pops a cigarette, which the wizard wags their finger at. As they take the cigarette they say 'After Hours only! Subscribe for more!'",
-    "copy-from": "mag_glam"
-  },
-  {
-    "type": "ammunition_type",
-    "id": "fp_loyalty_card_ammo",
-    "name": "Foodplace Loyalty Card",
-    "default": "fp_loyalty_card"
+    "id": "refined_knowledge",
+    "type": "ARMOR",
+    "name": { "str": "refined knowledge" },
+    "description": "Knowledge that has been distilled into it's purest form, magic. You know just a little bit more about everything, and mana flows through you exquisitely easily.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "longest_side": "1 cm",
+    "price": 2000,
+    "price_postapoc": 250,
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "ONLY_ONE", "TRADER_AVOID", "INTEGRATED", "AURA", "NONCONDUCTIVE" ],
+    "material": [ "concentrated_mana" ],
+    "symbol": ".",
+    "color": "brown",
+    "relic_data": {
+      "passive_effects": [
+		{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "INTELLIGENCE", "add": 2 }, { "value": "MAX_MANA", "multiply": 0.5 }, { "value": "REGEN_MANA", "multiply": 0.1 } ] }
+      ]
+    }
   },
   {
     "type": "ammunition_type",
@@ -309,333 +222,6 @@
     "symbol": "b",
     "color": "red"
   },
-  {
-    "type": "GENERIC",
-    "id": "money_hundred",
-    "name": { "str": "hundred-dollar bill" },
-    "copy-from": "money_one",
-    "description": "A hundred-dollar bill, featuring a portrait of Benjamin Franklin.",
-    "looks_like": "money_one",
-    "color": "green",
-    "symbol": "$",
-    "price": 1000,
-	"price_postapoc": 1000,
-    "flags": [ "OLD_CURRENCY", "BANK_NOTE_SHAPED" ]
-  },
-  {
-    "id": "coin_nickel",
-	"copy-from": "coin_nickel",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": {
-    "str": "nickel",
-    "str_pl": "nickels"
-    },
-	"quench": 100,
-	"flags": [
-    "OLD_CURRENCY",
-	"NUTRIENT_OVERRIDE",
-    "COIN_SHAPED"
-  ],
-	"use_action": {
-    "type": "consume_drug",
-    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
-	"effects": [
-      {
-        "id": "panacea",
-        "duration": "5 m"
-     },
-     {
-        "id": "coin_healing", "duration": "5 m"
-     } ],
-    "vitamins": [
-      [
-        "mutagenic_slurry",
-        10
-      ]
-    ]
-    },
-   "healthy": -2,
-   "addiction_potential": 5,
-   "addiction_type": "mutagen"
-  },
-  {
-    "id": "coin_dime",
-	"copy-from": "coin_dime",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": {
-    "str": "dime",
-    "str_pl": "dimes"
-    },
-	"flags": [
-    "OLD_CURRENCY",
-	"NUTRIENT_OVERRIDE",
-    "COIN_SHAPED"
-  ],
-    "quench": 200,
-	"use_action": {
-    "type": "consume_drug",
-    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
-	"effects": [
-      {
-        "id": "panacea",
-        "duration": "10 m"
-     },
-     {
-        "id": "coin_healing", "duration": "10 m" 
-     } ],
-    "vitamins": [
-      [
-        "mutagenic_slurry",
-        20
-      ]
-    ]
-    },
-   "healthy": -4,
-   "addiction_potential": 10,
-   "addiction_type": "mutagen"
-  },
-  {
-    "id": "coin_quarter",
-	"copy-from": "coin_quarter",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": {
-    "str": "quarter",
-    "str_pl": "quarters"
-    },
-	"flags": [
-    "OLD_CURRENCY",
-	"NUTRIENT_OVERRIDE",
-    "COIN_SHAPED"
-  ],
-    "quench": 600,
-	"use_action": {
-    "type": "consume_drug",
-    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
-	"effects": [
-      {
-        "id": "panacea",
-        "duration": "25 m"
-     },
-     {
-        "id": "coin_healing", "duration": "25 m" 
-     } ],
-    "vitamins": [
-      [
-        "mutagenic_slurry",
-        50
-      ]
-    ]
-    },
-   "healthy": -6,
-   "addiction_potential": 12,
-   "addiction_type": "mutagen"
-  },
-  {
-    "id": "coin_half_dollar",
-	"copy-from": "coin_half_dollar",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": {
-    "str": "half-dollar coin",
-    "str_pl": "half-dollar coins"
-    },
-	"flags": [
-    "OLD_CURRENCY",
-	"NUTRIENT_OVERRIDE",
-    "COIN_SHAPED"
-  ],
-	"use_action": {
-    "type": "consume_drug",
-    "activation_message": "You flip the coin and catch a wink from JFK as it disappears.",
-	"effects": [
-     {
-        "id": "coin_healing", "duration": "30 m" 
-     } ],
-    "vitamins": [
-      [
-        "mutagen_chelator",
-        250
-      ]
-    ]
-    }
-  },
-  {
-    "id": "coin_dollar",
-	"copy-from": "coin_dollar",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": {
-    "str": "dollar coin"
-    },
-	"quench": 1000,
-	"flags": [
-    "OLD_CURRENCY",
-	"NUTRIENT_OVERRIDE",
-	"MUTAGEN_CATALYST",
-    "COIN_SHAPED"
-  ],
-	"use_action": {
-    "type": "consume_drug",
-    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
-	"effects": [
-      {
-        "id": "panacea",
-        "duration": "100 m"
-     },
-     {
-        "id": "coin_healing", "duration": "60 m"
-     } ],
-    "vitamins": [
-      [
-        "mutagen",
-        500,
-        750
-      ]
-    ]
-    },
-   "healthy": -10,
-   "addiction_potential": 10,
-   "addiction_type": "mutagen"
-  },
-  {
-    "id": "coin_silver",
-	"copy-from": "coin_silver",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": {
-    "str": "Silver Eagle coin",
-    "str_pl": "Silver Eagle coins"
-    },
-	"flags": [
-    "OLD_CURRENCY",
-	"NUTRIENT_OVERRIDE",
-	"MUTAGEN_PRIMER",
-    "COIN_SHAPED"
-    ],
-    "healthy": -6,
-    "addiction_potential": 8,
-    "addiction_type": "mutagen",
-	"use_action": {
-    "type": "consume_drug",
-    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
-	"effects": [
-      {
-        "id": "cureall"
-     },
-     {
-        "id": "coin_healing", "duration": "60 m" 
-     }  ],
-    "vitamins": [
-      [
-        "mutagen_human",
-        450,
-        550
-      ]
-    ]
-    }
-  },
-  {
-    "id": "coin_gold",
-	"copy-from": "coin_gold",
-    "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "name": {
-    "str": "American Buffalo coin"
-    },
-	"flags": [
-    "OLD_CURRENCY",
-	"NUTRIENT_OVERRIDE",
-	"MUTAGEN_CATALYST",
-    "COIN_SHAPED"
-  ],
-	"quench": 2000,
-	"use_action": {
-    "type": "consume_drug",
-    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
-	"effects": [
-      {
-        "id": "cureall"
-     },
-     {
-        "id": "coin_healing", "duration": "1 d" 
-     },
-     {
-        "id": "panacea", "duration": "1 d" 
-     }   ],
-    "vitamins": [
-      [
-        "mutagen",
-        1000,
-        1500
-      ]
-    ]
-    },
-   "healthy": -25,
-   "addiction_potential": 25,
-   "addiction_type": "mutagen"
-  },
-  {
-  "id": "onyx_silver_ring",
-  "type": "COMESTIBLE",
-  "comestible_type": "FOOD",
-  "category": "weapons",
-  "name": {
-    "str": "onyx and silver ring"
-  },
-  "description": "A silver ring with an onyx mounted on top of it. There's a sinister sense to it.",
-  "weight": "13 mg",
-  "volume": "1 ml",
-  "price": 10000,
-  "price_postapoc": 25,
-  "material": [
-    {
-      "type": "silver",
-      "portion": 9
-    },
-    {
-      "type": "gemstone"
-    }
-  ],
-  "looks_like": "silver_ring",
-  "symbol": "[",
-  "color": "dark_gray",
-  "flags": [
-    "FANCY",
-	"SKINTIGHT", 
-	"ONE_PER_LAYER", 
-	"ALLOWS_NATURAL_ATTACKS", 
-	"INEDIBLE", 
-	"NO_TAKEOFF", 
-	"NUTRIENT_OVERRIDE",
-    "NO_WEAR_EFFECT",
-    "ALLOWS_TALONS"
-  ],
- "armor_data": { "covers": [ "HAND_EITHER" ] },
-  "use_action": { "type": "cast_spell", "spell_id": "altar_place_ring", "no_fail": true, "level": 1, "need_worn": true },
-  "copy-from": "garnet_silver_ring",
-  "variant_type": "generic",
-  "variants": [
-    {
-      "id": "generic_onyx_silver_ring",
-      "name": {
-        "str": "onyx and silver ring"
-      },
-      "description": "A silver ring with an onyx mounted on top of it. There's a sinister sense to it.",
-      "weight": 50
-    },
-    {
-      "id": "dark_ring",
-      "name": {
-        "str": "dark ring"
-      },
-      "description": "A dark silver ring with skull decorations and a pitch-black onyx mounted on top of it.",
-      "weight": 50
-    }
-  ]
-},
 {
     "id": "prac_enchanting_ADAD",
     "type": "practice",
@@ -660,7 +246,7 @@
     "subcategory": "CSC_PRACTICE_SOCIAL",
     "name": "piloting (beginner)",
     "description": "You practice winging it.",
-    "skill_used": "spellcraft",
+    "skill_used": "driving",
     "time": "1 h",
     "practice_data": { "min_difficulty": 0, "max_difficulty": 1 },
 	"tools": [ [ [ "laptop", 50 ] ] ],
@@ -703,12 +289,12 @@
   ],
   "pocket_data": [
       {
-        "rigid": true,
+        "rigid": false,
         "pocket_type": "CONTAINER",
-        "max_contains_volume": "1000 L",
-        "max_contains_weight": "1000 kg",
-        "moves": 0,
-        "max_item_length": "2 km",
+        "max_contains_volume": "1001 L",
+        "max_contains_weight": "1001 kg",
+        "moves": 1000,
+        "max_item_length": "3 km",
 		"item_restriction": [
           "silvermoon_str",
 		  "silvermoon_dex",
@@ -719,12 +305,12 @@
 		"volume_multiplier": 0.0
       },
 	  {
-        "rigid": true,
+        "rigid": false,
         "pocket_type": "CONTAINER",
         "max_contains_volume": "501 L",
         "max_contains_weight": "1001 kg",
-        "moves": 0,
-        "max_item_length": "2 km",
+        "moves": 1000,
+        "max_item_length": "3 km",
 		"item_restriction": [
 		  "familiar_frog", 
 		  "familiar_owl",
@@ -747,6 +333,9 @@
   "flags": [
     "FANCY",
 	"ONLY_ONE",
+	"OVERSIZE",
+	"ZERO_WEIGHT", 
+	"SEMITANGIBLE",
 	"TARDIS"
   ]
 },
@@ -761,7 +350,7 @@
     "weight": "20000 g",
     "volume": "250 ml",
     "price": 10000,
-	"spoils_in": "5 s",
+	"spoils_in": "1 s",
 	"rot_spawn": "GROUP_ATM_GOBLIN",
     "rot_spawn_chance": 100,
 	"flags": [ "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE", "INEDIBLE" ],
@@ -981,7 +570,7 @@
     "symbol": "~",
     "description": "Bleached mercury. Anything written with it comes out invisible, but it has multiple magical applications.",
     "volume": "100 ml",
-    "price": 50000,
+    "price": 10000,
     "weight": "1 mg",
     "color": "white",
     "looks_like": "water",
@@ -1487,9 +1076,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 3 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of an insightful eye" },
     "description": "A drawing of an eye that you can't quite pin down. One moment it appears warm and inviting, and the next cold and alien. Activate it to reveal a small area within a massive range for a brief time.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1520,9 +1109,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 5 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of an outward spiral" },
     "description": "A drawing spiraling infinitely outward. Activate it to push everything away from a target.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1575,9 +1164,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 5 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of an inward spiral" },
     "description": "A drawing spiraling infinitely inward. Activate it to pull everything toward a target magic circle.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1626,13 +1215,13 @@
     "id": "drawing_stop",
     "type": "TOOL",
     "category": "tools",
-    "charges_per_use": 3,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 3 }, "watertight": true, "rigid": true } ],
+    "charges_per_use": 5,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 5 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of a ticking clock" },
     "description": "A drawing that only seems partially real, you could swear that clock is ticking... Activate it to freeze creatures in time.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1655,8 +1244,8 @@
     "energy_source": "MANA",
     "difficulty": 1,
     "max_level": 10,
-    "base_casting_time": 100,
-    "base_energy_cost": 3000,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
     "min_aoe": 5,
     "max_aoe": 5,
     "min_damage": 1000,
@@ -1684,9 +1273,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of bile" },
     "description": "A drawing of bile dripping from what remains. Activate it to detonate an area, causing an explosion of magic at it's location.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1740,9 +1329,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of smoke" },
     "description": "A drawing of smoke in the aftermath. Activate it to detonate an area, causing an explosion of magic at it's location.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1796,9 +1385,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of blood" },
     "description": "A drawing of blood slowly leaking off the page into nowhere. Activate it to detonate an area, causing an explosion of magic at it's location.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1852,9 +1441,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of flame" },
     "description": "A drawing of flames lapping at the shores of destruction. Activate it to detonate an area, causing an explosion of magic at it's location.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1908,9 +1497,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of razing" },
     "description": "A drawing of nothing, or at least that's what it looks like. Activate it to detonate an area, causing an explosion of magic at it's location.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -1964,9 +1553,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 3 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of a spotlight from the sky" },
     "description": "A drawing of a beam shooting down from the sky onto a humanoid figure. Activate it to create a translocate gate on a nearby, animate magic circle and then translocate.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -2024,9 +1613,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 1 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of a blur" },
     "description": "A drawing of a figure moving too fast to keep track of. Activating it will allow one to swap places with a creature within a huge area.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -2042,7 +1631,7 @@
     "type": "SPELL",
     "name": "Mana-Painted Step",
     "description": "Teleports you to a target location.",
-    "effect": "banishment",
+    "effect": "attack",
     "shape": "blast",
     "valid_targets": [ "hostile", "ally", "self" ],
     "flags": [ "SOMATIC", "SILENT", "NO_LEGS", "TARGET_TELEPORT", "SWAP_POS", "NO_PROJECTILE" ],
@@ -2050,9 +1639,9 @@
     "max_range": 100,
     "max_level": 20,
     "difficulty": 7,
-    "base_casting_time": 100,
+    "base_casting_time": 0,
     "energy_source": "MANA",
-    "base_energy_cost": 1000
+    "base_energy_cost": 0
   },
   {
     "id": "drawing_dislocate",
@@ -2062,9 +1651,9 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "white_pen_ink": 7 }, "watertight": true, "rigid": true } ],
     "name": { "str": "drawing of the godhead" },
     "description": "A drawing of faces that are themselves made of faces making up one of the faces. Activate it to become invincible for 30 seconds.",
-    "weight": "1 g",
-    "volume": "1 ml",
-    "longest_side": "1 cm",
+    "weight": "10 g",
+    "volume": "1 L",
+    "longest_side": "12 cm",
     "price": 50000,
     "material": [ "magical_material" ],
     "flags": [ "TRADER_AVOID", "MAGIC_FOCUS", "RELOAD_ONE" ],
@@ -2248,14 +1837,14 @@
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
-    "price": 3000000,
+    "price": 300000,
     "flags": [ "SEMITANGIBLE", "TRADER_AVOID" ],
     "material": [ "magical_material" ],
     "symbol": "-",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "cleanse_soul", "no_fail": true, "level": 1, "need_wielding": true },
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_HP", "multiply": 0.3 } ] } ]
+      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "REGEN_HP", "multiply": 0.5 } ] } ]
     }
   },
   {
@@ -2338,12 +1927,11 @@
     "flags": [ "SILENT" ],
     "energy_source": "MANA",
     "effect": "recover_energy",
-    "extra_effects": [ { "id": "use_decaying_soul_fatigue", "hit_self": true } ],
     "effect_str": "STAMINA",
     "shape": "blast",
     "base_casting_time": 0,
-    "min_damage": 4000,
-    "max_damage": 4000,
+    "min_damage": 2000,
+    "max_damage": 2000,
     "max_level": 1,
     "base_energy_cost": 0,
     "difficulty": 4
@@ -2360,8 +1948,8 @@
     "effect_str": "FATIGUE",
     "shape": "blast",
     "base_casting_time": 0,
-    "min_damage": 3,
-    "max_damage": 3,
+    "min_damage": 1,
+    "max_damage": 1,
     "max_level": 1,
     "base_energy_cost": 0,
     "difficulty": 4
@@ -2420,7 +2008,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "price_postapoc": 250,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE", "ONLY_ONE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2431,7 +2019,9 @@
           "condition": "ALWAYS",
           "values": [
             { "value": "STRENGTH", "add": 2 },
-            { "value": "ATTACK_SPEED", "multiply": -0.3 }
+			{ "value": "SPEED", "multiply": 0.1 },
+			{ "value": "FATIGUE", "add": -15 },
+            { "value": "ATTACK_SPEED", "multiply": -0.1 }
           ]
         }
       ]
@@ -2447,7 +2037,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "price_postapoc": 500000,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE", "ONLY_ONE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2456,7 +2046,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MAX_MANA", "add": 2000 }, { "value": "REGEN_MANA", "multiply": 0.25 }, { "value": "PERCEPTION", "add": 2 } ]
+          "values": [ { "value": "MAX_MANA", "add": 2000 }, { "value": "REGEN_MANA", "multiply": 0.25 }, { "value": "PERCEPTION", "add": 2 }, { "value": "FATIGUE", "add": -15 } ]
         }
       ]
     }
@@ -2471,7 +2061,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "price_postapoc": 500000,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE", "ONLY_ONE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2480,7 +2070,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "MAX_STAMINA", "add": 3000 }, { "value": "REGEN_STAMINA", "multiply": 1.0 }, { "value": "DEXTERITY", "add": 2 } ]
+          "values": [ { "value": "MAX_STAMINA", "add": 3000 }, { "value": "REGEN_STAMINA", "multiply": 1.0 }, { "value": "DEXTERITY", "add": 2 }, { "value": "FATIGUE", "add": -15 } ]
         }
       ]
     }
@@ -2495,7 +2085,7 @@
     "longest_side": "1 cm",
     "price": 2000,
     "price_postapoc": 500000,
-    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE" ],
+    "flags": [ "PERSONAL", "SEMITANGIBLE", "OVERSIZE", "AURA", "NONCONDUCTIVE", "ONLY_ONE" ],
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
@@ -2507,12 +2097,76 @@
           "values": [
             { "value": "MAX_HP", "multiply": 0.3 },
             { "value": "REGEN_HP", "multiply": 0.3 },
+			{ "value": "FATIGUE", "add": -15 },
             { "value": "INTELLIGENCE", "add": 2 }
           ]
         }
       ]
     }
   },
+  {
+  "id": "silver_crown",
+  "type": "ARMOR",
+  "name": {
+    "str": "silver crown"
+  },
+  "description": "A shiny, silver tiara adorned with onyx.",
+  "weight": "130 g",
+  "volume": "100 ml",
+  "price_postapoc": 1000000,
+  "material": [
+    {
+      "type": "silver",
+      "portion": 9
+    },
+    {
+      "type": "gemstone"
+    }
+  ],
+  "looks_like": "crown_golden",
+  "symbol": "[",
+  "color": "dark_gray",
+  "material_thickness": 1,
+  "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "MAX_HP", "multiply": 0.3 },
+            { "value": "REGEN_HP", "multiply": 0.3 },
+            { "value": "INTELLIGENCE", "add": 2 },
+			{ "value": "STRENGTH", "add": 2 },
+            { "value": "ATTACK_SPEED", "multiply": -0.3 },
+			{ "value": "MAX_STAMINA", "add": 3000 }, 
+			{ "value": "REGEN_STAMINA", "multiply": 1.0 }, 
+			{ "value": "MAX_MANA", "add": 2000 }, 
+			{ "value": "REGEN_MANA", "multiply": 0.25 }, 
+			{ "value": "PERCEPTION", "add": 2 },
+			{ "value": "DEXTERITY", "add": 2 }
+          ]
+        }
+      ]
+    },
+  "flags": [
+    "SUPER_FANCY",
+	"ONLY_ONE",
+    "NO_WEAR_EFFECT"
+  ],
+  "armor": [
+    {
+      "encumbrance": 1,
+      "coverage": 20,
+      "covers": [
+        "head"
+      ],
+      "specifically_covers": [
+        "head_crown"
+      ]
+    }
+  ],
+  "copy-from": "garnet_silver_tiara"
+},
   {
   "type": "GENERIC",
   "category": "currency",
@@ -2527,20 +2181,30 @@
   "to_hit": -3,
   "color": "green",
   "symbol": "$",
+  "use_action": {
+      "target": "1l_gold",
+      "msg": "You burn the parcel, the worship which created it ground into nothing. Deep within the heart of the parcel your hand finds an unburnable token of someone's undying worship.",
+      "menu_text": "Burn Parcel",
+	  "need_fire": 100, 
+	  "need_fire_msg": "You would need fire to burn the parcel into nothing.", 
+      "moves": 10000,
+      "type": "transform"
+    },
   "material": [
     "paper"
   ],
   "price": 100000000,
   "price_postapoc": 100000,
   "flags": [
-    "OLD_CURRENCY"
+    "OLD_CURRENCY",
+	"ACT_IN_FIRE"
   ],
   "copy-from": "money_bundle_one"
 },
   {
     "id": "burning_heart",
     "type": "ARMOR",
-    "name": { "str": "burning heart" },
+    "name": { "str": "blazing heart" },
     "description": "A heart that has been branded with passion, grace, vigor and wonder.",
     "weight": "1 g",
     "volume": "1 ml",
@@ -2613,12 +2277,85 @@
     }
   },
   {
+    "id": "sacred_locket",
+    "type": "ARMOR",
+    "name": { "str": "sacred locket" },
+    "description": "A platinum necklace with a small, heart-shaped frame hanging from a chain... A fractal burn blazes from the heart which rests in it's once-empty frame.",
+    "weight": "47 g",
+    "volume": "25 ml",
+    "price": 10000000,
+    "material": [ "platinum" ],
+    "symbol": "[",
+    "color": "white",
+	"relic_data": {
+      "passive_effects": [
+	  { "id": "philostone_enchantment" },
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "MAX_HP", "multiply": 0.3 },
+            { "value": "REGEN_HP", "multiply": 0.3 },
+            { "value": "INTELLIGENCE", "add": 2 },
+			{ "value": "MAX_STAMINA", "add": 3000 }, 
+			{ "value": "REGEN_STAMINA", "multiply": 1.0 }, 
+			{ "value": "DEXTERITY", "add": 2 },
+			{ "value": "MAX_MANA", "add": 2000 }, 
+			{ "value": "REGEN_MANA", "multiply": 0.25 }, 
+			{ "value": "PERCEPTION", "add": 2 },
+			{ "value": "STRENGTH", "add": 2 },
+            { "value": "ATTACK_SPEED", "multiply": -0.3 }
+          ]
+        }
+      ]
+    },
+    "use_action": { "type": "cast_spell", "spell_id": "sacred_chain_freeze", "no_fail": true, "level": 2, "need_worn": true },
+    "flags": [ "SUPER_FANCY", "SEMITANGIBLE" ]
+  },
+  {
+    "id": "small_af_rotors",
+    "copy-from": "helicopter_rotors",
+    "type": "vehicle_part",
+    "name": { "str": "near-magic rotors" },
+    "item": "small_helicopter_rotor",
+    "//": "rotor diameter is in meters",
+    "rotor_diameter": 1,
+    "durability": 100,
+    "description": "A set of four military-grade helicopter rotor blades, used to provide lift by rotation.",
+    "damage_modifier": 0,
+    "requirements": { "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "1 h", "using": "vehicle_weld_removal" } },
+    "breaks_into": [ { "item": "scrap", "count": [ 8, 15 ] }, { "item": "steel_chunk", "count": [ 2, 8 ] } ],
+    "damage_reduction": { "all": 22 }
+  },
+  {
+    "id": "engine_turbine_small_magic",
+    "copy-from": "mana_engine",
+    "type": "vehicle_part",
+    "item": "v2_combustion_magic",
+    "durability": 200,
+    "epower": "-10 W",
+    "power": "1006695 W",
+    "energy_consumption": "4026780 W",
+    "folded_volume": "2 L",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 10, 20 ] },
+      { "item": "steel_chunk", "count": [ 10, 20 ] },
+      { "item": "scrap", "count": [ 10, 20 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "damage_reduction": { "all": 60 },
+    "extend": { "flags": [ "NO_INSTALL_HIDDEN" ] }
+  },
+  {
     "id": "hoverboard",
     "type": "vehicle",
     "name": "hoverboard",
     "parts": [
-      { "x": 0, "y": 0, "parts": [ "frame#cross", "reclining_seat", "seatbelt", "controls", "small_civilian_rotors", "engine_turbine_small", "small_storage_battery"  ] },
-	  { "x": -1, "y": 0, "parts": [ "frame#cross", { "part": "tank_30gal_drum", "fuel": "jp8" } ] }
+      { "x": 0, "y": 0, "parts": [ "frame#cross", "reclining_seat", "seatbelt", "controls", "small_af_rotors", "engine_turbine_small_magic", "small_storage_battery"  ] }
     ]
   },
   {
@@ -2663,7 +2400,7 @@
     "id": "twisted_aura",
     "type": "ARMOR",
     "name": { "str": "minor essence" },
-    "description": "You have absorbed the essence of a mage, making yourself more powerful in the process.",
+    "description": "You have absorbed the essence of a powerful being, making yourself more powerful in the process.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2718,7 +2455,7 @@
     "id": "massive_aura",
     "type": "ARMOR",
     "name": { "str": "middling essence" },
-    "description": "You have absorbed the essence of a mage, making yourself more powerful in the process.",
+    "description": "You have absorbed the essence of a powerful being, making yourself more even more powerful in the process.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2773,7 +2510,7 @@
     "id": "engorged_aura",
     "type": "ARMOR",
     "name": { "str": "major essence" },
-    "description": "You have absorbed the essence of a mage, making yourself more powerful in the process.",
+    "description": "You have absorbed the essence of a powerful being, making yourself more unimaginably powerful in the process.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2790,7 +2527,7 @@
     "id": "drowning_aura",
     "type": "ARMOR",
     "name": { "str": "majestic essence" },
-    "description": "You have absorbed so much of the essential essence of what it means to be a mage that you are drowning in mana.",
+    "description": "You have absorbed so much of the essential essence of what it means to be a mage that you are drowning in mana. There's no hiding it anymore.",
     "weight": "1 g",
     "volume": "1 ml",
     "longest_side": "1 cm",
@@ -2801,88 +2538,10 @@
     "material": [ "steel" ],
     "symbol": "/",
     "color": "brown",
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 3000 }, { "value": "INTELLIGENCE", "add": 1 } ] } ] }
-  },
-  {
-    "id": "leather_journal",
-    "type": "TOOL",
-    "category": "tools",
-    "name": { "str": "leather journal" },
-    "copy-from": "leather_journal",
-    "looks_like": "book_nonf_soft_psych_cggamers",
-    "description": "A leather-back journal for preserving notes and maps, has a strap to keep loose pages contained.",
-    "volume": "300 ml",
-    "weight": "150 g",
-    "flags": [ "TRADER_AVOID" ],
-    "material": [ "leather" ],
-    "symbol": "*",
-    "color": "brown",
-    "pocket_data": [
-      {
-        "//": "Binding",
-        "pocket_type": "CONTAINER",
-        "rigid": false,
-        "max_contains_weight": "2 kg",
-        "max_contains_volume": "2500 ml",
-        "max_item_length": "300 mm",
-        "moves": 150,
-        "item_restriction": [
-          "paper",
-          "militarymap",
-          "survivormap",
-          "roadmap",
-          "subwaymap",
-          "trailmap",
-          "touristmap",
-          "restaurantmap",
-          "flyer",
-          "survnote",
-          "character_sheet",
-          "newest_newspaper",
-          "many_years_old_newspaper",
-          "years_old_newspaper",
-          "one_year_old_newspaper",
-          "months_old_newspaper",
-          "weeks_old_newspaper",
-          "death_note",
-          "note_mutant_alpha_boss",
-          "evac_pamphlet",
-          "drawing_wolf",
-          "drawing_balrog",
-          "drawing_troll",
-          "drawing_gelatin",
-          "drawing_dragon",
-          "drawing_artist",
-          "drawing_scrying",
-          "drawing_destruction_acid",
-          "drawing_destruction_elec",
-          "drawing_destruction_cold",
-          "drawing_destruction_heat",
-          "drawing_destruction",
-          "drawing_translocate",
-          "drawing_step",
-          "drawing_dislocate",
-          "drawing_push",
-          "drawing_pull",
-          "drawing_stop",
-          "mirrored_page",
-          "crazed_note",
-          "magical_times_old",
-          "magical_times_recent",
-		  "pocket_dimension",
-		  "survivors_memory_1", 
-		  "survivors_memory_2", 
-		  "survivors_memory_3", 
-		  "survivors_memory_4", 
-		  "survivors_memory_5", 
-		  "survivors_memory_6", 
-		  "survivors_memory_7", 
-		  "desperate_letter",
-		  "operator_invitation",
-		  "forge_flyer"
-        ]
-      }
-    ]
+    "relic_data": { "passive_effects": [ 
+	{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "add": 3000 }, { "value": "INTELLIGENCE", "add": 1 } ] }
+    ] 
+	}
   },
   {
     "id": "dragonhide_journal",
@@ -2920,7 +2579,7 @@
         "max_item_length": "300 mm",
         "weight_multiplier": 0.1,
         "volume_multiplier": 0.1,
-        "moves": 50,
+        "moves": 33,
         "item_restriction": [
           "paper",
           "militarymap",
@@ -3089,22 +2748,6 @@
 	"use_action": { "type": "cast_spell", "spell_id": "eoc_operator_invitation", "no_fail": true, "level": 1, "need_wielding": true },
     "weight": "3 g",
     "volume": "1 ml"
-  },
-  {
-    "id": "cauldron_orichalcum",
-    "type": "GENERIC",
-    "category": "container",
-    "name": { "str": "orichalcum cauldron" },
-    "description": "This is an alchemical cauldron made of orichalcum.  The metal is especially resistant to the unique types of corrosion caused by alchemy.",
-	"copy-from": "cauldron_orichalcum",
-    "use_action": 
-	[ 
-	"HEAT_FOOD", 
-	{
-    "type": "deploy_furn",
-    "furn_type": "f_cauldron_orichalcum" 
-	}
-	]
   },
   {
     "type": "tool_quality",
@@ -3294,18 +2937,6 @@
     },
 	"pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "decaying_soul_ammo": 13 } } ],
     "color": "white"
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "orcs",
-	"copy-from": "orcs",
-	"friendly": [ "dragon_black" ]
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "dragon_black",
-	"copy-from": "dragon_black",
-    "friendly": [ "ooze", "lizardfolk", "orcs" ]
   },
   {
     "id": "tear_of_child",

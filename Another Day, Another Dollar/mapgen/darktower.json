@@ -561,8 +561,8 @@
       ],
       "place_loot": [
         { "item": "devils_catalogue", "x": 11, "y": 14, "chance": 100 },
-		{ "item": "money_strap_hundred", "x": 7, "y": 12, "chance": 100, "repeat": 333 },
-		{ "item": "money_strap_hundred", "x": 16, "y": 12, "chance": 100, "repeat": 333 },
+		{ "item": "money_strap_hundred", "x": 7, "y": 12, "chance": 100, "repeat": 100 },
+		{ "item": "money_strap_hundred", "x": 16, "y": 12, "chance": 100, "repeat": 100 },
         { "item": "vergists_manual", "x": 12, "y": 14, "chance": 100 }
       ]
     }

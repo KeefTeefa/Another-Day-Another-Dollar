@@ -32,7 +32,9 @@
         "........................"
       ],
       "palettes": [ "standard_building_palette", "library_palette" ],
-	  "place_monsters": [ { "monster": "GROUP_ATRAXA", "x": [ 16 ], "y": [ 5 ], "chance": 100 } ]
+	  "place_monster": [
+        { "monster": "mon_atraxa", "x": 16, "y": 6 }
+      ]
     }
   },
   {
@@ -124,7 +126,9 @@
         "m": "f_mutpoppy",
         "#": "f_hedge_short"
       },
-	  "place_monsters": [ { "monster": "GROUP_OMNATH", "x": [ 20 ], "y": [ 15 ], "chance": 100 } ],
+	  "place_monster": [
+        { "monster": "mon_omnath", "x": 20, "y": 15 }
+      ],
       "place_signs": [
         { "signage": "Welcome to <city> Botanical Garden!  Please stay on the path!", "x": 22, "y": 0 },
         { "signage": "Welcome to <city> Botanical Garden!  Please stay on the path!", "x": 25, "y": 0 },
@@ -210,7 +214,9 @@
         "#": "t_grate",
         "+": "t_laminated_door_glass_c"
       },
-	  "place_monsters": [ { "monster": "GROUP_ORTIEL", "x": [ 11 ], "y": [ 12 ], "chance": 100 } ],
+	  "place_monster": [
+        { "monster": "mon_ortiel", "x": 11, "y": 12 }
+      ],
       "furniture": { "y": "f_machinery_old" }
     }
   },
@@ -270,7 +276,9 @@
         "...ssssssssssssssssssssssssssssssssssssssssss...",
         "................................................"
       ],
-	  "place_monsters": [ { "monster": "GROUP_YDRIS", "x": [ 13 ], "y": [ 35 ], "chance": 100 } ],
+	  "place_monster": [
+        { "monster": "mon_yidris", "x": 13, "y": 35 }
+      ],
       "palettes": [ "town_hall_palette" ]
     }
   }

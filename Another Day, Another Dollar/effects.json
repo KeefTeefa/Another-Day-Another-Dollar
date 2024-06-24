@@ -72,6 +72,14 @@
   },
   {
     "type": "effect_type",
+    "id": "pkill_fruit",
+    "max_duration": "24 h",
+    "base_mods": { "pkill_tick": [ 42 ], "pkill_min": [ 1 ], "pkill_max_val": [ 15 ] },
+    "rating": "good",
+    "blood_analysis_description": "Potion Fruit Painkiller"
+  },
+  {
+    "type": "effect_type",
     "id": "frozen_hand",
     "name": [ "Frozen Hand" ],
     "desc": [ "Your hand has been frozen, making combat much more difficult." ],
@@ -115,9 +123,7 @@
     "desc": [ "Did you really do that? Well, it probably won't be fun for a while." ],
 	"base_mods": {
       "str_mod": [ -2 ],
-      "per_mod": [ -1 ],
       "dex_mod": [ -1 ],
-      "int_mod": [ -1 ],
       "speed_mod": [ -10 ],
       "vomit_chance": [ 100 ]
     },

@@ -1576,7 +1576,7 @@
   "id": "brimstone_shiv",
   "symbol": ",",
   "color": "light_cyan",
-  "looks_like": "shiv",
+  "looks_like": "bone_knife",
   "name": {
     "str": "brimstone shiv"
   },
@@ -2002,7 +2002,7 @@
   "name": {
     "str_sp": "self-destructive wakizashi"
   },
-  "description": "A short, high-tech sword with a hilt that resembles a serpent's tail wrapped around your wrist. The yokai housed within is obviously desparate for life, willing to do anything for a second chance. A thin vein of electric blood still runs the length of the blade, faintly pulsing with a spark that is dying to be rekindled.",
+  "description": "A short glass sword with a hilt that resembles a serpent's tail wrapped around your wrist. The yokai housed within is obviously desparate for life, willing to do anything for a second chance. A thin vein of electric blood still runs the length of the blade, faintly pulsing with a spark that is dying to be rekindled.",
   "weight": "925 g",
   "volume": "1500 ml",
   "longest_side": "70 cm",
@@ -2071,7 +2071,7 @@
   },
   "copy-from": "mc_wakizashi",
   "replace_materials": {
-    "mc_steel": "aluminum",
+    "mc_steel": "glass",
     "leather": "nylon"
   }
 },

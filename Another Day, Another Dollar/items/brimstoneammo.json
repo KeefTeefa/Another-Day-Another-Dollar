@@ -377,7 +377,7 @@
   "id": "white_brimstone_bolt_metal",
   "price": 500,
   "name": {
-    "str": "biological brimstone bolt"
+    "str": "electric brimstone bolt"
   },
   "symbol": "=",
   "color": "green",
@@ -868,11 +868,11 @@
   ],
   "gun_data": {
     "ammo": "brimstone_ammo",
-    "skill": "launcher",
+    "skill": "rifle",
     "range": 13,
     "ranged_damage": {
       "damage_type": "heat",
-      "amount": 7
+      "amount": 10
     },
     "dispersion": 180,
     "durability": 10,
@@ -885,7 +885,7 @@
       2
     ],
     [
-      "launcher",
+      "rifle",
       1
     ]
   ],
@@ -911,7 +911,7 @@
   "description": "A kit to attach a pair of arms and a firing rail to the barrel of a firearm.  It allows brimstone slivers to be fired, which it hyperchills during launch.",
   "gun_data": {
     "ammo": "brimstone_ammo",
-    "skill": "launcher",
+    "skill": "rifle",
     "range": 8,
     "ranged_damage": {
       "damage_type": "cold",
@@ -932,7 +932,7 @@
   "description": "A kit to attach a pair of arms and a firing rail to the barrel of a firearm.  It allows brimstone slivers to be fired, which it acidizes during launch.",
   "gun_data": {
     "ammo": "brimstone_ammo",
-    "skill": "launcher",
+    "skill": "rifle",
     "range": 8,
     "ranged_damage": {
       "damage_type": "acid",
@@ -953,7 +953,7 @@
   "description": "A kit to attach a pair of arms and a firing rail to the barrel of a firearm.  It allows brimstone slivers to be fired, which it brutalizes during launch.",
   "gun_data": {
     "ammo": "brimstone_ammo",
-    "skill": "launcher",
+    "skill": "rifle",
     "range": 8,
     "ranged_damage": {
       "damage_type": "biological",
@@ -974,7 +974,7 @@
   "description": "A kit to attach a pair of arms and a firing rail to the barrel of a firearm.  It allows brimstone slivers to be fired, which it galvanizes during launch.",
   "gun_data": {
     "ammo": "brimstone_ammo",
-    "skill": "launcher",
+    "skill": "rifle",
     "range": 8,
     "ranged_damage": {
       "damage_type": "electric",
@@ -996,7 +996,7 @@
   "description": "A kit to attach a pair of arms and a firing rail to the barrel of a firearm.  It allows brimstone slivers to be fired, which it anoints during launch.",
   "gun_data": {
     "ammo": "brimstone_ammo",
-    "skill": "launcher",
+    "skill": "rifle",
     "range": 8,
     "ranged_damage": {
       "damage_type": "pure",

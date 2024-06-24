@@ -20,6 +20,11 @@
     "name": "goldensun spring"
   },
   {
+    "type": "tool_quality",
+    "id": "ORRERY",
+    "name": "orrery"
+  },
+  {
     "type": "construction_group",
     "id": "build_stone_altar",
     "name": "Conjure an Altar of Worship"
@@ -32,17 +37,47 @@
   {
     "type": "construction_group",
     "id": "draw_magic_circle",
-    "name": "Etch a Magic Circle"
+    "name": "Etch a White Circle"
+  },
+  {
+    "type": "construction_group",
+    "id": "draw_magic_circle_green",
+    "name": "Etch a Green Circle"
+  },
+  {
+    "type": "construction_group",
+    "id": "draw_magic_circle_blue",
+    "name": "Etch a Blue Circle"
+  },
+  {
+    "type": "construction_group",
+    "id": "draw_magic_circle_black",
+    "name": "Etch a Black Circle"
+  },
+  {
+    "type": "construction_group",
+    "id": "draw_magic_circle_red",
+    "name": "Etch a Red Circle"
   },
   {
     "type": "construction_group",
     "id": "build_entertainment_center",
-    "name": "Put Together an Entertainment Center"
+    "name": "Assemble a Home Entertainment Center"
   },
   {
     "type": "construction_group",
     "id": "build_standing_alembic",
-    "name": "Put Together a Standing Alembic"
+    "name": "Assemble a Standing Alembic"
+  },
+  {
+    "type": "construction_group",
+    "id": "build_scribes_bureau",
+    "name": "Assemble a Scribes Bureau"
+  },
+  {
+    "type": "construction_group",
+    "id": "constr_mailbox_registered",
+    "name": "Register this Address"
   },
 {
     "type": "tool_quality",
@@ -79,6 +114,152 @@
     "id": "zen_garden",
     "name": "Put Together a Zen Garden"
   },
+  {
+    "id": "fake_orrery",
+    "type": "TOOL",
+    "name": { "str": "fake orrery (pseudo item)", "str_pl": "fake orreries (pseudo items)" },
+    "description": "Pseudo item for the orrery.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "ORRERY", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+  "id": "scribes_bureau_pseudo",
+  "type": "TOOL",
+  "name": {
+    "str": "scribes bureau pseudo item"
+  },
+  "description": "This is a pseudo item to represent a surface large enough to butcher a medium animal on.",
+  "weight": "1 g",
+  "volume": "1 ml",
+  "symbol": "[",
+  "color": "dark_gray",
+  "qualities": [
+    [
+      "SURFACE",
+      2
+    ],
+	[
+      "MANA_WEAVE",
+      1
+    ]
+  ],
+  "flags": [
+    "TRADER_AVOID",
+    "ZERO_WEIGHT"
+  ]
+},
+{
+    "type": "construction",
+    "id": "constr_scribes_bureau_orrery",
+    "group": "build_scribes_bureau",
+    "category": "FURN",
+    "required_skills": [ [ "tailor", 1 ] ],
+    "time": "5 m",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "enchanted_wood", 1 ] ], [ [ "feather", 1 ] ], [ [ "leather_journal", 1 ], [ "dragonhide_journal", 1 ] ] ],
+    "pre_terrain": "f_orrery",
+    "post_terrain": "f_scribes_bureau"
+  },
+  {
+    "type": "construction",
+    "id": "constr_scribes_bureau",
+    "group": "build_scribes_bureau",
+    "category": "FURN",
+    "required_skills": [ [ "tailor", 3 ], [ "spellcraft", 1 ] ],
+    "time": "1 h",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "lens", 3 ] ], [ [ "enchanted_wood", 1 ] ], [ [ "feather", 1 ] ], [ [ "leather_journal", 1 ], [ "dragonhide_journal", 1 ] ] ],
+    "pre_terrain": "f_desk",
+    "post_terrain": "f_scribes_bureau"
+  },
+  {
+  "type": "furniture",
+  "id": "f_scribes_bureau",
+  "name": "scribes bureau",
+  "symbol": "#",
+  "description": "A wooden desk with drawers that can be used for symbolic scribing. It has implementations for gazing into the universe, tailored specifically to it's design.",
+  "color": "light_red",
+  "move_cost_mod": 1,
+  "coverage": 45,
+  "required_str": 5,
+  "crafting_pseudo_item": "scribes_bureau_pseudo",
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_ASH",
+    "CONTAINER",
+    "PLACE_ITEM",
+    "ORGANIC",
+    "MOUNTABLE",
+    "FLAT_SURF",
+    "SMALL_HIDE"
+  ],
+  "rotates_to": "INDOORFLOOR",
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 8
+      },
+      {
+        "item": "wood_panel",
+        "count": 1
+      },
+      {
+        "item": "nail",
+        "charges": [
+          16,
+          24
+        ]
+      }
+    ]
+  },
+  "bash": {
+    "str_min": 12,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": [
+          4,
+          7
+        ]
+      },
+      {
+        "item": "wood_panel",
+        "count": [
+          0,
+          1
+        ]
+      },
+      {
+        "item": "nail",
+        "charges": [
+          10,
+          16
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": [
+          4,
+          12
+        ]
+      }
+    ]
+  },
+  "examine_action": "workbench",
+  "workbench": {
+    "multiplier": 1.1,
+    "mass": 200000,
+    "volume": "75L"
+  }
+},
   {
   "type": "terrain",
   "id": "t_atm",
@@ -186,6 +367,22 @@
     "color": "white",
 	"crafting_pseudo_item": "fake_zen_garden",
     "required_str": -1,
+	"deconstruct": {
+    "items": [
+      {
+        "item": "material_sand",
+        "count": 100
+      },
+      {
+        "item": "rock",
+        "count": 3
+      },
+      {
+        "item": "stick",
+        "count": 1
+      }
+    ]
+  },
 	"examine_action": {
       "type": "effect_on_condition",
       "effect_on_conditions": [
@@ -235,7 +432,7 @@
     }
 	]
 	},
-    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY" ],
+    "flags": [ "ALLOW_FIELD_EFFECT", "TRANSPARENT", "TINY", "EASY_DECONSTRUCT" ],
     "description": "A place set aside for tranquility's sake."
   },
   {
@@ -348,9 +545,9 @@
     "group": "soul_engine",
     "category": "FURN",
     "required_skills": [ [ "speech", 5 ] ],
-    "time": "16 h",
+    "time": "24 h",
 	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "engine_block_massive", 1 ] ], [ [ "engineering_engine_kit", 2 ], [ "spiral_stone", 2 ], [ "petrified_eye", 2 ] ] ],
+    "components": [ [ [ "engine_block_massive", 1 ] ], [ [ "knowledgeable_dust3", 1 ] ], [ [ "textbook_speech", 1 ] ], [ [ "drowning_aura", 1 ], [ "cleansed_soul", 1 ] ], [ [ "golemcore", 1 ] ], [ [ "engineering_engine_kit", 2 ], [ "spiral_stone", 2 ], [ "petrified_eye", 2 ] ] ],
     "pre_special": "check_empty",
     "post_terrain": "f_soul_engine"
   },
@@ -405,7 +602,7 @@
   {
     "type": "construction",
     "id": "constr_magic_circle_green",
-    "group": "draw_magic_circle",
+    "group": "draw_magic_circle_green",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 3 ] ],
     "time": "1 h",
@@ -418,7 +615,7 @@
   {
     "type": "construction",
     "id": "constr_magic_circle_black",
-    "group": "draw_magic_circle",
+    "group": "draw_magic_circle_black",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 3 ] ],
     "time": "1 h",
@@ -431,7 +628,7 @@
   {
     "type": "construction",
     "id": "constr_magic_circle_blue",
-    "group": "draw_magic_circle",
+    "group": "draw_magic_circle_blue",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 3 ] ],
     "time": "1 h",
@@ -444,7 +641,7 @@
   {
     "type": "construction",
     "id": "constr_magic_circle_red",
-    "group": "draw_magic_circle",
+    "group": "draw_magic_circle_red",
     "category": "FURN",
     "required_skills": [ [ "spellcraft", 3 ] ],
     "time": "1 h",
@@ -457,7 +654,7 @@
 {
     "type": "furniture",
     "id": "f_magic_circle",
-    "name": "Magic Circle",
+    "name": "White Circle",
 	"copy-from": "f_magic_circle", 
     "move_cost_mod": 0,
     "symbol": "O",
@@ -481,7 +678,7 @@
       }
     ]
   },
-    "description": "This is a rough magic circle, carved into the ground and decorated with blood, money, low-burning candles, or white ink. It has been ritually enchanted to allow translocation."
+    "description": "This is a neutral magic circle, carved into the ground and decorated with blood, money, low-burning candles, or white ink. It has been ritually enchanted to allow translocation."
   },
   {
     "id": "fake_magic_circle",
@@ -498,7 +695,7 @@
   {
     "type": "furniture",
     "id": "f_magic_circle_black",
-    "name": "Magic Circle",
+    "name": "Black Circle",
 	"copy-from": "f_magic_circle", 
     "move_cost_mod": 0,
     "symbol": "O",
@@ -523,7 +720,7 @@
   {
     "type": "furniture",
     "id": "f_magic_circle_red",
-    "name": "Magic Circle",
+    "name": "Red Circle",
 	"copy-from": "f_magic_circle", 
     "move_cost_mod": 0,
     "symbol": "O",
@@ -548,7 +745,7 @@
   {
     "type": "furniture",
     "id": "f_magic_circle_green",
-    "name": "Magic Circle",
+    "name": "Green Circle",
 	"copy-from": "f_magic_circle", 
     "move_cost_mod": 0,
     "symbol": "O",
@@ -573,7 +770,7 @@
   {
     "type": "furniture",
     "id": "f_magic_circle_blue",
-    "name": "Magic Circle",
+    "name": "Blue Circle",
 	"copy-from": "f_magic_circle", 
     "move_cost_mod": 0,
     "symbol": "O",
@@ -958,7 +1155,7 @@
     "type": "GENERIC",
     "category": "other",
     "name": { "str": "impression cylinder" },
-    "description": "The core of an infernal press that's been ripped straight out. Now that you're looking at it, you can tell it's just made of brimstone and crystallized mana, mixed so perfectly they're nearly indistinguishable. It radiates with magical energy, only some of it pure.",
+    "description": "The core of an influential press that's been ripped straight out. Now that you're looking at it, you can tell it's just made of brimstone and crystallized mana, mixed so perfectly they're nearly indistinguishable. It radiates with magical energy, only some of it pure.",
     "weight": "150 g",
     "volume": "150 ml",
     "longest_side": "12 cm",
@@ -970,7 +1167,7 @@
   {
     "type": "furniture",
     "id": "f_scroll_printer",
-    "name": "infernal press",
+    "name": "influential press",
     "description": "A dastardly machine containing an element capable of turning regular paper into liquid magic. It is simply above the level of anything else, capable of circumventing requirements that bind the world and keep it in check.",
     "symbol": "0",
     "bgcolor": "white",
@@ -1123,12 +1320,63 @@
     "id": "constr_silvermoon_loom",
     "group": "build_silvermoon_loom",
     "category": "FURN",
-    "required_skills": [ [ "spellcraft", 3 ], [ "tailor", 3 ] ],
-    "time": "1 h",
-	"qualities": [ [ { "id": "MANA_INFUSE", "level": 1 } ] ],
+    "required_skills": [ 
+	[ "spellcraft", 3 ], 
+	[ "tailor", 3 ], 
+	[
+      "fabrication",
+      3
+    ],
+    [
+      "mechanics",
+      2
+    ] ],
+    "time": "4 h",
+	"qualities": [ 
+	[ { "id": "MANA_INFUSE", "level": 1 } ],
+	[
+      {
+        "id": "CUT",
+        "level": 1
+      }
+    ],
+    [
+      {
+        "id": "SAW_W",
+        "level": 1
+      }
+    ],
+    [
+      {
+        "id": "HAMMER",
+        "level": 1
+      }
+    ] ],
 	"activity_level": "LIGHT_EXERCISE",
-    "components": [ [ [ "loom_frame", 1 ] ], [ [ "moonflowers", 3 ] ], [ [ "silver_small", 33 ] ] ],
-    "pre_terrain": "f_spinwheel_cordage",
+    "components": [ 
+	[ [ "loom_frame", 1 ] ], 
+	[ [ "moonflowers", 3 ] ], 
+	[ [ "silver_small", 33 ] ],  
+	[
+      [
+        "2x4",
+        20
+      ]
+    ],
+    [
+      [
+        "string_36",
+        4
+      ]
+    ],
+    [
+      [
+        "nail",
+        80
+      ]
+    ] 
+	],
+    "pre_special": "check_empty",
     "post_terrain": "f_spinwheel_magic"
   },
   {
@@ -1153,8 +1401,8 @@
     "type": "furniture",
     "id": "f_spinwheel_magic",
     "name": "silvermoon loom",
-    "looks_like": "wheel_wood",
-    "description": "A lunar spinwheel for spinning plant fibers, infused with the light of the silver moon. Each night that the moon turns it's eternal wheel you can weave moonlight into pure silver.",
+    "looks_like": "f_spinwheel",
+    "description": "A lunar spinwheel for spinning plant fibers into cordage, infused with the light of the silver moon. Each night that the moon turns it's eternal wheel you can weave moonlight into pure silver.",
     "symbol": "=",
     "bgcolor": "light_gray",
     "move_cost_mod": 2,
@@ -1261,7 +1509,7 @@
   "type": "terrain",
   "id": "t_goldensun_spring",
   "name": "goldensun_spring",
-  "description": "A scalding hot wellspring of water that has been focused with the light of the golden sun. Every day that the sun shines you can quench the daylight in it's twinkling waters, solidifying it into pure gold.",
+  "description": "A scalding hot wellspring of water drawn from deep within the earth by the life of golden reeds, each stalk hissing as water slowly seeps through them. Every day that the sun shines you can quench the daylight in it's twinkling waters, solidifying it into pure gold.",
   "looks_like": "t_water_hot",
   "symbol": "~",
   "color": "light_blue",
@@ -1467,6 +1715,29 @@
     "range_increment": 0.2
   },
   {
+    "id": "collection_burnout",
+    "type": "SPELL",
+    "name": "Collection Box Empty",
+    "description": "The collection box is empty",
+    "valid_targets": [ "ground" ],
+    "effect": "ter_transform",
+    "effect_str": "collection_place",
+    "shape": "blast",
+    "flags": [ "SOMATIC", "LOUD", "PERMANENT", "CONCENTRATE", "NO_PROJECTILE" ],
+    "energy_source": "MANA",
+    "difficulty": 5,
+    "base_casting_time": 0,
+    "final_casting_time": 0,
+    "base_energy_cost": 0,
+	"final_energy_cost": 0,
+    "max_level": 20,
+    "min_range": 5,
+    "max_range": 5,
+	"min_aoe": 5, 
+	"max_aoe": 5,
+    "range_increment": 0.2
+  },
+  {
   "type": "TOOL",
   "name": {
     "str": "mailbox"
@@ -1478,7 +1749,7 @@
   ],
   "weight": "1 g",
   "volume": "1 ml",
-  "qualities": [ [ "FOODPLACE_LOYALTY", 2 ] ],
+  "qualities": [ [ "FOODPLACE_LOYALTY", 1 ] ],
   "symbol": "@",
   "color": "red",
   "id": "mailbox_item",
@@ -1488,12 +1759,45 @@
   "type": "furniture",
   "id": "f_mailbox",
   "name": "mailbox",
-  "copy-from": "f_mailbox",
   "symbol": "P",
-  "description": "A small metal box on top of a wooden post, designed to receive mail deliveries.  Although considering the circumstances, it will likely never see proper use again.",
+  "description": "A small metal box on top of a wooden post, designed to receive mail deliveries. If you registered this address, you might be able to get different deliveries. Although considering the circumstances, it will likely never see proper use again. ",
   "color": "light_gray",
   "move_cost_mod": 1,
   "required_str": -1,
+  "examine_action": {
+      "type": "effect_on_condition",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_MAILBOX",
+          "condition": 
+		  {
+          "and": [
+            { "u_is_wearing": "postman_hat" },
+			{ "u_is_wearing": "postman_shirt" },
+			{ "u_is_wearing": "postman_shorts" }
+          ]
+          },
+    "effect": 
+	{
+        "run_eoc_selector": [
+          "eoc_post_office_tp",
+          "eoc_postofficer_translocate"
+        ],
+		"allow_cancel": true,
+        "names": [ "Visit the Office", "Translocate" ],
+        "keys": [ "1", "2" ],
+        "descriptions": [
+          "Translocate to a nearby post office.",
+          "Translocate to a gate of your choosing."
+        ]
+    },
+    "false_effect": 
+	{
+      "u_cast_spell": { "id": "run_eoc_mailbox_2", "hit_self": true }
+	}
+	}
+	]
+  },
   "flags": [
     "TRANSPARENT",
     "FLAMMABLE_HARD",
@@ -1559,6 +1863,54 @@
     ]
   }, 
   "crafting_pseudo_item": "mailbox_item"
+  },
+  {
+  "type": "TOOL",
+  "name": {
+    "str": "registered mailbox"
+  },
+  "description": "Dummy item.  If you see this, then something went wrong.",
+  "//": "Include ZERO_WEIGHT flag to avoid errors when instantiating pseudo items.",
+  "flags": [
+    "ZERO_WEIGHT"
+  ],
+  "weight": "1 g",
+  "volume": "1 ml",
+  "qualities": [ [ "FOODPLACE_LOYALTY", 2 ] ],
+  "symbol": "@",
+  "color": "red",
+  "id": "mailbox_registered_item",
+  "copy-from": "fake_item"
+  },
+  {
+    "type": "construction",
+    "id": "constr_mailbox_registered",
+    "group": "build_mailbox",
+    "category": "FURN",
+    "required_skills": [ [ "speech", 0 ] ],
+    "time": "6 h",
+	"activity_level": "LIGHT_EXERCISE",
+    "components": [ [ [ "postcard", 1 ], [ "envelope", 1 ], [ "big_envelope", 1 ] ], [ [ "money_hundred", 1 ], [ "letter", 1 ] ] ],
+    "pre_terrain": "f_mailbox",
+    "post_terrain": "f_mailbox_registered"
+  },
+  {
+  "type": "furniture",
+  "id": "f_mailbox_registered",
+  "name": "mailbox with registered address",
+  "looks_like": "f_mailbox",
+  "color": "red",
+  "copy-from": "f_mailbox",
+  "symbol": "P",
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_HARD",
+    "CONTAINER",
+    "PLACE_ITEM",
+    "MOUNTABLE"
+  ],
+  "description": "A small metal box on top of a wooden post, designed to receive mail deliveries. This address has been registered as your own, meaning you'll be able to receive different kinds of deliveries.", 
+  "crafting_pseudo_item": "mailbox_registered_item"
   },
   {
   "type": "furniture",
@@ -1824,16 +2176,29 @@
 	"max_damage": -126000,
     "shape": "blast"
   },
+  {
+    "id": "fake_enter_center",
+    "type": "TOOL",
+    "name": { "str": "fake enter center (pseudo item)", "str_pl": "fake enter center (pseudo items)" },
+    "description": "Pseudo item for the altar of power.",
+    "weight": "1 g",
+    "volume": "1 ml",
+    "symbol": "[",
+    "color": "dark_gray",
+    "qualities": [ [ "VHS", 1 ] ],
+    "flags": [ "TRADER_AVOID" ]
+  },
 {
   "type": "furniture",
   "id": "f_tv_setup",
   "name": "Home Entertainment Center",
-  "description": "A setup with everything somebody might need to kick back and watch a good flick.",
+  "description": "A setup with everything somebody might need to kick back and watch a good flick. There's no power, so what could go wrong?",
   "looks_like": "television",
   "symbol": "~",
   "required_str": 10,
   "color": "light_blue",
   "move_cost_mod": 5,
+  "crafting_pseudo_item": "fake_enter_center",
   "flags": [
     "TRANSPARENT",
     "CONTAINER",
@@ -1918,5 +2283,101 @@
       }
     ]
   }
-}
+},
+{
+  "type": "furniture",
+  "id": "f_collection_box",
+  "looks_like": "f_chest",
+  "name": "collection box",
+  "symbol": "P",
+  "description": "A small wooden box adorned with a holy symbol that you could place money inside, if you were feeling generous. Just examine it to look inside.",
+  "color": "light_gray",
+  "move_cost_mod": 1,
+  "required_str": -1,
+  "examine_action": {
+     "type": "effect_on_condition",
+     "effect_on_conditions": [
+   {
+     "id": "EOC_COLLECTION_BOX",
+     "effect": {
+        "run_eoc_selector": [
+		  "eoc_collection_hundred",
+          "eoc_collection_strap",
+          "eoc_collection_bundle",
+		  "eoc_collection_parcel",
+          "eoc_collection_steal",
+          "eoc_collection_leave"
+        ],
+		"allow_cancel": false,
+        "names": [ "Donate $100", "Donate a Strap", "Donate a Bundle", "Donate a Parcel", "Steal", "Turn Away" ],
+        "keys": [ "1", "2", "3", "4", "5", "6" ],
+        "descriptions": [
+          "Donate a hundred dollar bill.",
+          "Donate a strap of hundred dollar bills.",
+          "Donate a bundle of hundred dollar bills.",
+		  "Donate a parcel of hundred dollar bills.", 
+          "Reach in and steal a little money.",
+          "Leave without donating. Don't worry, it's understood that we all go through tough times."
+        ]
+      }
+	}
+	]
+  },
+  "flags": [
+    "TRANSPARENT",
+    "FLAMMABLE_HARD",
+    "CONTAINER",
+    "PLACE_ITEM",
+    "MOUNTABLE"
+  ],
+  "deconstruct": {
+    "items": [
+      {
+        "item": "2x4",
+        "count": 2
+      },
+      {
+        "item": "nail",
+        "charges": [
+          2,
+          5
+        ]
+      },
+      {
+        "item": "holy_symbol",
+        "count": 1
+      }
+    ]
+  },
+  "max_volume": "10 L",
+  "bash": {
+    "str_min": 12,
+    "str_max": 50,
+    "sound": "smash!",
+    "sound_fail": "whump.",
+    "items": [
+      {
+        "item": "2x4",
+        "count": 1
+      },
+      {
+        "item": "nail",
+        "charges": [
+          1,
+          5
+        ]
+      },
+      {
+        "item": "splinter",
+        "count": 2
+      },
+      {
+        "item": "holy_symbol"
+      },
+      {
+        "item": "scrap"
+	  }
+     ]
+    }
+  }
 ]

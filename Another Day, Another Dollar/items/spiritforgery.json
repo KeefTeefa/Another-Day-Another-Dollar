@@ -83,15 +83,12 @@
     ],
 	"armor": [
     {
-      "encumbrance": 3,
+      "encumbrance": 0,
       "covers": [
         "foot_l", "foot_r"
 		]
     }
 	],
-	"relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "SPIRITUAL" ] } ]
-    },
     "flags": [ "TARDIS", "SEMITANGIBLE", "INTEGRATED", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
@@ -251,15 +248,12 @@
     ],
 	"armor": [
     {
-      "encumbrance": 7,
+      "encumbrance": 0,
       "covers": [
         "torso"
       ]
     }
 	],
-	"relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "SPIRITUAL" ] } ]
-    },
     "flags": [ "TARDIS", "SEMITANGIBLE", "INTEGRATED", "AURA", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
@@ -490,15 +484,12 @@
     ],
 	"armor": [
     {
-      "encumbrance": 13,
+      "encumbrance": 0,
       "covers": [
         "eyes"
       ]
     }
 	],
-	"relic_data": {
-      "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "SPIRITUAL" ] } ]
-    },
     "flags": [ "TARDIS", "SEMITANGIBLE", "AURA", "INTEGRATED", "ONLY_ONE", "ZERO_WEIGHT" ]
   },
   {
@@ -605,7 +596,7 @@
     ],
 	"armor": [
     {
-      "encumbrance": 3,
+      "encumbrance": 1,
       "covers": [
         "foot_l", "foot_r"
       ]
@@ -792,7 +783,7 @@
     ],
 	"armor": [
     {
-      "encumbrance": 7,
+      "encumbrance": 1,
       "covers": [
         "torso"
       ]
@@ -1059,7 +1050,7 @@
     ],
 	"armor": [
     {
-      "encumbrance": 13,
+      "encumbrance": 1,
       "covers": [
         "eyes"
       ]

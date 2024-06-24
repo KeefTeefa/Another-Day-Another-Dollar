@@ -933,9 +933,7 @@
       { "id": "random_fireball" },
       { "id": "sorcery_timestop_dazzle" },
       { "id": "distraction" },
-      { "id": "enlarge" },
-      { "id": "summon_acid" },
-      { "id": "double_trouble" }
+      { "id": "summon_acid" }
     ],
     "shape": "blast",
     "flags": [ "VERBAL", "SILENT", "NO_LEGS", "RANDOM_TARGET", "WONDER" ],

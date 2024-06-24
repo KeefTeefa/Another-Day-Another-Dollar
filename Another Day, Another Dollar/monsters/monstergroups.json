@@ -113,10 +113,19 @@
     "name": "GROUP_MECH",
     "type": "monstergroup",
     "monsters": [
-	  { "monster": "mon_mech_recon", "weight": 25, "cost_multiplier": 15 },
-	  { "monster": "mon_mech_lifter", "weight": 25, "cost_multiplier": 15 },
-	  { "monster": "mon_mech_combat", "weight": 25, "cost_multiplier": 15 },
-	  { "group": "GROUP_TURRET", "weight": 25, "cost_multiplier": 15 }
+	  { "monster": "mon_mech_recon", "weight": 5, "cost_multiplier": 1 },
+	  { "monster": "mon_mech_lifter", "weight": 5, "cost_multiplier": 1 },
+	  { "monster": "mon_mech_combat", "weight": 5, "cost_multiplier": 1 },
+	  { "monster": "mon_mech_recon_robot", "weight": 15, "cost_multiplier": 1 },
+	  { "group": "GROUP_ROBOT", "weight": 20, "cost_multiplier": 2 },
+	  { "group": "GROUP_TURRET", "weight": 50, "cost_multiplier": 5 }
+    ]
+  },
+  {
+    "name": "GROUP_ZOMBIE_SCORCHED",
+    "type": "monstergroup",
+    "monsters": [
+	  { "monster": "mon_civilian_pyromancer", "weight": 10 }
     ]
   },
   {
@@ -124,6 +133,7 @@
     "name": "GROUP_ZOMBIE",
     "monsters": [
 	  { "monster": "mon_demon_portal", "weight": 1, "cost_multiplier": 5 },
+	  { "monster": "mon_civilian_pyromancer", "weight": 10, "ends": "30 days" },
 	  { "monster": "mon_demon_portal", "weight": 5, "cost_multiplier": 5, "starts": "120 days" },
 	  { "monster": "mon_demon_portal", "weight": 10, "cost_multiplier": 5, "starts": "230 days" },
 	  { "monster": "mon_demon_portal", "weight": 15, "cost_multiplier": 5, "starts": "365 days" },
@@ -135,6 +145,7 @@
 	  { "monster": "mon_walker", "weight": 25, "cost_multiplier": 1, "pack_size": [ 35, 60 ], "starts": "90 days" },
 	  { "monster": "mon_walker", "weight": 25, "cost_multiplier": 1, "pack_size": [ 60, 85 ], "starts": "120 days" },
 	  { "monster": "mon_feral_human_busy", "weight": 50, "cost_multiplier": 1 },
+	  { "monster": "mon_post_officer", "weight": 10, "cost_multiplier": 1 },
       { "group": "GROUP_GHOSTS", "weight": 10, "cost_multiplier": 1 },
 	  { "group": "GROUP_GHOSTS", "weight": 50, "cost_multiplier": 1, "pack_size": [ 1, 3 ], "starts": "120 days" },
 	  { "group": "GROUP_BOSSES", "weight": 25, "cost_multiplier": 25, "starts": "180 days" },
@@ -145,6 +156,7 @@
 	  { "group": "GROUP_MAGES", "weight": 40,  "cost_multiplier": 5, "starts": "60 days", "ends": "120 days" },
 	  { "group": "GROUP_MAGES", "weight": 50,  "cost_multiplier": 5, "starts": "120 days", "ends": "150 days" },
 	  { "group": "GROUP_MAGES", "weight": 70,  "cost_multiplier": 5, "starts": "150 days" },
+	  { "group": "GROUP_MAGES", "weight": 35,  "cost_multiplier": 5, "pack_size": [ 1, 2 ], "starts": "90 days" },
 	  { "group": "GROUP_MAGES", "weight": 70,  "cost_multiplier": 5, "pack_size": [ 1, 3 ], "starts": "240 days" },
 	  { "group": "GROUP_MAGES", "weight": 130,  "cost_multiplier": 5, "pack_size": [ 1, 5 ], "starts": "365 days" },
 	  { "group": "GROUP_DEMONS", "weight": 10, "cost_multiplier": 2, "starts": "2 days", "ends": "3 days" },
@@ -153,14 +165,14 @@
 	  { "group": "GROUP_DEMONS", "weight": 40, "cost_multiplier": 2, "starts": "5 days", "ends": "6 days" },
 	  { "group": "GROUP_DEMONS", "weight": 50, "cost_multiplier": 2, "starts": "7 days" },
 	  { "group": "GROUP_DEMONS", "weight": 20, "cost_multiplier": 1, "starts": "14 days" },
-      { "group": "GROUP_DEMONS", "weight": 20, "cost_multiplier": 2, "pack_size": [ 1, 3 ], "ends": "7 days" },
+      { "group": "GROUP_DEMONS", "weight": 20, "cost_multiplier": 2, "pack_size": [ 1, 2 ], "ends": "7 days" },
 	  { "group": "GROUP_DEMONS", "weight": 50, "cost_multiplier": 2, "pack_size": [ 1, 3 ], "starts": "7 days" },
-	  { "group": "GROUP_DEMONS", "weight": 50, "cost_multiplier": 2, "pack_size": [ 1, 3 ], "starts": "30 days" },
+	  { "group": "GROUP_DEMONS", "weight": 50, "cost_multiplier": 2, "pack_size": [ 1, 5 ], "starts": "30 days" },
 	  { "group": "GROUP_DEMONS", "weight": 70, "pack_size": [ 1, 3 ], "cost_multiplier": 3, "starts": "90 days", "ends": "120 days" },
 	  { "group": "GROUP_DEMONS", "weight": 70, "pack_size": [ 1, 3 ], "cost_multiplier": 3, "starts": "120 days" },
 	  { "group": "GROUP_DEMONS", "weight": 70, "pack_size": [ 1, 3 ], "cost_multiplier": 3, "starts": "200 days", "ends": "240 days" },
 	  { "group": "GROUP_DEMONS", "weight": 130, "pack_size": [ 1, 3 ], "cost_multiplier": 3, "starts": "240 days" },
-	  { "group": "GROUP_DEMONS", "weight": 130, "pack_size": [ 1, 7 ], "cost_multiplier": 1, "starts": "290 days", "ends": "365 days" },
+	  { "group": "GROUP_DEMONS", "weight": 130, "pack_size": [ 1, 5 ], "cost_multiplier": 1, "starts": "290 days", "ends": "365 days" },
 	  { "group": "GROUP_DEMONS", "weight": 150, "pack_size": [ 1, 7 ], "cost_multiplier": 1, "starts": "365 days" }
     ]
   },
@@ -169,9 +181,13 @@
     "name": "GROUP_FERAL",
     "monsters": [
 	  { "monster": "mon_feral_human_busy", "weight": 5 },
+	  { "monster": "mon_post_officer", "weight": 3, "cost_multiplier": 3 },
+	  { "group": "GROUP_WAND_WIELDERS", "weight": 5, "cost_multiplier": 2 },
 	  { "group": "GROUP_MAGES", "weight": 5, "cost_multiplier": 3 },
 	  { "monster": "mon_feral_militia", "weight": 15 },
 	  { "monster": "mon_feral_jackboot", "weight": 15 },
+	  { "monster": "mon_civilian_pyromancer", "weight": 10, "ends": "30 days" },
+	  { "monster": "mon_civilian_pyromancer", "weight": 1 },
 	  { "monster": "mon_feral_labsecurity_9mm", "weight": 15 },
 	  { "monster": "mon_feral_labsecurity_9mm", "weight": 50, "starts": "90 days" },
 	  { "monster": "mon_feral_jackboot", "weight": 40, "starts": "90 days" },
@@ -207,6 +223,7 @@
     "default": "mon_gracke",
     "monsters": [
       { "group": "GROUP_MAGES", "weight": 250, "cost_multiplier": 0, "starts": "15 days" },
+	  { "monster": "mon_silver_queen", "weight": 1, "starts": "120 days" },
       { "group": "GROUP_DEMONS", "weight": 250, "cost_multiplier": 0 },
       { "group": "GROUP_GHOSTS", "weight": 250, "cost_multiplier": 0 }
     ]
@@ -339,6 +356,7 @@
     "//": "Cheap golems used to defend the average wizard's tower.",
     "monsters": [
       { "group": "GROUP_DEMONS", "weight": 5 },
+	  { "group": "GROUP_FAMILIARS", "weight": 5, "ends": "90 days" },
 	  { "group": "GROUP_DEVILHANDS", "weight": 25, "pack_size": [ 1, 2 ] },
 	  { "group": "GROUP_MAGES", "weight": 100, "starts": "30 days" },
 	  { "group": "GROUP_MAGES", "weight": 300, "starts": "90 days" },
@@ -374,7 +392,7 @@
 	  { "group": "GROUP_DEVILHANDS", "weight": 50 },
 	  { "group": "GROUP_GOBLIN_STANDARD", "weight": 50 },
 	  { "group": "GROUP_DEMONLING_PACKS", "weight": 30, "starts": "30 days" },
-	  { "group": "GROUP_MAGES", "weight": 10, "starts": "90 days" },
+	  { "group": "GROUP_MAGES", "weight": 10, "starts": "45 days" },
       { "monster": "mon_dunebroodnephilim", "weight": 40, "pack_size": [ 1, 3 ] },
       { "monster": "mon_lilimp", "weight": 10 },
       { "group": "GROUP_CIRCLES", "weight": 10 }
@@ -409,6 +427,100 @@
 	  { "monster": "mon_corrolug", "weight": 40, "pack_size": [ 1, 3 ] },
 	  { "monster": "mon_frigiling", "weight": 50, "pack_size": [ 1, 3 ] },
 	  { "monster": "mon_paper_wisp", "weight": 50, "pack_size": [ 1, 5 ] }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIARS",
+    "monsters": [
+	  { "monster": "mon_dragon_black_wyrmling", "weight": 1 },
+	  { "monster": "mon_yulecat", "weight": 1 },
+	  { "monster": "mon_alpha_razorclaw", "weight": 1 },
+	  { "monster": "mon_dog_skeleton_brute", "weight": 1 },
+	  { "monster": "mon_pack_rat", "weight": 1 },
+	  { "monster": "mon_goose_golden", "weight": 1 },
+	  { "monster": "mon_foul_toad", "weight": 1 },
+	  { "monster": "mon_blastlid", "weight": 1 },
+	  { "monster": "mon_sparklet", "weight": 1 },
+	  { "monster": "mon_corrolug", "weight": 1 },
+	  { "monster": "mon_frigiling", "weight": 1 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_DRAGON",
+    "monsters": [
+	  { "monster": "mon_dragon_black_wyrmling", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_FROG",
+    "monsters": [
+	  { "monster": "mon_foul_toad", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_OWL",
+    "monsters": [
+	  { "monster": "mon_goose_golden", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_RAT",
+    "monsters": [
+	  { "monster": "mon_pack_rat", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_SKELETON_DOG",
+    "monsters": [
+	  { "monster": "mon_dog_skeleton_brute", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_FISH",
+    "monsters": [
+	  { "monster": "mon_alpha_razorclaw", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_CAT",
+    "monsters": [
+	  { "monster": "mon_yulecat", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_BLASTLID",
+    "monsters": [
+	  { "monster": "mon_blastlid", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_FRIGILING",
+    "monsters": [
+	  { "monster": "mon_frigiling", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_SPARKLET",
+    "monsters": [
+	  { "monster": "mon_sparklet", "weight": 1000 }
+	  ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FAMILIAR_CORROLUG",
+    "monsters": [
+	  { "monster": "mon_corrolug", "weight": 1000 }
 	  ]
   },
   {
@@ -499,9 +611,18 @@
 	  {"group": "GROUP_GOBLIN_STANDARD", "weight": 30 },
 	  { "monster": "mon_demon_portal", "weight": 30 }, 
 	  { "monster": "mon_demon_portal", "weight": 50, "starts": "180 days" },
+	  { "monster": "mon_silver_queen", "weight": 5, "conditions": [ "NIGHT" ] },
+	  { "monster": "mon_silver_queen", "weight": 10, "conditions": [ "NIGHT" ], "starts": "120 days" },
       { "monster": "mon_dunebroodnephilim", "weight": 40, "pack_size": [ 1, 3 ] },
       { "monster": "mon_lilimp", "weight": 10 },
       { "group": "GROUP_CIRCLES", "weight": 10 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_NEMESIS",
+    "monsters": [
+	  { "monster": "mon_angel_of_death", "weight": 100, "starts": "365 days" }
     ]
   },
   {
@@ -512,7 +633,11 @@
       { "monster": "mon_ortiel", "weight": 25, "cost_multiplier": 100, "starts": "30 days" },
       { "monster": "mon_yidris", "weight": 25, "cost_multiplier": 100, "starts": "30 days" },
       { "monster": "mon_omnath", "weight": 25, "cost_multiplier": 100, "starts": "30 days" },
-      { "monster": "mon_atraxa", "weight": 25, "cost_multiplier": 100, "starts": "30 days" }
+      { "monster": "mon_atraxa", "weight": 25, "cost_multiplier": 100, "starts": "30 days" },
+	  { "monster": "mon_silver_queen", "weight": 5, "cost_multiplier": 1000, "starts": "120 days", "conditions": [ "NIGHT" ] },
+	  { "group": "GROUP_BOSSES2", "weight": 5, "cost_multiplier": 100, "pack_size": [ 1, 2 ], "starts": "90 days" },
+	  { "group": "GROUP_BOSSES2", "weight": 5, "cost_multiplier": 100, "pack_size": [ 1, 3 ], "starts": "180 days" }
+	  
     ]
   },
   {
@@ -523,10 +648,22 @@
       { "monster": "mon_widow_ghost", "weight": 20 },
       { "monster": "mon_child_ghost", "weight": 20 },
       { "monster": "mon_fusion_ghost", "weight": 20 },
-	  { "monster": "mon_ghost_generator", "weight": 2 },
+	  { "monster": "mon_ghost_generator", "weight": 1, "cost_multiplier": 15 },
       { "monster": "mon_business_ghost", "weight": 20 },
+	  { "monster": "mon_mech_recon_robot", "weight": 3, "cost_multiplier": 5, "starts": "90 days" },
 	  { "monster": "mon_paper_wisp", "weight": 10 },
-	  { "monster": "mon_paper_printer", "weight": 5 }
+	  { "monster": "mon_paper_printer", "weight": 3, "cost_multiplier": 5 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_WAND_WIELDERS",
+    "monsters": [
+      { "monster": "mon_civilian_pyromancer", "weight": 1 },
+	  { "monster": "mon_civilian_chilling", "weight": 1 },
+	  { "monster": "mon_civilian_cat_lady", "weight": 1 },
+	  { "monster": "mon_civilian_icu_wand", "weight": 1 },
+	  { "monster": "mon_civilian_police_wand", "weight": 1 }
     ]
   },
   {
@@ -534,12 +671,16 @@
     "name": "GROUP_MAGES",
     "monsters": [
       { "monster": "mon_nethermage", "weight": 10 },
-	  { "monster": "mon_feral_human_busy", "weight": 5 },
+	  { "group": "GROUP_WAND_WIELDERS", "weight": 3 },
+	  { "monster": "mon_post_officer", "weight": 1 },
+	  { "monster": "mon_feral_human_busy", "weight": 3 },
       { "monster": "mon_nethermage_cold", "weight": 10 },
       { "monster": "mon_nethermage_bile", "weight": 10 },
       { "monster": "mon_nethermage_fire", "weight": 10 },
-	  { "monster": "mon_mage_operator", "weight": 40 },
-	  { "group": "GROUP_BOSSES2", "weight": 5, "starts": "180 days" },
+	  { "monster": "mon_mage_operator", "weight": 20 },
+	  { "group": "GROUP_BOSSES2", "weight": 5, "starts": "60 days" },
+	  { "group": "GROUP_BOSSES2", "weight": 5, "starts": "120 days" },
+	  { "group": "GROUP_BOSSES2", "weight": 10, "starts": "365 days" },
       { "monster": "mon_mage_ghost", "weight": 10 }
     ]
   },
@@ -555,10 +696,32 @@
   },
   {
     "type": "monstergroup",
+    "name": "GROUP_LILIMP",
+    "monsters": [
+      { "monster": "mon_lilimp", "weight": 100 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MAGIC_MEGASTORE",
+    "monsters": [
+	  { "group": "GROUP_FAMILIARS", "weight": 10, "ends": "30 days" },
+      { "monster": "mon_owlbear_zombie_brute", "weight": 10 },
+	  { "monster": "mon_leprechaun", "weight": 10 },
+      { "monster": "mon_yulecat_zombie", "weight": 10 },
+      { "monster": "mon_troll_zombie", "weight": 10 },
+      { "monster": "mon_wisp", "weight": 10, "pack_size": [ 1, 10 ] },
+	  { "monster": "mon_ogre", "weight": 10 },
+      { "monster": "mon_dragon_black_wyrmling", "weight": 10 }
+    ]
+  },
+  {
+    "type": "monstergroup",
     "name": "GROUP_GOBLIN_STANDARD",
     "monsters": [
       { "monster": "mon_goblin_mage", "weight": 65 },
 	  { "monster": "mon_goblin_mage", "weight": 105, "pack_size": [ 1, 2 ], "starts": "90 days" },
+	  { "monster": "mon_goblin_mage", "weight": 55, "pack_size": [ 1, 5 ], "starts": "240 days" },
 	  { "group": "GROUP_DEMONS2", "weight": 105, "pack_size": [ 1, 3 ], "starts": "120 days" }
     ]
   },
@@ -567,7 +730,22 @@
     "name": "GROUP_MANSION",
     "monsters": [
 	{ "group": "GROUP_MAGES", "weight": 10 },
+	{ "group": "GROUP_FERAL", "weight": 15, "pack_size": [ 1, 3 ] },
 	  { "group": "GROUP_MAGES", "weight": 5, "pack_size": [ 1, 3 ], "starts": "120 days" }
+    ]
+  },
+  {
+    "name": "GROUP_FOOTBALL",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_null", "weight": 300 },
+      { "monster": "mon_zombie_tough", "weight": 150, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_zombie_runner", "weight": 150, "pack_size": [ 1, 1 ] },
+	  { "group": "GROUP_FERAL", "weight": 35, "pack_size": [ 1, 3 ] },
+	  { "group": "GROUP_DEMONS", "weight": 15, "pack_size": [ 1, 3 ], "starts": "30 days" },
+	  { "group": "GROUP_MAGES", "weight": 15, "pack_size": [ 1, 2 ], "starts": "45 days" },
+	  { "monster": "mon_lilimp", "weight": 10 },
+      { "monster": "mon_zombie_fat", "weight": 100, "pack_size": [ 4, 6 ] }
     ]
   },
   {

@@ -73,7 +73,7 @@
       { "group": "operator_pistols" },
 	  { "group": "operator_ammo" },
       { "group": "any_MRE", "count": [ 1, 5 ] },
-      { "item": "classified_intelligence" },
+      { "item": "classified_intelligence", "prob": 25 },
       { "item": "money_strap_hundred", "count": [ 1, 3 ] },
 	  { "item": "money_hundred", "count": [ 10, 100 ] },
       { "item": "quikclot", "count": [ 10, 15 ] }

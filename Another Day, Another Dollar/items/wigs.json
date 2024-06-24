@@ -1,4 +1,48 @@
 [
+{
+    "type": "item_group",
+    "id": "wigs",
+    "subtype": "collection",
+    "items": [
+      { "item": "hair_black_crewcut_wig", "prob": 5 },
+      { "item": "hair_black_mohawk_wig", "prob": 5 },
+      { "item": "hair_black_fro_wig", "prob": 5 },
+      { "item": "hair_black_short_wig", "prob": 5 },
+      { "item": "hair_black_medium_wig", "prob": 5 },
+      { "item": "hair_black_long_wig", "prob": 5 },
+      { "item": "hair_brown_crewcut_wig", "prob": 5 },
+      { "item": "hair_brown_mohawk_wig", "prob": 5 },
+      { "item": "hair_brown_fro_wig", "prob": 5 },
+      { "item": "hair_brown_short_wig", "prob": 5 },
+      { "item": "hair_brown_medium_wig", "prob": 5 },
+      { "item": "hair_brown_long_wig", "prob": 5 },
+      { "item": "hair_blond_crewcut_wig", "prob": 5 },
+      { "item": "hair_blond_mohawk_wig", "prob": 5 },
+      { "item": "hair_blond_fro_wig", "prob": 5 },
+      { "item": "hair_blond_short_wig", "prob": 5 },
+      { "item": "hair_blond_medium_wig", "prob": 5 },
+      { "item": "hair_blond_long_wig", "prob": 5 },
+      { "item": "hair_red_crewcut_wig", "prob": 5 },
+      { "item": "hair_red_mohawk_wig", "prob": 5 },
+      { "item": "hair_red_fro_wig", "prob": 5 },
+      { "item": "hair_red_short_wig", "prob": 5 },
+      { "item": "hair_red_medium_wig", "prob": 5 },
+      { "item": "hair_red_long_wig", "prob": 5 },
+      { "item": "hair_gray_crewcut_wig", "prob": 5 },
+      { "item": "hair_gray_mohawk_wig", "prob": 5 },
+      { "item": "hair_gray_fro_wig", "prob": 5 },
+      { "item": "hair_gray_short_wig", "prob": 5 },
+      { "item": "hair_gray_medium_wig", "prob": 5 },
+      { "item": "hair_gray_long_wig", "prob": 5 },
+      { "item": "hair_white_crewcut_wig", "prob": 5 },
+      { "item": "hair_white_mohawk_wig", "prob": 5 },
+      { "item": "hair_white_fro_wig", "prob": 5 },
+      { "item": "hair_white_short_wig", "prob": 5 },
+      { "item": "hair_white_medium_wig", "prob": 5 },
+      { "item": "hair_white_long_wig", "prob": 5 },
+      { "item": "baldcap", "prob": 5 }
+    ]
+  },
   {
     "id": "hair_black_crewcut_wig",
     "repairs_like": "balclava",
@@ -773,7 +817,7 @@
     "material_thickness": 0.2,
     "environmental_protection": 1,
     "flags": [ "VARSIZE" ],
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "HAIR_BALD" ] } ] },
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "hair_bald" ] } ] },
     "armor": [ { "encumbrance": 5, "coverage": 60, "covers": [ "head" ] } ]
   }
 ]

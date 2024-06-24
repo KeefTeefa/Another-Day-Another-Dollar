@@ -17,7 +17,7 @@
     "type": "effect_on_condition",
     "id": "eoc_oni_spawn",
 	"eoc_type": "RECURRING",
-	"recurrence": [ "7 days", "30 days" ],
+	"recurrence": [ "2 days", "24 days" ],
 	"condition": {
           "or": [
             { "u_has_effect": "deathbeforedishonor" }
@@ -31,11 +31,11 @@
     "type": "effect_on_condition",
     "id": "eoc_death_spawn",
 	"eoc_type": "RECURRING",
-	"recurrence": [ "14 days", "42 days" ],
+	"recurrence": [ "24 days", "48 days" ],
 	"condition": { "u_has_effect": "deathandtaxes" },
     "effect": [ 
-    { "run_eocs": "taxes_eoc" },
-    { "u_message": "A soft crackle in the back of your mind warns you of the camera rolling. Suddenly you remember that episode, and how similar it was to the last few minutes of your life. Time to pay up.", "popup": false } ]
+    { "run_eocs": [ "eoc_taxes" ] },
+    { "u_message": "A soft crackle in the back of your mind warns you of the camera rolling. Suddenly you remember that episode, and how similar it was to the last few minutes of your life. So, Death or Taxes?.", "popup": false } ]
   },
   {
     "type": "effect_on_condition",
@@ -63,10 +63,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
 			{ "u_is_wearing": "saints_symbol" },
             { "u_is_wearing": "armor_spirit" },
@@ -92,7 +93,7 @@
 	},
 	{ "u_message": "Almost without realizing it, you find yourself completely entranced by 'Death Before Dishonor.' It's an absolute saga, and with the extended edition clocks in at roughly 3 hours. Still, it does so much with so little...", "popup": true }
 	],
-	"false_effect": [ { "run_eocs": "eoc_dat" } ]
+	"false_effect": [ { "run_eocs": [ "eoc_dat" ] } ]
   },
   {
     "type": "effect_on_condition",
@@ -147,42 +148,69 @@
     "type": "effect_on_condition",
     "id": "eoc_taxes_cash",
     "condition": { "u_has_item": "money_bundle_hundred" }, 
-	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": "eoc_taxes" } ],
+	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": [ "eoc_taxes" ] } ],
     "effect": [ { "u_consume_item": "money_bundle_hundred" }, { "u_message": "You wisely pay the Tax collector their due." } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_taxes_gold",
     "condition": { "u_has_items": { "item": "gold_small", "count": 1000 } },
-	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": "eoc_taxes" } ],
+	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": [ "eoc_taxes" ] } ],
     "effect": [ { "u_consume_item": "gold_small", "count": 1000 }, { "u_message": "You wisely pay the Tax collector their due." } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_taxes_silver",
     "condition": { "u_has_items": { "item": "silver_small", "count": 1000 } },
-	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": "eoc_taxes" } ],
+	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": [ "eoc_taxes" ] } ],
     "effect": [ { "u_consume_item": "silver_small", "count": 1000 }, { "u_message": "You wisely pay the Tax collector their due." } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_taxes_partial",
     "condition": { "u_has_item": "money_strap_hundred" }, 
-	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": "eoc_taxes" } ],
+	"false_effect": [ { "u_message": "You can't fool Death! If you can't pay, please select 'Can't Pay.'", "popup": true }, { "run_eocs": [ "eoc_taxes" ] } ],
     "effect": [ { "u_consume_item": "money_strap_hundred" }, { "u_message": "You pay the Tax collector to wait a few days." }, { "queue_eocs": "eoc_taxes", "time_in_future": "3 days" } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_taxes_cant_pay",
     "condition": { "or": [ { "u_is_wearing": "mask_skull" }, { "u_is_wearing": "american_flag" }, { "u_has_trait": "PSYCHOPATH" }, { "u_has_trait": "personality_brave_plus" }, { "u_is_wearing": "grim_reaper_robe" }, { "u_has_item": "scythe_toy" } ] },
-	"effect": [ { "u_message": "You simply don't have the means, not that you'd pay even if you could." }, { "u_spawn_monster": "mon_death_small", "lifespan": "10 minutes" } ],
-    "false_effect": [ { "u_message": "You simply don't have the means. It must be your time to go." }, { "u_spawn_monster": "mon_death", "lifespan": "10 minutes" } ]
+	"effect": [ { "u_message": "You simply don't have the means, not that you'd pay even if you could." }, { "u_spawn_monster": "mon_death_small", "lifespan": "10 minutes" }, { "u_lose_effect": "deathandtaxes" } ],
+    "false_effect": [ { "u_message": "You simply don't have the means. It must be your time to go." }, { "u_spawn_monster": "mon_death", "lifespan": "10 minutes" }, { "u_lose_effect": "deathandtaxes" } ]
   },
   {
     "type": "effect_on_condition",
     "id": "eoc_gold_spawn",
 	"eoc_type": "RECURRING",
 	"recurrence": "1 d",
+	"condition": {
+          "or": [
+            { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
+			{ "u_is_wearing": "beautification_aura" },
+			{ "u_is_wearing": "mundane_aura" },
+			{ "u_has_item": "bend_will_item" },
+			{ "u_has_item": "longsword_holy" },
+            { "u_is_wearing": "holy_symbol_wood" },
+			{ "u_is_wearing": "saints_symbol" },
+            { "u_is_wearing": "armor_spirit" },
+			{ "u_has_trait": "SPIRITUAL" },
+			{ "u_is_wearing": "ring_purity" },
+            { "u_is_wearing": "ring_engagement" },
+            { "u_is_wearing": "ring_wedding" },
+            { "u_is_wearing": "bead_bracelet" },
+            { "u_is_wearing": "bead_necklace" },
+            { "u_is_wearing": "relic_small" }
+          ]
+        },
+	"false_effect": [ { "run_eocs": [ "eoc_silver_spawn" ] } ],
+    "effect": [ 
+    { "u_spawn_item": "gold_small", "count": 10 }, { "u_message": "Another day, another dollar.", "type": "warning" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_silver_spawn",
 	"condition": {
           "or": [
             { "u_is_wearing": "pointed_hat" },
@@ -201,35 +229,9 @@
             { "u_is_wearing": "pact_of_flame_devoted" }
           ]
         },
-	"false_effect": [ { "run_eocs": [ { "id": "eoc_silver_spawn" } ] } ],
+	"false_effect": [ { "run_eocs": [ "eoc_crystallized_spawn" ] } ],	
     "effect": [ 
-    { "u_spawn_item": "gold_small", "count": 10 }, { "u_message": "Another day, another dollar.", "type": "warning" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "eoc_silver_spawn",
-	"condition": {
-          "or": [
-            { "u_is_wearing": "holy_symbol" },
-			{ "u_is_wearing": "beautification_aura" },
-			{ "u_is_wearing": "mundane_aura" },
-			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
-            { "u_is_wearing": "holy_symbol_wood" },
-			{ "u_is_wearing": "saints_symbol" },
-            { "u_is_wearing": "armor_spirit" },
-			{ "u_has_trait": "SPIRITUAL" },
-			{ "u_is_wearing": "ring_purity" },
-            { "u_is_wearing": "ring_engagement" },
-            { "u_is_wearing": "ring_wedding" },
-            { "u_is_wearing": "bead_bracelet" },
-            { "u_is_wearing": "bead_necklace" },
-            { "u_is_wearing": "relic_small" }
-          ]
-        },
-	"false_effect": [ { "run_eocs": [ { "id": "eoc_crystallized_spawn" } ] } ],	
-    "effect": [ 
-    { "u_spawn_item": "silver_small", "count": 20 }, { "u_message": "Another day, another dollar.", "type": "warning" } ]
+    { "u_spawn_item": "silver_small", "count": 10 }, { "u_message": "Another day, another dollar.", "type": "warning" } ]
   },
   {
     "type": "effect_on_condition",
@@ -251,7 +253,7 @@
     "type": "effect_on_condition",
     "id": "eoc_possession",
 	"condition": { "npc_allies_global": 1 },
-	"false_effect": [ { "u_message": "No one's gonna be willing to do that with YOU, dude.", "type": "warning" } ],
+	"false_effect": { "u_message": "No one's gonna be willing to do that with YOU, dude.", "type": "warning" },
     "effect": [ "take_control_menu" ]
   },
   {
@@ -409,7 +411,7 @@
   {
     "type": "effect_on_condition",
     "id": "eoc_linguistics_one_good",
-    "effect": { "u_add_effect": "bless", "duration": 8640000 },
+    "effect": [ { "u_add_effect": "bless", "duration": 8640000 }, { "u_add_effect": "cureall", "duration": 1 } ],
     "false_effect": { "u_cast_spell": { "id": "eoc_linguistics_one" } },
     "condition": {
       "and": [
@@ -435,10 +437,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
 			{ "u_is_wearing": "saints_symbol" },
             { "u_is_wearing": "armor_spirit" },
@@ -483,10 +486,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
 			{ "u_is_wearing": "saints_symbol" },
             { "u_is_wearing": "armor_spirit" },
@@ -531,10 +535,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
 			{ "u_is_wearing": "saints_symbol" },
             { "u_is_wearing": "armor_spirit" },
@@ -628,6 +633,82 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "eoc_post_office_tp",
+    "effect": 
+	    [
+            {
+              "u_location_variable": { "global_val": "OM_post_office_tp" },
+              "target_params": 
+			  { 
+				"om_terrain": "post_office",
+				"om_terrain_match_type": "CONTAINS",
+			    "search_range": 1000,
+			    "min_distance": 0,
+			    "random": true 			
+			  }
+            },
+			{ "u_message": "The mailbox' flag stands tall!" },
+			{ 
+			"run_eocs": 
+			[
+              {
+                 "id": "eoc_post_office_tp_2"
+		      }
+	        ] 
+			}
+      ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_post_office_tp_2",
+    "effect": 
+	[
+	    {  
+		   "u_teleport": { "global_val": "OM_post_office_tp" },
+		   "force": true
+	    },
+		{
+        "u_message": "You get sucked into the mailbox.",
+        "popup": true
+        }
+	]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_postofficer_translocate",
+    "effect": { "u_cast_spell": { "id": "translocate_self_no_hands", "hit_self": true } }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_mailbox_2",
+    "effect": [ 
+	{
+      "u_cast_spell": { "id": "spawn_postage_stamp", "hit_self": true }
+	}, 
+	{
+      "u_consume_item": "money_hundred"
+	}
+	],
+	"false_effect": [ { "u_message": "If you were really rolling in cash, you might consider putting a hundred bucks in this box and buying a stamp that way. At least then you could spend some of that sweet, sweet 'scarole.", "type": "warning", "popup": true } ],
+    "condition": { "and": [ { "u_has_item": "money_hundred" }, { "u_query": "You know, before the end of days you were able to magically purchase a postage stamp by putting money in these things. The glue always dried way too quick, but for a small fee of a hundred dollars you might be able to order that collectible robot you've been wanting... Do you want to buy a stamp?", "default": false } ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_saints_symbol_summon",
+    "effect": [ 
+	{ "u_message": "The moon's blinding glow condenses into an unending set of empty eyes.", "type": "warning", "popup": true },
+	{ "u_spawn_monster": "mon_silver_queen", "real_count": 1, "min_radius": 3, "max_radius": 7, "outdoor_only": false }
+	],
+	"false_effect": [ { "u_message": "The night is not dark enough to dare face you.", "type": "warning", "popup": true } ],
+    "condition": { "and": 
+	[ 
+	{ "not": "is_day" }, 
+	"u_is_outside", 
+	{ "u_query": "Do you hold aloft your saint's symbol in defiance, daring the moon to send it's greatest warrior? ", "default": false }  
+	] }
+  },
+  {
+    "type": "effect_on_condition",
     "id": "ring_of_fire_eoc",
     "effect": [ { "u_spawn_item": "devils_ring", "count": 1 } ],
     "condition": { "and": [ { "u_is_wearing": "onyx_silver_ring" }, { "u_has_trait": "PSYCHOPATH" } ] }
@@ -694,6 +775,18 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "eoc_chromatic_orb",
+    "false_effect": { "u_cast_spell": { "id": "drain_fatigue_self_chromatic_orb" } },
+    "condition": {
+      "or": [
+        { "u_is_wearing": "ring_signet" },
+		{ "u_has_item": "familiar_dragon" },
+        { "u_has_trait": "MANA_CRYST_MANA" }
+      ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
     "id": "eoc_crystal_spawn",
     "effect": { "u_cast_spell": { "id": "crystallize_mana_crystal_5" } },
     "false_effect": { "u_cast_spell": { "id": "crystallize_mana_1" } },
@@ -710,7 +803,7 @@
     "id": "eoc_indirected",
     "effect": { "u_cast_spell": { "id": "indirected_mana_focused" } },
     "false_effect": { "u_cast_spell": { "id": "indirected_mana" } },
-    "condition": { "or": [ { "u_is_wearing": "copper_circlet" }, { "u_is_wearing": "wizard_hat" }, { "u_is_wearing": "ring_signet" } ] }
+    "condition": { "or": [ { "u_is_wearing": "copper_circlet" }, { "u_is_wearing": "wizard_hat" }, { "u_is_wearing": "ring_signet" }, { "u_is_wearing": "condensed_metamagic" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" } ] }
   },
   {
     "type": "effect_on_condition",
@@ -752,6 +845,29 @@
             { "u_is_wearing": "pact_of_flame" },
 			{ "u_has_trait": "PSYCHOPATH" },
 			{ "u_is_wearing": "foodperson_mask" },
+			{ "u_is_wearing": "foodperson_mask_on" },
+			{ "u_is_wearing": "pact_of_blood_devoted" },
+            { "u_is_wearing": "pact_of_smoke_devoted" },
+            { "u_is_wearing": "pact_of_bile_devoted" },
+            { "u_is_wearing": "pact_of_flame_devoted" }
+      ]
+    }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_soul_bind",
+    "effect": { "u_spawn_item": "decaying_soul" },
+    "false_effect": { "u_spawn_item": "decaying_soul_pill" },
+    "condition": {
+      "or": [
+            { "u_is_wearing": "pointed_hat" },
+			{ "u_is_wearing": "onyx_silver_ring" },
+            { "u_is_wearing": "pact_of_blood" },
+            { "u_is_wearing": "pact_of_smoke" },
+            { "u_is_wearing": "pact_of_bile" },
+            { "u_is_wearing": "pact_of_flame" },
+			{ "u_is_wearing": "foodperson_mask" },
+			{ "u_has_trait": "PSYCHOPATH" },
 			{ "u_is_wearing": "foodperson_mask_on" },
 			{ "u_is_wearing": "pact_of_blood_devoted" },
             { "u_is_wearing": "pact_of_smoke_devoted" },
@@ -810,10 +926,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
             { "u_is_wearing": "armor_spirit" },
 			{ "u_has_trait": "SPIRITUAL" },
@@ -859,10 +976,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
             { "u_is_wearing": "armor_spirit" },
 			{ "u_has_trait": "SPIRITUAL" },
@@ -893,8 +1011,6 @@
       "or": [
             { "u_is_wearing": "pointed_hat" },
 			{ "u_is_wearing": "onyx_silver_ring" },
-            { "u_has_effect": "eff_frightful_presence" },
-            { "u_has_effect": "fearparalyze" },
             { "u_is_wearing": "pact_of_blood" },
             { "u_is_wearing": "pact_of_smoke" },
             { "u_is_wearing": "pact_of_bile" },
@@ -904,8 +1020,7 @@
 			{ "u_is_wearing": "pact_of_blood_devoted" },
             { "u_is_wearing": "pact_of_smoke_devoted" },
             { "u_is_wearing": "pact_of_bile_devoted" },
-            { "u_is_wearing": "pact_of_flame_devoted" },
-            { "u_has_effect": "hypovolemia" }
+            { "u_is_wearing": "pact_of_flame_devoted" }
       ]
     }
   },
@@ -961,7 +1076,7 @@
       { "u_add_effect": "taint", "intensity": 2, "duration": "5 minutes" },
       { "u_add_effect": "nausea", "intensity": 2, "duration": "5 minutes" }
     ],
-    "condition": { "not": { "or": [ { "u_has_effect": "blind" },  { "u_has_worn_with_flag": "BLIND" }, { "u_is_wearing": "silent_metamagic" }, { "u_is_wearing": "subtle_metamagic" }, { "u_is_wearing": "condensed_metamagic" },{ "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" }, { "u_is_wearing": "ring_signet" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" }, { "u_is_wearing": "foodperson_mask" } ] } }
+    "condition": { "not": { "or": [ { "u_has_effect": "blind" },  { "u_has_worn_with_flag": "BLIND" }, { "u_is_wearing": "silent_metamagic" }, { "u_is_wearing": "subtle_metamagic" }, { "u_is_wearing": "condensed_metamagic" },{ "u_has_worn_with_flag": "PSYSHIELD_PARTIAL" }, { "u_is_wearing": "ring_signet" }, { "u_has_wielded_with_flag": "MAGIC_FOCUS" }, { "u_is_wearing": "foodperson_mask" }, { "u_is_wearing": "foodperson_mask_on" } ] } }
   },
   {
     "type": "effect_on_condition",
@@ -1030,10 +1145,11 @@
           "or": [
             { "u_is_wearing": "ring_purity" },
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
             { "u_is_wearing": "relic_small" },
 			{ "u_has_trait": "SPIRITUAL" },
@@ -1058,6 +1174,7 @@
     "false_effect": { "u_cast_spell": { "id": "drain_fatigue_self_distraction" } },
     "condition": { "or": [ { "u_has_trait": "PSYCHOPATH" }, { "compare_int": [ { "u_val": "fatigue" }, ">=", { "const": 100 } ] } ] }
   },
+
   {
     "type": "effect_on_condition",
     "id": "eoc_bless",
@@ -1065,8 +1182,8 @@
     "false_effect": 
 	{
       "u_add_morale": "morale_feeling_good",
-      "bonus": 10,
-      "max_bonus": 10,
+      "bonus": 1,
+      "max_bonus": 1,
       "duration": "10 minutes",
       "decay_start": "10 minutes"
     },
@@ -1092,10 +1209,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
 			{ "u_is_wearing": "saints_symbol" },
             { "u_is_wearing": "armor_spirit" },
@@ -1113,8 +1231,315 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "eoc_collection_hundred",
+    "condition": { "u_has_item": "money_hundred" }, 
+	"false_effect": { "u_message": "You don't have $100.", "popup": true },
+    "effect": [ 
+	{ "u_consume_item": "money_hundred" }, 
+	{ "u_message": "You put $100 in the collection box. Feels good man." }, 
+	{
+      "u_add_morale": "morale_feeling_good",
+      "bonus": 10,
+      "max_bonus": 10,
+      "duration": "3 hours",
+      "decay_start": "3 hours"
+    } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_strap",
+    "condition": { "u_has_item": "money_strap_hundred" },
+	"false_effect": { "u_message": "You don't have a strap of hundred dollar bills.", "popup": true },
+    "effect": [ { "u_consume_item": "money_strap_hundred" }, { "u_message": "You put a strap of hundreds in the collection box. Nice!" }, { "run_eocs": [ "eoc_collection_strap_spawn" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_strap_spawn",
+    "condition": {
+          "or": [
+            { "u_is_wearing": "pointed_hat" },
+			{ "u_is_wearing": "onyx_silver_ring" },
+			{ "u_is_wearing": "aura_feral" },
+			{ "u_is_wearing": "foodperson_mask" },
+			{ "u_is_wearing": "foodperson_mask_on" },
+			{ "u_has_trait": "PSYCHOPATH" },
+            { "u_is_wearing": "pact_of_blood" },
+            { "u_is_wearing": "pact_of_smoke" },
+            { "u_is_wearing": "pact_of_bile" },
+            { "u_is_wearing": "pact_of_flame" },
+			{ "u_is_wearing": "pact_of_blood_devoted" },
+            { "u_is_wearing": "pact_of_smoke_devoted" },
+            { "u_is_wearing": "pact_of_bile_devoted" },
+            { "u_is_wearing": "pact_of_flame_devoted" }
+          ]
+        },
+	"false_effect": { "u_add_effect": "panacea", "duration": "1 day" },
+    "effect": { "u_add_effect": "bless", "duration": "1 day" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_bundle",
+    "condition": { "u_has_item": "money_bundle_hundred" },
+	"false_effect": { "u_message": "You don't have a bundle of hundred dollar bills.", "popup": true },
+    "effect": [ { "u_consume_item": "money_strap_hundred"}, { "u_message": "You put a bundle of hundreds in the collection box. How 'bout them apples?" }, { "run_eocs": [ "eoc_collection_bundle_spawn" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_bundle_spawn",
+    "condition": {
+          "or": [
+            { "u_is_wearing": "pointed_hat" },
+			{ "u_is_wearing": "onyx_silver_ring" },
+			{ "u_is_wearing": "aura_feral" },
+			{ "u_is_wearing": "foodperson_mask" },
+			{ "u_is_wearing": "foodperson_mask_on" },
+			{ "u_has_trait": "PSYCHOPATH" },
+            { "u_is_wearing": "pact_of_blood" },
+            { "u_is_wearing": "pact_of_smoke" },
+            { "u_is_wearing": "pact_of_bile" },
+            { "u_is_wearing": "pact_of_flame" },
+			{ "u_is_wearing": "pact_of_blood_devoted" },
+            { "u_is_wearing": "pact_of_smoke_devoted" },
+            { "u_is_wearing": "pact_of_bile_devoted" },
+            { "u_is_wearing": "pact_of_flame_devoted" }
+          ]
+        },
+	"false_effect": [ { "u_add_effect": "panacea", "duration": "7 days" }, { "u_spawn_item": "panacea", "count": 3 } ],
+    "effect": { "u_add_effect": "panacea", "duration": "1 day" }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_parcel",
+    "condition": { "u_has_item": "money_parcel_hundred" },
+	"false_effect": { "u_message": "You don't have a parcel of hundred dollar bills.", "popup": true },
+    "effect": [ { "u_consume_item": "money_parcel_hundred"}, { "u_message": "You put a parcel of hundreds in the collection box. This is as devout an act as any one person could achieve, supposedly. It does make you feel good." }, { "run_eocs": [ "eoc_collection_parcel_spawn" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_parcel_spawn",
+    "condition": {
+          "or": [
+            { "u_is_wearing": "pointed_hat" },
+			{ "u_is_wearing": "onyx_silver_ring" },
+			{ "u_is_wearing": "aura_feral" },
+			{ "u_is_wearing": "foodperson_mask" },
+			{ "u_is_wearing": "foodperson_mask_on" },
+			{ "u_has_trait": "PSYCHOPATH" },
+			{ "u_has_trait": "THRESH_MANA" },
+			{ "u_is_wearing": "ring_signet" },
+            { "u_is_wearing": "pact_of_blood" },
+            { "u_is_wearing": "pact_of_smoke" },
+            { "u_is_wearing": "pact_of_bile" },
+            { "u_is_wearing": "pact_of_flame" },
+			{ "u_is_wearing": "pact_of_blood_devoted" },
+            { "u_is_wearing": "pact_of_smoke_devoted" },
+            { "u_is_wearing": "pact_of_bile_devoted" },
+            { "u_is_wearing": "pact_of_flame_devoted" }
+          ]
+        },
+	"false_effect": [ { "u_spawn_item": "strength_token" }, { "u_cast_spell": { "id": "collection_burnout", "hit_self": true  } } ],
+    "effect": [ { "u_cast_spell": { "id": "temp_faith", "hit_self": true } }, { "u_cast_spell": { "id": "collection_burnout", "hit_self": true  } } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_steal",
+    "effect": [ { "u_spawn_item": "money_bundle_hundred" }, { "u_message": "You steal from this, of all holy places." }, { "u_add_trait": "HAS_NEMESIS" }, { "u_cast_spell": { "id": "collection_burnout", "hit_self": true  } } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_collection_leave",
+	"effect": { "u_message": "You turn away from the collection box.", "popup": false }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_HORN_MOSS",
+    "effect": [ { "u_cast_spell": { "id": "flask_regeneration_effect", "hit_self": true } } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GLOWING_MUSHROOM",
+    "effect": [ { "u_cast_spell": { "id": "glowing_mushroom_spell", "hit_self": true } } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_FERN_FLOWER",
+    "effect": [ { "u_cast_spell": { "id": "flower_fern_spell", "hit_self": true } }]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_FUNNELCAP",
+    "effect": [ { "u_cast_spell": { "id": "funnelcap_spell", "hit_self": true } } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_SOJOURNERS_FLOWER",
+    "effect": [ { "u_cast_spell": { "id": "sojourners_palm_spell", "hit_self": true } } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_WHISKFLOWER",
+    "effect": [ { "u_cast_spell": { "id": "whiskflower_spell", "hit_self": true } } ]
+  },
+   {
+     "type": "effect_on_condition",
+     "id": "EOC_CHOOSE_TOBACCO",
+     "effect": {
+        "run_eoc_selector": [
+		  "EOC_HORN_MOSS", 
+		  "EOC_GLOWING_MUSHROOM",
+		  "EOC_FERN_FLOWER",
+		  "EOC_FUNNELCAP",
+		  "EOC_SOJOURNERS_FLOWER",
+		  "EOC_WHISKFLOWER"
+        ],
+		"allow_cancel": false,
+        "names": [ "Horn Moss Capsule", "Glowing Mushrooms", "Fern Flowers", "Funnelcap Chunks", "Sojourner's Flower", "Whiskflowers" ],
+        "keys": [ "1", "2", "3", "4", "5", "6" ],
+        "descriptions": [
+		  "Flakes of horn moss leave you feeling right as rain.", 
+          "Tiny glowing mushrooms make you feel a little quicker on your feet.",
+		  "Fern flowers bring good luck to the chewer.", 
+          "Funnelcap chunks restore a small amount of mana.",
+          "Sojourner's palm displaces you rapidly.",
+		  "Bits of whiskflower get you drunk."
+        ]
+      }
+  },
+  {
+     "type": "effect_on_condition",
+     "id": "EOC_POTIONFRUIT_PASSION",
+     "effect": {
+        "run_eoc_selector": [
+		  "EOC_POTION_FRUIT_APPLE",
+		  "EOC_POTION_FRUIT_PEACH",
+		  "EOC_POTION_FRUIT_PEAR",
+		  "EOC_POTION_FRUIT_BLACKBERRY",
+		  "EOC_POTION_FRUIT_RASPBERRY",
+		  "EOC_POTION_FRUIT_STRAWBERRY",
+		  "EOC_POTION_FRUIT_ELDERBERRY",
+          "EOC_POTION_FRUIT_CRANBERRY",
+          "EOC_POTION_FRUIT_HUCKLEBERRY",
+		  "EOC_POTION_FRUIT_WINTERGREEN",
+          "EOC_POTION_FRUIT_CHERRY",
+          "EOC_POTION_FRUIT_APRICOT",
+		  "EOC_POTION_FRUIT_MAYAPPLE",
+		  "EOC_POTION_FRUIT_GRAPE"
+        ],
+		"allow_cancel": false,
+        "names": [ "Apple", "Peach", "Pear", "Blackberry", "Raspberry", "Strawberry", "Elderberry", "Cranberry", "Huckleberry", "Wintergreen", "Cherry", "Apricot", "Mayapple", "Grape" ],
+        "keys": [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n" ],
+        "descriptions": [
+          "Tastes like healing apple!",
+          "Juicy peach flavor leaves your illnesses in the past.",
+          "The perfect pear taste makes your attacks faster.",
+		  "Wild blackberries harm those who attack you.", 
+          "Raspberry the pain away.",
+          "Strawberry makes even the coldest nights warm.",
+		  "Elderberry wakes you up and keeps you awake.",
+		  "Sour cranberry purges your blood of toxins.",
+		  "A huckleberry swing makes your dodge attacks easier.",
+		  "Your eyes adjust to a cool wintergreen night...",
+		  "Lovely red cherry thickens your blood, making you bleed less.",
+		  "One whiff of apricot and your eyes can suddenly hone in on the distant horizon.",
+		  "The sweetest grape wine leaves you in the perfect state of perpetual sobriety.",
+		  "After a mayapple like that, you could eat anything and your stomach could take it."
+        ]
+      }
+  },
+  {
+     "type": "effect_on_condition",
+     "id": "eoc_prismatic_crown",
+     "effect": {
+        "run_eoc_selector": [
+		  "eoc_spawn_ortiel",
+		  "eoc_spawn_omnath",
+		  "eoc_spawn_yidris",
+		  "eoc_spawn_atraxa"
+        ],
+		"allow_cancel": false,
+        "names": [ "Ortisian Punch", "Omnathan Swirl", "Yidrisian Spike", "Atraxan Delight" ],
+        "keys": [ "a", "b", "c", "d" ],
+        "descriptions": [
+          "Hurts to let it go!",
+          "A true surprise to the taste buds!",
+          "Feel that burn!",
+		  "Refreshing and provocative!"
+        ]
+      }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_spawn_ortiel",
+    "effect": { "u_spawn_monster": "mon_ortiel", "real_count": 1, "min_radius": 5, "max_radius": 13, "outdoor_only": false }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_spawn_omnath",
+    "effect": { "u_spawn_monster": "mon_omnath", "real_count": 1, "min_radius": 5, "max_radius": 13, "outdoor_only": false }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_spawn_yidris",
+    "effect": { "u_spawn_monster": "mon_yidris", "real_count": 1, "min_radius": 5, "max_radius": 13, "outdoor_only": false }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_spawn_atraxa",
+    "effect": { "u_spawn_monster": "mon_atraxa", "real_count": 1, "min_radius": 5, "max_radius": 13, "outdoor_only": false }
+  },
+   {
+    "type": "effect_on_condition",
+    "id": "eoc_devil_mission",
+	"recurrence": "365 days",
+	"condition": {
+          "not": {
+            "or": [
+              { "u_is_wearing": "pact_of_bile" },
+              { "u_is_wearing": "pact_of_blood" },
+              { "u_is_wearing": "pact_of_smoke" },
+              { "u_is_wearing": "pact_of_flame" },
+			{ "u_is_wearing": "pact_of_blood_devoted" },
+            { "u_is_wearing": "pact_of_smoke_devoted" },
+            { "u_is_wearing": "pact_of_bile_devoted" },
+            { "u_is_wearing": "pact_of_flame_devoted" },
+			  { "u_is_wearing": "onyx_silver_ring" },
+			  { "u_is_wearing": "pointed_hat" },
+              { "u_has_trait": "PSYCHOPATH" }
+            ]
+         }
+    },
+	"false_effect": [ 
+	{ "assign_mission": "MISSION_KILL_ANGEL" }, 
+	{ "u_message": "Your seal is called upon. Only the truly faithful would dare answer. The message is delivered via a small icon which appears in your hand, the figure of a cartoonish wizard painted like a victorian patron to be hung above the mantel. On the back, the word 'faith' is written in blood.", "type": "warning", "popup": true }, 
+	{ "u_spawn_item": "icon" } ],	
+    "effect": [ 
+    { "u_spawn_item": "trade_writ" }, { "u_message": "Another year in paradise.", "type": "warning" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "prayer_faithful_angel",
+    "effect": 
+	[ 
+	{ 
+	"u_spawn_monster": "mon_angel_of_death", "real_count": 1, "min_radius": 1, "max_radius": 50, "outdoor_only": true
+	}, 
+	{ "u_set_field": "fd_cold_air4", "radius": 10, "outdoor_only": false, "intensity": 1 },
+	{
+      "u_message": "You look to the sky and ask 'what's next?' The sky gives her old reply, 'the rest.'", "type": "warning"
+    }
+	],
+    "condition": { "u_at_om_location": "church_steeple_end" }
+  },
+  {
+    "type": "effect_on_condition",
     "id": "eoc_prayer_faithful",
     "effect": { "u_cast_spell": { "id": "prayer_faithful2" } },
+	"false_effect": [
+	{ "run_eocs": [ "prayer_faithful_angel" ] },
+	{
+      "u_message": "Your heart suddenly feels cold, or has it been like that all along?", "type": "warning"
+    }
+	],
     "condition": {
           "not": {
             "or": [
@@ -1172,10 +1597,11 @@
         {
           "or": [
             { "u_is_wearing": "holy_symbol" },
+			{ "u_is_wearing": "strength_token" },
 			{ "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			{ "u_has_item": "holy_blade" },
+			{ "u_has_item": "longsword_holy" },
             { "u_is_wearing": "holy_symbol_wood" },
 			{ "u_is_wearing": "saints_symbol" },
             { "u_is_wearing": "armor_spirit" },
@@ -1226,10 +1652,11 @@
           "not": {
             "or": [
               { "u_is_wearing": "holy_symbol" },
+			  { "u_is_wearing": "strength_token" },
 			  { "u_is_wearing": "beautification_aura" },
 			{ "u_is_wearing": "mundane_aura" },
 			{ "u_has_item": "bend_will_item" },
-			  { "u_has_item": "holy_blade" },
+			  { "u_has_item": "longsword_holy" },
               { "u_is_wearing": "holy_symbol_wood" },
               { "u_is_wearing": "bead_bracelet" },
               { "u_is_wearing": "bead_necklace" },
@@ -1269,10 +1696,12 @@
         "popup": true
       },
       "lightning",
+	  { "u_cast_spell": { "id": "become_psycho", "hit_self": true } },
       { "u_spawn_monster": "mon_ortiel", "real_count": 1, "min_radius": 7, "max_radius": 50, "outdoor_only": false }
     ],
     "effect": [
       { "u_cast_spell": { "id": "spawn_spell_scroll_devil" } },
+	  { "u_cast_spell": { "id": "become_psycho", "hit_self": true } },
       {
         "run_eocs": [
           {
@@ -1453,15 +1882,16 @@
 	"condition": { "u_has_effect": "deathandtaxes" },
     "effect": [ 
 	{ "u_add_effect": "cureall", "duration": 1 },
-    { "u_spawn_item": "record_accounting" },	
-	{ "math": [ "u_pain()", "=", "0" ] },
-	{ "run_eocs": "taxes_eoc" },
 	{ "u_lose_effect": "deathandtaxes" },
+    { "u_spawn_item": "bouquet" },	
+	{ "u_spawn_item": "record_accounting" },
+	{ "math": [ "u_pain()", "=", "0" ] },
 	{ "u_cast_spell": { "id": "taxes" } },
 	{ "arithmetic": [ { "u_val": "stored_kcal" }, "=", { "const": 50000 } ] },
     { "arithmetic": [ { "u_val": "thirst" }, "=", { "const": 0 } ] },
 	{ "u_set_hp": 999, "only_increase": true }, 
-	{ "u_message": "Laugh or cry, your choice.", "popup": true } ]
+	{ "u_message": "Laugh or cry, your choice.", "popup": true },
+    { "run_eocs": [ "eoc_taxes" ] } ]
   },
   {
     "type": "effect_on_condition",

@@ -108,7 +108,7 @@
         "s  #o.h.h.........____________..........xxyo#  s",
         "s  #o.h.h.......I..............I........+.bo#  s",
         "s  ||.h.h........rrrr......rrrr.........xxx||  s",
-        "s   |.......ccc..r............r..ccc.......|   s",
+        "s   |.......ccc..ry...........r..ccc.......|   s",
         "s   ||||^...cGc..r....CCCC....r..cGc...^||||   s",
         "s      |||||ooo|||.B........B.|||ooo|||||      s",
         "s          |###| |.......h....| |###|          s",
@@ -121,7 +121,7 @@
       "palettes": [ "cathedral" ],
       "item": { "C": { "item": "candlestick", "chance": 50 } },
       "terrain": { "_": "t_carpet_concrete_red", " ": "t_region_groundcover_urban", "*": "t_open_air" },
-      "furniture": { " ": [ [ "f_region_flower_decorative", 1 ], [ "f_null", 25 ] ] },
+      "furniture": { " ": [ [ "f_region_flower_decorative", 1 ], [ "f_null", 25 ] ], "y": "f_collection_box" },
 	  "place_npcs": [
         { "class": "saint", "x": 24, "y": 39 }
       ],

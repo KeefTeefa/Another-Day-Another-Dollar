@@ -150,9 +150,9 @@
         { "item": "stash_wood", "x": 8, "y": 9, "chance": 100 }
       ],
       "place_npcs": [
-        { "class": "raider", "x": [ 5, 7 ], "y": [ 5, 15 ] },
-        { "class": "raider", "x": [ 5, 7 ], "y": [ 20, 21 ] },
-        { "class": "raider", "x": [ 15, 20 ], "y": [ 5, 15 ] }
+        { "class": "raider_ADAD", "x": [ 5, 7 ], "y": [ 5, 15 ] },
+        { "class": "raider_ADAD", "x": [ 5, 7 ], "y": [ 20, 21 ] },
+        { "class": "raider_ADAD", "x": [ 15, 20 ], "y": [ 5, 15 ] }
       ]
     }
   },
@@ -2156,8 +2156,8 @@
       { "point": [ 4, 1, 0 ], "overmap": "forge_5BOP_north" },
       { "point": [ 4, 1, 1 ], "overmap": "forge_5BOP_roof_north" }
     ],
-    "locations": [ "wilderness" ],
-    "city_distance": [ 20, -1 ],
+    "locations": [ "land" ],
+    "city_distance": [ 10, -1 ],
     "city_sizes": [ 0, 20 ],
     "occurrences": [ 0, 1 ]
   },

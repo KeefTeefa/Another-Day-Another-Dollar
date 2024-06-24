@@ -3,18 +3,20 @@
     "type": "region_overlay",
     "regions": [ "all" ],
     "city": { 
-	"houses": { "wizard_tower_op": 5, "wizard_tower_stalker": 5, "wizard_tower_abandoned": 10, "cathedral_saint": 3 },
+	"houses": { "wizard_tower_op": 5, "wizard_tower_stalker": 5, "wizard_tower_abandoned": 15, "cathedral_saint": 3 },
+	"parks": { "zengarden_ADAD": 15, "botanical_garden_omnath": 15 },
 	"shops": 
 	{ 
 	"magic_academy_operator": 150, 
 	"magic_academy_necro": 150, 
 	"bank_raiders": 100, 
+	"gambling_hall_technomancerkelvinist": 25, 
+	"mortuary_animistbiomancer": 25, 
 	"bank_altar": 100, 
 	"office_towermage": 1, 
-	"s_library_atraxa": 10, 
-	"botanical_garden_omnath": 10, 
-	"lighthouse_ortiel": 10, 
-	"town_hall_ydris": 10, 
+	"s_library_atraxa": 15,  
+	"lighthouse_ortiel": 15, 
+	"town_hall_ydris": 15, 
 	"post_office_overrun": 100,
 	"police_dept_ADAD": 200, 
 	"demonic_fortress": 25 } 

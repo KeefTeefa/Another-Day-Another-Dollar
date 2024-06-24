@@ -350,10 +350,214 @@
     ]
   },
   {
+  "type": "GENERIC",
+  "id": "broken_mech_recon_robot",
+  "name": {
+    "str": "broken recon mech"
+  },
+  "description": "A broken mech exoskeleton suit, it looks beyond repair.",
+  "weight": "700388 g",
+  "volume": "125 L",
+  "price": 1000,
+  "price_postapoc": 10,
+  "to_hit": -3,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": ";",
+  "color": "light_green",
+  "flags": [
+    "TRADER_AVOID",
+    "NO_REPAIR"
+  ],
+  "melee_damage": {
+    "bash": 7
+  }
+},
+  {
+  "id": "robot_mech_laser",
+  "type": "GUN",
+  "reload_noise_volume": 2,
+  "name": {
+    "str": "RMES marksman system for 'Spectre' ADAD"
+  },
+  "description": "The integral weapon system for the RMES exoskeleton mech-suit, a quiet and accurate marksman laser rifle.",
+  "weight": "12500 g",
+  "volume": "5500 ml",
+  "price": 9500000,
+  "price_postapoc": 8000,
+  "longest_side": "1228 mm",
+  "to_hit": -2,
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "symbol": "(",
+  "color": "blue",
+  "skill": "rifle",
+  "ammo": [
+    "123ln"
+  ],
+  "range": 45,
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "123ln": 1
+      }
+    }
+  ],
+  "ranged_damage": {
+    "damage_type": "heat",
+    "amount": 30,
+    "armor_penetration": 4
+  },
+  "dispersion": 15,
+  "durability": 8,
+  "loudness": 1,
+  "reload": 0,
+  "ammo_to_fire": 0,
+  "ammo_effects": [
+    "LASER",
+    "PLASMA_BUBBLE",
+    "INCENDIARY"
+  ],
+  "flags": [
+    "NO_UNLOAD",
+    "NEVER_JAMS",
+    "NO_UNWIELD",
+    "NO_SALVAGE",
+    "NO_REPAIR",
+    "UNBREAKABLE_MELEE",
+    "NON_FOULING",
+    "NEEDS_NO_LUBE"
+  ],
+  "melee_damage": {
+    "bash": 6
+  }
+},
+  {
+  "id": "mon_mech_recon_robot",
+  "type": "MONSTER",
+  "name": {
+    "str": "'Spectre'"
+  },
+  "description": "The Boeing-Daewoo RMES (Recon Mechanical Exoskeleton Suit), a recent acquisition by the U.S. military, it was designed to be used in a scout-recon-sniper role, due to its mobility, integrated laser sniper rifle, and suite of optics for target designation and battlefield awareness.  It was not deployed before the Cataclysm hit, though there were a few prototypes in the field. Some ethereal force has taken control of this one, driving it to new heights. Unfortunately, that force seems to be driving it toward destruction.",
+  "default_faction": "robot",
+  "looks_like": "mon_mech_recon",
+  "species": [
+    "ROBOT"
+  ],
+  "diff": 5,
+  "volume": "700388 ml",
+  "weight": "700388 g",
+  "hp": 320,
+  "speed": 120,
+  "material": [
+    "superalloy"
+  ],
+  "symbol": "M",
+  "color": "blue",
+  "aggression": 100,
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 3,
+  "melee_dice_sides": 8,
+  "emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "60 s" }, { "emit_id": "emit_plasma", "delay": "30 s" } ],
+  "starting_ammo": {
+    "123ln": 100
+  },
+  "melee_damage": [
+    {
+      "damage_type": "cut",
+      "amount": 5
+    }
+  ],
+  "vision_night": 100,
+  "revert_to_itype": "broken_mech_recon_robot",
+  "death_function": {
+    "corpse_type": "BROKEN"
+  },
+  "death_drops": {
+      "subtype": "collection",
+      "items": [
+        { "item": "spell_scroll_bio_for_stamina", "prob": 75 },
+		{ "item": "spell_scroll_auto_tazer", "prob": 75 },
+		{ "item": "spell_scroll_directed_mana", "prob": 50 },
+        { "group": "robots" }
+      ]
+    },
+  "special_attacks": [
+     [ "FEAR_PARALYZE", 25 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "phase_skulker_teleport", "hit_self": true },
+        "cooldown": 5,
+        "monster_message": "The Spectre disappears like a glitch in reality and reappears elsewhere."
+      },
+     {
+      "type": "gun",
+      "cooldown": 15,
+      "move_cost": 150,
+      "gun_type": "robot_mech_laser",
+      "ammo_type": "123ln",
+      "no_ammo_sound": "'The Spectre's arm cannon clicks.'",
+      "fake_skills": [
+         [
+          "gun",
+          5
+        ],
+        [
+          "rifle",
+          5
+        ]
+      ],
+      "fake_dex": 8,
+	  "fake_per": 8,
+      "require_targeting_player": true,
+      "ranges": [
+        [
+          5,
+          20,
+          "DEFAULT"
+        ]
+      ],
+      "description": "The Spectre glows with white light and fires a beam of energy at you!"
+    }
+  ],
+  "path_settings": {
+    "max_dist": 30,
+    "avoid_traps": true,
+    "avoid_sharp": true
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "BASHES",
+    "PUSH_MON",
+    "ELECTRONIC",
+    "NOHEAD",
+	"DROPS_AMMO",
+	"SLUDGETRAIL", 
+	"SLUDGEPROOF",
+    "NO_BREATHE",
+	"RANGED_ATTACKER",
+    "PRIORITIZE_TARGETS",
+    "PATH_AVOID_DANGER_1",
+    "STUN_IMMUNE"
+  ],
+  "armor": {
+    "bash": 15,
+    "cut": 25,
+    "bullet": 20
+  }
+},
+  {
     "id": "mon_death",
     "type": "MONSTER",
     "name": { "str": "death" },
-    "description": "You can almost recognize this thing from last episode.",
+    "description": "You can almost recognize this thing, it looks like your Mother. No, that's your best friend. Wait, who are you?",
     "default_faction": "nether",
     "looks_like": "mon_magi_shadow",
     "bodytype": "human",
@@ -373,7 +577,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 10,
     "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
-    "emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "1 s" }, { "emit_id": "emit_dragon_adult_fright", "delay": "1 s" } ],
+    "emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "1 s" }, { "emit_id": "emit_dragon_adult_fright", "delay": "1 s" }, { "emit_id": "emit_shadow_field", "delay": "5 s" } ],
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_physiology" ],
     "dodge": 10,
@@ -404,7 +608,20 @@
         { "item": "grim_reaper_robe" },
 		{ "item": "jackolantern_lit" },
 		{ "item": "twisted_soul" },
-        { "item": "scythe_war" }
+        { "item": "scythe_war" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" }
       ]
     },
     "flags": [
@@ -444,7 +661,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 10,
     "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
-    "emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "1 s" } ],
+    "emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "1 s" }, { "emit_id": "emit_shadow_field", "delay": "10 s" } ],
     "weakpoint_sets": [ "wps_humanoid_body" ],
     "families": [ "prof_intro_biology", "prof_physiology" ],
     "dodge": 10,
@@ -474,7 +691,14 @@
         { "item": "grim_reaper_robe" },
 		{ "item": "jackolantern_lit" },
 		{ "item": "decaying_soul" },
-        { "item": "scythe_war" }
+        { "item": "scythe_war" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" },
+		{ "group": "benjamins" }
       ]
     },
     "flags": [
@@ -486,6 +710,86 @@
 	  "ALL_SEEING",
       "NO_BREATHE",
       "NIGHT_INVISIBILITY",
+      "NOGIB",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "angel",
+    "base_faction": "animal",
+    "by_mood": [ "human" ],
+    "hate": [ "nether" ]
+  },
+  {
+    "id": "mon_angel_of_death",
+    "type": "MONSTER",
+    "name": { "str": "Angel of Death" },
+    "description": "A silhouette of pure black is barely visible in the cascade of light pouring from this 'creature,' a divine sword visible in the shadow of perfectly symmetrical angel's wings.",
+    "default_faction": "angel",
+    "looks_like": "mon_magi_shadow",
+    "bodytype": "human",
+    "species": [ "UNKNOWN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 7000,
+    "speed": 250,
+    "material": [ "arcane_skin" ],
+    "symbol": ".",
+    "color": "white",
+    "aggression": 100,
+    "morale": 100,
+    "phase": "PLASMA",
+    "anger_triggers": [ "HOSTILE_SEEN", "PLAYER_CLOSE" ],
+    "melee_skill": 5,
+    "melee_dice": 2,
+    "melee_dice_sides": 10,
+    "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
+    "emit_fields": [ { "emit_id": "emit_hot_air4_blast", "delay": "7 s" }, { "emit_id": "emit_dragon_adult_fright", "delay": "1 s" }, { "emit_id": "emit_glimmer", "delay": "3 s" } ],
+    "weakpoint_sets": [ "wps_humanoid_body" ],
+    "families": [ "prof_intro_biology", "prof_physiology" ],
+    "dodge": 10,
+	"regenerates": 333,
+    "luminance": 50,
+    "harvest": "exempt",
+    "vision_day": 100,
+    "vision_night": 100,
+	"armor": { "pure": 9999 },
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "The Angel of Death falls, and as it does the world opens up to swallow it whole. This is truly the greatest gift that the One Below could ever receive." },
+    "special_attacks": [
+      [ "FEAR_PARALYZE", 10 ],
+	  {
+        "type": "spell",
+        "spell_data": { "id": "fireball", "min_level": 5 },
+        "cooldown": 10,
+        "monster_message": "The Angel of Death calls down flames of redemption by beating it's oversized wings."
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "DEATH_STRIKE", "min_level": 1 },
+        "cooldown": 30,
+        "monster_message": "The Angel of Death raises high it's blade of righteous judgement and finds you fit to smite."
+      }
+    ],
+    "death_drops": {
+      "subtype": "collection",
+      "items": [
+		{ "item": "cleansed_soul" },
+        { "item": "longsword_holy" },
+		{ "item": "armor_spirit" },
+		{ "item": "money_parcel_hundred", "count": 33 }
+      ]
+    },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "BASHES",
+      "FLIES",
+	  "FIREPROOF",
+	  "ALWAYS_SEES_YOU",
+      "NO_BREATHE",
+	  "NEMESIS",
       "NOGIB",
       "CAN_OPEN_DOORS"
     ]
@@ -542,6 +846,7 @@
     "melee_dice_sides": 4,
 	"armor": { "cold": 9999 },
     "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
+	"emit_fields": [ { "emit_id": "emit_cold_air4_stream", "delay": "1 s" } ],
     "dodge": 2,
     "vision_day": 10,
     "vision_night": 10,
@@ -629,14 +934,12 @@
   "dodge": 4,
   "vision_day": 10,
   "vision_night": 45,
-  "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
+  "death_function": { "corpse_type": "NO_CORPSE", "message": "The %s is shredded into nothing." },
   "harvest": "arachnid_flying",
   "anger_triggers": [
     "PLAYER_WEAK",
-    "STALK"
-  ],
-  "fear_triggers": [
-    "HURT",
+    "STALK",
+	"HURT",
     "FIRE"
   ],
   "flags": [
@@ -645,19 +948,16 @@
     "SEES",
 	"HIT_AND_RUN", 
 	"HARDTOSHOOT",
-    "FLIES",
-    "PATH_AVOID_FIRE"
+    "FLIES"
   ]
 },
 {
     "id": "self_organizing_paper",
     "type": "COMESTIBLE",
-	"comestible_type": "FOOD",
     "looks_like": "paper",
-    "name": { "str": "self-organizing paper" },
-    "description": "A stack of papers that are enchanted to organize themselves. Their development was obviously never fully researched, as they're violently gnashing at everything nearby. Luckily they're still within their warranty.",
-    "weight": "12 g",
-    "volume": "24 ml",
+	"copy-from": "mana_potion_lesser",
+    "name": { "str": "self-organizing white-out" },
+    "description": "A drought of liquid paper that is violently gnashing at the bottle, attempting to escape it's mortal bonds and find freedom as a full sheet of paper. Luckily it's still within it's warranty.",
     "price": 1000,
 	"spoils_in": "1 hours",
 	"rot_spawn": "GROUP_PAPER",
@@ -665,9 +965,7 @@
 	"flags": [ "TRADER_AVOID", "NO_AUTO_CONSUME", "NUTRIENT_OVERRIDE" ],
 	"use_action": [ 
 	{ "type": "cast_spell", "spell_id": "eat_paper", "no_fail": true, "level": 1 }
-	],
-    "symbol": "}",
-    "color": "black"
+	]
   },
   {
     "id": "eat_paper",
@@ -675,7 +973,7 @@
     "name": "Refund",
     "description": "Meditation leaves you weary for the day.",
     "valid_targets": [ "self" ],
-    "flags": [ "CONCENTRATE", "SILENT", "RANDOM_DAMAGE", "NO_HANDS" ],
+    "flags": [ "CONCENTRATE", "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "PERMANENT_ALL_LEVELS" ],
     "energy_source": "MANA",
     "effect": "spawn_item",
     "effect_str": "money_hundred",

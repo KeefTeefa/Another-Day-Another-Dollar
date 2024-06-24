@@ -1,7 +1,7 @@
 [
   {
     "type": "npc",
-    "id": "thug",
+    "id": "thug_ADAD",
     "name_suffix": "Thug",
     "class": "NC_THUG",
     "attitude": 0,
@@ -11,7 +11,7 @@
   },
   {
     "type": "npc",
-    "id": "bandit",
+    "id": "bandit_ADAD",
     "name_suffix": "Bandit",
     "class": "NC_SCAVENGER",
     "attitude": 0,
@@ -21,7 +21,7 @@
   },
   {
     "type": "npc",
-    "id": "raider",
+    "id": "raider_ADAD",
     "name_suffix": "Raider",
     "class": "NC_SOLDIER",
     "attitude": 0,
@@ -31,7 +31,7 @@
   },
   {
     "type": "npc",
-    "id": "wandering_thug",
+    "id": "wandering_thug_ADAD",
     "//": "Mission set to null, so they walk around.",
     "name_suffix": "Thug",
     "class": "NC_THUG",
@@ -42,7 +42,7 @@
   },
   {
     "type": "npc",
-    "id": "wandering_bandit",
+    "id": "wandering_bandit_ADAD",
     "name_suffix": "Bandit",
     "class": "NC_SCAVENGER",
     "attitude": 0,
@@ -52,7 +52,7 @@
   },
   {
     "type": "npc",
-    "id": "wandering_raider",
+    "id": "wandering_raider_ADAD",
     "name_suffix": "Raider",
     "class": "NC_SOLDIER",
     "attitude": 0,

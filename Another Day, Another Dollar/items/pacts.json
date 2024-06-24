@@ -30,7 +30,7 @@
     "description": "Your pact makes you feel unpleasantly hot, like someone's watching you.",
     "starting_trait": false,
     "valid": false,
-	"bodytemp_modifiers": [ 150, 150 ]
+	"bodytemp_modifiers": [ 50, 50 ]
   },
   {
     "type": "mutation",
@@ -57,7 +57,7 @@
     "id": "pact_of_blood_enchantment",
     "condition": "ALWAYS",
     "values": [
-      { "value": "MAX_MANA", "add": 3000 },
+      { "value": "MAX_MANA", "add": 2500 },
 	  { "value": "INTELLIGENCE", "add": 1 },
 	  { "value": "STRENGTH", "add": 1 },
       { "value": "REGEN_MANA", "multiply": 0.2 }
@@ -85,6 +85,40 @@
     "min_field_intensity": 2,
     "max_field_intensity": 2
   },
+   {
+    "id": "fd_smokepact",
+    "type": "field_type",
+    "legacy_enum_id": 33,
+    "intensity_levels": [
+      { "name": "swirl of brimstone smoke", "translucency": 5 },
+      { "name": "brimstone smoke", "color": "light_gray" },
+      { "name": "thick brimstone smoke", "color": "dark_gray" }
+    ],
+    "decay_amount_factor": 5,
+    "percent_spread": 250,
+    "outdoor_age_speedup": "6 minutes",
+    "dirty_transparency_cache": true,
+    "priority": 8,
+    "half_life": "35 minutes",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_field": true,
+    "looks_like": "fd_smoke"
+  },
+  {
+    "type": "SPELL",
+    "id": "summon_smoke",
+    "name": "Summons Smoke for Pact",
+    "description": "",
+    "valid_targets": [ "hostile", "ground", "ally", "self" ],
+	"copy-from": "summon_cold_blood",
+    "field_id": "fd_smokepact",
+    "field_chance": 1,
+    "min_duration": 1000,
+    "max_duration": 1000,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1
+  },
   {
     "type": "enchantment",
     "id": "pact_of_blood_enchantment_2",
@@ -101,14 +135,14 @@
       { "value": "REGEN_MANA", "multiply": 0.2 },
 	  { "value": "BONUS_DODGE", "add": 1 },
 	  { "value": "DEXTERITY", "add": 1 },
-      { "value": "MAX_MANA", "add": 3000 }
+      { "value": "MAX_MANA", "add": 2500 }
     ]
   },
   {
     "type": "enchantment",
     "id": "pact_of_smoke_enchantment2",
     "condition": "ALWAYS",
-    "intermittent_activation": { "effects": [ { "frequency": "24 h", "spell_effects": [ { "id": "phase_door" } ] } ] }
+    "intermittent_activation": { "effects": [ { "frequency": "18 h", "spell_effects": [ { "id": "phase_door" } ] }, { "frequency": "13 s", "spell_effects": [ { "id": "summon_smoke" } ] } ] }
   },
   {
     "type": "enchantment",
@@ -120,7 +154,7 @@
 	  { "value": "INTELLIGENCE", "add": 4 },
 	  { "value": "MAX_HP", "multiply": 0.2 },
       { "value": "REGEN_MANA", "multiply": 0.5 },
-      { "value": "MAX_MANA", "add": 4500 }
+      { "value": "MAX_MANA", "add": 3500 }
     ]
   },
   {
@@ -128,7 +162,7 @@
     "id": "pact_of_flame_enchantment",
     "condition": "ALWAYS",
     "intermittent_activation": { "effects": [ { "frequency": "7 d", "spell_effects": [ { "id": "spawn_spell_scroll_devil" } ] } ] },
-    "values": [ { "value": "MAX_MANA", "add": 5000 }, { "value": "REGEN_MANA", "multiply": 0.5 }, { "value": "LUMINATION", "add": 5 }, { "value": "SPEED", "multiply": 0.5 } ]
+    "values": [ { "value": "MAX_MANA", "add": 4000 }, { "value": "REGEN_MANA", "multiply": 0.5 }, { "value": "LUMINATION", "add": 5 }, { "value": "SPEED", "multiply": 0.2 } ]
   },
   {
     "type": "enchantment",
@@ -142,8 +176,8 @@
     "name": "Blood Thirst",
     "description": "Drawing blood keeps you going.",
     "valid_targets": [ "self" ],
-    "min_damage": 100,
-    "max_damage": 100,
+    "min_damage": 50,
+    "max_damage": 50,
     "max_level": 10,
     "effect": "recover_energy",
     "effect_str": "STAMINA",
@@ -415,7 +449,7 @@
     "base_energy_cost": 0,
     "flags": [ "SOMATIC", "PERMANENT" ],
     "shape": "blast",
-	"extra_effects": [ { "id": "remove_formication", "hit_self": true } ],
+	"extra_effects": [ { "id": "remove_formication", "hit_self": true }, { "id": "drain_fatigue_self_flight", "hit_self": true } ],
     "effect": "remove_effect",
     "effect_str": "dermatik"
   },

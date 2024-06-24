@@ -2,13 +2,14 @@
   {
     "result": "spirit_1",
     "type": "recipe",
+	"id_suffix": "forged spirit",
     "activity_level": "LIGHT_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
     "skill_used": "spellcraft",
     "difficulty": 3,
-	"skills_required": [ "spellcraft", 3 ],
-    "time": "24 h",
+	"skills_required": [ "speech", 3 ],
+    "time": "12 h",
     "reversible": true,
     "autolearn": true,
     "using": [ [ "tailoring_leather_patchwork_simple", 8 ] ],
@@ -24,12 +25,13 @@
   {
     "result": "spirit_2",
     "type": "recipe",
+	"id_suffix": "forged spirit",
     "activity_level": "BRISK_EXERCISE",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
     "skill_used": "fabrication",
     "difficulty": 5,
-	"skills_required": [ "spellcraft", 5 ],
+	"skills_required": [ "speech", 5 ],
     "time": "24 h",
     "reversible": true,
     "autolearn": true,
@@ -60,12 +62,13 @@
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "result": "spirit_3",
+	"id_suffix": "forged spirit",
     "category": "CC_ANOTHERDAY",
     "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
     "skill_used": "electronics",
     "difficulty": 7,
-	"skills_required": [ "spellcraft", 7 ],
-    "time": "24 h",
+	"skills_required": [ "speech", 7 ],
+    "time": "36 h",
     "reversible": true,
     "decomp_learn": 3,
 	"autolearn": true,
@@ -98,6 +101,108 @@
   },
   {
     "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "cursed_spirit_1",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
+    "skill_used": "speech", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "time": "1 s",
+    "autolearn": true,
+    "book_learn": [  [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 1 ] ] ]
+  },
+{
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "cursed_spirit_2",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
+    "skill_used": "speech", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "time": "1 s",
+    "autolearn": true,
+    "book_learn": [  [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "cursed_spirit_3",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
+    "skill_used": "speech", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "time": "1 s",
+    "autolearn": true,
+    "book_learn": [  [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_bundle_hundred", 7 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "spirit_1",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
+    "skill_used": "speech", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "time": "1 s",
+    "autolearn": true,
+    "book_learn": [  [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_parcel_hundred", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "spirit_2",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
+    "skill_used": "speech", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "time": "1 s",
+    "autolearn": true,
+    "book_learn": [  [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_parcel_hundred", 3 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE", 
+	"skills_required": [ "speech", 3 ],
+    "result": "spirit_3",
+	"id_suffix": "made via money",
+    "category": "CC_ANOTHERDAY",
+    "subcategory": "CSC_ANOTHERDAY_SPIRITFORGERY",
+    "skill_used": "speech", 
+	"qualities": [ { "id": "POWER_ALTAR", "level": 1 } ],
+    "difficulty": 5,
+    "flags": [ "UNCRAFT_LIQUIDS_CONTAINED" ],
+    "time": "1 s",
+    "autolearn": true,
+    "book_learn": [  [ "wayward_memory_NLS", 1 ], [ "vergists_manual", 1 ], [ "devils_catalogue", 1 ] ],
+    "components": [ [ [ "money_parcel_hundred", 7 ] ] ]
+  },
+  {
+    "type": "recipe",
     "activity_level": "NO_EXERCISE",
     "result": "spirit_int",
     "category": "CC_ANOTHERDAY",
@@ -108,7 +213,7 @@
     "difficulty": 0,
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -122,7 +227,7 @@
     "difficulty": 0,
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -136,7 +241,7 @@
     "difficulty": 0,
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -150,7 +255,7 @@
     "difficulty": 0,
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -164,7 +269,7 @@
     "difficulty": 0,
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -178,7 +283,7 @@
     "difficulty": 0,
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -192,7 +297,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -207,7 +312,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -222,7 +327,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -237,7 +342,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -252,7 +357,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -267,7 +372,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -282,7 +387,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -297,7 +402,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -312,7 +417,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -327,7 +432,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -342,7 +447,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -357,7 +462,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -372,7 +477,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -387,7 +492,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -402,7 +507,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -417,7 +522,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -432,7 +537,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -447,7 +552,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -462,7 +567,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -477,7 +582,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -492,7 +597,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -507,7 +612,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -522,7 +627,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -537,7 +642,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -552,7 +657,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -567,7 +672,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -582,7 +687,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -597,7 +702,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -612,7 +717,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -627,7 +732,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -642,7 +747,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -657,7 +762,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -672,7 +777,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -687,7 +792,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -702,7 +807,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -717,7 +822,7 @@
 	"tools": [ [ [ "forge", 16 ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -732,7 +837,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -747,7 +852,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -762,7 +867,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -777,7 +882,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -792,7 +897,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -807,7 +912,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -822,7 +927,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -837,7 +942,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -852,7 +957,7 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -867,6 +972,6 @@
 	"tools": [ [ [ "surface_heat", 10, "LIST" ] ], [ [ "metalworking_tongs", -1 ] ] ],
     "time": "8 h",
     "autolearn": true,
-    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ] ] ]
+    "components": [ [ [ "blood", 1 ] ], [ [ "twisted_soul", 1 ], [ "money_parcel_hundred", 1 ] ] ]
   }
 ]

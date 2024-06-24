@@ -12,6 +12,86 @@
   },
   {
     "type": "ter_furn_transform",
+    "id": "spit_trap_ter_transform",
+	"//": "completely jacked the code from Move Earth, credit to Korgent for this spell.",
+    "terrain": [
+      { "result": "t_hole", "valid_terrain": [ "t_pit", "t_slope_down" ], "message": "The overgrowth takes a final gargantuan bite and lets out a small, almost ladylike burp." },
+      {
+        "result": "t_pit",
+        "valid_terrain": [
+          "t_pit_corpsed",
+          "t_pit_covered",
+          "t_pit_glass",
+          "t_pit_glass_covered",
+          "t_pit_spiked",
+          "t_pit_spiked_covered",
+          "t_rootcellar",
+          "t_pit_shallow"
+        ],
+        "message": "The overgrowth finishes a full-course meal."
+      },
+      {
+        "result": "t_pit_shallow",
+        "valid_terrain": [
+          "t_grave",
+          "t_dirt",
+          "t_sand",
+          "t_clay",
+          "t_dirtmound",
+          "t_grass",
+          "t_grass_long",
+          "t_grass_tall",
+          "t_grass_dead",
+          "t_grass_white",
+          "t_dirtfloor",
+          "t_fungus_floor_in",
+          "t_fungus_floor_sup",
+          "t_fungus_floor_out",
+          "t_sandbox"
+        ],
+        "message": "The overgrowth takes a big bite out of the ground."
+      },
+      {
+        "result": "t_sand",
+        "valid_terrain": [
+          "t_pavement",
+          "t_pavement_y",
+          "t_sidewalk",
+          "t_concrete",
+          "t_thconc_floor",
+          "t_thconc_floor_olight",
+          "t_strconc_floor",
+          "t_floor",
+          "t_floor_waxed",
+          "t_carpet_red",
+          "t_carpet_yellow",
+          "t_carpet_purple",
+          "t_carpet_green",
+          "t_linoleum_white",
+          "t_linoleum_gray",
+          "t_slope_up",
+          "t_rock_red",
+          "t_rock_blue",
+          "t_floor_red",
+          "t_floor_green",
+          "t_floor_blue",
+          "t_pavement_bg_dp",
+          "t_pavement_y_bg_dp",
+          "t_sidewalk_bg_dp"
+        ],
+        "message": "The overgrowth bites, chews, and spits back up some sand."
+      },
+      { "result": "t_rock_floor", "valid_terrain": [ "t_rock" ], "message": "The overgrowth bites, chews, and spits the rock back up." },
+      {
+        "result": "t_hole",
+        "valid_terrain": [ "t_null" ],
+        "message": "The overgrowth blows hard the dust falls to the ground.",
+        "message_good": false
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
     "id": "magic_bench_place",
     "furniture": [
       {
@@ -40,6 +120,19 @@
           "f_necrobrazier"
         ],
         "message": "The brazier has been blackened and drained of all power."
+      }
+    ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "collection_place",
+    "furniture": [
+      {
+        "result": "f_collection_box",
+        "valid_furniture": [
+          "f_chest"
+        ],
+        "message": "The collection box has been thoroughly rifled. No sense donating anything now."
       }
     ]
   },

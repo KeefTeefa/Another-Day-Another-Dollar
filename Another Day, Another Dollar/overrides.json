@@ -1,0 +1,1405 @@
+[
+{
+    "id": "effect_dispel_magic",
+    "type": "effect_type",
+    "name": [ "Dispel Magic" ],
+    "//": "Removes effects from spells Difficulty 6 or below.  No attumement effects removed.",
+    "desc": [ "Enchantments are being stripped away from you." ],
+    "apply_message": "",
+    "remove_message": "You feel a sudden sense of loss.",
+    "max_duration": "2 seconds",
+    "removes_effects": [
+      "enchant_windrun",
+      "dark_sight",
+      "effect_ethereal_grasp",
+      "invisibility",
+      "bless",
+      "bio_boost",
+      "entangled",
+      "root_impale",
+      "ogres_strength",
+      "eagles_sight",
+      "cats_grace",
+      "foxs_cunning",
+      "feather_fall",
+      "bio_weave",
+      "natures_commune",
+      "electric_eye",
+      "electric_waves",
+      "electric_arts",
+      "flower_fern_eff",
+      "glowing_mushroom_eff",
+      "flask_speed_eff",
+      "flask_healing_eff",
+      "flask_stamina_eff",
+      "flask_excitement",
+      "flask_resistance",
+      "flask_illumination",
+      "flask_mana_regen",
+      "flask_max_mana",
+      "flask_regeneration",
+      "earthshaper_fortitude_of_stone",
+      "effect_tremorsense",
+      "effect_sense_outsiders",
+      "effect_kelvinist_anti_cold",
+      "effect_kelvinist_anti_heat",
+      "effect_magus_slowfall",
+      "effect_magus_spiderclimb",
+      "effect_biomancer_swim_speed",
+      "effect_biomancer_carrion_feast",
+      "effect_classless_watch",
+      "effect_obfuscating_aura",
+      "effect_shape_of_dust",
+      "effect_acid_res_aura",
+      "effect_acid_res_aura_greater",
+      "effect_thorns_electric",
+	  "frozen_hand",
+	  "haste_longer",
+	  "faded",
+	  "battle_fervor",
+	  "scourge",
+	  "crack_magic",
+	  "lsd_magic",
+	  "morphine_magic",
+	  "adderall_magic",
+	  "smoke_magic",
+	  "smoke_magic2"
+    ]
+  },
+  {
+    "id": "effect_disjunction",
+    "type": "effect_type",
+    "name": [ "Disjunction" ],
+    "//": "Need to update these as effects are added to both lol. Don't think I can extend effects?",
+    "desc": [ "All enchantments are being stripped away from you." ],
+    "apply_message": "",
+    "remove_message": "You feel a sudden acute sense of loss.",
+    "max_duration": "2 seconds",
+    "removes_effects": [
+      "enchant_windrun",
+      "dark_sight",
+      "effect_ethereal_grasp",
+      "invisibility",
+      "bless",
+      "bio_boost",
+      "entangled",
+      "root_impale",
+      "ogres_strength",
+      "eagles_sight",
+      "cats_grace",
+      "foxs_cunning",
+      "feather_fall",
+      "bio_weave",
+      "natures_commune",
+      "electric_eye",
+      "electric_waves",
+      "electric_arts",
+      "flower_fern_eff",
+      "glowing_mushroom_eff",
+      "flask_speed_eff",
+      "flask_healing_eff",
+      "flask_stamina_eff",
+      "flask_excitement",
+      "flask_resistance",
+      "flask_illumination",
+      "flask_mana_regen",
+      "flask_max_mana",
+      "flask_regeneration",
+      "earthshaper_fortitude_of_stone",
+      "effect_tremorsense",
+      "effect_sense_outsiders",
+      "effect_kelvinist_anti_cold",
+      "effect_kelvinist_anti_heat",
+      "effect_magus_slowfall",
+      "effect_magus_spiderclimb",
+      "effect_biomancer_swim_speed",
+      "effect_biomancer_carrion_feast",
+      "effect_classless_watch",
+      "effect_obfuscating_aura",
+      "effect_shape_of_dust",
+      "effect_acid_res_aura",
+      "effect_acid_res_aura_greater",
+      "effect_thorns_electric",
+      "haste",
+      "synaptic_stim",
+      "slow_freeze_effect",
+      "neuro_boost",
+      "cold_heart_effect",
+      "overclocker_drive_effect",
+      "biomechanic",
+      "ice_energy",
+      "ice_age_eff",
+      "effect_biomancer_remove_instability",
+      "effect_terra_armor",
+      "gravity_mage_melee",
+      "eff_storm_elemental_electric_melee",
+	  "frozen_hand",
+	  "haste_longer",
+	  "faded",
+	  "battle_fervor",
+	  "scourge",
+	  "crack_magic",
+	  "lsd_magic",
+	  "morphine_magic",
+	  "adderall_magic",
+	  "smoke_magic",
+	  "smoke_magic2",
+	  "dieanotherday"
+	  
+    ]
+  },
+  {
+    "abstract": "spell_wand",
+	"copy-from": "spell_wand",
+	"//": "makes it so pull_metal_weapon works on permanent, but not disposable wands", 
+    "name": { "str": "Magic Wand" },
+    "type": "TOOL",
+    "material": [ "iron" ]
+  },
+  {
+    "abstract": "spell_scroll",
+    "name": { "str": "Spell Scroll" },
+    "type": "BOOK",
+    "copy-from": "spell_scroll",
+    "looks_like": "envelope",
+    "price": 25000
+  },
+  {
+    "type": "BOOK",
+    "category": "manuals",
+    "id": "icon",
+    "name": { "str": "icon" },
+    "description": "This is a small picture, about the same size as an ID card, symbolizing a religious figure.  On the back, there is a text that faintly reads 'New England Church Community'.",
+    "price": 200,
+    "price_postapoc": 250,
+    "weight": "1 g",
+    "volume": "2 ml",
+    "to_hit": -3,
+    "color": "white",
+    "intelligence": 12,
+    "fun": 1,
+    "symbol": "$",
+    "use_action": { "type": "learn_spell", "spells": [ "prayer" ] },
+    "material": [ "paper" ]
+  },
+  {
+    "id": "cards_magic",
+    "type": "BOOK",
+    "category": "manuals",
+    "name": { "str": "deck of Sorcery cards", "str_pl": "decks of Sorcery cards" },
+    "description": "A set of cards meant to play the game \"Sorcery.\"  Each card has a fun picture of a different monster.",
+    "weight": "210 g",
+    "volume": "250 ml",
+    "price": 23000,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "blue",
+    "flags": [ "NO_REPAIR" ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "category": "weapons",
+	"flags": [ "INEDIBLE", "OLD_CURRENCY", "BANK_NOTE_SHAPED", "NUTRIENT_OVERRIDE" ],
+    "id": "money_hundred",
+    "name": { "str": "hundred-dollar bill" },
+    "description": "A hundred-dollar bill, featuring a portrait of Benjamin Franklin. Most people have figured out by now that if you offer it as payment, a creature will come to try and aid you.",
+    "looks_like": "money_one",
+    "copy-from": "money_one",
+    "color": "green",
+    "symbol": "$",
+	"use_action": [ 
+	{ "type": "cast_spell", "spell_id": "use_hundred", "no_fail": true, "level": 1, "need_wielding": true }
+	],
+    "price_postapoc": 1000
+  },
+  {
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "category": "weapons",
+	"flags": [ "INEDIBLE", "OLD_CURRENCY", "BANK_NOTE_STRAP_SHAPED", "NUTRIENT_OVERRIDE" ],
+    "id": "money_strap_hundred",
+    "name": { "str": "hundred-dollar currency strap" },
+    "description": "A hundred hundred-dollar bills held together by a mustard currency strap. Most people have figured out by now that if you offer it as payment, a creature will come to your aid.",
+    "looks_like": "money_strap_one",
+    "copy-from": "money_strap_one",
+    "color": "green",
+    "symbol": "$",
+	"use_action": [ 
+	{ "type": "cast_spell", "spell_id": "use_strap", "no_fail": true, "level": 1, "need_wielding": true }
+	],
+    "price_postapoc": 10000
+  },
+  {
+	  "id": "money_bundle_hundred", 
+	  "type": "COMESTIBLE",
+      "comestible_type": "FOOD",
+      "category": "weapons",
+	  "flags": [ "INEDIBLE", "OLD_CURRENCY", "NUTRIENT_OVERRIDE" ],
+	  "copy-from": "money_bundle_hundred", 
+	  "name": { "str": "hundred-dollar currency bundle" },
+	  "price_postapoc": 100000,
+	  "description": "A thousand hundred-dollar bills, divided evenly between ten mustard currency straps, and bundled together with rubber bands. Most people have figured out by now that if you offer it as payment, a band of mercenaries from Hell will come to your aid.",
+	  "use_action": [ 
+	{ "type": "cast_spell", "spell_id": "use_bundle", "no_fail": true, "level": 1, "need_wielding": true }
+	]
+  },
+  {
+  "id": "postman_hat",
+  "type": "ARMOR",
+  "name": {
+    "str": "mail carrier hat"
+  },
+  "description": "A traditional mail carrier's cap, with the US postal service logo embroidered on the front above the plastic brim.  A symbol of a bygone world, but some life still clings to it. When you reach inside you can pull out as many postcards as you could ever need.",
+  "weight": "90 g",
+  "volume": "750 ml",
+  "price": 1000,
+  "price_postapoc": 50,
+  "material": [
+    "cotton",
+    "plastic"
+  ],
+  "symbol": "[",
+  "looks_like": "hat_ball",
+  "color": "blue",
+  "warmth": 6,
+  "material_thickness": 0.1,
+  "environmental_protection": 1,
+  "use_action": [ 
+	{ "type": "cast_spell", "spell_id": "spawn_postcard", "no_fail": true, "level": 1, "need_worn": true }
+	],
+  "flags": [
+    "SUN_GLASSES"
+  ],
+  "armor": [
+    {
+      "encumbrance_modifiers": [
+        "NONE"
+      ],
+      "coverage": 100,
+      "covers": [
+        "head"
+      ],
+      "specifically_covers": [
+        "head_crown",
+        "head_forehead"
+      ]
+    }
+  ]
+},
+{
+    "type": "furniture",
+    "id": "f_orrery",
+    "name": "orrery",
+    "looks_like": "f_statue",
+    "description": "This is a beautiful, non-scale model of the solar system.  A complex series of gears allows the relative motions of the planets to be studied at the turn of a crank.  This more modern version also has bluetooth and could have been controlled with an app, if there was any power anymore.",
+    "symbol": "@",
+    "color": "brown",
+    "move_cost_mod": -1,
+    "coverage": 40,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "NOITEM", "EASY_DECONSTRUCT" ],
+	"crafting_pseudo_item": "fake_orrery",
+    "deconstruct": { "items": [ { "item": "orrery_item", "count": 1 } ] },
+    "max_volume": "1750 L",
+    "bash": {
+      "str_min": 20,
+      "str_max": 60,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 10, 100 ] },
+        { "item": "pipe", "count": [ 1, 5 ] },
+        { "item": "wire", "count": [ 3, 10 ] }
+      ]
+    }
+  },
+  {
+    "id": "ring_signet",
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "category": "weapons",
+	"copy-from": "ring_signet",
+    "name": { "str": "signet ring" },
+    "description": "A gold and silver ring with a wide stamp attached to the band.  A long time ago, the stamp was legible, but now the patterns have faded into each other.",
+    "weight": "14 g",
+    "volume": "1 ml",
+    "price": 10000,
+	"price_postapoc": 10000,
+    "material": [ "gold", "silver" ],
+    "symbol": "[",
+    "color": "yellow",
+	"use_action": { "type": "cast_spell", "spell_id": "use_ring_signet", "no_fail": true, "level": 10, "need_worn": true },
+	"relic_data": { "passive_effects": [ 
+	{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_MANA", "multiply": 0.1 } ] }
+    ] 
+	},
+    "armor_data": { "covers": [ "HAND_EITHER" ] },
+    "flags": [ "FANCY", "SKINTIGHT", "ONE_PER_LAYER", "ONLY_ONE", "ALLOWS_NATURAL_ATTACKS", "INEDIBLE", "NO_TAKEOFF", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "type": "AMMO",
+    "id": "crystallized_mana",
+    "category": "spare_parts",
+    "price": 50000,
+    "copy-from": "crystallized_mana",
+    "name": { "str_sp": "crystallized mana" },
+    "symbol": "=",
+    "color": "yellow",
+    "description": "Some crystallized mana.  This can be reloaded into rechargeable mana crystals, but can never be unloaded.",
+    "flags": [ "TRADER_AVOID", "ZERO_WEIGHT" ],
+    "volume": "100 ml",
+    "ammo_type": "crystallized_mana",
+    "material": [ "crystallized_mana" ],
+    "count": 100,
+    "looks_like": "battery"
+  },
+   {
+    "type": "tool_quality",
+    "id": "FOODPLACE_LOYALTY",
+    "name": "shipping and handling"
+  },
+  {
+  "type": "BOOK",
+  "name": {
+    "str": "Foodkid badge"
+  },
+  "description": "A star-shaped plastic badge.  \"Foodkid\" is printed on it in bold letters.  This badge marks its wearer as Foodperson's trusty sidekick, and comes included with every kid's meal at Foodplace. Welcome to the Foodplace Loyalty Program™!",
+  "category": "manuals",
+  "qualities": [ [ "FOODPLACE_LOYALTY", 1 ] ],
+  "id": "badge_foodkid",
+  "armor_data": {
+    "covers": [
+      "torso"
+    ]
+  },
+  "copy-from": "badge_foodkid"
+},
+  {
+    "id": "fp_loyalty_card",
+    "type": "AMMO",
+    "name": "Foodplace Loyalty Card",
+    "ammo_type": "fp_loyalty_card_ammo",
+	"description": "A bright pink loyalty card, all the points are stamped. There's an ad on the back for so called 'Loyalists' to send these in for prizes that would be delivered magically, and it says the instructions can be found in a magazine called 'Glamopolitan'. It sounds more like a call to arms than a rewards program, but who knows. This would definitely prove your fidelity to Foodplace, if that still meant anything…",
+    "copy-from": "fp_loyalty_card"
+  },
+  {
+    "id": "mag_glam",
+    "type": "BOOK",
+	"category": "manuals",
+     "name": {
+    "str": "Glamopolitan",
+    "str_pl": "issues of Glamopolitan"
+    },
+    "description": "A full-size glossy women's magazine.  There are a few unoriginal recipes and some simple cooking tips somewhere in between the fashion photos and the sex advice columns. Every issue has an advertisement for Foodplace's Loyalty Program™, hosted by a cute little cartoonish wizard. They colorfully show you a Foodplace kid with his Badge, putting a handful of Loyalty cards in his mailbox. Out pops a cigarette, which the wizard wags their finger at. As they take the cigarette they say 'After Hours only! Subscribe for more!'",
+    "copy-from": "mag_glam"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "fp_loyalty_card_ammo",
+    "name": "Foodplace Loyalty Card",
+    "default": "fp_loyalty_card"
+  },
+  {
+    "id": "coin_nickel",
+	"copy-from": "coin_nickel",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+    "str": "nickel",
+    "str_pl": "nickels"
+    },
+	"quench": 100,
+	"flags": [
+    "OLD_CURRENCY",
+	"NUTRIENT_OVERRIDE",
+    "COIN_SHAPED"
+  ],
+	"use_action": {
+    "type": "consume_drug",
+    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
+	"effects": [
+      {
+        "id": "panacea",
+        "duration": "5 m"
+     },
+     {
+        "id": "coin_healing", "duration": "5 m"
+     } ],
+    "vitamins": [
+      [
+        "mutagenic_slurry",
+        10
+      ]
+    ]
+    },
+   "healthy": -2,
+   "addiction_potential": 5,
+   "addiction_type": "mutagen"
+  },
+  {
+    "id": "coin_dime",
+	"copy-from": "coin_dime",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+    "str": "dime",
+    "str_pl": "dimes"
+    },
+	"flags": [
+    "OLD_CURRENCY",
+	"NUTRIENT_OVERRIDE",
+    "COIN_SHAPED"
+  ],
+    "quench": 200,
+	"use_action": {
+    "type": "consume_drug",
+    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
+	"effects": [
+      {
+        "id": "panacea",
+        "duration": "10 m"
+     },
+     {
+        "id": "coin_healing", "duration": "10 m" 
+     } ],
+    "vitamins": [
+      [
+        "mutagenic_slurry",
+        20
+      ]
+    ]
+    },
+   "healthy": -4,
+   "addiction_potential": 10,
+   "addiction_type": "mutagen"
+  },
+  {
+    "id": "coin_quarter",
+	"copy-from": "coin_quarter",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+    "str": "quarter",
+    "str_pl": "quarters"
+    },
+	"flags": [
+    "OLD_CURRENCY",
+	"NUTRIENT_OVERRIDE",
+    "COIN_SHAPED"
+  ],
+    "quench": 600,
+	"use_action": {
+    "type": "consume_drug",
+    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
+	"effects": [
+      {
+        "id": "panacea",
+        "duration": "25 m"
+     },
+     {
+        "id": "coin_healing", "duration": "25 m" 
+     } ],
+    "vitamins": [
+      [
+        "mutagenic_slurry",
+        50
+      ]
+    ]
+    },
+   "healthy": -6,
+   "addiction_potential": 12,
+   "addiction_type": "mutagen"
+  },
+  {
+    "id": "coin_half_dollar",
+	"copy-from": "coin_half_dollar",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+    "str": "half-dollar coin",
+    "str_pl": "half-dollar coins"
+    },
+	"flags": [
+    "OLD_CURRENCY",
+	"NUTRIENT_OVERRIDE",
+    "COIN_SHAPED"
+  ],
+	"use_action": {
+    "type": "consume_drug",
+    "activation_message": "You flip the coin and catch a wink from JFK as it disappears.",
+	"effects": [
+     {
+        "id": "coin_healing", "duration": "30 m" 
+     } ],
+    "vitamins": [
+      [
+        "mutagen_chelator",
+        250
+      ]
+    ]
+    }
+  },
+  {
+    "id": "coin_dollar",
+	"copy-from": "coin_dollar",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+    "str": "dollar coin"
+    },
+	"quench": 1000,
+	"flags": [
+    "OLD_CURRENCY",
+	"NUTRIENT_OVERRIDE",
+	"MUTAGEN_CATALYST",
+    "COIN_SHAPED"
+  ],
+	"use_action": {
+    "type": "consume_drug",
+    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
+	"effects": [
+      {
+        "id": "panacea",
+        "duration": "100 m"
+     },
+     {
+        "id": "coin_healing", "duration": "60 m"
+     } ],
+    "vitamins": [
+      [
+        "mutagen",
+        500,
+        750
+      ]
+    ]
+    },
+   "healthy": -10,
+   "addiction_potential": 10,
+   "addiction_type": "mutagen"
+  },
+  {
+    "id": "coin_silver",
+	"copy-from": "coin_silver",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+    "str": "Silver Eagle coin",
+    "str_pl": "Silver Eagle coins"
+    },
+	"flags": [
+    "OLD_CURRENCY",
+	"NUTRIENT_OVERRIDE",
+	"MUTAGEN_PRIMER",
+    "COIN_SHAPED"
+    ],
+    "healthy": -6,
+    "addiction_potential": 8,
+    "addiction_type": "mutagen",
+	"use_action": {
+    "type": "consume_drug",
+    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
+	"effects": [
+      {
+        "id": "cureall"
+     },
+     {
+        "id": "coin_healing", "duration": "60 m" 
+     }  ],
+    "vitamins": [
+      [
+        "mutagen_human",
+        450,
+        550
+      ]
+    ]
+    }
+  },
+  {
+    "id": "coin_gold",
+	"copy-from": "coin_gold",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+    "str": "American Buffalo coin"
+    },
+	"flags": [
+    "OLD_CURRENCY",
+	"NUTRIENT_OVERRIDE",
+	"MUTAGEN_CATALYST",
+    "COIN_SHAPED"
+  ],
+	"quench": 2000,
+	"use_action": {
+    "type": "consume_drug",
+    "activation_message": "You flip the coin and amazingly catch it in your mouth.",
+	"effects": [
+      {
+        "id": "cureall"
+     },
+     {
+        "id": "coin_healing", "duration": "1 d" 
+     },
+     {
+        "id": "panacea", "duration": "1 d" 
+     }   ],
+    "vitamins": [
+      [
+        "mutagen",
+        1000,
+        1500
+      ]
+    ]
+    },
+   "healthy": -25,
+   "addiction_potential": 25,
+   "addiction_type": "mutagen"
+  },
+  {
+  "id": "holy_symbol_wood",
+  "type": "ARMOR",
+  "copy-from": "holy_symbol_wood",
+  "name": {
+    "str": "handmade holy symbol"
+  },
+  "description": "A simple necklace representing a religious faith.",
+  "weight": "25 g",
+  "volume": "25 ml",
+  "price": 500,
+  "price_postapoc": 10,
+  "material": [
+    "wood",
+    "cotton"
+  ],
+  "symbol": ",",
+  "relic_data": { "passive_effects": [ 
+	{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_STAMINA", "multiply": 0.1 } ] }
+    ] 
+ },
+  "color": "brown",
+  "use_action": [
+    "MEDITATE"
+  ],
+  "flags": [
+    "NO_WEAR_EFFECT", 
+	"ONLY_ONE"
+  ]
+},
+  {
+  "id": "onyx_silver_ring",
+  "type": "COMESTIBLE",
+  "comestible_type": "FOOD",
+  "category": "weapons",
+  "name": {
+    "str": "onyx and silver ring"
+  },
+  "description": "A silver ring with an onyx mounted on top of it. There's a sinister sense to it.",
+  "weight": "13 mg",
+  "volume": "1 ml",
+  "price": 10000,
+  "price_postapoc": 25,
+  "material": [
+    {
+      "type": "silver",
+      "portion": 9
+    },
+    {
+      "type": "gemstone"
+    }
+  ],
+  "looks_like": "silver_ring",
+  "symbol": "[",
+  "color": "dark_gray",
+  "flags": [
+    "FANCY",
+	"SKINTIGHT", 
+	"ONE_PER_LAYER", 
+	"ALLOWS_NATURAL_ATTACKS", 
+	"INEDIBLE", 
+	"NO_TAKEOFF", 
+	"ONLY_ONE",
+	"NUTRIENT_OVERRIDE",
+    "NO_WEAR_EFFECT",
+    "ALLOWS_TALONS"
+  ],
+ "armor_data": { "covers": [ "HAND_EITHER" ] },
+  "use_action": { "type": "cast_spell", "spell_id": "altar_place_ring", "no_fail": true, "level": 1, "need_worn": true },
+  "relic_data": { "passive_effects": [ 
+	{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MAX_HP", "multiply": 0.1 } ] }
+    ] 
+	},
+  "copy-from": "garnet_silver_ring",
+  "variant_type": "generic",
+  "variants": [
+    {
+      "id": "generic_onyx_silver_ring",
+      "name": {
+        "str": "onyx and silver ring"
+      },
+      "description": "A silver ring with an onyx mounted on top of it. There's a sinister sense to it.",
+      "weight": 50
+    },
+    {
+      "id": "dark_ring",
+      "name": {
+        "str": "dark ring"
+      },
+      "description": "A dark silver ring with skull decorations and a pitch-black onyx mounted on top of it.",
+      "weight": 50
+    }
+  ]
+},
+ {
+    "id": "cauldron_orichalcum",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "orichalcum cauldron" },
+    "description": "This is an alchemical cauldron made of orichalcum.  The metal is especially resistant to the unique types of corrosion caused by alchemy.",
+	"copy-from": "cauldron_orichalcum",
+    "use_action": 
+	[ 
+	"HEAT_FOOD", 
+	{
+    "type": "deploy_furn",
+    "furn_type": "f_cauldron_orichalcum" 
+	}
+	]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "orcs",
+	"copy-from": "orcs",
+	"friendly": [ "dragon_black" ]
+  },
+  {
+    "id": "mon_dragon_black_wyrmling",
+    "type": "MONSTER",
+	"copy-from": "mon_dragon_black_wyrmling", 
+	"looks_like": "mon_shadow_snake",
+    "name": "black dragon wyrmling",
+    "description": "This is a small black dragon, less than five years old.  Its scales are glossy, and its horns barely peek out of its head.  Even from one so young, you see the glint of sadism in its eyes."
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "dragon_black",
+	"copy-from": "dragon_black",
+    "friendly": [ "ooze", "lizardfolk", "orcs" ]
+  },
+  {
+    "id": "leather_journal",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "leather journal" },
+    "copy-from": "leather_journal",
+    "looks_like": "book_nonf_soft_psych_cggamers",
+    "description": "A leather-back journal for preserving notes and maps, has a strap to keep loose pages contained.",
+    "volume": "300 ml",
+    "weight": "150 g",
+    "flags": [ "TRADER_AVOID" ],
+    "material": [ "leather" ],
+    "symbol": "*",
+    "color": "brown",
+    "pocket_data": [
+      {
+        "//": "Binding",
+        "pocket_type": "CONTAINER",
+        "rigid": false,
+        "max_contains_weight": "2 kg",
+        "max_contains_volume": "2500 ml",
+        "max_item_length": "300 mm",
+        "moves": 150,
+        "item_restriction": [
+          "paper",
+          "militarymap",
+          "survivormap",
+          "roadmap",
+          "subwaymap",
+          "trailmap",
+          "touristmap",
+          "restaurantmap",
+          "flyer",
+          "survnote",
+          "character_sheet",
+          "newest_newspaper",
+          "many_years_old_newspaper",
+          "years_old_newspaper",
+          "one_year_old_newspaper",
+          "months_old_newspaper",
+          "weeks_old_newspaper",
+          "death_note",
+          "note_mutant_alpha_boss",
+          "evac_pamphlet",
+          "drawing_wolf",
+          "drawing_balrog",
+          "drawing_troll",
+          "drawing_gelatin",
+          "drawing_dragon",
+          "drawing_artist",
+          "drawing_scrying",
+          "drawing_destruction_acid",
+          "drawing_destruction_elec",
+          "drawing_destruction_cold",
+          "drawing_destruction_heat",
+          "drawing_destruction",
+          "drawing_translocate",
+          "drawing_step",
+          "drawing_dislocate",
+          "drawing_push",
+          "drawing_pull",
+          "drawing_stop",
+          "mirrored_page",
+          "crazed_note",
+          "magical_times_old",
+          "magical_times_recent",
+		  "pocket_dimension",
+		  "survivors_memory_1", 
+		  "survivors_memory_2", 
+		  "survivors_memory_3", 
+		  "survivors_memory_4", 
+		  "survivors_memory_5", 
+		  "survivors_memory_6", 
+		  "survivors_memory_7", 
+		  "desperate_letter",
+		  "operator_invitation",
+		  "forge_flyer"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magi_staff_minor",
+    "type": "GENERIC",
+    "looks_like": "stick_long",
+    "name": { "str": "minor staff of the magi", "str_pl": "minor staves of the magi" },
+    "copy-from": "magi_staff_minor"
+  },
+  {
+    "id": "magi_staff_lesser",
+    "type": "GENERIC",
+    "looks_like": "stick_long",
+    "name": { "str": "lesser staff of the magi", "str_pl": "lesser staves of the magi" },
+    "copy-from": "magi_staff_lesser"
+  },
+  {
+    "id": "magi_staff_greater",
+    "type": "GENERIC",
+    "looks_like": "stick_long",
+    "name": { "str": "greater staff of the magi", "str_pl": "greater staves of the magi" },
+    "copy-from": "magi_staff_greater"
+  },
+  {
+    "id": "smoking_mana",
+    "type": "SPELL",
+    "name": "Puff",
+    "description": "",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "energy_source": "MANA",
+    "effect": "recover_energy",
+    "effect_str": "MANA",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 5,
+    "max_damage": 5,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 0
+  },
+  {
+    "type": "enchantment",
+    "id": "cigarette_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "15 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+  },
+  {
+    "id": "cig_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cigarette" },
+    "copy-from": "cig_lit",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "id": "cigarette_enchantment" } ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "cigar_enchantment",
+    "condition": "ALWAYS",
+	"values": [
+      { "value": "SOCIAL_INTIMIDATE", "add": 1 }
+    ],
+    "intermittent_activation": { "effects": [ { "frequency": "10 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+  },
+  {
+    "id": "cigar_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cigar" },
+    "copy-from": "cigar_lit",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "id": "cigar_enchantment" } ] }
+  },
+  {
+    "type": "enchantment",
+    "id": "blunt_enchantment",
+    "condition": "ALWAYS",
+    "intermittent_activation": { "effects": [ { "frequency": "3 s", "spell_effects": [ { "id": "smoking_mana", "hit_self": true } ] } ] }
+  },
+  {
+    "id": "joint_lit",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "blunt" },
+    "description": "A twist of the herb wrapped in tobaccy, perfect for a relaxing evening.",
+    "copy-from": "joint_lit",
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "id": "blunt_enchantment" } ] }
+  },
+  {
+    "type": "ammunition_type",
+    "id": "butt",
+    "name": "Butts",
+    "default": "cig_butt"
+  },
+  {
+    "type": "AMMO",
+    "id": "cig_butt",
+    "name": { "str": "cigarette butt" },
+    "copy-from": "cig_butt",
+    "count": 1,
+    "armor_data": {
+      "warmth": 3,
+      "armor": [
+        {
+          "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
+          "encumbrance": 50,
+          "coverage": 25,
+          "covers": [ "mouth" ]
+        }
+      ]
+    },
+    "flags": [ "CANT_WEAR" ],
+    "ammo_type": "butt"
+  },
+  {
+    "type": "AMMO",
+    "id": "cigar_butt",
+    "name": { "str": "cigar butt" },
+    "copy-from": "cigar_butt",
+    "flags": [ "CANT_WEAR" ],
+    "armor_data": {
+      "warmth": 3,
+      "armor": [
+        {
+          "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
+          "encumbrance": 50,
+          "coverage": 25,
+          "covers": [ "mouth" ]
+        }
+      ]
+    },
+    "count": 1,
+    "ammo_type": "butt"
+  },
+  {
+    "type": "AMMO",
+    "id": "joint_roach",
+    "name": { "str": "blunt roach" },
+    "copy-from": "joint_roach",
+    "description": "A twist of the herb wrapped in tobaccy, perfect for a relaxing evening.",
+    "count": 1,
+    "armor_data": {
+      "warmth": 3,
+      "armor": [
+        {
+          "material": [ { "type": "paper", "covered_by_mat": 100, "thickness": 0.1 } ],
+          "encumbrance": 30,
+          "coverage": 25,
+          "covers": [ "mouth" ]
+        }
+      ]
+    },
+    "flags": [ "CANT_WEAR" ],
+    "ammo_type": "butt"
+  },
+  {
+    "id": "coffee",
+    "type": "COMESTIBLE",
+    "name": { "str": "coffee" },
+    "copy-from": "coffee",
+    "use_action": { "type": "cast_spell", "spell_id": "coffee_spell", "no_fail": true, "level": 1 }
+  },
+  {
+    "id": "coffee_spell",
+    "type": "SPELL",
+    "name": "coffee manamization",
+    "description": "Recovers mana",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "energy_source": "MANA",
+    "effect": "spawn_item",
+    "effect_str": "coffee_aura",
+    "shape": "blast",
+    "base_casting_time": 0,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 240000,
+    "max_duration": 240000,
+    "max_level": 1,
+    "base_energy_cost": 0,
+    "difficulty": 4
+  },
+  {
+    "id": "joint",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "blunt" },
+    "description": "A twist of the herb wrapped in tobaccy, perfect for a relaxing evening.",
+    "copy-from": "joint"
+  },
+  {
+    "id": "crack",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str_sp": "crack" },
+    "copy-from": "crack",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You smoke your crack rocks.  Mother would be proud.",
+      "effects": [ { "id": "high", "duration": 15 }, { "id": "crack_magic", "duration": 15 } ],
+      "stat_adjustments": { "hunger": -10 },
+      "fields_produced": { "fd_cracksmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 }
+    }
+  },
+  {
+    "id": "lsd",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "pink tab" },
+    "copy-from": "lsd",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You eat the pink tablet.",
+      "effects": [ { "id": "hallu", "duration": 3600 }, { "id": "lsd_magic", "duration": 3600 } ]
+    }
+  },
+  {
+    "id": "melatonin_tablet",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "melatonin tablet" },
+    "copy-from": "melatonin_tablet",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You pop a melatonin tablet.",
+      "effects": [ { "id": "melatonin", "duration": "16 h" }, { "id": "smoke_magic", "duration": 3600 } ]
+    }
+  },
+  {
+    "id": "prussian_blue",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "Prussian blue tablet" },
+    "copy-from": "prussian_blue",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take some Prussian blue.",
+      "effects": [ { "id": "pblue", "duration": 3600 }, { "id": "smoke_magic", "duration": 1000 } ]
+    }
+  },
+  {
+    "id": "morphine",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "morphine" },
+    "copy-from": "morphine",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You shoot up.",
+      "tools_needed": { "syringe": -1 },
+      "effects": [
+        { "id": "pkill3", "duration": 120 },
+        { "id": "pkill2", "duration": 1200 },
+        { "id": "morphine_magic", "duration": 1200 }
+      ]
+    }
+  },
+  {
+    "id": "hi_q_wax",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cannabis wax" },
+    "copy-from": "hi_q_wax",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take a dab of some wax.  *cough cough* good stuff!",
+      "effects": [
+        { "id": "weed_high", "duration": "150 m" },
+        { "id": "pkill1", "duration": "100 m" },
+        { "id": "pkill2", "duration": "5 m" },
+        { "id": "high", "duration": "60 m" },
+        { "id": "smoke_magic2", "duration": "60 m" },
+        { "id": "smoke", "duration": "2 m" }
+      ],
+      "stat_adjustments": { "hunger": 5, "thirst": 7 },
+      "fields_produced": { "fd_weedsmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 },
+      "moves": 6000
+    }
+  },
+  {
+    "id": "hi_q_distillate",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "cannabis distillate" },
+    "copy-from": "hi_q_distillate",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You take a dab of some distillate.  Sooooo smooth…",
+      "effects": [
+        { "id": "weed_high", "duration": "180 m" },
+        { "id": "pkill1", "duration": "120 m" },
+        { "id": "pkill2", "duration": "5 m" },
+        { "id": "high", "duration": "60 m" },
+        { "id": "smoke_magic2", "duration": "60 m" },
+        { "id": "smoke", "duration": "1 m" }
+      ],
+      "stat_adjustments": { "hunger": 4, "thirst": 6 },
+      "fields_produced": { "fd_weedsmoke": 2 },
+      "charges_needed": { "advanced_ecig": 1 },
+      "moves": 1500
+    }
+  },
+  {
+    "id": "adderall",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "adderall" },
+    "copy-from": "adderall",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You pop an adderall.",
+      "effects": [ { "id": "pblue", "duration": 3600 } ]
+    }
+  },
+  {
+    "id": "weed",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str_sp": "marijuana" },
+    "copy-from": "weed",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You smoke some weed.  Good stuff, man!",
+      "effects": [ { "id": "weed_high", "duration": 90 }, { "id": "pkill1", "duration": 360 }, { "id": "smoke_magic", "duration": 100 } ],
+      "stat_adjustments": { "hunger": 4, "thirst": 6 },
+      "fields_produced": { "fd_weedsmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 },
+      "moves": 40
+    }
+  },
+  {
+    "id": "tobacco",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "rolling tobacco" },
+    "copy-from": "tobacco",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You smoke some tobacco.",
+      "effects": [ { "id": "cig", "duration": 200 }, { "id": "smoke_magic", "duration": 100 } ],
+      "stat_adjustments": { "hunger": -2, "thirst": 1 },
+      "fields_produced": { "fd_cigsmoke": 2 },
+      "charges_needed": { "fire": 1 },
+      "tools_needed": { "apparatus": -1 },
+      "moves": 250
+    }
+  },
+  {
+    "id": "spirit_walk",
+    "type": "SPELL",
+    "name": "Spirit Walk",
+    "copy-from": "spirit_walk",
+    "valid_targets": [ "ally", "hostile" ],
+    "description": "Momentarily plunge into the underworld, and swap positions with any spirit you command.",
+    "targeted_monster_ids": [
+      "mon_wisp",
+      "mon_shadow",
+      "mon_magi_shadow",
+      "mon_darkman",
+      "mon_shadow_snake",
+      "mon_magic_circle_crystal",
+      "mon_mage_ghost",
+      "mon_widow_ghost",
+      "mon_child_ghost",
+      "mon_fusion_ghost",
+      "mon_business_ghost",
+	  "mon_mech_recon_robot"
+    ]
+  },
+  {
+    "id": "holographic_transposition",
+    "type": "SPELL",
+    "name": "Holographic Transposition",
+    "description": "Allows you to swap places with a previously existing holographic image of yourself.  If the universe itself can't tell you apart, who could?",
+    "valid_targets": [ "hostile", "ally" ],
+    "copy-from": "holographic_transposition",
+    "targeted_monster_ids": [
+      "mon_mirror_image",
+      "mon_hologram",
+      "mon_magic_circle_crystal",
+      "mon_mage_ghost",
+      "mon_child_ghost",
+      "mon_widow_ghost",
+      "mon_business_ghost",
+	  "mon_mech_recon_robot",
+      "mon_fusion_ghost"
+    ],
+    "flags": [ "NO_LEGS", "LOUD", "SOMATIC", "SWAP_POS", "NO_PROJECTILE" ],
+    "effect": "attack",
+    "shape": "blast",
+    "spell_class": "TECHNOMANCER",
+    "energy_source": "MANA",
+    "difficulty": 3,
+    "max_level": 20,
+    "base_casting_time": 100,
+    "casting_time_increment": -1.0,
+    "final_casting_time": 80,
+    "base_energy_cost": 150,
+    "energy_increment": -2.0,
+    "final_energy_cost": 100,
+    "min_range": 20,
+    "max_range": 30,
+    "range_increment": 1.0
+  },
+  {
+    "id": "banishment_greater",
+    "type": "SPELL",
+    "name": "Greater Banishment",
+    "description": "A more advanced version of Banishment, which is a ritual spell that attempts to banish a monster.  Being closely related to blood magic, the Blood Mage is much more specialized to use a spell like this.",
+    "valid_targets": [ "hostile" ],
+    "copy-from": "banishment_greater",
+    "flags": [ "SOMATIC", "VERBAL", "NO_PROJECTILE" ],
+    "effect": "banishment",
+    "shape": "blast",
+    "min_damage": 120,
+    "damage_increment": 15,
+    "max_damage": 640,
+    "min_range": 6,
+    "max_range": 6,
+    "min_aoe": 0,
+    "max_aoe": 2,
+    "aoe_increment": 0.04,
+    "base_energy_cost": 400,
+    "spell_class": "BLOOD_MAGE",
+    "difficulty": 6,
+    "max_level": 35,
+    "base_casting_time": 100,
+    "energy_source": "MANA"
+  },
+  {
+    "id": "bless",
+    "type": "SPELL",
+    "name": { "str": "Bless" },
+    "description": "A spell of blessing that gives you energy and boosts your abilities.",
+    "copy-from": "bless",
+    "effect": "effect_on_condition",
+	"effect_str": "eoc_bless"
+  },
+  {
+    "id": "ink_standard",
+    "type": "requirement",
+    "//": "should contain all the ink pens",
+    "tools": [ [ [ "pen", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "green_pen", 1 ], [ "red_pen", 1 ], [ "unending_pen", 1 ], [ "unending_pen_green", 1 ], [ "unending_pen_red", 1 ], [ "unending_pen_blue", 1 ] ] ]
+  },
+  {
+    "type": "scenario",
+    "id": "magic_basement",
+    "copy-from": "magic_basement",
+    "extend": { "professions": [ 
+	"ranchersoon", 
+	"psychic", 
+	"magictailor", 
+	"cheatingfencer", 
+	"magicgunslinger", 
+	"paralegal", 
+	"magicmechanic", 
+	"magic_bow_hunter", 
+	"magicmedic", 
+	"buddingtechie", 
+	"forceful_mage", 
+	"ailing_artist", 
+	"magicmartialartist",
+    "fishierman", 
+	"courier", 
+	"budding_soulmancer", 
+	"budding_magician", 
+	"foodplace_fanatic", 
+	"gaming_prodigy", 
+	"corporate_bodyguard", 
+	"bio_dog", 
+	"frost_wizard", 
+    "gateinstallationtech", 
+	"paranoidpriest", 
+	"proburglar", 
+	"famous_boxer", 
+	"drunkard",	
+	"blamelessdude", 
+	"professional_postman",
+	"paranormalinvestigator",
+	"gambler",
+	"dungeon_master",
+	"party_fighter",
+	"party_druid", 
+	"party_wizard", 
+	"party_cleric", 
+	"party_rogue",
+	"magic_photojournalist"
+	] }
+ },
+ {
+    "type": "scenario",
+    "id": "lake_retreat",
+    "copy-from": "lake_retreat",
+    "extend": { "professions": [ 
+	"ranchersoon", 
+	"psychic", 
+	"magictailor", 
+	"cheatingfencer", 
+	"magicgunslinger", 
+	"paralegal", 
+	"magicmechanic", 
+	"magic_bow_hunter", 
+	"magicmedic", 
+	"buddingtechie", 
+	"forceful_mage", 
+	"ailing_artist", 
+	"magicmartialartist",
+    "fishierman", 
+	"courier", 
+	"budding_soulmancer", 
+	"budding_magician", 
+	"foodplace_fanatic", 
+	"gaming_prodigy", 
+	"corporate_bodyguard", 
+	"bio_dog", 
+	"frost_wizard", 
+    "gateinstallationtech", 
+	"paranoidpriest", 
+	"proburglar", 
+	"famous_boxer", 
+	"drunkard",	
+	"blamelessdude", 
+	"professional_postman",
+	"paranormalinvestigator",
+	"gambler",
+	"dungeon_master",
+	"party_fighter",
+	"party_druid", 
+	"party_wizard", 
+	"party_cleric", 
+	"party_rogue",
+	"magic_photojournalist"
+	] }
+ }
+]

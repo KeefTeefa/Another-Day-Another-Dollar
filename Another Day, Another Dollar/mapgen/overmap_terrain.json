@@ -1,7 +1,137 @@
 [
 {
+    "type": "overmap_terrain",
+    "id": [ "zengarden_ADAD" ],
+    "copy-from": "generic_city_building",
+    "name": "zen garden",
+    "looks_like": "publicgarden",
+    "sym": "z",
+    "color": "white"
+  },
+{
+    "type": "city_building",
+    "id": "mortuary_animistbiomancer_north",
+    "locations": [ "land" ],
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "mortuary_animistbiomancer_north" }, { "point": [ 0, 0, 1 ], "overmap": "mortuary_roof_north" } ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "mortuary_animistbiomancer",
+    "name": "mortuary",
+    "copy-from": "generic_city_building",
+    "sym": "M",
+    "color": "i_blue",
+    "mondensity": 6
+  },
+{
+    "type": "city_building",
+    "id": "gambling_hall_technomancerkelvinist",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "gambling_hall_technomancerkelvinist_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "gambling_hall_roof_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "gambling_hall_upper_roof_north" }
+    ]
+  },
+{
+    "type": "overmap_terrain",
+    "id": [ "gambling_hall_technomancerkelvinist" ],
+    "copy-from": "generic_city_building",
+    "name": "gambling hall",
+    "sym": "g",
+    "color": "blue"
+  },
+{
     "type": "overmap_special",
-    "id": "Half-Sunken Cabin",
+    "id": "Mansion_Boarded_MAGUS-STORMSHAPER",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "mansion_boarded_c3_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "mansion_c3_roof_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "mansion_boarded_e1_north" },
+      { "point": [ 1, 0, 2 ], "overmap": "mansion_e1_roof_north" },
+      { "point": [ 2, 0, 0 ], "overmap": "mansion_boarded_c1_east" },
+      { "point": [ 2, 0, 2 ], "overmap": "mansion_c1_roof_east" },
+      { "point": [ 0, 1, 0 ], "overmap": "mansion_boarded_t4_east" },
+      { "point": [ 0, 1, 2 ], "overmap": "mansion_t4_roof_east" },
+      { "point": [ 1, 1, 0 ], "overmap": "mansion_+4_north" },
+      { "point": [ 1, 1, 2 ], "overmap": "mansion_+4_roof_north" },
+      { "point": [ 2, 1, 0 ], "overmap": "mansion_boarded_t2_west" },
+      { "point": [ 2, 1, 2 ], "overmap": "mansion_t2_roof_west" },
+      { "point": [ 0, 2, 0 ], "overmap": "mansion_boarded_c2_west" },
+      { "point": [ 0, 2, 2 ], "overmap": "mansion_c2_roof_west" },
+      { "point": [ 1, 2, 0 ], "overmap": "mansion_boarded_t2_start_north" },
+      { "point": [ 1, 2, 2 ], "overmap": "mansion_t2_roof_north" },
+      { "point": [ 2, 2, 0 ], "overmap": "mansion_boarded_c4_south" },
+      { "point": [ 2, 2, 2 ], "overmap": "mansion_c4_roof_south" },
+      { "point": [ 0, 0, 1 ], "overmap": "mansion_boarded_c3u_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "mansion_boarded_magusstormshaper_e1u_north" },
+      { "point": [ 2, 0, 1 ], "overmap": "mansion_boarded_c1u_east" },
+      { "point": [ 0, 1, 1 ], "overmap": "mansion_boarded_t4u_east" },
+      { "point": [ 1, 1, 1 ], "overmap": "mansion_+4u_north" },
+      { "point": [ 2, 1, 1 ], "overmap": "mansion_boarded_t2u_west" },
+      { "point": [ 0, 2, 1 ], "overmap": "mansion_boarded_c2u_west" },
+      { "point": [ 1, 2, 1 ], "overmap": "mansion_boarded_t2u_north" },
+      { "point": [ 2, 2, 1 ], "overmap": "mansion_boarded_c4u_south" },
+      { "point": [ 0, 0, -1 ], "overmap": "mansion_c3d_north" },
+      { "point": [ 1, 0, -1 ], "overmap": "mansion_e1d_north" },
+      { "point": [ 2, 0, -1 ], "overmap": "mansion_c1d_east" },
+      { "point": [ 0, 1, -1 ], "overmap": "mansion_t4d_east" },
+      { "point": [ 1, 1, -1 ], "overmap": "mansion_+4d_north" },
+      { "point": [ 2, 1, -1 ], "overmap": "mansion_boarded_t2d_west" },
+      { "point": [ 0, 2, -1 ], "overmap": "mansion_c2d_west" },
+      { "point": [ 1, 2, -1 ], "overmap": "mansion_boarded_t2d_start_north" },
+      { "point": [ 2, 2, -1 ], "overmap": "mansion_c4d_south" }
+    ],
+    "connections": [ { "point": [ 1, -1, 0 ], "terrain": "road", "connection": "local_road", "from": [ 1, 0, 0 ] } ],
+    "locations": [ "land" ],
+    "city_distance": [ 20, 80 ],
+    "occurrences": [ 50, 100 ],
+    "flags": [ "UNIQUE", "CLASSIC", "MAN_MADE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "mansion_boarded_magusstormshaper_e1u" ],
+    "copy-from": "generic_mansion"
+  },
+{
+    "type": "overmap_special",
+    "id": "Rest_Area_DRUID-EARTHSHAPER",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "s_restparking_druidearthshaper_1_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "s_restparking_druidearthshaper_2_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "s_reststop_druidearthshaper_1_north" },
+      { "point": [ 0, 1, 1 ], "overmap": "s_reststop_1_roof_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "s_reststop_druidearthshaper_2_north" },
+      { "point": [ 1, 1, 1 ], "overmap": "s_reststop_2_roof_north" }
+    ],
+    "connections": [
+      { "point": [ 0, -1, 0 ], "terrain": "road", "from": [ 0, 0, 0 ], "existing": true },
+      { "point": [ 1, -1, 0 ], "terrain": "road", "from": [ 1, 0, 0 ], "existing": true }
+    ],
+    "locations": [ "wilderness" ],
+    "city_distance": [ 15, 150 ],
+    "occurrences": [ 0, 2 ],
+    "flags": [ "CLASSIC", "MAN_MADE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "s_restparking_druidearthshaper_1", "s_restparking_druidearthshaper_2" ],
+    "copy-from": "generic_city_building_no_sidewalk",
+    "name": "rest area parking",
+    "sym": "+",
+    "color": "light_gray"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "s_reststop_druidearthshaper_1", "s_reststop_druidearthshaper_2" ],
+    "copy-from": "generic_city_building_no_sidewalk",
+    "name": "rest area",
+    "sym": "#",
+    "color": "blue"
+  },
+{
+    "type": "overmap_special",
+    "id": "half_sunken_hut",
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "witch_cabin_lake_north" },
       { "point": [ 0, 0, 1 ], "overmap": "cabin_lake_roof_north" }
@@ -16,8 +146,8 @@
     "id": [ "witch_cabin_lake" ],
     "name": "half-sunken hut",
     "sym": "C",
-    "color": "i_green",
-    "see_cost": 5,
+    "color": "light_gray",
+    "see_cost": 10,
     "flags": [ "RISK_HIGH" ]
   },
 {
@@ -546,7 +676,7 @@
       "police_dept_ADAD_d101",
       "police_dept_ADAD_d111"
     ],
-    "name": "operations department",
+    "name": "postal headquarters",
     "copy-from": "generic_city_building",
 	"looks_like": "police_dept_u000",
     "color": "h_yellow",
@@ -564,7 +694,7 @@
       "police_dept_ADAD_d102",
       "police_dept_ADAD_d112"
     ],
-    "name": "operations department roof",
+    "name": "postal headquarters roof",
 	"looks_like": "police_dept_u000",
     "copy-from": "generic_city_building",
     "color": "h_yellow"
@@ -580,7 +710,7 @@
   {
     "type": "overmap_terrain",
     "id": [ "police_dept_ADAD_b00", "police_dept_ADAD_b10", "police_dept_ADAD_b01", "police_dept_ADAD_b11" ],
-    "name": "operations department garage",
+    "name": "postal headquarters garage",
     "copy-from": "generic_city_building",
     "color": "h_yellow"
   },

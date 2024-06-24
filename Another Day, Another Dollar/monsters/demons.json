@@ -453,6 +453,7 @@
     "harvest": "exempt",
 	"death_function": { "corpse_type": "NO_CORPSE", "message": "The amalgamation of sparks dissolves into nothing." },
     "special_attacks": [
+	[ "PULL_METAL_WEAPON", 10 ],
       {
         "type": "spell",
         "spell_data": { "id": "jolt", "min_level": 5 },
@@ -510,6 +511,7 @@
     "harvest": "exempt",
 	"death_function": { "corpse_type": "NO_CORPSE", "message": "The amalgamation of sparks dissolves into nothing." },
     "special_attacks": [
+	[ "PULL_METAL_WEAPON", 20 ],
       {
         "type": "spell",
         "spell_data": { "id": "jolt", "min_level": 5 },
@@ -1107,7 +1109,7 @@
     "dodge": 3,
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
 	"starting_ammo": {
-    "38_fmj": 6
+    "38_fmj": 12
   },
 	"special_attacks": [
 	[ "EAT_CARRION", 0 ],
@@ -1122,7 +1124,7 @@
         "fake_per": 5,
         "require_targeting_player": false,
         "description": "",
-        "ranges": [ [ 2, 15, "DEFAULT" ] ]
+        "ranges": [ [ 1, 15, "DEFAULT" ] ]
       }
     ],
     "flags": [
@@ -1185,7 +1187,7 @@
         "fake_dex": 5,
         "fake_per": 5,
         "require_targeting_player": false,
-        "description": "The moment it think that it's safe, the goballoon swallows sulfur and fires it's corrosive residue from it's nose.",
+        "description": "The moment it think that it's safe, the goballoon swallows sulfur and fires corrosive residue from it's nose.",
         "ranges": [ [ 2, 15, "DEFAULT" ] ]
       }
     ],
@@ -1239,6 +1241,7 @@
     "fear_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "special_attacks": [
       [ "ABSORB_ITEMS", 0 ],
+	  [ "PULL_METAL_WEAPON", 10 ],
       {
         "type": "gun",
         "cooldown": 15,
@@ -1305,7 +1308,7 @@
 	"looks_like": "mon_zombie_scissorlimbs", 
     "volume": "20250 ml",
     "weight": "20250 g",
-    "hp": 400,
+    "hp": 1000,
     "speed": 100,
     "material": [ "iflesh" ],
     "symbol": "O",
@@ -1329,6 +1332,7 @@
     "anger_triggers": [ "PLAYER_WEAK", "PLAYER_CLOSE", "HURT" ],
     "special_attacks": [
 	  [ "ACID_BARF", 5 ],
+	  [ "PULL_METAL_WEAPON", 15 ],
       [ "ABSORB_ITEMS", 0 ],
       {
         "type": "gun",
@@ -1340,7 +1344,7 @@
         "fake_per": 8,
         "require_targeting_player": false,
         "description": "The goblimp attempts to flap it's decrepit wings and fails, sneezing acid everywhere in the process.",
-        "ranges": [ [ 1, 15, "DEFAULT" ] ]
+        "ranges": [ [ 1, 25, "DEFAULT" ] ]
       }
     ],
     "flags": [
@@ -1369,17 +1373,120 @@
     "qty": 1
   },
   {
+    "id": "mon_silver_queen",
+    "type": "MONSTER",
+    "name": { "str": "The Silver Queen" },
+    "description": "A wretched amalgam of spikes and flesh, there is only a silver crown to tell you what this once-woman is. The betrothed of Hell itself, penultimate ruler of all it's wicked colors.",
+    "bodytype": "human",
+    "default_faction": "nether",
+	"looks_like": "mon_spider_web_mega",
+    "species": [ "HORROR" ],
+    "volume": "48000 ml",
+    "weight": "800 kg",
+    "hp": 5000,
+    "speed": 250,
+    "material": [ "steel" ],
+    "symbol": "O",
+    "color": "dark_gray",
+    "aggression": 100,
+    "morale": 100,
+    "armor": { "electric": 25, "acid": 25, "heat": 100, "cold": 100, "pure": 10, "stab": 25, "cut": 99, "bullet": 25, "bash": 25 },
+    "melee_skill": 7,
+    "melee_dice": 2,
+    "vision_day": 50,
+    "vision_night": 50,
+    "melee_dice_sides": 10,
+    "melee_damage": [ { "damage_type": "cold", "amount": 5 } ],
+    "dodge": 7,
+	"regenerates": 10, 
+    "harvest": "exempt",
+    "biosignature": { "biosig_item": "silver_small", "biosig_timer": 25 },
+    "death_drops": "silverqueendrops",
+    "emit_fields": [ { "emit_id": "emit_hot_air2_stream", "delay": "1 s" }, { "emit_id": "emit_rad_leak", "delay": "25 s" } ],
+    "death_function": {
+      "corpse_type": "NO_CORPSE",
+      "message": "The Moon seems to brighten in the sky as the Silver Queen turns to moonlight, her material form crumbling to nothing. Still, a grin is somehow visible on her twisted face."
+    },
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "FIRE", "HURT" ],
+    "special_attacks": [
+	[ "FEAR_PARALYZE", 10 ],
+	[ "PULL_METAL_WEAPON", 10 ],
+	  {
+        "type": "spell",
+        "spell_data": { "id": "summon_mages", "min_level": 1, "hit_self": true },
+        "cooldown": 10,
+        "monster_message": "The Silver Queen's children are ever part of her..."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "red_roll", "min_level": 1 },
+        "cooldown": 25,
+        "monster_message": "The silver crown glows red hot."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "hemorhurt", "min_level": 1 },
+        "cooldown": 5,
+        "monster_message": "You feel an attempt at seduction from this mass of writhing flesh."
+      },
+      { "id": "smash", "throw_strength": 54 },
+      { "id": "stretch_attack" },
+      { "id": "longswipe" },
+      { "id": "cut_throat" },
+	  { "type": "leap", "cooldown": 1, "max_range": 13 },
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "SWIMS",
+      "FLIES",
+      "NOHEAD",
+      "COLDPROOF",
+      "NOGIB",
+      "FIREY",
+      "FIREPROOF",
+      "LOUDMOVES",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "GRABS",
+      "DESTROYS",
+      "BASHES",
+      "PUSH_MON",
+      "PUSH_VEH",
+      "STUN_IMMUNE",
+      "PRIORITIZE_TARGETS",
+      "ARTHROPOD_BLOOD"
+    ]
+  },
+  {
+    "id": "summon_yidris_2",
+    "type": "SPELL",
+    "name": { "str": "Summon Yidris Phase 2" },
+    "description": "Spawns phase 2 yidris.",
+    "valid_targets": [ "ground", "self" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "flags": [ "HOSTILE_SUMMON", "PERMANENT", "SPAWN_WITH_DEATH_DROPS" ],
+    "shape": "blast",
+    "effect": "summon",
+    "effect_str": "mon_yidris_2",
+    "min_aoe": 2,
+    "max_aoe": 2
+  },
+  {
     "id": "mon_yidris",
     "type": "MONSTER",
 	"name": "Yidris, Maelstrom Wielder",
-    "description": "A grey skinned ogre with ringed horns and a mouth filled with flame wields a tall axe that he holds with such obvious expertise and confidence that you almost mistake him for a brute. Were it not for the cold intelligence in his eye...",
+    "description": "A grey skinned ogre with ringed horns and a mouth filled with flame wields a tall axe that he holds with such obvious expertise and confidence that you almost mistake him for a brute. Were it not for the cold intelligence in his eye and the ward against all magic he is so obviously incanting.",
     "bodytype": "human",
     "default_faction": "nether",
 	"looks_like": "mon_zombie_nemesis",
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
-    "hp": 2000,
+    "hp": 1000,
     "speed": 200,
     "material": [ "stone" ],
     "symbol": "Y",
@@ -1391,23 +1498,78 @@
     "melee_skill": 10,
     "melee_dice": 4,
     "melee_dice_sides": 6,
-    "armor": { "electric": 99, "cold": 99, "heat": 20, "cut": 50, "bullet": 40 },
+    "armor": { "pure": 99, "heat": 50, "cold": 50, "acid": 50, "electric": 99, "biological": 40 },
     "bleed_rate": 20,
     "melee_damage": [ { "damage_type": "cold", "amount": 3 } ],
     "emit_fields": [ { "emit_id": "emit_shock_cloud", "delay": "1 s" } ],
     "dodge": 7,
-	"regenerates": 5, 
-    "death_drops": "yidrisdrops",
     "harvest": "exempt",
-    "death_function": { "corpse_type": "NO_CORPSE", "message": "Yidris solemnly leaves through a portal, unscathed." },
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "Yidris' magical ward shatters, and their skin hardens as they prepare for a duel to the death.", "effect": { "id": "summon_yidris_2", "hit_self": true } },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "special_attacks": [
 	[ "FEAR_PARALYZE", 10 ],
+	[ "PULL_METAL_WEAPON", 5 ],
       {
         "type": "spell",
         "spell_data": { "id": "summon_mages", "min_level": 1, "hit_self": true },
         "cooldown": 15,
         "monster_message": "Yidris blinks his gargantuan eye and nether magic incarnates before them..."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "jolt", "min_level": 10, "hit_self": true },
+        "cooldown": 15,
+        "monster_message": "As Yidris swings it's axe the air crackles with lightning."
+      }
+    ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "NOHEAD", "NOGIB", "NO_BREATHE", "STUN_IMMUNE", "ARTHROPOD_BLOOD" ]
+  },
+  {
+    "id": "mon_yidris_2",
+    "type": "MONSTER",
+	"name": "Yidris, Maelstrom Wielder",
+    "description": "A grey skinned ogre with ringed horns and a mouth filled with flame wields a tall axe that he holds with such obvious expertise and confidence that you almost mistake him for a brute. Since his magic ward was destroyed, he's become more feral in close combat.",
+    "bodytype": "human",
+    "default_faction": "nether",
+	"looks_like": "mon_zombie_nemesis",
+    "species": [ "HORROR" ],
+    "volume": "48000 ml",
+    "weight": "800 kg",
+    "hp": 1000,
+    "speed": 200,
+    "material": [ "stone" ],
+    "symbol": "Y",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "vision_day": 50,
+    "vision_night": 50,
+    "melee_skill": 10,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "armor": { "pure": 99, "electric": 99, "bash": 50, "stab": 50, "cut": 50, "bullet": 40 },
+    "bleed_rate": 20,
+    "melee_damage": [ { "damage_type": "cold", "amount": 3 } ],
+    "emit_fields": [ { "emit_id": "emit_shock_cloud", "delay": "1 s" } ],
+    "dodge": 7,
+    "death_drops": "yidrisdrops",
+    "harvest": "exempt",
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "Yidris solemnly leaves through a portal, beaten and bruised." },
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
+    "special_attacks": [
+	[ "FEAR_PARALYZE", 10 ],
+	[ "PULL_METAL_WEAPON", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "summon_mages", "min_level": 1, "hit_self": true },
+        "cooldown": 15,
+        "monster_message": "Yidris blinks his gargantuan eye and nether magic incarnates before them..."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "jolt", "min_level": 10, "hit_self": true },
+        "cooldown": 15,
+        "monster_message": "As Yidris swings it's axe the air crackles with lightning."
       }
     ],
     "flags": [ "SEES", "HEARS", "SMELLS", "NOHEAD", "NOGIB", "NO_BREATHE", "STUN_IMMUNE", "ARTHROPOD_BLOOD" ]
@@ -1418,7 +1580,7 @@
     "name": "Nether Mages",
     "description": "Survival not guaranteed.",
     "valid_targets": [ "ground", "self" ],
-    "min_damage": 0,
+    "min_damage": 1,
     "max_damage": 2,
     "min_aoe": 5,
     "max_aoe": 5,
@@ -1431,7 +1593,7 @@
     "min_duration": 120000,
     "max_duration": 120000,
     "base_energy_cost": 0,
-    "flags": [ "HOSTILE_SUMMON", "RANDOM_TARGET", "RANDOM_DAMAGE", "NO_PROJECTILE", "SPAWN_GROUP" ],
+    "flags": [ "HOSTILE_SUMMON", "RANDOM_TARGET", "RANDOM_DAMAGE", "NO_PROJECTILE", "SPAWN_GROUP", "PERMANENT_ALL_LEVELS" ],
     "shape": "blast",
     "effect": "summon",
     "effect_str": "GROUP_MAGES"
@@ -1440,15 +1602,15 @@
     "id": "mon_omnath",
     "type": "MONSTER",
     "name": { "str": "Omnath, Locus of Creation" },
-    "description": "If you could call it corporeal, this 'thing' would be a mass of rainbow light. That is, if you can get close enough to see it.",
+    "description": "If you could call it corporeal, this 'thing' would be a mass of rainbow light. It has a radiating glow that reminds you of the light before and after life, which condenses into a haze around it.",
     "bodytype": "blob",
     "default_faction": "nether",
 	"looks_like": "shifting_mass",
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
-    "hp": 1000,
-    "speed": 40,
+    "hp": 4000,
+    "speed": 100,
     "material": [ "stone" ],
     "symbol": "O",
     "color": "green",
@@ -1457,41 +1619,22 @@
     "luminance": 20,
     "vision_day": 50,
     "vision_night": 50,
-    "melee_skill": 0,
-    "melee_dice": 0,
+    "melee_skill": 1,
+    "melee_dice": 1,
     "melee_dice_sides": 0,
     "death_drops": "omnathdrops",
 	"regenerates": 1, 
-	"armor": { "electric": 50, "cold": 50, "heat": 50, "acid": 50, "pure": 999 },
-    "melee_damage": [ { "damage_type": "pure", "amount": 0 } ],
-    "dodge": 7,
+    "melee_damage": [ { "damage_type": "pure", "amount": 4 } ],
+    "dodge": 1,
     "harvest": "exempt",
-    "death_function": { "corpse_type": "NO_CORPSE", "message": "Where once there was, there simply isn't." },
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "The mass of light and color collapses like a dying star, condensating into pure, evil Colors.", "effect": { "id": "summon_mages", "hit_self": true } },
     "special_attacks": [
 	[ "FEAR_PARALYZE", 10 ],
       {
         "type": "spell",
-        "spell_data": { "id": "red_roll", "min_level": 1 },
-        "cooldown": 25,
-        "monster_message": "Red energy itself is released from the creation entity."
-      },
-      {
-        "type": "spell",
-        "spell_data": { "id": "white_roll", "min_level": 1 },
-        "cooldown": 25,
-        "monster_message": "White energy itself is released from the creation entity."
-      },
-      {
-        "type": "spell",
-        "spell_data": { "id": "blue_roll", "min_level": 1 },
-        "cooldown": 25,
-        "monster_message": "Blue energy itself is released from the creation entity."
-      },
-      {
-        "type": "spell",
-        "spell_data": { "id": "green_roll", "min_level": 1 },
-        "cooldown": 25,
-        "monster_message": "Green energy itself is released from the creation entity."
+        "spell_data": { "id": "omnath_roll", "min_level": 1, "hit_self": true },
+        "cooldown": 5,
+        "monster_message": "Unending creative energy is frolicced into the world."
       }
     ],
     "flags": [
@@ -1500,14 +1643,69 @@
       "SMELLS",
       "FLIES",
       "NOHEAD",
-      "COLDPROOF",
       "NOGIB",
+	  "FIREPROOF",
       "PACIFIST",
       "NO_BREATHE",
       "STUN_IMMUNE",
       "RANGED_ATTACKER",
       "ARTHROPOD_BLOOD"
     ]
+  },
+  {
+    "type": "SPELL",
+    "id": "omnath_roll",
+    "name": { "str": "omnaths roll" },
+    "description": "Veg.",
+    "valid_targets": [ "hostile", "self", "ground" ],
+    "max_level": 1,
+    "flags": [ "WONDER" ],
+    "min_aoe": 5,
+    "max_aoe": 5,
+    "base_casting_time": 0,
+    "base_energy_cost": 0,
+    "min_range": 5,
+    "max_range": 5,
+    "min_damage": 1,
+    "max_damage": 1,
+    "difficulty": 0,
+    "effect": "attack",
+    "shape": "blast",
+    "energy_source": "MANA",
+    "extra_effects": [
+      { "id": "green_effect_web" },
+      { "id": "golgari_effect_creeper" },
+      { "id": "gruul_effect_troll" },
+      { "id": "naya_slow", "hit_self": true },
+      { "id": "green_effect_gas" },
+      { "id": "green_effect_bees" },
+      { "id": "poly_gelatin_slesnya" },
+      { "id": "sultai_banishment" },
+      { "id": "green_effect_sap" },
+	  { "id": "blue_effect_electric" },
+      { "id": "blue_effect_slime" },
+      { "id": "dimir_effect_slow" },
+      { "id": "azorius_restorehp" },
+      { "id": "blue_effect_sludge" },
+	  { "id": "blue_effect_extinguisher" },
+      { "id": "blue_effect_coldair1" },
+      { "id": "blue_effect_coldair2" },
+      { "id": "blue_effect_coldair3" },
+	  { "id": "izzet_effects" },
+	  { "id": "boros_restorehp" },
+	  { "id": "red_effect_hotair" },
+      { "id": "random_fireball" },
+      { "id": "red_effect_hotair1" },
+      { "id": "red_effect_hotair2" },
+      { "id": "red_effect_hotair3" },
+	  { "id": "red_effect_fire" }
+    ],
+    "field_id": "fd_nuke_gas",
+    "field_chance": 5,
+    "min_duration": 3000,
+    "max_duration": 3000,
+    "min_field_intensity": 1,
+    "max_field_intensity": 1
   },
   {
     "id": "mon_ortiel",
@@ -1520,14 +1718,14 @@
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
-    "hp": 2000,
-    "speed": 200,
+    "hp": 3000,
+    "speed": 300,
     "material": [ "steel" ],
     "symbol": "O",
     "color": "dark_gray",
     "aggression": 100,
     "morale": 100,
-    "armor": { "electric": 20, "heat": 50, "stab": 99, "cut": 50, "bullet": 50, "bash": 99 },
+    "armor": { "electric": 10, "heat": 99, "stab": 25, "cut": 50, "bullet": 25, "bash": 99 },
     "melee_skill": 7,
     "melee_dice": 2,
     "vision_day": 50,
@@ -1535,7 +1733,7 @@
     "melee_dice_sides": 10,
     "melee_damage": [ { "damage_type": "heat", "amount": 5 } ],
     "dodge": 7,
-	"regenerates": 10, 
+	"regenerates": 5, 
     "harvest": "exempt",
     "biosignature": { "biosig_item": "brimstone_chunk", "biosig_timer": 50 },
     "death_drops": "ortieldrops",
@@ -1549,14 +1747,15 @@
 	[ "FEAR_PARALYZE", 10 ],
       {
         "type": "spell",
-        "spell_data": { "id": "open_tindalos_rift", "min_level": 1 },
-        "cooldown": 7,
-        "monster_message": "Ortiel blows their horn, and evil responds in kind."
+        "spell_data": { "id": "phase_skulker_teleport", "hit_self": true },
+        "cooldown": 10,
+        "monster_message": "Ortiel seems to move faster than possible, instantly repositioning."
       },
       { "id": "smash", "throw_strength": 54 },
       { "id": "stretch_attack" },
       { "id": "longswipe" },
       { "id": "cut_throat" },
+	  { "type": "leap", "cooldown": 1, "max_range": 5 },
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
     ],
     "flags": [
@@ -1587,7 +1786,7 @@
     "id": "mon_ortiel_trapped",
     "type": "MONSTER",
     "name": { "str": "Ortiel, the Yore Tiller" },
-    "description": "A tall bronze statue with a head both made of and wreathed in flame. It's hands grip an ethereal horn, silently calling for creatures of the night.",
+    "description": "A tall bronze statue with a head both made of and wreathed in flame. It's hands grip an ethereal horn, eternally calling to the night for battle.",
     "bodytype": "human",
     "default_faction": "nether",
 	"looks_like": "f_statue",
@@ -1595,7 +1794,7 @@
     "volume": "48000 ml",
     "weight": "800 kg",
     "hp": 3000,
-    "speed": 200,
+    "speed": 300,
     "material": [ "steel" ],
     "symbol": "O",
     "color": "dark_gray",
@@ -1621,16 +1820,11 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "FIRE", "HURT" ],
     "special_attacks": [
 	[ "FEAR_PARALYZE", 10 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "open_tindalos_rift", "min_level": 1 },
-        "cooldown": 5,
-        "monster_message": "Ortiel blows their horn, and evil responds in kind."
-      },
       { "id": "smash", "throw_strength": 54 },
       { "id": "stretch_attack" },
       { "id": "longswipe" },
       { "id": "cut_throat" },
+	  { "type": "leap", "cooldown": 1, "max_range": 5 },
       { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
     ],
     "flags": [
@@ -1763,6 +1957,7 @@
     "special_attacks": [
 	  [ "FEAR_PARALYZE", 10 ],
 	  [ "BIO_OP_DISARM", 10],
+	  [ "PULL_METAL_WEAPON", 10 ],
 	  { "id": "smash", "throw_strength": 54 },
 	  {
         "type": "spell",
@@ -1811,7 +2006,7 @@
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
-    "hp": 4000,
+    "hp": 5000,
     "speed": 300,
     "material": [ "brimstone" ],
     "symbol": "D",
@@ -1847,7 +2042,7 @@
 	  {
         "type": "spell",
         "spell_data": { "id": "summon_demons", "min_level": 1 },
-        "cooldown": 15,
+        "cooldown": 10,
         "monster_message": "The devil hastily beckons for reinforcements."
       },
 	  {
@@ -1935,7 +2130,7 @@
     "melee_damage": [ { "damage_type": "pure", "amount": 5 } ],
     "dodge": 0,
 	"emit_fields": [
-      { "emit_id": "emit_tindalos_rift", "delay": "30 s" },
+      { "emit_id": "emit_tindalos_rift", "delay": "25 s" },
 	  { "emit_id": "emit_rad_leak", "delay": "30 s" }
     ],
     "vision_day": 15,
@@ -1949,30 +2144,29 @@
     "id": "mon_atraxa",
     "type": "MONSTER",
     "name": { "str": "Atraxa, Praetors' Voice" },
-    "description": "A presence stands there, somewhere near you. If only you could reach out and touch it, it feels so warm, so incredibly pure...",
+    "description": "A presence stands there, somewhere near you. A radiant glow of warm, hazy light dews your vision, as white claws wrap stretch infinitely toward Atraxa's chorus. If only you could reach out and touch it, it feels so warm, so incredibly pure...",
     "bodytype": "angel",
 	"looks_like": "mon_vortex", 
     "default_faction": "nether",
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
-    "hp": 333,
+    "hp": 750,
     "speed": 150,
     "material": [ "stone" ],
     "symbol": "A",
     "color": "white",
-    "aggression": 0,
+    "aggression": 100,
     "morale": 100,
     "luminance": 25,
-    "melee_skill": 0,
-    "melee_dice": 0,
-    "melee_dice_sides": 0,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
     "vision_day": 50,
     "vision_night": 50,
-	"armor": { "electric": 100, "biological": 100, "cold": 100, "stab": 100, "cut": 100, "bullet": 100, "bash": 100 },
-    "melee_damage": [ { "damage_type": "pure", "amount": 0 } ],
+    "melee_damage": [ { "damage_type": "pure", "amount": 3 } ],
 	"emit_fields": [
-	  { "emit_id": "emit_rad_leak", "delay": "30 s" }
+	  { "emit_id": "emit_rad_leak", "delay": "3 s" }
     ],
     "dodge": 7,
     "harvest": "exempt",
@@ -1988,19 +2182,19 @@
         "type": "spell",
         "spell_data": { "id": "heal_ally_atraxa", "min_level": 1 },
         "cooldown": 10,
-        "monster_message": "Atraxa's radiant light purifies her own darkness..."
+        "monster_message": "Atraxa's radiant light purifies darkness."
       },
 	  {
         "type": "spell",
         "spell_data": { "id": "hemorhurt", "min_level": 1 },
-        "cooldown": 1,
-        "monster_message": "Atraxa's warm light lulls you towards an unending sleep."
+        "cooldown": 7,
+        "monster_message": "Atraxa's sullen lullaby pulls you towards an unending sleep."
       },
 	  {
         "type": "spell",
         "spell_data": { "id": "polymorph_atraxa", "min_level": 1 },
         "cooldown": 10,
-        "monster_message": "Atraxa's holy light turns foe into friend..."
+        "monster_message": "Atraxa's burning light turns foe into friend..."
       }
     ],
     "flags": [
@@ -2008,6 +2202,7 @@
       "HEARS",
       "SMELLS",
       "FLIES",
+	  "HIT_AND_RUN",
       "NOHEAD",
       "COLDPROOF",
       "NOGIB",
@@ -2048,10 +2243,10 @@
     "type": "SPELL",
     "name": "Atraxa's Polymorph",
     "description": "The warmth of the Praetors overwhelms you.",
-    "valid_targets": [ "hostile", "ally" ],
-    "flags": [ "NO_PROJECTILE", "RANDOM_TARGET", "PERMANENT", "HOSTILE_SUMMON" ],
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_PROJECTILE", "RANDOM_TARGET", "PERMANENT" ],
     "effect": "targeted_polymorph",
-    "effect_str": "mon_wisp",
+    "effect_str": "mon_atraxas_choir",
     "shape": "blast",
     "energy_source": "MANA",
     "base_casting_time": 0,
@@ -2067,6 +2262,70 @@
     "max_range": 20
   },
   {
+    "id": "mon_atraxas_choir",
+    "type": "MONSTER",
+    "name": "choir",
+    "description": "Lights dance in waves across the air, each creature their song touches a new addition to their unending song.",
+    "default_faction": "magical_beast",
+    "bodytype": "blob",
+    "species": [ "MAGICAL_BEAST" ],
+    "volume": "1500 ml",
+    "weight": "136 g",
+    "hp": 20,
+    "speed": 160,
+    "luminance": 16,
+    "material": [ "powder" ],
+    "symbol": "o",
+    "color": "yellow",
+    "aggression": 5,
+    "morale": 40,
+    "melee_skill": 6,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "electric", "amount": 8 } ],
+    "dodge": 9,
+    "vision_day": 20,
+    "vision_night": 20,
+    "harvest": "exempt",
+    "death_drops": "wisp_death",
+    "anger_triggers": [ "PLAYER_CLOSE" ],
+    "death_function": { "message": "The %s disintegrates!", "corpse_type": "NO_CORPSE" },
+	"special_attacks": [
+	[ "RESURRECT", 0 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "heal_ally_atraxa", "min_level": 1 },
+        "cooldown": 25,
+        "monster_message": "Atraxa's radiant light purifies darkness."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "hemorhurt", "min_level": 1 },
+        "cooldown": 25,
+        "monster_message": "Atraxa's sullen lullaby pulls you towards an unending sleep."
+      },
+	  {
+        "type": "spell",
+        "spell_data": { "id": "polymorph_atraxa", "min_level": 1 },
+        "cooldown": 25,
+        "monster_message": "Atraxa's burning light turns foe into friend..."
+      }
+    ],
+    "flags": [
+      "SEES",
+      "HEARS",
+      "FLIES",
+      "PATH_AVOID_DANGER_1",
+      "ELECTRIC",
+      "HARDTOSHOOT",
+      "NOGIB",
+	  "LOUDMOVES",
+      "NOHEAD",
+      "NO_BREATHE",
+      "SWARMS"
+    ]
+  },
+  {
     "id": "mon_dunebroodnephilim",
     "type": "MONSTER",
     "name": { "str": "dune brood nephilim" },
@@ -2077,8 +2336,8 @@
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
-    "hp": 50,
-	"speed": 50,
+    "hp": 100,
+	"speed": 100,
     "material": [ "stone" ],
     "symbol": "N",
     "color": "brown",
@@ -2104,7 +2363,7 @@
       {
         "type": "spell",
         "spell_data": { "id": "dune", "min_level": 1 },
-        "cooldown": 15,
+        "cooldown": 10,
         "monster_message": "The nephilims stomach sack engorges and it rears open it's mouth for more to be added to the brood, already lashing out for something to eat. They slither and claw out of it's throat fully grown and hunting for more."
       }
     ],
@@ -2132,8 +2391,8 @@
     "species": [ "HORROR" ],
     "volume": "48000 ml",
     "weight": "800 kg",
-    "hp": 30,
-	"speed": 40,
+    "hp": 40,
+	"speed": 50,
     "material": [ "stone" ],
     "symbol": "N",
     "color": "brown",
@@ -2182,7 +2441,7 @@
     "volume": "48000 ml",
     "weight": "800 kg",
     "hp": 150,
-	"speed": 20,
+	"speed": 150,
     "material": [ "stone" ],
     "symbol": "N",
     "color": "brown",
@@ -2207,7 +2466,7 @@
       {
         "type": "spell",
         "spell_data": { "id": "dune", "min_level": 1 },
-        "cooldown": 10,
+        "cooldown": 5,
         "monster_message": "The nephilims stomach sack engorges and it rears open it's mouth for more to be added to the brood, already lashing out for something to eat. They slither and claw out of it's throat fully grown and hunting for more, fading into dust when the hunger goes unsated."
       }
     ],
@@ -2235,8 +2494,8 @@
     "effect": "attack",
 	"extra_effects": [ { "id": "dune_nest", "hit_self": true } ],
     "shape": "blast",
-    "min_range": 25,
-    "max_range": 25,
+    "min_range": 1,
+    "max_range": 1,
     "flags": [ "LOUD", "RANDOM_TARGET", "NO_EXPLOSION_SFX" ],
     "difficulty": 3
   },
@@ -2398,7 +2657,7 @@
     "description": "What was once the bleeding blade of a yokai has been freed into a long blue and white cyber-serpent that hovers above the ground, gouts of electricity shooting from the sides of it's metallic, grinning mouth. It seems to be evil incarnate, indiscriminate in it's rampage, constantly building an army inside it's own body from some unknown source of power.",
     "copy-from": "mon_dragon_black_adult",
     "weight": "2200 kg",
-	"default_faction": "defense_bot",
+	"default_faction": "nether",
     "hp": 1500,
     "melee_dice": 4,
     "melee_dice_sides": 12,
